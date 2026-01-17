@@ -1,0 +1,41 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe Republic F-84 Thunderjet is an early escort fighter, fighter-bomber, and tactical nuclear bomber.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRepublic F-84 Thunderjet.\\E$"}
+{"rule":"TANK_YOU","sentence":"^\\QFor ferry flights, two 100 gal (400L) fuel tanks could be carried on the inner stations and two 167 gal (760L) fuel tanks to the outer ones.\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAdding additional second-generation maps would be difficult, as there is a mapping from hex codes XXYY to map sheet.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qde Havilland Vampire\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QSee also: DHA Vampire F+W Vampire FIAT Vampire HAL Vampire Macchi Vampire SNCASE Vampire SNCASE Mistral\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QDHA Vampire F+W Vampire FIAT Vampire HAL Vampire Macchi Vampire SNCASE Vampire SNCASE Mistral\\E$"}
+{"rule":"IF_VB","sentence":"^\\QWe consider only the Goblin-engined Vampires, and not the Nene-engined Vampires as these did not see service (although see the DHA Vampire and SNCASE Mistral).\\E$"}
+{"rule":"CD_NN","sentence":"^\\QA typical air-to-air load would be two 450L (100 imperial gallon) fuel tanks to increase endurance.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qde Havilland Vampire SNCASE Mistral\\E$"}
+{"rule":"THE_LATER_LATTER","sentence":"^\\QUnusually, the FB.52A uses the Goblin 2 engine rather than the later and more powerful Goblin 3 engine of many of the other fighter-bomber Vampires.\\E$"}
+{"rule":"THE_LATER_LATTER","sentence":"^\\QUnusually, the FB.52A uses the Goblin 2 engine rather than the later and more powerful Goblin 3 engine used by many of the other fighter-bomber Vampires.\\E$"}
+{"rule":"THE_LATER_LATTER","sentence":"^\\QUnusually, the FB.52A uses the Goblin 2 engine rather than the later and more powerful Goblin 3 engine used by many of the other fighter-bomber Vampires.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qde Havilland Vampire Macchi Vampire\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qde Havilland Vampire FIAT Vampire\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe SNCASE (Societé nationale des constructions aéronautiques du Sud-Est) Vampire FB.5 is a day fighter and fighter bomber.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFor ferry flights, two 120 gallon (400L) FTs can be carried on the inner stations and two 200 gallon (750L) FTs to the outer ones.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFor ferry flights, two 120-gallon (400L) FTs can be carried on the inner stations and two 200-gallon (750L) FTs to the outer ones.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QA typical air-to-ground load might be two 1000 lb bombs carried on the inner stations along with two 200-gallon (750L) FTs on the outer stations.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QA typical air-to-air load is two 200 gal (750L) FTs on the outer stations and, from 1960, on the Mk.6, two AIM-9B IRMs on the inner stations.\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QThe generic tank units are: heavy tank heavy tank HQ medium tank medium tank HQ light tank light tank HQ\\E$"}
+{"rule":"CD_NN","sentence":"^\\QGeneric Units Name Defense Sighting Strength Range infantry 4S 00 6 infantry HQ 4S 00 6 infantry FAC 5S 00 6 heavy tank 8H 00 12 heavy tank HQ 8H 00 12 medium tank 6H 00 12 medium tank HQ 6H 00 12 light tank 4H 00 12 light tank HQ 4H 00 12\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe generic infantry units are: infantry infantry HQ infantry FAC The first two units are platoons.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWikipedia states that this is E-band, which 2-3 GHz and corresponds to the UF band.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIt is equipped with an Oeil Noir 1 radar.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBofers L/70 BOFI and BOFI-R\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThis is Bofers 40 mm L/70 with an improved optical fire-control system, laser rangefinder, proximity-fuzed ammunition and, in the case of the BOFI-R, an integrated all-weather FCR.\\E$"}
+{"rule":"THIS_NNS","sentence":"^\\QPuma assigns A/B to these latter two.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QWikipedia\nWikipedia on AMX-13\nWikipedia on 30 mm shells\nAMX-30SA\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QUsed by Oerlikon 35 mm\nCombines tracking and search\nPulse Doppler Tracking is J band\nDoppler Search is E/F band with a range of 15 km\n1965 onwards\nUsed in the first prototype of the Gepard\nGepard FCR is VF = same frequency as FCR-C\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QHowever, Wikipedia also mentions an \"AFCC\" which controls one firing section of three launchers, one acquisition radar, and one illuminator.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QDuring the South Atlantic War, air-to-air refueling probes from Avro Vulcans were installed on several MR.2s to give the MR.2P version and the underwing stations were equipped with AIM-9G/L IRMs.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QLight APCs: Bronco ATTC, BvS10/Viking, BTR-50PK, BTR-60/70/80, FV432, M113, M114, Saracen, Spartan, most Stryker variants, and VAB.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTracked carriers include the M548, Bv 202/206, and BvS10/Beowulf.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAt this time, the battalion had attached half a battery of 105 mm Light Guns from Alma Battery of 29 Commando Regiment, RA, a section of Blowpipes from 43rd Air Defence Battery, RA, and a Recce Troop of 59 Independent Commando Squadron, RE.\\E$"}
+{"rule":"CD_NN","sentence":"^\\QA Company 12IR 5 infantry platoon\\E$"}
+{"rule":"CD_NN","sentence":"^\\QB Company 12IR 3 infantry platoon\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QB Battery, 601 GADA 1 Oerlikon 35 mm GDF section Two guns 1 towed FCR-D Skyguard\\E$"}
+{"rule":"TANK_YOU","sentence":"^\\QFor ferry flights, two 100 gallon (450L) fuel tanks could be carried on the inner stations and two 167 gallon (760L) fuel tanks to the outer ones.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Dummy\\+|Dummy's\\+)[0-9]+\\Q: Bidgee (CC BY-SA 3.0)\\E$"}
