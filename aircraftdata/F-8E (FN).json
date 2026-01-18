@@ -1,7 +1,7 @@
 {
     "variantname": "FN",
     "variantdescription": "for French Navy.",
-    "base": "F-8E",
+    "_include": "F-8E",
     "previouslydesignated": null,
     "origin": "TSOH",
     "loadnotes": [

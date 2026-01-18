@@ -1,7 +1,7 @@
 {
     "versionname": "F-100A",
     "versiondescription": "Original day fighter version.",
-    "base": "F-100C",
+    "_include": "F-100C",
     "internalfuel": 240,
     "atarefuel": false,
     "ceilingtable": [
@@ -23,7 +23,7 @@
             ]
         ]
     ],
-    "loadnotes": [],
+    "loadnotes": [ ],
     "VPs": [
         12,
         8,

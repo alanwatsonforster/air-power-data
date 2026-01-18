@@ -1,7 +1,7 @@
 {
     "versionname": "F-8J",
     "origin": "TSOH",
-    "base": "F-8E",
+    "_include": "F-8E",
     "previouslydesignated": null,
     "radar": {
         "name": "APQ-124",

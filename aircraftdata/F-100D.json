@@ -1,7 +1,7 @@
 {
     "versionname": "F-100D",
     "versiondescription": "Improved fighter-bomber and tactical nuclear striker version.",
-    "base": "F-100C",
+    "_include": "F-100C",
     "storeslimits": [
         4,
         10,

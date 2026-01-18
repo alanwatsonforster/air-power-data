@@ -4,7 +4,7 @@
     "popularname": null,
     "manufacturername": "Tupolev",
     "natoreportingnames": "NATO reporting name for aircraft is Bull.",
-    "base": "B-29A",
+    "_include": "B-29A",
     "radar": {
         "name": "RPB Kobal't",
         "eccm": 0,

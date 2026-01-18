@@ -1,5 +1,5 @@
 {
-    "base": "F-105D",
+    "_include": "F-105D",
     "origin": "TSOH",
     "versionname": "F-105F",
     "versiondescription": "Two-seater combat-capable trainer.",

@@ -5,7 +5,7 @@
         "Pilot",
         "Observer"
     ],
-    "base": "Alpha Jet A",
+    "_include": "Alpha Jet A",
     "bombsystem": "Manual",
     "ecm": {
         "iff": true
@@ -56,5 +56,5 @@
     "properties": [
         "HTD"
     ],
-    "notes": []
+    "notes": [ ]
 }

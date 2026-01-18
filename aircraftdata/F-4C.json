@@ -1,6 +1,6 @@
 {
     "versionname": "F-4C",
-    "base": "F-4B",
+    "_include": "F-4B",
     "originallydesignated": null,
     "radar": {
         "name": "APQ-100",

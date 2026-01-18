@@ -1,7 +1,7 @@
 {
     "versionname": "F9F-2B",
     "description": "The Grumman F9F-2B Panther is a carrier-capable day fighter and fighter-bomber. This version is a development of the F9F-2 version and has additional stations on the wing root and can carry both bombs and HVARs. All F9F-2 aircraft were converted to this standard, and subsequently commonly referred to as the F9F-2 rather than the F9F-2B.",
-    "base": "F9F-2",
+    "_include": "F9F-2",
     "stations": [
         [
             "grouppair",

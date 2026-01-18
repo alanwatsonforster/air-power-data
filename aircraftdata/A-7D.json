@@ -1,6 +1,6 @@
 {
     "versionname": "A-7D",
-    "base": "A-7E",
+    "_include": "A-7E",
     "ecm": {
         "iff": true,
         "rwr": "B",

@@ -1,6 +1,6 @@
 {
     "versionname": "F7U-3M",
-    "base": "F7U-3",
+    "_include": "F7U-3",
     "internalfuel": 430,
     "radar": {
         "name": "APQ-51",

@@ -1,6 +1,6 @@
 {
     "versionname": "F9F-8",
-    "base": "F9F-6",
+    "_include": "F9F-6",
     "atarefuel": true,
     "ceilingtable": [
         42,

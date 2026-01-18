@@ -1,7 +1,7 @@
 {
     "versionname": "F9F-8B",
     "versiondescription": "Tactical nuclear bomber version.",
-    "base": "F9F-8",
+    "_include": "F9F-8",
     "stations": [
         [
             "pair",

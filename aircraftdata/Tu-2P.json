@@ -3,7 +3,7 @@
     "popularname": "",
     "manufacturername": "Tupolev",
     "description": "The Tupolev Tu-2P is a night intercepter. A few Tu-2S were converted by the PLAAF by adding the radar from the J-5A (MiG-17PF) and replacing the 20 mm cannons with 23 mm NR-23 cannons. The NATO reporting name is Bat.",
-    "base": "Tu-2S",
+    "_include": "Tu-2S",
     "crew": [
         "Pilot",
         "Radar Operator",

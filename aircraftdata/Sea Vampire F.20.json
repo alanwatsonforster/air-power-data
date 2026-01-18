@@ -1,7 +1,7 @@
 {
     "versionname": "Sea Vampire F.20",
     "description": "The de Havilland Sea Vampire F.20 is a carrier-capable day fighter and fighter-bomber. It is an adaptation of the Vampire FB.5 for carrier operation, with an arrester hook, strengthed undercarriage, and more effective speed brakes.",
-    "base": "Vampire FB.5",
+    "_include": "Vampire FB.5",
     "powertable": {
         "M": [
             1.0,

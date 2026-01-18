@@ -1,14 +1,14 @@
 {
     "versionname": "F-104B",
-    "base": "F-104A",
+    "_include": "F-104A",
     "crew": [
         "Pilot",
         "Observer"
     ],
     "gun": "",
     "internalfuel": 230,
-    "technology": [],
-    "notes": [],
+    "technology": [ ],
+    "notes": [ ],
     "VPs": [
         16,
         10,

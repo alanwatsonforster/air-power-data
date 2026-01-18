@@ -1,7 +1,7 @@
 {
     "versionname": "A-7P",
     "versiondescription": "Attack version for Portuguese Air Force.",
-    "base": "A-7B",
+    "_include": "A-7B",
     "radar": {
         "name": "APQ-126",
         "eccm": 0,

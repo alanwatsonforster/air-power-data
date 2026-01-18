@@ -1,7 +1,7 @@
 {
     "versionname": "F9F-8T",
     "versiondescription": "Trainer and fast FAC version.",
-    "base": "F9F-8",
+    "_include": "F9F-8",
     "subsequentlydesignated": "TF-9J",
     "crew": [
         "Pilot",

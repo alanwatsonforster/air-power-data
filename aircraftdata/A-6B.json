@@ -1,7 +1,7 @@
 {
     "versionname": "A-6B",
     "versiondescription": "The A-6B was a conversion of the A-6A with systems and weapons specialized for Iron Hand missions (suppression of air defenses).",
-    "base": "A-6A",
+    "_include": "A-6A",
     "ecm": {
         "iff": true,
         "rwr": "B",

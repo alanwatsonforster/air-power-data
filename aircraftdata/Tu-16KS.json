@@ -1,7 +1,7 @@
 {
     "versionname": "Tu-16KS",
     "description": "The Tupolev Tu-16KS is a maritime strike aircraft. It is derived from the Tu-16 conventional bomber. The NATO reporting name for the aircraft is Badger-B, and for the tail radar is Bee Hind.",
-    "base": "Tu-16A",
+    "_include": "Tu-16A",
     "ecm": {
         "iff": true,
         "rwr": "B",

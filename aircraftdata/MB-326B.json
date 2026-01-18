@@ -1,7 +1,7 @@
 {
     "versionname": "MB-326B",
     "description": "The Aermacchi MB-326B is a trainer with a secondary light attack capability.",
-    "base": "MB-326H",
+    "_include": "MB-326H",
     "stations": [
         [
             "pair",

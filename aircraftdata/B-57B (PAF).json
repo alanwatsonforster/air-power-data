@@ -2,7 +2,7 @@
     "variantname": "PAF",
     "variantdescription": "in service with the PAF.",
     "origin": "TSOH",
-    "base": "B-57B",
+    "_include": "B-57B",
     "radar": {
         "name": "RB-1A",
         "eccm": 0,

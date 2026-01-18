@@ -1,5 +1,5 @@
 {
-    "base": "A-4E",
+    "_include": "A-4E",
     "variantname": "1969 Upgrade",
     "variantdescription": "with RWR-B, DDS-B and DJM-B3, from 1969.",
     "ecm": {

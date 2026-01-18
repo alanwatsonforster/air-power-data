@@ -2,7 +2,7 @@
     "versionname": "Nimrod MR.1",
     "description": "The Hawker Siddeley Nimrod MR.1 is a maritime patrol aircraft.",
     "origin": "Watson",
-    "base": "Nimrod MR.2",
+    "_include": "Nimrod MR.2",
     "radar": {
         "name": "ASV Mk 21D",
         "eccm": 1,

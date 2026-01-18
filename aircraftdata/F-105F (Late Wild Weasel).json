@@ -1,5 +1,5 @@
 {
-    "base": "F-105F (Early Wild Weasel)",
+    "_include": "F-105F (Early Wild Weasel)",
     "origin": "TSOH",
     "variantname": "Late Wild Weasel",
     "variantdescription": "equipped for air-defense suppression, from 1968.",

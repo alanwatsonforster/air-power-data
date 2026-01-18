@@ -1,7 +1,7 @@
 {
     "variantname": "Silverplate",
     "description": "The Boeing B-29A is a propeller-driven strategic nuclear bomber. This variant is a conversion of the conventional base variant under the 1943 to 1947 Silverplate program, with provision for nuclear weapons, all armor and turrets removed, and additional fuel tanks.",
-    "base": "B-29A",
+    "_include": "B-29A",
     "crew": [
         "Pilot",
         "Copilot",

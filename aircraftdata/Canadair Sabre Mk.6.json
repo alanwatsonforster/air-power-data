@@ -1,7 +1,7 @@
 {
     "versionname": "Canadair Sabre Mk.6",
     "description": "The Canadair Sabre Mk.6 is a day fighter. It is a development of the Mk.5 with a more powerful Orenda 14 engine and the unslatted 6-3 wing.",
-    "base": "Canadair Sabre Mk.5",
+    "_include": "Canadair Sabre Mk.5",
     "powertable": {
         "M": [
             1.5,

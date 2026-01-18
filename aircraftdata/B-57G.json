@@ -2,7 +2,7 @@
     "versionname": "B-57G",
     "versiondescription": "Night interdictor version.",
     "origin": "TSOH",
-    "base": "B-57B",
+    "_include": "B-57B",
     "gun": "",
     "bombsystem": "Computed",
     "ecm": {

@@ -2,7 +2,7 @@
     "versionname": "F-86F-35",
     "variantname": null,
     "description": "The North American F-86F-35 Sabre is a single-engined, swept-wing, fighter-bomber, and tactical nuclear bomber. The F-86F-35 is similar to the F-86F-25 but the inner left weapon station is reinforced to allow carriage of a Mk 12 nuclear bomb and the aircraft is equipped with the LABS system to allow toss bombing. This variant is the original, with the early slatted wing.",
-    "base": "F-86F-25",
+    "_include": "F-86F-25",
     "storeslimits": [
         2,
         6,

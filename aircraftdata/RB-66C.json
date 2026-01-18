@@ -3,7 +3,7 @@
     "versiondescription": "Electronic warfare version.",
     "variantname": null,
     "variantdescription": null,
-    "base": "B-66B (Late)",
+    "_include": "B-66B (Late)",
     "subsequentlydesignated": "EB-66C",
     "crew": [
         "Pilot",
@@ -38,7 +38,7 @@
             ]
         ]
     ],
-    "loadnotes": [],
+    "loadnotes": [ ],
     "VPs": [
         34,
         22,

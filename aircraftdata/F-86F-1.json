@@ -1,7 +1,7 @@
 {
     "versionname": "F-86F-1",
     "description": "The North American F-86F Sabre is a single-engined, swept-wing, day fighter. The F-86F-1 is derived from the F-86E, but gains a more powerful engine. This variant is the original with the early slatted wing.",
-    "base": "F-86E",
+    "_include": "F-86E",
     "ceilingtable": [
         48,
         45,
@@ -96,7 +96,7 @@
     "ecm": {
         "iff": true
     },
-    "notes": [],
+    "notes": [ ],
     "VPs": [
         9,
         6,

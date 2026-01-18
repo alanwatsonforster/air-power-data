@@ -1,7 +1,7 @@
 {
     "versionname": "F2H-2",
     "description": "The McDonnell F2H-2 Banshee is a carrier-capable fighter-bomber.",
-    "base": "F2H-3",
+    "_include": "F2H-3",
     "internalfuel": 290,
     "atarefuel": false,
     "ceilingtable": [
@@ -151,5 +151,5 @@
         3,
         1
     ],
-    "notes": []
+    "notes": [ ]
 }

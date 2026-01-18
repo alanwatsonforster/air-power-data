@@ -1,7 +1,7 @@
 {
     "versionname": "F4U-5N",
     "description": "The Vought F4U-5N Corsair is a propeller-driven, carrier-capable night fighter and night attack aircraft.",
-    "base": "F4U-5",
+    "_include": "F4U-5",
     "radar": {
         "name": "APS-19",
         "eccm": 0,

@@ -3,7 +3,7 @@
     "versiondescription": "Electronic warfare version.",
     "variantname": null,
     "variantdescription": null,
-    "base": "A-3B (Late)",
+    "_include": "A-3B (Late)",
     "originallydesignated": "A3D-2Q",
     "crew": [
         "Pilot",
@@ -35,7 +35,7 @@
             ]
         ]
     ],
-    "loadnotes": [],
+    "loadnotes": [ ],
     "VPs": [
         34,
         22,

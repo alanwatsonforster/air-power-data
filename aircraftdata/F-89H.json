@@ -1,6 +1,6 @@
 {
     "versionname": "F-89H",
-    "base": "F-89D",
+    "_include": "F-89D",
     "radar": {
         "name": "APG-40",
         "eccm": 1,

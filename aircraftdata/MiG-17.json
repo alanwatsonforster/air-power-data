@@ -1,7 +1,7 @@
 {
     "versionname": "MiG-17",
     "description": "The Mikoyan-Gurevich MiG-17 is an day fighter. It is a development of the MiG-15bis, with new wings and tail surfaces and a modified fuselage. It uses the non-afterburning VK-1A engine. The NATO reporting name for the aircraft is Fresco-A.",
-    "base": "MiG-17F",
+    "_include": "MiG-17F",
     "powertable": {
         "M": [
             1.5,

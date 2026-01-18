@@ -3,7 +3,7 @@
     "variantname": "CS",
     "variantdescription": "as supplied by Carl Smeaton",
     "origin": "Carl Smeaton",
-    "base": "MiG-21MF",
+    "_include": "MiG-21MF",
     "powertable": {
         "AB": [
             3.5,

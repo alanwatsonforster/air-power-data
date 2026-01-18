@@ -1,7 +1,7 @@
 {
     "versionname": "F-100F",
     "versiondescription": "Two-seat trainer with combat capability. Also used as fast FAC.",
-    "base": "F-100D",
+    "_include": "F-100D",
     "crew": [
         "Pilot",
         "Observer"

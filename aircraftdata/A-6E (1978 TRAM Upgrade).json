@@ -1,5 +1,5 @@
 {
-    "base": "A-6E",
+    "_include": "A-6E",
     "variantname": "1978 TRAM Upgrade",
     "variantdescription": "with TRAM sensor and attack systems upgrades, from 1978.",
     "technology": [

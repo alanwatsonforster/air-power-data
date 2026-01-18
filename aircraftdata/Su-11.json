@@ -1,6 +1,6 @@
 {
     "versionname": "Su-11",
-    "base": "Su-9",
+    "_include": "Su-9",
     "description": "The Sukhoi Su-11 is an all-weather interceptor. It is an improved version of the Su-9. The NATO reporting name for the aircraft is Fishpot-C and for the radar is Skip Spin.",
     "turndragtable": {
         "TT": [
@@ -33,7 +33,7 @@
         "iff": true,
         "rwr": "A"
     },
-    "notes": [],
+    "notes": [ ],
     "storeslimits": [
         2,
         6,

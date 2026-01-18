@@ -2,7 +2,7 @@
     "versionname": "F-89J",
     "variantname": "Rocket-and-Fuel Pods",
     "variantdescription": "with rocket-and-fuel wing-tip pods from the F-89D.",
-    "base": "F-89D",
+    "_include": "F-89D",
     "radar": {
         "name": "APG-40",
         "eccm": 1,
@@ -22,7 +22,7 @@
                 8
             ],
             0,
-            []
+            [ ]
         ],
         [
             "pair",

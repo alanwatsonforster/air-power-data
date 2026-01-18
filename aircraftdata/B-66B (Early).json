@@ -2,7 +2,7 @@
     "versionname": "B-66B",
     "popularname": "Destroyer",
     "versiondescription": "Tactical conventional and nuclear bomber version.",
-    "base": "A-3B (Early)",
+    "_include": "A-3B (Early)",
     "ejectionseat": "standard",
     "radar": {
         "name": "APS-63",

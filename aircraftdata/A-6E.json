@@ -1,7 +1,7 @@
 {
     "versionname": "A-6E",
     "versiondescription": "The A-6E was upgrade of the A-6A with improved navigation and attack systems.",
-    "base": "A-6A",
+    "_include": "A-6A",
     "powertable": {
         "M": [
             1.5,

@@ -1,6 +1,6 @@
 {
     "versionname": "MiG-21SM",
-    "base": "MiG-21PF",
+    "_include": "MiG-21PF",
     "description": "The Mikoyan-Gurevich MiG-21SM is an all-weather interceptor. It is an improved version of the MiG-21S, with a new engine and an internal GSh-21L cannon. The NATO reporting name for the aircraft is Fishbed-J and for the radar is Jay Bird.",
     "origin": "TSOH",
     "powertable": {
@@ -291,7 +291,7 @@
         "iff": true,
         "rwr": "A"
     },
-    "properties": [],
+    "properties": [ ],
     "storeslimits": [
         4,
         6,

@@ -1,7 +1,7 @@
 {
     "versionname": "AU-1",
     "description": "The Vought AU-1 Corsair is a propeller-driven, carrier-capable close-air-support aircraf, developed for the USMC from the F4U-5. It has additional armor, oil coolers relocated to reduce vulnerability, simplified superchargers, and two additional weapon stations.",
-    "base": "F4U-5",
+    "_include": "F4U-5",
     "ceilingtable": [
         41,
         31,

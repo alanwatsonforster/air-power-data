@@ -1,5 +1,5 @@
 {
-    "base": "F-104C",
+    "_include": "F-104C",
     "variantname": "ATA Refueling",
     "variantdescription": "with optional ATA refueling probe installed.",
     "atarefuel": true,
@@ -95,6 +95,6 @@
             9.0
         ]
     },
-    "notes": [],
+    "notes": [ ],
     "description": ""
 }

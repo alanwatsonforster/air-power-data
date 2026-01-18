@@ -1,8 +1,8 @@
 {
     "versionname": "F-104C",
     "versiondescription": "Fighter-bomber version.",
-    "base": "F-104A",
-    "notes": [],
+    "_include": "F-104A",
+    "notes": [ ],
     "stations": [
         [
             "pair",

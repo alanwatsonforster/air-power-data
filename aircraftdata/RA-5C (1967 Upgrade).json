@@ -1,5 +1,5 @@
 {
-    "base": "RA-5C",
+    "_include": "RA-5C",
     "variantname": "1967 Upgrade",
     "variantdescription": "with RWR-B and DJM-B3, from 1967.",
     "ecm": {

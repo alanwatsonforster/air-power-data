@@ -3,7 +3,7 @@
     "versiondescription": null,
     "variantname": "Wild Weasel II",
     "variantdescription": "equipped for defense suppresion.",
-    "base": "F-100F (Wild Weasel I)",
+    "_include": "F-100F (Wild Weasel I)",
     "stations": [
         [
             "pair",

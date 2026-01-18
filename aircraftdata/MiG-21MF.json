@@ -1,7 +1,7 @@
 {
     "versionname": "MiG-21MF",
     "description": "The Mikoyan-Gurevich MiG-21MF is an all-weather interceptor. It is an export version of the MiG-21SM. The NATO reporting name for the aircraft is Fishbed-J and for the radar is Jay Bird.",
-    "base": "MiG-21SM",
+    "_include": "MiG-21SM",
     "stations": [
         [
             "pair",

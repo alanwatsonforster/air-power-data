@@ -4,7 +4,7 @@
     "description": "The Canadair Sabre Mk.5 is a day fighter. It is a development of the Mk.4 with a more powerful Orenda 10 engine replacing the General Electric J47 and the unslatted 6-3 wing.",
     "manufacturername": "Canadair",
     "origin": "APJ 25",
-    "base": "F-86F-25 (6-3 Wing)",
+    "_include": "F-86F-25 (6-3 Wing)",
     "popularname": null,
     "powertable": {
         "M": [
@@ -233,7 +233,7 @@
         ]
     },
     "lockon": 7,
-    "notes": [],
+    "notes": [ ],
     "loadnotes": [
         "Either stations 1 to 4 or stations 5 to 12 can be used.",
         "Stations 5 to 12 can each carry two RKs."

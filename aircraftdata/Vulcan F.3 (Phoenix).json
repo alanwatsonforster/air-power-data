@@ -2,7 +2,7 @@
     "versionname": "Vulcan F.3",
     "description": "The Avro Vulcan F.3A is a long-range intercepter. This variant is equipped with AIM-54 Phoenix missiles and the AWG-9 radar from the F-14A.",
     "variantname": "Phoenix",
-    "base": "Vulcan B.2",
+    "_include": "Vulcan B.2",
     "radar": {
         "name": "AWG-9",
         "eccm": 3,
@@ -29,7 +29,7 @@
         "DDS capacity is 60 CH.",
         "Only the pilot and copilot have ejection seats. The other crew members can bail out three game turns after declaring their intent to do so."
     ],
-    "variantnotes": [],
+    "variantnotes": [ ],
     "stations": [
         [
             "grouppair",

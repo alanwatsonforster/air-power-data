@@ -3,7 +3,7 @@
     "versiondescription": "Reconnaissance version.",
     "originallydesignated": "F4H-1P",
     "subsequentlydesignated": null,
-    "base": "F-4B",
+    "_include": "F-4B",
     "speedtable": {
         "EH": [
             [
@@ -156,7 +156,7 @@
                 6
             ],
             500,
-            []
+            [ ]
         ],
         [
             "single",

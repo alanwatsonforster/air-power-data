@@ -1,6 +1,6 @@
 {
     "versionname": "F-4E",
-    "base": "F-4C",
+    "_include": "F-4C",
     "origin": "TSOH",
     "crew": [
         "Pilot",
@@ -272,7 +272,7 @@
         "SMP",
         "RPR"
     ],
-    "notes": [],
+    "notes": [ ],
     "stations": [
         [
             "pair",

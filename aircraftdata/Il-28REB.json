@@ -1,7 +1,7 @@
 {
     "versionname": "Il-28REB",
     "description": "The Ilyushin Il-28REB is a electronic-countermeasures aircraft. It is a development of the Il-28 medium bomber. The NATO reporting name for the aircraft is Beagle.",
-    "base": "Il-28",
+    "_include": "Il-28",
     "crew": [
         "Pilot",
         "EW Officer",
@@ -29,7 +29,7 @@
                 1
             ],
             0,
-            []
+            [ ]
         ]
     ],
     "loadnotes": [

@@ -2,7 +2,7 @@
     "versionname": "MiG-21F",
     "description": "The Mikoyan-Gurevich MiG-21F is a day fighter. This is the first production version with two NR-30 cannons, but without a search radar or missile armament. The NATO reporting name for the aircraft is Fishbed-B and for the radar is High Fix.",
     "origin": "AMW",
-    "base": "MiG-21F-13",
+    "_include": "MiG-21F-13",
     "radar": {
         "name": "SRD-5MN Baza-6",
         "eccm": 0,
@@ -45,7 +45,7 @@
             ]
         ]
     ],
-    "loadnotes": [],
+    "loadnotes": [ ],
     "VPs": [
         14,
         8,

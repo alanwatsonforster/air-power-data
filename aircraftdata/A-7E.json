@@ -1,6 +1,6 @@
 {
     "versionname": "A-7E",
-    "base": "A-7C",
+    "_include": "A-7C",
     "powertable": {
         "M": [
             1.5,

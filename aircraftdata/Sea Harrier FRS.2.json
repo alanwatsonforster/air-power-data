@@ -1,7 +1,7 @@
 {
     "versionname": "Sea Harrier FRS.2",
     "origin": "TSOH 2nd Edition ADCs",
-    "base": "Sea Harrier FRS.1",
+    "_include": "Sea Harrier FRS.1",
     "powertable": {
         "M": [
             4.5,

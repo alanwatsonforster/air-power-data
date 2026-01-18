@@ -1,6 +1,6 @@
 {
     "versionname": "F-8D",
-    "base": "F-8C",
+    "_include": "F-8C",
     "previouslydesignated": "F8U-2N",
     "origin": "TSOH",
     "internalfuel": 480,

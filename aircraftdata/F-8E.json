@@ -1,6 +1,6 @@
 {
     "versionname": "F-8E",
-    "base": "F-8D",
+    "_include": "F-8D",
     "previouslydesignated": "F8U-2NE",
     "origin": "TSOH",
     "powertable": {

@@ -1,7 +1,7 @@
 {
     "versionname": "Tu-14T",
     "description": "The Tupolev Tu-14T is a torpedo bomber. It is a development of the Tu-14 medium bomber. The NATO reporting name for the aircraft is Bosun.",
-    "base": "Tu-14",
+    "_include": "Tu-14",
     "ejectionseat": "early",
     "stations": [
         [

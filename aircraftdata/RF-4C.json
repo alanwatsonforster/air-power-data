@@ -1,7 +1,7 @@
 {
     "versionname": "RF-4C",
     "versiondescription": "Reconnaissance version.",
-    "base": "F-4C",
+    "_include": "F-4C",
     "speedtable": {
         "EH": [
             [
@@ -154,7 +154,7 @@
                 6
             ],
             500,
-            []
+            [ ]
         ],
         [
             "single",

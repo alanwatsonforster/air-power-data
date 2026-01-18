@@ -1,5 +1,5 @@
 {
-    "base": "A-7E (1980 Upgrade)",
+    "_include": "A-7E (1980 Upgrade)",
     "variantname": "1985 Upgrade",
     "variantdescription": "with RWR-C, DJM-C4, and AGM-88 ARM capability, from 1985.",
     "ecm": {

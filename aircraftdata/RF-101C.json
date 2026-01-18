@@ -1,13 +1,13 @@
 {
     "versionname": "RF-101C",
     "versiondescription": "Tactical reconnaissance version.",
-    "base": "F-101C",
+    "_include": "F-101C",
     "crew": [
         "Pilot"
     ],
     "radar": null,
     "gun": null,
-    "technology": [],
+    "technology": [ ],
     "notes": [
         "Camera-filled nose, with oblique and overhead cameras."
     ],
@@ -35,7 +35,7 @@
             ]
         ]
     ],
-    "loadnotes": [],
+    "loadnotes": [ ],
     "VPs": [
         20,
         15,

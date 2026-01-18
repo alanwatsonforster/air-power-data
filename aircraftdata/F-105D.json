@@ -1,7 +1,7 @@
 {
     "versionname": "F-105D",
     "origin": "TSOH",
-    "base": "F-105B",
+    "_include": "F-105B",
     "powertable": {
         "AB": [
             2.5,

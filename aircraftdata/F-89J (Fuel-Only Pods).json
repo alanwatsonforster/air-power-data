@@ -2,7 +2,7 @@
     "versionname": "F-89J",
     "variantname": "Fuel-Only Pods",
     "variantdescription": "with fuel-only wing-tip pods.",
-    "base": "F-89J (Rocket-and-Fuel Pods)",
+    "_include": "F-89J (Rocket-and-Fuel Pods)",
     "internalfuel": 770,
     "rocketfactors": 0,
     "stations": [
@@ -13,7 +13,7 @@
                 8
             ],
             0,
-            []
+            [ ]
         ],
         [
             "pair",

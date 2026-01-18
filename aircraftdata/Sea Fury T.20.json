@@ -1,7 +1,7 @@
 {
     "versionname": "Sea Fury T.20",
     "description": "The Hawker Sea Fury T.20 is a carrier-capable trainer.",
-    "base": "Sea Fury FB.11",
+    "_include": "Sea Fury FB.11",
     "crew": [
         "Pilot",
         "Observer"

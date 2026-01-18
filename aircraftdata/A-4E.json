@@ -3,7 +3,7 @@
     "versiondescription": "The A-4E is a development of the A-4C, with two additional pylons and improved avionics.",
     "previouslydesignated": "A4D-5",
     "subsequentlydesignated": null,
-    "base": "A-4C",
+    "_include": "A-4C",
     "ecm": {
         "iff": true,
         "rwr": "A",

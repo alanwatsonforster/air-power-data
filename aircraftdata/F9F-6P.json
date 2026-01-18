@@ -1,7 +1,7 @@
 {
     "versionname": "F9F-6P",
     "versiondescription": "Reconnaissance version of F9F-6.",
-    "base": "F9F-6",
+    "_include": "F9F-6",
     "gun": "",
     "radar": null,
     "ataradarranging": null,

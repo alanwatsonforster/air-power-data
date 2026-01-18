@@ -1,5 +1,5 @@
 {
-    "base": "A-7E",
+    "_include": "A-7E",
     "variantname": "1980 Upgrade",
     "variantdescription": "with automatic maneuver flaps, from 1980.",
     "lowspeedliftdevicelimit": 3.5,

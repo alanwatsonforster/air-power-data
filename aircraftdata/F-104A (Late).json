@@ -1,5 +1,5 @@
 {
-    "base": "F-104A",
+    "_include": "F-104A",
     "variantname": "Late",
     "variantdescription": "reengined with more powerful J79-GE-19 engine in 1967.",
     "powertable": {
@@ -38,7 +38,7 @@
         58,
         50
     ],
-    "notes": [],
+    "notes": [ ],
     "VPs": [
         18,
         12,

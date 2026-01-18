@@ -1,5 +1,5 @@
 {
-    "base": "A-4C",
+    "_include": "A-4C",
     "variantname": "1965 Upgrade",
     "variantdescription": "with RWR-A, from 1965.",
     "ecm": {

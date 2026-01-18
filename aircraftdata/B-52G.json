@@ -1,6 +1,6 @@
 {
     "versionname": "B-52G",
-    "base": "B-52D",
+    "_include": "B-52D",
     "blindarcs": "90-",
     "ecm": {
         "iff": true,

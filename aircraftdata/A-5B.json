@@ -1,7 +1,7 @@
 {
     "versionname": "A-5B",
     "versiondescription": "The A-5B is an improved version of the A-5A, with additional fuel, two extra pylons, blow flaps. It did not see service as a bomber, but instead was used as a trainer for the RA-5C.",
-    "base": "A-5A",
+    "_include": "A-5A",
     "previouslydesignated": "A3J-2",
     "internalfuel": 880,
     "stations": [

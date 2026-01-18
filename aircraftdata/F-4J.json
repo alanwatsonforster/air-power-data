@@ -1,6 +1,6 @@
 {
     "versionname": "F-4J",
-    "base": "F-4E",
+    "_include": "F-4E",
     "internalfuel": 610,
     "ceilingtable": [
         62,

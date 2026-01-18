@@ -1,7 +1,7 @@
 {
     "versionname": "F-101C",
     "versiondescription": "Fighter-bomber version.",
-    "base": "F-101B",
+    "_include": "F-101B",
     "crew": [
         "Pilot"
     ],
@@ -26,7 +26,7 @@
     },
     "ataradarranging": "RE",
     "gundamagerating": "4/6*",
-    "technology": [],
+    "technology": [ ],
     "stations": [
         [
             "pair",
@@ -51,7 +51,7 @@
             ]
         ]
     ],
-    "loadnotes": [],
+    "loadnotes": [ ],
     "VPs": [
         16,
         12,

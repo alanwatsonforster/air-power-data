@@ -1,7 +1,7 @@
 {
     "variantname": "1969 Upgrade",
     "variantdescription": "with RWR-A and DJM-A3, from 1969.",
-    "base": "F-8E (1966 Upgrade)",
+    "_include": "F-8E (1966 Upgrade)",
     "origin": "TSOH",
     "gunammunition": 2.5,
     "ecm": {

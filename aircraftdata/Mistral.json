@@ -1,7 +1,7 @@
 {
     "versionname": "Mistral",
     "description": "The SNCASE SE.535 Mistral is a day fighter and fighter bomber. It is derived from the SNCASE Vampire FB.5, but has a more powerfule Nene engine, an ejection seat, and air conditioning for use in hot climates.",
-    "base": "Vampire FB.5",
+    "_include": "Vampire FB.5",
     "powertable": {
         "M": [
             1.0,

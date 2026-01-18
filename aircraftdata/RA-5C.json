@@ -1,7 +1,7 @@
 {
     "versionname": "RA-5C",
     "versiondescription": "The RA-5C is an reconnaissance version of the A-5B. It saw extensive service in the Vietnam War.",
-    "base": "A-5B",
+    "_include": "A-5B",
     "previouslydesignated": "A3J-3P",
     "ecm": {
         "iff": true,

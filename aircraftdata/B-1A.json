@@ -2,7 +2,7 @@
     "versionname": "B-1A",
     "popularname": null,
     "description": "The Rockwell B-1A Lancer is a strategic nuclear bomber.",
-    "base": "B-1B",
+    "_include": "B-1B",
     "geometries": {
         "forward": {
             "maxspeed": 3.5,
@@ -231,7 +231,7 @@
                     10.0
                 ]
             },
-            "properties": []
+            "properties": [ ]
         },
         "aft": {
             "minspeed": 5.5,

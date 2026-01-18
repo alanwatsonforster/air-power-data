@@ -1,7 +1,7 @@
 {
     "versionname": "F-86H",
     "description": "The North American F-86H Sabre is a single-engined, swept-wing, fighter-bomber. The F-86H is derived from the F-86F-35, but has a more powerful engine and four 20 mm M39 guns in place of the original six .50 cal guns. This variant is the original with the unslatted 6-3 wing.",
-    "base": "F-86F-40",
+    "_include": "F-86F-40",
     "origin": "APJ 25",
     "crew": [
         "Pilot"
@@ -246,7 +246,7 @@
         "BT": 2
     },
     "properties:comment": "Not HTD.",
-    "properties": [],
+    "properties": [ ],
     "storeslimits": [
         2,
         6,

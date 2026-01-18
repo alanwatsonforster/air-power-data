@@ -2,7 +2,7 @@
     "versionname": "T-37C",
     "popularname": "Tweet",
     "versiondescription": "Trainer and light attack aircraft.",
-    "base": "A-37B",
+    "_include": "A-37B",
     "powertable": {
         "M": [
             1.0,

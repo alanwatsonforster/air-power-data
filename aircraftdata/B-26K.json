@@ -7,7 +7,7 @@
     "originallydesignated": null,
     "origin": "APJ 51",
     "variantdescription": null,
-    "base": "B-26B (No Turrets)",
+    "_include": "B-26B (No Turrets)",
     "crew": [
         "Pilot",
         "Navigator",

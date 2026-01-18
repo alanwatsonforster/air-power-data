@@ -1,7 +1,7 @@
 {
     "versionname": "Il-28T",
     "description": "The Ilyushin Il-28T is a torpedo bomber. It is a development of the Il-28 medium bomber. The NATO reporting name for the aircraft is Beagle.",
-    "base": "Il-28",
+    "_include": "Il-28",
     "gun": "One 23 mm NR-23",
     "gunatatohitrolls": "3/2/1",
     "gundamagerating": "3/2",

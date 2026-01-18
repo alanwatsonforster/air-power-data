@@ -1,5 +1,5 @@
 {
-    "base": "F-102A",
+    "_include": "F-102A",
     "variantname": "Late",
     "variantdescription": "with IRSTS and AIM-26 capability from 1963 and later.",
     "technology": [

@@ -1,7 +1,7 @@
 {
     "versionname": "Il-28N",
     "description": "The Ilyushin Il-28N is a tactical nuclear bomber. It is a development of the Il-28 medium bomber. The NATO reporting name for the aircraft is Beagle.",
-    "base": "Il-28",
+    "_include": "Il-28",
     "internalfuel": 615,
     "storeslimits": [
         4,
@@ -15,7 +15,7 @@
                 1
             ],
             6600,
-            []
+            [ ]
         ]
     ],
     "loadnotes": [
