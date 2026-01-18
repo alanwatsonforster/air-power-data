@@ -1161,8 +1161,11 @@ def writelatexfile(latexfilename, directives):
 
 def makepdffile(latexfilename, pdffilename):
     log("making %s." % pdffilename)
+    # Setting SOURCE_DATE_EPOCH and FORCE_SOURCE_DATE below forces the source
+    # date in the file so that we produce the identical PDF files from identical
+    # source files.
     os.system(
-        'xelatex -interaction=nonstopmode "'
+        'SOURCE_DATE_EPOCH=0 FORCE_SOURCE_DATE=1 xelatex -interaction=nonstopmode "'
         + latexfilename
         + '" >aircraftdatacards.log 2>&1 || cat aircraftdatacards.log'
     )
