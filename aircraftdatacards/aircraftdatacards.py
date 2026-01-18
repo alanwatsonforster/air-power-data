@@ -1150,8 +1150,6 @@ def writelatexfile(latexfilename, directives):
             writeadc(directive[1])
         elif directive[0] == "chapter":
             writechapter(directive[1])
-        elif directive[0] == "comment":
-            pass
         else:
             raise RuntimeError("invalid directive %r." % directive)
     writelatexepilog()

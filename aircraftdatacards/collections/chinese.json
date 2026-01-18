@@ -4,20 +4,13 @@
         false
     ],
     [
-        "comment",
-        "date unknown"
-    ],
-    [
         "type",
         "Shenyang JJ-2 and FT-2",
         "Shenyang JJ-2",
         "Shenyang FT-2"
     ],
     [
-        "comment",
-        "1957"
-    ],
-    [
+        // 1957
         "type",
         "Shenyang J-5 and F-5",
         "Shenyang J-5",
@@ -27,10 +20,7 @@
         "Shenyang FT-5"
     ],
     [
-        "comment",
-        "April 1962"
-    ],
-    [
+        // April 1962
         "type",
         "Shenyang J-6 and F-6",
         "Shenyang J-6",
