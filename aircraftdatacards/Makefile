@@ -33,14 +33,16 @@ format		:
 	python3 format.py
 
 types					:	.FORCE
+	rm -f types/*.json
+	python3 make-types.py
 	ls types/*.json | \
 	sed 's/\.json//' | \
 	while read basename; do \
-	  echo "$$basename"; \
-	  cp "$$basename".json type.json; \
+	  mv "$$basename".json type.json; \
 	  python3 aircraftdatacards.py type.json; \
 	  python3 aircraftdatacards.py type.json; \
 	  mv type.pdf "$$basename".pdf; \
+	  rm type.aux type.json type.log type.out type.tex; \
 	done
 
 collections				:	.FORCE
