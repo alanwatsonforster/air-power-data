@@ -35,14 +35,26 @@ format		:
 types					:	.FORCE
 	rm -f types/*.json
 	python3 make-types.py
-	ls types/*.json | \
-	sed 's/\.json//' | \
-	while read basename; do \
-	  mv "$$basename".json type.json; \
-	  python3 aircraftdatacards.py type.json; \
-	  python3 aircraftdatacards.py type.json; \
-	  mv type.pdf "$$basename".pdf; \
-	  rm type.aux type.json type.log type.out type.tex; \
+	$(MAKE) -j3 types-for-version-1 types-for-version-2 types-for-version-3
+	rm -f types/*.json
+
+types-for-version-1		:	.FORCE
+	version=1 make types-for-version
+types-for-version-2		:	.FORCE
+	version=2 make types-for-version
+types-for-version-3		:	.FORCE
+	version=3 make types-for-version
+
+types-for-version		:	.FORCE
+	mkdir -p types/version-$$version
+	ls types/*.json |														\
+	sed 's:.*/::;s/\.json//' | 												\
+	while read typename; do 												\
+		cp types/"$$typename".json type-$$version.json; 					\
+		version=$$version python3 aircraftdatacards.py type-$$version.json;	\
+	  	version=$$version python3 aircraftdatacards.py type-$$version.json;	\
+	  	mv type-$$version.pdf types/version-$$version/"$$typename".pdf;		\
+	  	rm type-$$version.*; 												\
 	done
 
 collections				:	.FORCE
