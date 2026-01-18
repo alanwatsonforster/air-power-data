@@ -47,25 +47,36 @@ types-for-version-3		:	.FORCE
 
 types-for-version		:	.FORCE
 	mkdir -p types/version-$$version
-	ls types/*.json |														\
-	sed 's:.*/::;s/\.json//' | 												\
-	while read typename; do 												\
-		cp types/"$$typename".json type-$$version.json; 					\
-		version=$$version python3 aircraftdatacards.py type-$$version.json;	\
-	  	version=$$version python3 aircraftdatacards.py type-$$version.json;	\
-	  	mv type-$$version.pdf types/version-$$version/"$$typename".pdf;		\
-	  	rm type-$$version.*; 												\
+	ls types/*.json |																		\
+	sed 's:.*/::;s/\.json//' | 																\
+	while read typename; do 																\
+		cp types/"$$typename".json type-$$version.json; 									\
+		version=$$version python3 aircraftdatacards.py type-$$version.json;					\
+	  	version=$$version python3 aircraftdatacards.py type-$$version.json;					\
+	  	mv type-$$version.pdf types/version-$$version/"$$typename".pdf;						\
+	  	rm type-$$version.*; 																\
 	done
 
 collections				:	.FORCE
-	ls collections/*.json | \
-	sed 's/\.json//' | \
-	while read basename; do \
-	  echo "$$basename"; \
-	  cp "$$basename".json collection.json; \
-	  python3 aircraftdatacards.py collection.json; \
-	  python3 aircraftdatacards.py collection.json; \
-	  mv collection.pdf "$$basename".pdf; \
+	$(MAKE) -j3 collections-for-version-1 collections-for-version-2 collections-for-version-3
+
+collections-for-version-1		:	.FORCE
+	version=1 make collections-for-version
+collections-for-version-2		:	.FORCE
+	version=2 make collections-for-version
+collections-for-version-3		:	.FORCE
+	version=3 make collections-for-version
+
+collections-for-version		:	.FORCE
+	mkdir -p collections/version-$$version
+	ls collections/*.json | 																\
+	sed 's:.*/::;s/\.json//' | 																\
+	while read collectionname; do 															\
+		cp collections/"$$collectionname".json collection-$$version.json; 					\
+		python3 aircraftdatacards.py collection-$$version.json; 							\
+		python3 aircraftdatacards.py collection-$$version.json; 							\
+		mv collection-$$version.pdf collections/version-$$version/"$$collectionname".pdf;	\
+		rm collection-$$version.*; 															\
 	done
 
 example-adcs:
