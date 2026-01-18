@@ -176,13 +176,5 @@ sandbox*
 Sandbox*
 
 # ADC intermediate files
-aircraftdatacards/all.tex
-aircraftdatacards/australian.tex
-aircraftdatacards/bombers.tex
-aircraftdatacards/british.tex
-aircraftdatacards/canadian.tex
-aircraftdatacards/chinese.tex
-aircraftdatacards/european.tex
-aircraftdatacards/french.tex
-aircraftdatacards/italian.tex
 aircraftdatacards/types/*.tex
+aircraftdatacards/collections/*.tex

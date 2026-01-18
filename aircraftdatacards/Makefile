@@ -43,6 +43,17 @@ types					:	.FORCE
 	  mv type.pdf "$$basename".pdf; \
 	done
 
+collections				:	.FORCE
+	ls collections/*.json | \
+	sed 's/\.json//' | \
+	while read basename; do \
+	  echo "$$basename"; \
+	  cp "$$basename".json collection.json; \
+	  python3 aircraftdatacards.py collection.json; \
+	  python3 aircraftdatacards.py collection.json; \
+	  mv collection.pdf "$$basename".pdf; \
+	done
+
 example-adcs:
 	version=1 make example-adc.pdf && mv example-adc.pdf example-adc-v1.pdf
 	version=2 make example-adc.pdf && mv example-adc.pdf example-adc-v2.pdf
