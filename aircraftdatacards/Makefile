@@ -32,6 +32,17 @@ bomber-fighters.pdf		:	.FORCE
 format		:
 	python3 format.py
 
+types					:	.FORCE
+	ls types/*.json | \
+	sed 's/\.json//' | \
+	while read basename; do \
+	  echo "$$basename"; \
+	  cp "$$basename".json type.json; \
+	  python3 aircraftdatacards.py type.json; \
+	  python3 aircraftdatacards.py type.json; \
+	  mv type.pdf "$$basename".pdf; \
+	done
+
 example-adcs:
 	version=1 make example-adc.pdf && mv example-adc.pdf example-adc-v1.pdf
 	version=2 make example-adc.pdf && mv example-adc.pdf example-adc-v2.pdf

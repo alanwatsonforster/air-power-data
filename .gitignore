@@ -163,7 +163,6 @@ cython_debug/
 
 # TeX files.
 *.aux
-*.pdf
 *.synctex.gz
 *.synctex(busy)
 *.fls
@@ -186,3 +185,4 @@ aircraftdatacards/chinese.tex
 aircraftdatacards/european.tex
 aircraftdatacards/french.tex
 aircraftdatacards/italian.tex
+aircraftdatacards/types/*.tex

@@ -1162,9 +1162,9 @@ def writelatexfile(latexfilename, directives):
 def makepdffile(latexfilename, pdffilename):
     log("making %s." % pdffilename)
     os.system(
-        "xelatex -interaction=nonstopmode "
+        'xelatex -interaction=nonstopmode "'
         + latexfilename
-        + " >aircraftdatacards.log 2>&1 || cat aircraftdatacards.log"
+        + '" >aircraftdatacards.log 2>&1 || cat aircraftdatacards.log'
     )
     log("finished making %s." % pdffilename)
 
