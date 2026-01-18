@@ -1087,6 +1087,7 @@ def writelatexprolog(withtableofcontents):
         r"""
 %%!LW recipe=latexmk (xelatex)
 %%!TEX program = xelatex
+%%LTeX: enabled=false
 
 \documentclass[twocolumn]{report}
 \input aircraftdatacards.tex
