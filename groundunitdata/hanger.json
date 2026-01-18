@@ -1,0 +1,12 @@
+{
+    "name": "hanger",
+    "description": "hanger",
+    "symbols": "hangar",
+    "sightingrange": 24,
+    "defensestrength": "5S",
+    "VPs": [
+        8,
+        5,
+        3
+    ]
+}

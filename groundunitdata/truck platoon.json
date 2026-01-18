@@ -1,0 +1,9 @@
+{
+    "name": "truck platoon",
+    "description": "truck platoon",
+    "symbols": "truck/limitedwheeled/transport/platoon",
+    "sightingrange": 12,
+    "defensestrength": "2S",
+    "mobility": "G/P",
+    "VP3D": 4
+}

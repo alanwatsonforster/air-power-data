@@ -1,0 +1,12 @@
+{
+    "name": "large building",
+    "description": "large building",
+    "symbols": "largebuilding",
+    "sightingrange": 24,
+    "defensestrength": "6S",
+    "VPs": [
+        7,
+        5,
+        2
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "unidentified armor",
+    "description": "unidentified armor",
+    "symbols": "armor",
+    "sightingrange": 12,
+    "aaa": {
+        "class": "B",
+        "maximumrelativealtitude": 3
+    }
+}

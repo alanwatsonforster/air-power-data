@@ -1,0 +1,8 @@
+{
+    "name": "transport airplane",
+    "description": "transport airplane",
+    "symbols": "fixedwing",
+    "text": "C",
+    "defensestrength": "3S",
+    "sightingrange": 18
+}
