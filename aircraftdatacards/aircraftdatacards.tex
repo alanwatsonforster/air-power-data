@@ -617,7 +617,7 @@
         \hline
 \end{tabular}}
 
-\newcommand{\adc}{
+\newcommand{\adc}[1]{
     \newgeometry{
         nofoot,nomarginpar,nohead,
         margin=1cm,
@@ -629,6 +629,7 @@
     \begin{center}
         \begin{singlespace}
             \blockABCDEFG
+            #1
         \end{singlespace}
     \end{center}
     \newpage

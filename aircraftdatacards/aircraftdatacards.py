@@ -1075,10 +1075,11 @@ def writeadc(name):
         blockE(data, geometry=geometry)
         blockF(data, geometry=geometry)
         blockG(data, geometry=geometry)
-        writelatex(r"\adc")
         if not labelled:
-            writelatex(r"\adclabel{%s}" % name)
+            writelatex(r"\adc{\adclabel{%s}}" % name)
             labelled = True
+        else:
+            writelatex(r"\adc{}")
 
 
 def writelatexprolog(withtableofcontents):
