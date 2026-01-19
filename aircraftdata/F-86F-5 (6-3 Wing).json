@@ -2,7 +2,7 @@
     "versionname": "F-86F-5",
     "variantname": "6-3 Wing",
     "description": "The North American F-86F Sabre is a single-engined, swept-wing, day fighter. The F-86F-5 is derived from the F-86E, and gains a more powerful engine and a better combat range as they can carry the larger 200 gal fuel tank in combat. This variant is modified with the unslatted 6-3 wing, which gives better maneuverability at altitude but raises the landing and stall speed.",
-    "_include": "F-86F-1",
+    "_include": "F-86F-5",
     "lowspeedliftdevicename": null,
     "turndragtable": {
         "TT": [
