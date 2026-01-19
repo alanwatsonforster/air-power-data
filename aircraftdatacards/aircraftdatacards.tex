@@ -102,8 +102,11 @@
 
 \usepackage{enotez}
 
-\setenotez{list-heading={
-\subsection{#1}}}
+\setenotez{%
+    list-heading={
+    \subsection{#1}},
+    reset = true
+}
 
 \newcommand{\note}[1]{%
     \endnote{%
