@@ -17,8 +17,7 @@
             ],
             1400,
             [
-                "FT",
-                "RK"
+                "FT"
             ]
         ],
         [
@@ -29,7 +28,6 @@
             1000,
             [
                 "FT",
-                "RK",
                 "BB",
                 "IRM"
             ]
@@ -42,17 +40,36 @@
             1200,
             [
                 "FT",
-                "RK",
                 "BB",
                 "IRM"
+            ]
+        ],
+        [
+            "grouppair",
+            [
+                5, 6, 11, 12
+            ],
+            280,
+            [
+                "RK"
+            ]
+        ],
+        [
+            "grouppair",
+            [
+                7, 8, 9, 10
+            ],
+            280,
+            [
+                "RK"
             ]
         ]
     ],
     "loadnotes": [
-        "Stations must be loaded symmetrically, with the exception that a Mk 12 nuclear bomb may be carried on station 3 with a 120 gal (450L) FT on station 2.",
+        "Either stations 1 to 4, or stations 1, 4, and 7 to 10, or stations 5 to 12 may be used.",
+        "Stations must be loaded symmetrically, with the exception that a Mk 12 nuclear bomb (weight 1200 lb and load 3.0) may be carried on station 3 (left) with a 120 gal (450L) FT on station 2 (right).",
         "May use 200 gal (760L) FTs on stations 1 and 4 and 120 gal (450L) FTs on stations 2 and 3.",
-        "May use four HVAR RKs on each station. If RKs are carried on stations 1 and 4, they must also be carried on stations 2 and 3.",
-        "May use an Mk 12 nuclear bomb (weight 1200 and load 3.0) on station 3.",
+        "May use two HVAR RKs on each of stations 5 to 12.",
         "From 1958, may use AIM-9B IRMs."
     ],
     "VPs": [

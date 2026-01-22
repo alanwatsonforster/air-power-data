@@ -17,8 +17,7 @@
             ],
             1400,
             [
-                "FT",
-                "RK"
+                "FT"
             ]
         ],
         [
@@ -30,16 +29,36 @@
             1000,
             [
                 "FT",
-                "RK",
                 "BB",
                 "IRM"
+            ]
+        ],
+        [
+            "grouppair",
+            [
+                5, 6, 11, 12
+            ],
+            280,
+            [
+                "RK"
+            ]
+        ],
+        [
+            "grouppair",
+            [
+                7, 8, 9, 10
+            ],
+            280,
+            [
+                "RK"
             ]
         ]
     ],
     "loadnotes": [
+        "Either stations 1 to 4, or stations 1, 4, and 7 to 10, or stations 5 to 12 may be used.",
         "Stations must be loaded symmetrically.",
         "May use 200 gal (760L) FTs on stations 1 and 4 and 120 gal (450L) FTs on stations 2 and 3.",
-        "May use four HVAR RKs on each station. If RKs are carried on stations 1 and 4, they must also be carried on stations 2 and 3.",
+        "May use two HVAR RKs on each of stations 5 to 12.",
         "From 1958, may use AIM-9B IRMs."
     ],
     "VPs": [

@@ -250,14 +250,14 @@
     "storeslimits": [
         2,
         6,
-        5000
+        5200
     ],
     "stations": [
         [
             "pair",
             [
                 1,
-                4
+                8
             ],
             1400,
             [
@@ -265,14 +265,35 @@
             ]
         ],
         [
+            "pair",
+            [
+                2,
+                7
+            ],
+            280,
+            [
+                "RK"
+            ]
+        ],
+        [
+            "pair",
+            [
+                3,
+                6
+            ],
+            280,
+            [
+                "RK"
+            ]
+        ],
+        [
             "single",
             [
-                2
+                4
             ],
             1000,
             [
                 "FT",
-                "RK",
                 "BB",
                 "IRM"
             ]
@@ -280,22 +301,21 @@
         [
             "single",
             [
-                3
+                5
             ],
             1200,
             [
                 "FT",
-                "RK",
                 "BB",
                 "IRM"
             ]
         ]
     ],
     "loadnotes": [
-        "Stations must be loaded symmetrically, with the exception that a Mk 12 nuclear bomb may be carried on station 3 with a 120 gal (450L) FT on station 2.",
+        "Stations must be loaded symmetrically, with the exception that a Mk 12 nuclear bomb (weight 1200~lb and load 3.0) may be carried on station 5 (left) with a 120 gal (450L) FT on station 4 (right).",
         "May use 200 gal (760L) FTs on stations 1 and 4 and 120 gal (450L) FTs on stations 2 and 3.",
-        "May use four HVAR RKs on stations 2 and 3.",
-        "May use an Mk 12 nuclear bomb (weight 1200 and load 3.0) on station 3.",
+        "May use two HVAR RKs on each of stations 2, 3, 6, and 7 if stations 4 and 5 are unloaded.",
+        "May use one HVAR on each of stations 2 and 7 if stations 4 and 4 are carrying 1000~lb or lighter bombs.",
         "From 1958, may use AIM-9B IRMs."
     ],
     "VPs": [

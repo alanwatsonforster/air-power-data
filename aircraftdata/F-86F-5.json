@@ -7,9 +7,11 @@
     },
     "notes": [ ],
     "loadnotes": [
+
+        "Either stations 1 and 2 or 3 to 10 may be used.",
         "Stations must be loaded symmetrically.",
         "May use 120 gal (450L) or 200 gal (760L) FTs.",
-        "May use eight HVAR RKs on each station."
+        "May use two HVAR RKs on each of stations 3 to 10."
     ],
     "VPs": [
         9,

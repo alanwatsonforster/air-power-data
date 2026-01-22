@@ -303,15 +303,24 @@
             1400,
             [
                 "FT",
-                "RK",
                 "BB"
+            ]
+        ], [
+            "grouppair",
+            [
+                3, 6, 7, 10
+            ],
+            280,
+            [
+                "RK"
             ]
         ]
     ],
     "loadnotes": [
+        "Either stations 1 and 2 or 3 to 10 may be used.",
         "Stations must be loaded symmetrically.",
         "May use 120 gal (450L) FTs. May also use 200 gal (760L) FTs, but only for ferry flights and not for combat.",
-        "May use eight HVAR RKs on each station."
+        "May use two HVAR RKs on each of stations 3 to 10."
     ],
     "VPs": [
         8,
