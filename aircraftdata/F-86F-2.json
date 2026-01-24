@@ -1,0 +1,16 @@
+{
+    "versionname": "F-86F-2",
+    "variantname": null,
+    "description": "The North American F-86F-2 Sabre is a single-engined, swept-wing, fighter-bomber. The F-86F-2 is derived from the F-86F-1, but with four T-160 20-mm guns in place of the .50-cal guns. These were fitted as part of the GUNVAL trials to find a more effective armament for USAF fighters. The F-86F-2 has the 6-3 wing.",
+    "_include": "F-86F-1 (6-3 Wing)",
+    "gun": "Four 20 mm T-160",
+    "gunatatohitrolls": "6/4/3",
+    "gundamagerating": "5/7*",
+    "gunammunition": 2.0,
+    "VPs": [
+        10,
+        7,
+        3,
+        2
+    ]
+}
