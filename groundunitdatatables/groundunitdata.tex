@@ -3,7 +3,7 @@
 
 \documentclass[10pt]{article}
 
-\input{../src/glass/aircraftdata/style.tex}
+\input{../aircraftdata/style.tex}
 
 \runningtitle{Ground Unit Data}
 \setcounter{secnumdepth}{0}
@@ -17,6 +17,7 @@
 % Don't break footnotes between columns so easily.
 \interfootnotelinepenalty=1000
 
+\iffalse
 \newcommand{\note}[1]{%
     \footnote{%
         \setlength{\parindent}{0pt}%
@@ -30,6 +31,11 @@
 }
 
 \newcommand{\clearnotes}{\clearpage}
+\else
+\newcommand{\note}[1]{\relax}
+\newcommand{\notesection}[1]{\relax}
+\newcommand{\clearnotes}{\relax}
+\fi
 
 \twocolumn
 
@@ -281,7 +287,13 @@ VPs are awarded for damage to any of the constituent units.%
 \clearpage
 \section{Ground Combat Units}
 
-Ground combat units represent a combat formationsof infantry, tanks, IFVs, APCs, or artillery. Their primary role is combat with other ground units.
+Ground combat units represent a combat formations of infantry, tanks, IFVs, APCs, or artillery. Their primary role is combat with other ground units.
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{photos/centurion.jpg}
+    %\caption*{A Dutch Centurion tank on maneuvers in 1970.}
+    % https://commons.wikimedia.org/wiki/File:Nederlandse_leger_oefent_in_La_Courtine,_Frankrijk_oefening,_Bestanddeelnr_923-7334.jpg
+\end{figure}
 
 \subsection{Properties}
 
