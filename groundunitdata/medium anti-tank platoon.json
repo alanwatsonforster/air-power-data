@@ -1,0 +1,13 @@
+{
+    "name": "medium anti-tank",
+    "description": "medium anti-tank platoon",
+    "symbols": "armor/antiarmor/medium/platoon",
+    "defensestrength": "6H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "aaa": {
+        "class": "B",
+        "maximumrelativealtitude": 3
+    },
+    "VP3D": 12
+}

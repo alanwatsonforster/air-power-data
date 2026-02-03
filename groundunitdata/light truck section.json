@@ -1,0 +1,9 @@
+{
+    "name": "light truck section",
+    "description": "light truck section",
+    "symbols": "truck/light/limitedwheeled/transport/section",
+    "sightingrange": 12,
+    "defensestrength": "2S",
+    "mobility": "G/P",
+    "VP3D": 4
+}
