@@ -1,0 +1,9 @@
+{
+    "name": "medium APC",
+    "description": "medium APC squad",
+    "symbols": "armor/medium/transport/squad",
+    "defensestrength": "6H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 8
+}

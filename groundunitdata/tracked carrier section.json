@@ -1,0 +1,9 @@
+{
+    "name": "tracked carrier section",
+    "description": "tracked carrier section",
+    "symbols": "truck/tracked/transport/section",
+    "sightingrange": 12,
+    "defensestrength": "2S",
+    "mobility": "U",
+    "VP3D": 4
+}

@@ -1,0 +1,9 @@
+{
+    "name": "infantry weapons",
+    "description": "infantry weapons squad",
+    "symbols": "infantry/weapons/squad",
+    "defensestrength": "4S",
+    "sightingrange": 6,
+    "mobility": "U",
+    "VP3D": 6
+}

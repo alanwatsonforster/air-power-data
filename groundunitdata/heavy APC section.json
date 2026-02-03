@@ -1,0 +1,9 @@
+{
+    "name": "heavy APC",
+    "description": "heavy APC section",
+    "symbols": "armor/heavy/transport/section",
+    "defensestrength": "8H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 10
+}

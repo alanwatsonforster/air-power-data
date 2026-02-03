@@ -1,0 +1,9 @@
+{
+    "name": "open tank",
+    "description": "open tank squad",
+    "symbols": "armor/gun/open/squad",
+    "defensestrength": "4O",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 5
+}

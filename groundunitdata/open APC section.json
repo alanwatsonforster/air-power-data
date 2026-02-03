@@ -1,0 +1,9 @@
+{
+    "name": "open APC",
+    "description": "open APC section",
+    "symbols": "armor/open/transport/section",
+    "defensestrength": "4O",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 5
+}

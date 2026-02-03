@@ -1,0 +1,9 @@
+{
+    "name": "armoured HQ",
+    "description": "armored HQ section",
+    "symbols": "armor/light/headquarters/section",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 12
+}

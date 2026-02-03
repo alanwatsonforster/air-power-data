@@ -1,27 +1,30 @@
 {
-    "name": "Oerlikon GDF",
-    "year": 1963,
-    "description": "Oerlikon GDF twin 35 mm air-defense section",
+    "name": "61-K",
+    "year": 1939,
+    "description": "61-K 37 mm air-defense section",
     "symbols": "air-defense/gun/section",
-    "text": "35\u00d72",
+    "text": "37",
     "defensestrength": "3S",
     "sightingrange": 12,
     "mobility": "T",
     "aaa": {
-        "type": "35\u00d72",
+        "type": "37",
         "class": "M",
         "range": [
             4,
             8,
-            10
+            11
         ],
         "hitroll": [
-            3,
             2,
-            1
+            1,
+            0
         ],
         "maximumrelativealtitude": 12,
         "damagerating": 4
     },
-    "VP3D": 7
+    "VPs": [
+        3,
+        2
+    ]
 }

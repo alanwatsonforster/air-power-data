@@ -1,0 +1,9 @@
+{
+    "name": "medium IFV",
+    "description": "medium IFV section",
+    "symbols": "armor/gun/medium/transport/section",
+    "defensestrength": "6H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 10
+}

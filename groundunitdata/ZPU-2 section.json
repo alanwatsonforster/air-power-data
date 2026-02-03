@@ -1,0 +1,30 @@
+{
+    "name": "ZPU-2",
+    "year": 1949,
+    "description": "ZPU-2 14.5 mm air-defense section",
+    "symbols": "air-defense/gun/section",
+    "text": "14.5\u00d72",
+    "defensestrength": "3S",
+    "sightingrange": 12,
+    "mobility": "T",
+    "aaa": {
+        "type": "14.5\u00d72",
+        "class": "L",
+        "range": [
+            2,
+            3,
+            5
+        ],
+        "hitroll": [
+            3,
+            2,
+            1
+        ],
+        "maximumrelativealtitude": 6,
+        "damagerating": 1
+    },
+    "VPs": [
+        3,
+        1
+    ]
+}

@@ -90,6 +90,16 @@ The term “platoon” is more commonly used for infantry and tank units and “
 
 Companies, battalions, and other larger units exist above platoons or batteries, but they are represented by multiple units. For example, an infantry company might be formed by three infantry platoons.
 
+Most of the ground units described here and employed in the game are platoons or batteries. Many are also available as squads or sections:
+\begin{itemize}
+    \item All ground combat and transport platoon are also available as sections and squads.
+    \item All AAA platoons and batteries are also available as sections.
+\end{itemize}
+A section or squad is identical in every way to a platoon or battery that has taken 1D or 2D damage, respectively, except that no VPs are awarded for this notional damage and non-AAA squads and sections may not engage in barrage fire.%
+\note{
+    So for example sections/squads have 2D/1D damage resilience and \plus{1}/\plus{2} modifiers to AAA attacks. Similar modifiers should be applied to ground-to-ground attacks.
+}
+
 \subsection{Damage Resilience}
 
 A ground unit has a damage resilience, which is the amount of damage it can suffer before being killed. It is determined by the size of the unit:%
@@ -290,9 +300,11 @@ VPs are awarded for damage to any of the constituent units.%
 
 Ground combat units are formations of infantry, tanks, IFVs, APCs, or artillery whose primary role is combat with other ground units. Transport units provide strategic mobility to infantry and towed artillery and are the life-blood of logistic networks.
 
-Table~\ref{table:ground-combat-units} summarizes the properties of ground combat and transport units, and
-Figure~\ref{figure:ground-combat-units} shows their representation as counters.
+Table~\ref{table:ground-combat-units} summarizes the properties of ground combat and transport units, and Figure~\ref{figure:ground-combat-units} shows their representation as counters.
+All platoons in Table~\ref{table:ground-combat-units} are also available as sections and squads.
+
 The AAA class is B2 for infantry platoons and B3 for AFV platoons, indicating that they are capable of barrage fire to altitudes of 2 and 3 levels, respectively.
+Infantry and AFV sections and squads are not capable of barrage fire.
 
 \subsection{Infantry Units}
 
@@ -508,6 +520,7 @@ AAA units specialize in the use of guns to destroy attacking aircraft, but also 
 \subsection{Properties}
 
 Table~\ref{table:aaa-units} summarizes the properties of AAA units, and Figure~\ref{figure:aaa-units} shows their representation as counters.
+All platoons and batteries in Table~\ref{table:aaa-units} are also available as sections (but not squads).
 As well as the properties common to all ground units, Table~\ref{table:aaa-units} gives:%
 \note{
     \notesection{AAA Values}
@@ -999,15 +1012,14 @@ The Tunguska-M entered service in the Soviet Army in 1990. It has been used by R
 
 \subsection{Medium AAA Units}
 
-\paragraph{Oerlikon GDF Battery and Section.}
+\paragraph{Oerlikon GDF Battery.}
 
 The Oerlikon GDF has two 35~mm guns in an open mount on a towed carriage.
-A battery has six gun mounts and a section has two.
+A battery has six gun mounts.
 The basic fire-control system is optical, but a section is often coupled with the Super Fledermaus or Skyguard fire-control radars.
 (These radars cannot control a whole battery, only a section.)%
 \note{
-    For the Oerlikon GDF battery and section: The AAA values for the battery are from \emph{Air Strike} with the hit rolls reduced from 5/4/3 to 4/3/2 as described in the extended note above.
-    The AAA values for the section are determined using the recipe for sections described in the extended note above.
+    For the Oerlikon GDF battery: The AAA values for the battery are from \emph{Air Strike} with the hit rolls reduced from 5/4/3 to 4/3/2 as described in the extended note above.
 }
 
 The Oerlikon GDF entered service in 1963 and has served widely. Notably, it saw combat in the South Atlantic War with the Argentine forces in the defense of BAM Malvinas (Port Stanley Airport) and BAM Condor (Goose Green Airfield).
@@ -1651,16 +1663,11 @@ This appendix contains a number of example orders of battle and their correspond
     \item Table~\ref{table:ob-twelth-infantry}: 12th Infantry Regiment at the 1982 Battle of Goose Green, with attachments from the 25th Infantry Regiment, 4th Airborne Artillery Regiment, 601st Anti-Aircraft Artillery Group.
 \end{itemize}
 
-We see that we need the following additional ground units:
-\begin{itemize}
-    \item towed artillery \emph{section}
-\end{itemize}
-
 \begin{table*}[p]
     \centering
     \caption{2 Para at Goose Green}
     \label{table:ob-two-para}
-
+    \small
     \begin{tabularx}{0.9\linewidth}{LLL}
         \toprule
         Element&Game Ground Unit&Notes\\
@@ -1704,7 +1711,7 @@ We see that we need the following additional ground units:
     \centering
     \caption{12IR at Goose Green}
     \label{table:ob-twelth-infantry}
-
+    \small
     \begin{tabularx}{0.9\linewidth}{LLL}
         \toprule
         Element&Game Ground Unit&Notes\\

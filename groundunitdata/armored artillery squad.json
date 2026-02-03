@@ -1,0 +1,11 @@
+{
+    "name": "armored artillery",
+    "description": "armored artillery squad",
+    "symbols": "artillery/armor/light/squad",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VPs": [
+        4
+    ]
+}

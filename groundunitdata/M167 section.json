@@ -1,0 +1,29 @@
+{
+    "name": "M167",
+    "year": 1967,
+    "description": "M167 20 mm gatling towed air-defense section",
+    "symbols": "air-defense/gun/section",
+    "text": "20\u00d76",
+    "defensestrength": "3S",
+    "sightingrange": 12,
+    "mobility": "T",
+    "aaa": {
+        "type": "20\u00d76",
+        "class": "L",
+        "range": [
+            2,
+            4,
+            6
+        ],
+        "hitroll": [
+            5,
+            4,
+            3
+        ],
+        "damagerating": 3,
+        "maximumrelativealtitude": 8,
+        "fcrclass": "R",
+        "fcrfrequency": "HF"
+    },
+    "VP3D": 7
+}

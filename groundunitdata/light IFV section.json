@@ -1,0 +1,9 @@
+{
+    "name": "light IFV",
+    "description": "light tank section",
+    "symbols": "armor/gun/light/transport/section",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 6
+}

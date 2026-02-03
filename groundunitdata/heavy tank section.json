@@ -1,0 +1,9 @@
+{
+    "name": "heavy tank",
+    "description": "heavy tank section",
+    "symbols": "armor/gun/heavy/section",
+    "defensestrength": "8H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 12
+}

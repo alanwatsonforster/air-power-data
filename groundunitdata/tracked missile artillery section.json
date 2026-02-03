@@ -1,0 +1,12 @@
+{
+    "name": "tracked missile artillery",
+    "description": "tracked missile artillery section",
+    "symbols": "missile/truck/tracked/section",
+    "sightingrange": 12,
+    "defensestrength": "2S",
+    "mobility": "U",
+    "VPs": [
+        7,
+        3
+    ]
+}

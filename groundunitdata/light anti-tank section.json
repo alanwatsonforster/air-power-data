@@ -1,0 +1,9 @@
+{
+    "name": "light anti-tank",
+    "description": "light anti-tank section",
+    "symbols": "armor/antiarmor/light/section",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 10
+}

@@ -1,0 +1,9 @@
+{
+    "name": "light tank",
+    "description": "light tank squad",
+    "symbols": "armor/gun/light/squad",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 6
+}

@@ -1,0 +1,12 @@
+{
+    "name": "mobile artillery",
+    "description": "mobile artillery section",
+    "symbols": "artillery/truck/limitedwheeled/section",
+    "sightingrange": 12,
+    "defensestrength": "2S",
+    "mobility": "G/P",
+    "VPs": [
+        6,
+        3
+    ]
+}

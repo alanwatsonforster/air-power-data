@@ -1,0 +1,30 @@
+{
+    "name": "twin Rh-202",
+    "year": 1972,
+    "description": "Rh-202 twin 20 mm air-defense section",
+    "symbols": "air-defense/gun/section",
+    "text": "20\u00d72",
+    "defensestrength": "3S",
+    "sightingrange": 12,
+    "mobility": "T",
+    "aaa": {
+        "type": "20\u00d72",
+        "class": "L",
+        "range": [
+            2,
+            4,
+            6
+        ],
+        "hitroll": [
+            4,
+            3,
+            2
+        ],
+        "maximumrelativealtitude": 8,
+        "damagerating": 3
+    },
+    "VPs": [
+        3,
+        2
+    ]
+}

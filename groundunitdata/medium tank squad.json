@@ -1,0 +1,9 @@
+{
+    "name": "medium tank",
+    "description": "medium tank squad",
+    "symbols": "armor/gun/medium/squad",
+    "defensestrength": "6H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 10
+}
