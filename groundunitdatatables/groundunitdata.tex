@@ -144,7 +144,7 @@ Figures \ref{figure:ground combat-units}, \ref{figure:aaa-units}, \ref{figure:ra
 
 Figures \ref{figure:ground-combat-units}, \ref{figure:aaa-units}, \ref{figure:radar-and-ccu-units}, and \ref{figure:infantry-sam-units} show the graphical representation of ground units as counters.
 
-The representation is based on NATO symbols, including those for infantry, armor, anti-armor, air defense, guns, missiles, tube artillery, and rocket artillery. One addition is that a rectangle denotes an unarmored vehicle such as a truck or tracked carrier. A truck or mobile unit has two wheel symbols in the lower position, whereas a tracked carrier has a tracked symbol.
+The representation is based on NATO symbols, including those for infantry, armor, anti-armor, air defense, guns, missiles, mortar, tube artillery, and rocket artillery. One addition is that a rectangle denotes an unarmored vehicle such as a truck or tracked carrier. A truck or mobile unit has two wheel symbols in the lower position, whereas a tracked carrier has a tracked symbol. The mortar symbol is modified to be simply an open circle, for compactness.
 
 All vehicular units have either an armored or unarmored vehicle symbol, all infantry units have an infantry symbol, and towed units have none of these.
 
@@ -314,10 +314,18 @@ Infantry are soldiers trained to fight on foot. In some cases, they are also tra
 
 An infantry platoon is armed with small arms, light machine guns, grenade launchers, and portable anti-tank weapons such as bazookas, LAWs, MAWs, RPGs, and infantry ATGMs.
 
-\paragraph{Infantry Weapons Platoons.}
+\paragraph{Infantry Weapons Platoon.}
 
-An infantry weapons platoon is equipped with medium or heavy machine guns, ATGMs, automatic grenade launchers, or mortars.
-These are often battalion-level assets.%
+An infantry weapons platoon is equipped with medium or heavy machine guns, ATGMs, or automatic grenade launchers.
+It is often a battalion-level asset.%
+\note{
+    An infantry weapons platoon is not strictly necessary, but it adds to the look-and-feel, and we might consider giving them longer range in ground-to-ground combat. Having a single type is probably more appropriate than having separate types for mortar, grenade launchers, recoilless rifles, ATGMs, and machine guns. One might think that the .50 cal infantry AAA unit could serve as a machine-gun weapons platoon, but I would imagine most machine-gun weapons platoons have low tripods for ground combat rather than high ones for AAA.
+}
+
+\paragraph{Infantry Mortar Platoon.}
+
+An infantry mortar platoon is equipped with 60-mm, 81-mm, 82-mm or similar mortars.
+It is often a battalion-level asset.%
 \note{
     An infantry weapons platoon is not strictly necessary, but it adds to the look-and-feel, and we might consider giving them longer range in ground-to-ground combat. Having a single type is probably more appropriate than having separate types for mortar, grenade launchers, recoilless rifles, ATGMs, and machine guns. One might think that the .50 cal infantry AAA unit could serve as a machine-gun weapons platoon, but I would imagine most machine-gun weapons platoons have low tripods for ground combat rather than high ones for AAA.
 }
@@ -450,18 +458,19 @@ These are platoons with tracked carriers such as the M548, Bv~202/206, or BvS10/
 
 \subsection{Artillery Units}
 
-Artillery is specialized in indirect fire. It may be tube, rocket, or missile and armored, tracked, mobile, or towed.
+Artillery is specialized in indirect fire. It may be mortar, tube, rocket, or missile and armored, tracked, mobile, or towed.
+
+\paragraph{Armored Mortar Platoon.} These have protection for their crew and weapons from small arms and artillery shrapnel. They include platoons with the 81-mm AMX-10P TMC-81, 81-mm FV432, 107-mm M106, 81-mm M125, 120-mm M1064, 120-mm M1129/M1252, and 120-mm VTM 120.
+
+\paragraph{Towed Mortar Platoon.} These have unprotected, towed mounts. They include platoons with the 120-mm M1938, 120-mm M1943, and 160-mm M-160. Smaller infantry mortars are found in infantry mortar platoons.
 
 \paragraph{Armored Artillery Battery.} These have protection for their crew and weapons from small arms and artillery shrapnel. They include batteries with the 130-mm 2S1 Gvozdika, 152-mm 2S3 Akatsiya, 152-mm 2S19 Msta-S, 105-mm Abbot, 155-mm AMX-30 AuF1, 155-mm AS-90, 155-mm M109, and 155-mm Panzerhaubitze 2000.
-\note{
-    I probably will include self-propelled mortars as armored artillery too. That said, it would only take me five minutes to make the counter with a mortar symbol and add them to the tables.
-}
 
 \paragraph{Tracked Artillery Battery.} These are mounted on a tracked chassis that provides mobility, but does not provide protection from small arms or artillery shrapnel. They include batteries with the 240-mm 2S4 Tyulpan, 203-mm 2S7 Pion, 105-mm M7 Priest, 175-mm M107, and 203-mm M110.
 
 \paragraph{Mobile Artillery Battery.} These are mounted on truck chassis and do not provide protection from small arms or artillery shrapnel. They include batteries with the 155-mm Archer and 155-mm CAESAR.
 
-\paragraph{Towed Artillery Battery.} These have unprotected, towed mounts. They include the 152-mm D-20, 130-mm D-30, 122-mm D-74, 155-mm FH70, 105-mm L118 Light Gun, 155-mm M114, 105-mm M119, 155-mm M198, 105-mm OTO Melara Mod 56, and 87.6-mm QF 25-pounder. A truck platoon may transport a towed artillery battery.
+\paragraph{Towed Artillery Battery.} These have unprotected, towed mounts. They include batteries with the 152-mm D-20, 130-mm D-30, 122-mm D-74, 155-mm FH70, 105-mm L118 Light Gun, 155-mm M114, 105-mm M119, 155-mm M198, 105-mm OTO Melara Mod 56, and 87.6-mm QF 25-pounder. A truck platoon may transport a towed artillery battery.
 
 \paragraph{Armored Rocket Artillery Battery.} These are the rocket equivalents of the armored artillery batteries. They include batteries with the M270 MLRS and TOS-1.
 
@@ -490,7 +499,7 @@ Artillery is specialized in indirect fire. It may be tube, rocket, or missile an
     \par
     \begin{tablenote}{0.45\linewidth}
         \tablenotetext{a}{Platoons and batteries are available as sections and squads with corresponding modifications to their damage resiliences.}
-        \tablenotetext{b}{Platoons with AAA class of B2 and B3 can employ barrage fire to altitudes of 2 and 3 levels, respectively}
+        \tablenotetext{b}{Platoons with AAA class of B2 and B3 can employ barrage fire to altitudes of 2 and 3 levels, respectively.}
     \end{tablenote}
 \end{table*}
 
@@ -1698,9 +1707,9 @@ This appendix contains a number of example orders of battle and their correspond
         &\binarymultiply{3}{infantry platoon}\\
 
         Support Company
-        &\binarymultiply{1}{infantry weapons platoon}&Mortars\\
-        &\binarymultiply{1}{infantry weapons platoon}&GPMG\\
-        &\binarymultiply{1}{infantry weapons platoon}&MILAN\\
+        &\binarymultiply{1}{infantry mortar platoon}\\
+        &\binarymultiply{1}{infantry weapons platoon}&GPMGs\\
+        &\binarymultiply{1}{infantry weapons platoon}&MILANs\\
         &\binarymultiply{1}{infantry platoon}&Engineers\\
 
         Alma Battery
@@ -1720,7 +1729,7 @@ This appendix contains a number of example orders of battle and their correspond
     \centering
     \caption{12IR at Goose Green}
     \label{table:ob-twelth-infantry}
-
+    \small
     \begin{tabularx}{0.9\linewidth}{LLL}
         \toprule
         Element&Game Ground Unit&Notes\\

@@ -1,0 +1,13 @@
+{
+    "name": "armored mortar",
+    "description": "armored mortar platoon",
+    "symbols": "mortar/armor/light/platoon",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "aaa": {
+        "class": "B",
+        "maximumrelativealtitude": 3
+    },
+    "VP3D": 10
+}

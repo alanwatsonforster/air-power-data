@@ -1,0 +1,9 @@
+{
+    "name": "towed mortar",
+    "description": "towed mortar platoon",
+    "symbols": "mortar/platoon",
+    "sightingrange": 12,
+    "defensestrength": "4S",
+    "mobility": "T",
+    "VP3D": 7
+}
