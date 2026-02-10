@@ -1,0 +1,9 @@
+{
+    "name": "armored mortar",
+    "description": "armored mortar section",
+    "symbols": "mortar/armor/light/section",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 10
+}

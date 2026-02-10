@@ -1,0 +1,9 @@
+{
+    "name": "infantry weapons",
+    "description": "infantry mortar section",
+    "symbols": "infantry/mortar/section",
+    "defensestrength": "4S",
+    "sightingrange": 6,
+    "mobility": "U",
+    "VP3D": 6
+}
