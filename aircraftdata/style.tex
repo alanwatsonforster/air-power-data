@@ -239,7 +239,7 @@ minus \fontdimen4\font}
     \@startsection{section}{1}%
     {\z@}%
     {-1.5ex \@plus 1.0ex \@minus -0.2ex}%
-    {1.0ex \@plus 0.2ex}%
+    {2.0ex \@plus 0.2ex}%
     {\normalfont\LARGE\bfseries\raggedright}%
 }
 \renewcommand
@@ -298,18 +298,18 @@ minus \fontdimen4\font}
 
 \usepackage[toc]{multitoc}
 \renewcommand*{\multicolumntoc}{2}
-\setlength{\columnseprule}{\columnseprule}
+\setlength{\columnseprule}{0pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Style for the standard title page
 
 \let\originaltitle\title
-\renewcommand{\title}[1]{\originaltitle{\bfseries\Large\MakeUppercase{#1}}}
+\renewcommand{\title}[1]{\originaltitle{\bfseries\huge{#1}}}
 \let\originalauthor\author
-\renewcommand{\author}[1]{\originalauthor{\parbox{0.5\linewidth}{\centering\itshape\normalsize #1}}}
+\renewcommand{\author}[1]{\originalauthor{\parbox{0.5\linewidth}{\centering\large #1}}}
 \let\originaldate\date
-\renewcommand{\date}[1]{\originaldate{\normalsize{#1}}}
+\renewcommand{\date}[1]{\originaldate{\large #1}}
 
 % Abbreviations
 
