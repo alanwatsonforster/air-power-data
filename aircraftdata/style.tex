@@ -79,8 +79,42 @@
 \usepackage{microtype}
 \usepackage{multirow}
 \usepackage{pdflscape}
-\usepackage{enotez}
 \usepackage{comment}
+\usepackage{enotez}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Text Notes
+
+\newif\iftextnotes
+
+\newcommand{\textnote}[2]{%
+    \iftextnotes%
+    \footnote{%
+        \setlength{\parindent}{0pt}%
+        \setlength{\parskip}{\smallskipamount}%
+        ~{\bfseries #1.} \ignorespaces #2%
+    }%
+    \fi%
+}
+
+\newcommand{\textnotesection}[1]{%
+    {\itshape\bfseries #1.} \ignorespaces
+}
+
+\newcommand{\cleartextnotes}{%
+    \iftextnotes%
+    \clearpage%
+    \fi%
+}
+
+% Add some space between footnotes.
+\setlength{\footnotesep}{11pt}
+
+% Don't break footnotes between columns so easily.
+\interfootnotelinepenalty=1000
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Basic spacing.
 
@@ -256,21 +290,6 @@ minus \fontdimen4\font}
 }{
 }
 \fi
-
-\newcommand{\trainingnote}[1]{
-    \vspace{1ex}
-    \begin{center}
-        \framebox{
-            \begin{minipage}{0.9\linewidth}\setlength{\parskip}{\smallskipamount}\smallskip #1\par\smallskip
-        \end{minipage}}
-    \end{center}
-    \vspace{1ex}
-}
-
-\newcommand{\relevantadvancedrules}[1]{
-    \begin{raggedleft} \emph{Relevant advanced rules: #1}\par
-    \end{raggedleft}
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

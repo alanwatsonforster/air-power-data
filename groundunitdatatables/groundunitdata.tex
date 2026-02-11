@@ -5,37 +5,13 @@
 
 \input{../aircraftdata/style.tex}
 
+\textnotestrue
+
 \runningtitle{Ground Unit Data}
 \setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{1}
 
 \setlength{\tabcolsep}{0.3em}
-
-% Add some space between footnotes.
-\setlength{\footnotesep}{11pt}
-
-% Don't break footnotes between columns so easily.
-\interfootnotelinepenalty=1000
-
-\iffalse
-\newcommand{\note}[1]{%
-    \footnote{%
-        \setlength{\parindent}{0pt}%
-        \setlength{\parskip}{\smallskipamount}%
-        #1
-    }%
-}
-
-\newcommand{\notesection}[1]{%
-    \par{\bfseries #1}\par
-}
-
-\newcommand{\clearnotes}{\clearpage}
-\else
-\newcommand{\note}[1]{\relax}
-\newcommand{\notesection}[1]{\relax}
-\newcommand{\clearnotes}{\relax}
-\fi
 
 %\twocolumn
 
@@ -59,8 +35,8 @@ Much of the information here is adapted from the \emph{Air Strike}, \emph{Eagles
 
 \section{Ground Units}
 
-A ground \emph{unit} is a combat or logistics formation of infantry, armor, transports, AAA, SAM launchers, or radars. This section discusses them in general.%
-\note{
+A ground \emph{unit} is a combat or logistics formation of infantry, armor, transports, AAA, SAM launchers, or radars. This section discusses them in general.\textnote
+{Rules}{
     Much of this section should be included in the 3A rules, but it's here for the moment.
 }
 
@@ -95,8 +71,8 @@ Most of the ground units described here and employed in the game are platoons or
     \item All ground combat and transport platoon are also available as sections and squads.
     \item All AAA platoons and batteries are also available as sections.
 \end{itemize}
-A section or squad is identical in every way to a platoon or battery that has taken 1D or 2D damage, respectively, except that no VPs are awarded for this notional damage and non-AAA squads and sections may not engage in barrage fire.%
-\note{
+A section or squad is identical in every way to a platoon or battery that has taken 1D or 2D damage, respectively, except that no VPs are awarded for this notional damage and non-AAA squads and sections may not engage in barrage fire.\textnote
+{Squads and Sections as Damaged Platoons}{
     So for example sections/squads have 2D/1D damage resilience and \plus{1}/\plus{2} modifiers to AAA attacks. Similar modifiers should be applied to ground-to-ground attacks.
 }
 
@@ -104,9 +80,9 @@ Other terms are used for units even within English-speaking armies. For example,
 
 \subsection{Damage Resilience}
 
-A ground unit has a damage resilience, which is the amount of damage it can suffer before being killed. It is determined by the size of the unit:%
-\note{
-    Air Strike has a form of this, in that units whose counters have white text are only able to take 1D of damage before being killed (see the last paragraph of rule 28). Such units include infantry SAMs, armored CCUs, and many vehicle SAMs. TSOH also mentions units being able to take only 2D damage, but it doesn't have any relevant units since it attaches SAM teams to infantry platoons rather than having them as separate (see below) and doesn't have a separate FAC unit. In both cases, the idea seems to have been incompletely implemented in the rules. I'm generalizing and homogenizing the idea. This is important as we need sections for mobile AAA units with two vehicles and for the Oerlikon GDF (as Skyguard can only control two guns and not a full battery). To a large degree, a section is equivalent to a platoon that has taken 1D and a squad is equivalent to a platoon that has taken 2D, so the mechanics of the game are really not impacted.
+A ground unit has a damage resilience, which is the amount of damage it can suffer before being killed. It is determined by the size of the unit:\textnote
+{Damage Resilience in \emph{Air Strike}}{
+    There is a form of damage resilience in \emph{Air Strike}, in that units whose counters have white text are only able to take 1D of damage before being killed (see the last paragraph of rule 28). Such units include infantry SAMs, armored CCUs, and many vehicle SAMs. TSOH also mentions units being able to take only 2D damage, but it doesn't have any relevant units since it attaches SAM teams to infantry platoons rather than having them as separate (see below) and doesn't have a separate FAC unit. In both cases, the idea seems to have been incompletely implemented in the rules. I'm generalizing and homogenizing the idea. This is important as we need sections for mobile AAA units with two vehicles and for the Oerlikon GDF (as Skyguard can only control two guns and not a full battery). To a large degree, a section is equivalent to a platoon that has taken 1D and a squad is equivalent to a platoon that has taken 2D, so the mechanics of the game are really not impacted.
 }
 
 \begin{itemize}
@@ -122,19 +98,19 @@ A ground unit has a numerical defense strength and target class, which are used 
 A ground unit can be a hard, open, or soft target according to the degree to which it provides armored protection to its personnel and weapons:
 \begin{itemize}
 
-    \item A hard target has armored protection both from side and top attacks and is denoted by an underlined defense strength. It is classified as heavy, medium, or light according to its degree of protection, but this classification is simply descriptive. Most tanks, IFVs, and APCs are hard targets.%
-        \note{
+    \item A hard target has armored protection both from side and top attacks and is denoted by an underlined defense strength. It is classified as heavy, medium, or light according to its degree of protection, but this classification is simply descriptive. Most tanks, IFVs, and APCs are hard targets.\textnote
+        {Hard Targets}{
             Most tracked SAM vehicles are classified as hard targets, despite many of them having completely exposed missiles. If an air-burst bomb explodes above a SAM-4 launcher, it is not going to shrug it off. I think many SAM vehicles are tracked mainly for \emph{mobility} and perhaps for crew protection, but in terms of a mission-kill on their weapon systems, they are soft targets. I've not changed anything yet, but we need to think about this.
         }
 
-    \item An open target has armored protection from side attacks but not from top attacks and is denoted by an underlined defense strength followed by an exclamation point. It is normally treated as a hard target, but against napalm, fire, FAE, and air-burst HE bombs, it is considered to be a soft target. The BTR-50P APC and the M3 half-tracked APC are examples of open targets.%
-        \note{
-            Open targets are relevant to the 1956 and 1967 Arab-Israeli Wars where both sides used M3s. If an M3 is attacked by an air-burst or napalm bomb, the crew and passengers will suffer more or less as if they were in the open.
+    \item An open target has armored protection from side attacks but not from top attacks and is denoted by an underlined defense strength followed by an exclamation point. It is normally treated as a hard target, but against napalm, fire, FAE, and air-burst HE bombs, it is considered to be a soft target. The BTR-50P APC and the M3 half-tracked APC are examples of open targets.\textnote
+        {Open Targets}{
+            These are relevant to the 1956 and 1967 Arab-Israeli Wars where both sides used M3 half-tracks. If an M3 is attacked by an air-burst or napalm bomb, the crew and passengers will suffer more or less as if they were in the open.
         }
 
-    \item A soft target does not have armored protection and does not have an underlined defense strength. Examples include infantry, towed artillery, unarmored vehicles, and armored vehicles that do not fully protect their personnel and weapons such as the M-107 and M-110 tracked artillery vehicles.%
-        \note{
-            Nothing like the M-107/110 is included in Air Strike, but again I would assert that it is tracked mainly for mobility. Effectively, these are towed artillery installed in an exposed position on a tracked hull and have almost no protection for most of the crew.
+    \item A soft target does not have armored protection and does not have an underlined defense strength. Examples include infantry, towed artillery, unarmored vehicles, and armored vehicles that do not fully protect their personnel and weapons such as the M-107 and M-110 tracked artillery vehicles.\textnote
+        {Soft Targets}{
+            Nothing like the M-107/110 is included in \emph{Air Strike}, but again I would assert that it is tracked mainly for mobility. Effectively, these are towed artillery installed in an exposed position on a tracked hull and have almost no protection for most of the crew.
         }
 
 \end{itemize}
@@ -157,8 +133,8 @@ The size of a unit is indicated by one, two, or three dots (for squads, sections
 \subsection{Mobility}
 
 A ground unit has a mobility that may restrict the hexes it may occupy according to the terrain in and around those hexes.
-Infantry units, armored units (whether tracked and wheeled), and tracked units have unrestricted (U) mobility. Truck and mobile (i.e., truck-borne) units have good (G) or poor (P) mobility. All other units have towed (T) mobility.%
-\note{
+Infantry units, armored units (whether tracked and wheeled), and tracked units have unrestricted (U) mobility. Truck and mobile (i.e., truck-borne) units have good (G) or poor (P) mobility. All other units have towed (T) mobility.\textnote
+{Mobility}{
     The inspiration for this rule was \href{https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_road_through_Mitla_Pass_dotted_with_wrecked_Egyptian_vehicles_and_armour_after_Israel_air_force_attacks._June_1967._D326-013.jpg}{this photograph} of the Mitla Pass from 1967.
     Also, think of the Falklands; the terrain was open, but impassable to everything except the CVR(T)s and Bv~202s. The basic rule is effectively: don't put trucks or towed weapons in forests unless there is a road.
     The advanced rule is effectively: if the terrain is difficult, keep your trucks and towed weapons near roads even in clear terrain.
@@ -167,8 +143,8 @@ Infantry units, armored units (whether tracked and wheeled), and tracked units h
 }
 
 A scenario may modify the mobility classes of ground units and the associated restrictions.
-One common modification is to explicitly indicate the hexes occupied by each ground unit; in this case this rule is largely superfluous.%
-\note{
+One common modification is to explicitly indicate the hexes occupied by each ground unit; in this case this rule is largely superfluous.\textnote
+{Mobility and Movement}{
     Not entirely superfluous: if we allow ground units to move, then the restrictions are relevant.
 }
 
@@ -211,9 +187,9 @@ For example, a scenario set in the open desert of southern Iraq might specify th
 
 \subsection{Transportation}
 
-Certain ground units and targets may be \emph{transported} by certain \emph{transport} units.%
-\note{
-    The idea of transporting units and cargo comes from the “Thunder and Fire” scenario we're currently playing. The rules here simply generalize it slightly, incorporate the idea of mobility, and add rules for mounting and dismounting as an advanced rule. They also generalize POL targets to POL and supplies targets.
+Certain ground units and targets may be \emph{transported} by certain \emph{transport} units.\textnote
+{Transportation}{
+    The idea of transporting units and cargo comes from the “Thunder and Fire” scenario from \emph{Eagles of the Gulf}. The rules here simply generalize it slightly, incorporate the idea of mobility, and add rules for mounting and dismounting as an advanced rule. They also generalize POL targets to POL and supplies targets.
 }
 
 An infantry or towed unit may be transported by a specific associated IFV, APC, truck, or tracked-carrier unit of at least the same size.
@@ -240,8 +216,8 @@ If a transport unit suffers damage, then its mounted unit or cargo suffers the s
 
 At the start of a game, a dismounted unit may be placed according to either its mobility or that of its transport.
 Otherwise, a dismounted unit and its transport are treated normally.
-A dismounted unit and its transport need not occupy the same hex.%
-\note{
+A dismounted unit and its transport need not occupy the same hex.\textnote
+{Dismounted Units}{
     Being placed according to the mobility of its transport allows a tracked transport to place a towed unit in a forest hex.
 }
 
@@ -250,8 +226,8 @@ A dismounted unit and its transport need not occupy the same hex.%
 \paragraph{Mounting and Dismounting Infantry.}
 
 A dismounted infantry unit in the same hex as its specific associated transport may begin to mount by declaring its intention at the start of a Ground Unit Interaction Phase.
-At the start of the Ground Unit Interaction Phase five game turns later, the unit is considered to be mounted, and its counter is removed from the map.%
-\note{
+At the start of the Ground Unit Interaction Phase five game turns later, the unit is considered to be mounted, and its counter is removed from the map.\textnote
+{Mounting and Dismounting Infantry}{
     The rules for mounting and dismounting are completely new. I'm very open to suggestions about this.
 }
 
@@ -274,8 +250,8 @@ A towed unit may not mount or dismount during the game.
 
 At the start of a game, an infantry, infantry weapons, or infantry HQ platoon may \emph{attach} one or two infantry squads to form a \emph{composite} platoon.
 The \emph{attached} squads are commonly infantry SAM or FAC squads.
-A scenario may add further restrictions on forming composite platoons.%
-\note{
+A scenario may add further restrictions on forming composite platoons.\textnote
+{Composite Platoons}{
     This rule comes from TSOH. It doesn't have counters for infantry SAMs, so in scenarios V-11 and V-22 it says treat infantry platoons as if they have an infantry SAM squad. This rule helps with stacking (since attached squads do not count for stacking) and with keeping your precious FACs and SAM teams anonymous. It also works nicely with the transport rule, since attached squads do not need their own transport but can ride with the platoon.
 }
 
@@ -292,8 +268,8 @@ An attached squad retains its normal capabilities (i.e., an attached SAM squad m
 If a composite platoon is suppressed, each attached squad is suppressed too.
 If a composite platoon suffers damage, then for each D of damage, roll one die for each attached squad and on a \minusafter{3} the attached squad is killed.
 If a composite platoon is killed, each attached squad is killed too.
-VPs are awarded for damage to any of the constituent units.%
-\note{
+VPs are awarded for damage to any of the constituent units.\textnote
+{Damage to Attached Squads}{
     The roll of \minusafter{4} seems about right. The probability of killing an attached squad is 40\% for 1D and 64\% for 2D. Those numbers are fairly good approximations to 1/3 and 2/3. If the roll was \minusafter{3}, they would be 30\% and 51\%, and that seems a little low.
 }
 
@@ -319,16 +295,16 @@ An infantry platoon is armed with small arms, light machine guns, grenade launch
 \paragraph{Infantry Weapons Platoon.}
 
 An infantry weapons platoon is equipped with medium or heavy machine guns, portable ATGMs, or automatic grenade launchers.
-It is often a battalion-level asset.%
-\note{
+It is often a battalion-level asset.\textnote
+{Infantry Weapons Platoon}{
     An infantry weapons platoon is not strictly necessary, but it adds to the look-and-feel, and we might consider giving them longer range in ground-to-ground combat. Having a single type is probably more appropriate than having separate types for mortar, grenade launchers, recoilless rifles, ATGMs, and machine guns. One might think that the .50 cal infantry AAA unit could serve as a machine-gun weapons platoon, but I would imagine most machine-gun weapons platoons have low tripods for ground combat rather than high ones for AAA.
 }
 
 \paragraph{Infantry Mortar Platoon.}
 
 An infantry mortar platoon is equipped with portable 60-mm, 81-mm, 82-mm, or similar mortars.
-It is often a battalion-level asset.%
-\note{
+It is often a battalion-level asset.\textnote
+{Infantry Mortar Platoon}{
     An infantry weapons platoon is not strictly necessary, but it adds to the look-and-feel, and we might consider giving them longer range in ground-to-ground combat. Having a single type is probably more appropriate than having separate types for mortar, grenade launchers, recoilless rifles, ATGMs, and machine guns. One might think that the .50 cal infantry AAA unit could serve as a machine-gun weapons platoon, but I would imagine most machine-gun weapons platoons have low tripods for ground combat rather than high ones for AAA.
 }
 
@@ -344,8 +320,8 @@ Infantry SAM and heavy SAM squads are equipped with shoulder-launched and pedest
 
 Tanks are armored vehicles that are specialized for direct fire with a gun.
 Here, the gun does not have to be mounted in a turret; AFVs with casemate guns such as the SU-100, Kanonenjagdpanzer, and Stridsvagn 103 are also considered to be tanks.
-Tanks are distinguished by their level of protection.%
-\note{
+Tanks are distinguished by their level of protection.\textnote
+{Light, Medium, and Heavy Armor}{
     The protection level of tanks and other AFVs are based on the armor classes in the Wargames Research Group 1950--1985 rules: open is class I; light is class II to III; and heavy is class IX and X.
     More modern tanks are guesses, and I'm willing to be corrected.
 }
@@ -370,16 +346,16 @@ These include platoons with the AMX-10 RC, AMX-13, Ferret, Fox, M24 Chaffee, M41
 
 \paragraph{Open Tank Platoon.}
 
-These include platoons with the ASU-57 or SU-76.%
-\note{
-    Open tanks are uncommon, but we need an open target class for M3 half-track APCs, so it is easy to apply it here too.
+These include platoons with the ASU-57 or SU-76.\textnote
+{Open Tanks}{
+    These are uncommon, but we need an open target class for M3 half-track APCs, so it is easy to apply it here too.
 }
 
 \subsection{Anti-Tank Units}
 
 Anti-tank vehicles here are armored vehicles equipped with ATGMs.
-Conventional gun-armed anti-tank vehicles are considered to be tanks.%
-\note{
+Conventional gun-armed anti-tank vehicles are considered to be tanks.\textnote
+{Anti-Tank Units}{
     Like infantry weapons platoons, anti-tank units are mainly chrome.
     However, in ground combat, we might give them more effectiveness against vehicular or towed targets and less against infantry targets.
 }
@@ -396,8 +372,8 @@ These include platoons with the AMX-10P HOT, BRDM-2/3 ATGM variants, FV438 Swing
 
 Both IFVs and APCs are armored vehicles that transport infantry.
 However, IFVs provide fire support and typically have a 20~mm or larger cannon, and APCs do not.
-Some IFVs are also designed to allow their attached infantry to fight while mounted.%
-\note{
+Some IFVs are also designed to allow their attached infantry to fight while mounted.\textnote
+{IFV and APC Units}{
     And again we might distinguish APCs and IFVs in ground-to-ground combat.
     Bradley IFVs made mincemeat of Iraqi tank regiments; M113 APCs would not have had the same impact.
 }
@@ -413,7 +389,7 @@ These include platoons with the CV90, M2A2 Bradley (only this version), or Marde
 These include platoons with all other types of IFVs, including the AIFV, AMX-10P, BMP-1/2/3, LAV-25, M2/3 Bradley (except the M2A2 version), M1296 Dragoon, Schützenpanzer Lang HS.30, VCBI, Warrior, and YPR-765.
 
 %Heavy APCs: converted heavy tanks.
-%\note{
+%\textnote{Heavy and Medium APCs}{
 %    Heavy and medium APCs are not really relevant, but they exist and are easy to include once you've added medium IFVs.
 %}
 
@@ -486,8 +462,8 @@ They include batteries with the 155-mm Archer and 155-mm CAESAR.
 
 \paragraph{Tracked Missile Artillery Battery.} These are missile-armed equivalents of tracked artillery batteries. They include batteries with the MGM-52 Lance and Pluton.
 
-\paragraph{Mobile Missile Artillery Battery.} These are missile-armed equivalents of mobile artillery batteries. They include batteries with the 9K52 Luna-M (Frog), Corporal, Sergeant, M34/M50 Honest John, M74 Redstone, M790 Pershing 1a, M1003 Pershing II, OTR-21 Tochka (SS-21), and RSD-10 Pioneer (SS-20).%
-\note{
+\paragraph{Mobile Missile Artillery Battery.} These are missile-armed equivalents of mobile artillery batteries. They include batteries with the 9K52 Luna-M (Frog), Corporal, Sergeant, M34/M50 Honest John, M74 Redstone, M790 Pershing 1a, M1003 Pershing II, OTR-21 Tochka (SS-21), and RSD-10 Pioneer (SS-20).\textnote
+{Missile Artillery Batteries}{
     Missile artillery is mainly included to serve as a target.
 }
 
@@ -514,9 +490,9 @@ They include batteries with the 155-mm Archer and 155-mm CAESAR.
 \subsection{HQ Units}
 
 These are the HQ platoons of battalions or regiments.
-Normal platoons serve as the HQ platoons of companies.%
-\note{
-    I wondered if HQ platoons were also used at the company level, but looking at the Air Strike scenarios they are included at a ratio of about one HQ platoons to nine normal platoons, so they seem to be battalion HQs.
+Normal platoons serve as the HQ platoons of companies.\textnote
+{HQ Units}{
+    I wondered if HQ platoons were also used at the company level, but looking at the \emph{Air Strike} scenarios they are included at a ratio of about one HQ platoons to nine normal platoons, so they seem to be battalion HQs.
 }
 
 \paragraph{Infantry HQ Platoon.}
@@ -525,9 +501,14 @@ An infantry HQ platoon is the HQ unit of an infantry battalion or regiment.
 The HQ platoon of a mechanized infantry battalion or regiment will consist of an infantry HQ platoon transported by a normal IFV or APC platoon.
 The HQ platoon of a motorized infantry battalion or regiment will consist of an infantry HQ platoon transported by a normal truck platoon.
 
+\paragraph{Mobile HQ Platoon.}
+
+A mobile HQ platoon is typically the HQ unit of a battalion or regiment other than those of infantry, tank, mechanized infantry, or armored artillery.
+It is equipped with trucks, and its personnel are not specialized in fighting as infantry.
+
 \paragraph{Armored HQ Platoon.}
 
-An armored HQ platoon represents the HQ unit of a tank or mechanized infantry battalion or regiment. It is equipped with lightly armored vehicles such as the AIFV-B-CP, BMP-1K, BMT-2K, BTR-60P/PA/PB/PBK, FV105 Sultan, M577, M1068, M1130, YPR-765 PRCO-C, or adapted APCs.%
+An armored HQ platoon is the HQ unit of a tank, mechanized infantry, or armored artillery battalion or regiment. It is equipped with lightly armored vehicles such as the AIFV-B-CP, BMP-1K, BMT-2K, BTR-60P/PA/PB/PBK, FV105 Sultan, M577, M1068, M1130, YPR-765 PRCO-C, or adapted APCs.
 
 \clearpage
 \section{AAA Units}
@@ -543,17 +524,13 @@ AAA units specialize in the use of guns to destroy attacking aircraft, but also 
 
 Table~\ref{table:aaa-units} summarizes the properties of AAA units, and Figure~\ref{figure:aaa-units} shows their representation as counters.
 All platoons and batteries in Table~\ref{table:aaa-units} are also available as sections (but not squads).
-As well as the properties common to all ground units, Table~\ref{table:aaa-units} gives:%
-\note{
-    \notesection{AAA Values}
-
+As well as the properties common to all ground units, Table~\ref{table:aaa-units} gives:\textnote
+{AAA Values}{
     This long note summarizes how I have determined the AAA values for AAA units. VP values are discussed separately.
 
     I compare AAA values for AAA units from \emph{Air Strike}, \emph{Eagles of the Gulf}, and \emph{The Speed of Heat} to the actual characteristics of the guns they represent. My aim is to empirically understand the underlying model sufficiently to identify anomalous values and to apply it to other guns. That said, I do comment on the model.
 
-    \notesection{AAA Values for Batteries}
-
-    I start by attempting to understand the AAA values for batteries.
+    \textnotesection{AAA Values for Batteries} I start by attempting to understand the AAA values for batteries.
 
     The upper part of the following table shows the original data for gun batteries from \emph{Air Strike} (AS), \emph{Eagles of the Gulf} (EOTG), and \emph{The Speed of Heat} (TSOH). I have added columns with the caliber, burst rate of fire per mount, and muzzle velocity.
 
@@ -675,9 +652,7 @@ As well as the properties common to all ground units, Table~\ref{table:aaa-units
 
     \end{itemize}
 
-    \notesection{AAA Values for Sections}
-
-    I now turn to sections. Again, my aim is to empirically understand the underlying model sufficiently to identify anomalous values and to apply it to other guns.
+    \textnotesection{AAA Values for Sections} I now turn to sections. Again, my aim is to empirically understand the underlying model sufficiently to identify anomalous values and to apply it to other guns.
 
     The upper part of the following table shows the original data for gun sections from \emph{Air Strike} (AS), \emph{Eagles of the Gulf} (EOTG), and \emph{The Speed of Heat} (TSOH). Again, I have added columns with the caliber, burst rate of fire per mount, and muzzle velocity.
 
@@ -785,10 +760,8 @@ As well as the properties common to all ground units, Table~\ref{table:aaa-units
 
     \end{itemize}
 
-    \notesection{Summary}
-
+    \textnotesection{Summary}
     I have developed an empirical understanding of the model for AAA values.
-
     Consideration of outliers suggests:
     \begin{itemize}
         \item Increasing in the hit rolls of the mounted ZPU-4, single Rh-202, Panhard M3 VDA, ZU-23 (and derivatives), and BOFI.
@@ -798,7 +771,7 @@ As well as the properties common to all ground units, Table~\ref{table:aaa-units
     I have adopted these changes.
 
 }
-\clearnotes
+\cleartextnotes
 
 \begin{itemize}
     \item the AAA class (light, medium, or heavy);
@@ -825,36 +798,36 @@ Units without an FCR (or with a range-only FCR) are limited to visually sighted 
 
 \paragraph{M2 Platoon.}
 
-The Browning M2 .50~cal (12.7~mm) heavy machine gun is normally found on a low tripod for ground combat, but here is used on a tall dual-purpose mount suitable for air defense. A platoon has six guns.%
-\note{
-    For the M2 platoon: The AAA values are from \emph{Air Strike}.
+The Browning M2 .50~cal (12.7~mm) heavy machine gun is normally found on a low tripod for ground combat, but here is used on a tall dual-purpose mount suitable for air defense. A platoon has six guns.\textnote
+{M2 Platoon}{
+    The AAA values are from \emph{Air Strike}.
 }
 
 The M2 gun was introduced in 1933 and has been used by United States forces and their allies in numerous conflicts since then.
 
 \paragraph{DShK-38 Platoon.}
 
-The DShK-38 12.7~mm heavy machine gun is most commonly found on a low, wheeled mount for ground combat, but here is used on a tall tripod suitable for air defense. A platoon has six guns.%
-\note{
-    For the DShk-38 platoon: The AAA values are from \emph{Air Strike}.
+The DShK-38 12.7~mm heavy machine gun is most commonly found on a low, wheeled mount for ground combat, but here is used on a tall tripod suitable for air defense. A platoon has six guns.\textnote
+{DShK-38 Platoon}{
+    The AAA values are from \emph{Air Strike}.
 }
 
 The DShK-38 entered service with the Soviet Army in 1938 and saw action in World War II and numerous conflicts since then, including the Korean and Vietnam Wars, in which the Soviet Union participated or provided arms.
 
 \paragraph{M16 Section.}
 
-The M16 Multiple Gun Motor Carriage has an M45 turret with four M2 .50 cal (12.7~mm) heavy machine guns mounted on a modified M3 half-track. A section has two vehicles.%
-\note{
-    For the M16 section: The AAA values are from \emph{Eagles of the Gulf}.
+The M16 Multiple Gun Motor Carriage has an M45 turret with four M2 .50 cal (12.7~mm) heavy machine guns mounted on a modified M3 half-track. A section has two vehicles.\textnote
+{M16 Section}{
+    The AAA values are from \emph{Eagles of the Gulf}.
 }
 
 The M16 was used by United States forces during World War II and (primarily as an anti-personnel weapon) in the Korean War for airfield defense. Additionally, Israeli forces employed it during the 1956 Arab-Israeli War.
 
 \paragraph{M55 Platoon.}
 
-The M55 has an M45 turret with four M2 .50 cal (12.7~mm) heavy machine guns mounted on a towed carriage. A platoon has four gun mounts.%
-\note{
-    For the M55 battery: The AAA values are from \emph{Eagles of the Gulf}.
+The M55 has an M45 turret with four M2 .50 cal (12.7~mm) heavy machine guns mounted on a towed carriage. A platoon has four gun mounts.\textnote
+{M55 Battery}{
+    The AAA values are from \emph{Eagles of the Gulf}.
 }
 
 The M55 was used by United States forces during the Korean War and by Pakistani forces during the 1965 India-Pakistan War.
@@ -863,46 +836,46 @@ The M55 was used by United States forces during the Korean War and by Pakistani 
 
 \paragraph{ZPU-1/2/4 Battery.}
 
-The ZPU-1/2/4 have single, twin, or quad 14.5~mm heavy machine guns in open mounts on towed carriages. A battery has six gun mounts.%
-\note{
-    For the ZPU-1 battery: The AAA values are from \emph{Eagles of the Gulf} and \emph{The Speed of Heat}.
-}%
-\note{
-    For the ZPU-2 battery: The AAA values are from \emph{Air Strike}.
-}%
-\note{
-    For the ZPU-4 battery: The AAA values are from \emph{Air Strike} rather than \emph{The Speed of Heat}, for the reasons described in the extended note above.
+The ZPU-1/2/4 have single, twin, or quad 14.5~mm heavy machine guns in open mounts on towed carriages. A battery has six gun mounts.\textnote
+{ZPU-1 Battery}{
+    The AAA values are from \emph{Eagles of the Gulf} and \emph{The Speed of Heat}.
+}\textnote
+{ZPU-2 Battery}{
+    The AAA values are from \emph{Air Strike}.
+}\textnote
+{ZPU-4 Battery}{
+    The AAA values are from \emph{Air Strike} rather than \emph{The Speed of Heat}, for the reasons described in the extended note above.
 }
 
 The ZPU-1/2/4 was introduced in 1949 and saw extensive service with Soviet or Soviet-supported forces in many subsequent conflicts, including with communist forces in the Korean War and Vietnam War and with Arab forces in the various Arab-Israeli Wars from 1956 onwards.
 
 \paragraph{Mobile ZPU-1/2/4 Section.}
 
-This is a section of two light trucks mounting ZPU-1/2/4 guns.%
-\note{
-    For the mobile ZPU-4 section:
+This is a section of two light trucks mounting ZPU-1/2/4 guns.\textnote
+{Mobile ZPU-4 Section}{
     AAA values are from \emph{Air Strike}, except that I have adopted hit rolls of 4/3/2 rather than 3/3/2 as described in the extended note above.
     %\emph{Air Strike} gives this 5 VPs, which is the same as the towed ZPU-4 battery despite the mobile section having worse hit rolls and defense strength. I think 4 VPs (i.e., one less than the battery) is more appropriate.
-}%
-\note{
-    For the mobile ZPU-1 and ZPU-2 section: These do not appear in \emph{Air Strike}, \emph{Eagles of the Gulf}, or \emph{The Speed of Heat}, but they are very common. As described in the extended note above, I have produced AAA hit values for the sections from those of the ZPU-1 and ZPU-2 batteries.
+}\textnote
+{Mobile ZPU-1 and ZPU-2 Section}{
+    These do not appear in \emph{Air Strike}, \emph{Eagles of the Gulf}, or \emph{The Speed of Heat}, but they are very common. As described in the extended note above, I have produced AAA hit values for the sections from those of the ZPU-1 and ZPU-2 batteries.
 }
 
 Many users of the ZPU-1/2/4 mount it on a suitable truck for increased mobility. Like the towed versions, it has seen combat in many conflicts.
 
 \paragraph{M167 Platoon.}
 
-The M167 Vulcan Air Defense System (VADS) has a 20~mm six-barreled Vulcan gun in an open mount on a towed carriage. The fire-control system has optical sights and a range-only radar. A platoon has four gun mounts.%
-\note{
-    For the M167 platoon: The AAA values are from \emph{Air Strike}. I'm not sure when it gained FCR-R or if it gained night IR sights.
+The M167 Vulcan Air Defense System (VADS) has a 20~mm six-barreled Vulcan gun in an open mount on a towed carriage. The fire-control system has optical sights and a range-only radar. A platoon has four gun mounts.\textnote
+{M167 Platoon}{
+    The AAA values are from \emph{Air Strike}. I'm not sure when it gained FCR-R or if it gained night IR sights.
 }
 
 The M167 was introduced into service with the US Army in 1967, principally for airfield defense, and subsequently served with other US allies.
 
 \paragraph{M163 Section.}
 
-The M163 Vulcan Air Defense System (VADS) has a 20~mm six-barreled Vulcan gun in a lightly armored but open-topped turret on an adapted M113 APC. The fire-control system has optical sights and a range-only radar. A section has two vehicles.\note{
-    For the M163 section: The AAA values are from \emph{Air Strike}. I have the same uncertainties as I do for the M167.
+The M163 Vulcan Air Defense System (VADS) has a 20~mm six-barreled Vulcan gun in a lightly armored but open-topped turret on an adapted M113 APC. The fire-control system has optical sights and a range-only radar. A section has two vehicles.\textnote
+{M163 Section}{
+    The AAA values are from \emph{Air Strike}. I have the same uncertainties as I do for the M167.
 }
 
 The M163 VADS was introduced into service with the US Army in 1968 and has since been adopted by other US allies. The M163 was used by US forces in the Vietnam War, the 1989 Invasion of Panama, and the 1991 Gulf War. It was also used by the Israel Army in the 1982 Lebanon War and in 2002 during the Second Intifada.
@@ -911,36 +884,35 @@ From 1988 in the US Army, each M163 was typically issued with a FIM-92 Stinger l
 
 \paragraph{TCM-20 Platoon.}
 
-The TCM-20 is an Israeli adaptation of the M55, with two Hispano-Suiza 20mm guns from obsolete aircraft replacing the four .50 cal machine guns. As with the M55, the fire-control system is entirely optical. A platoon has four gun mounts.%
-\note{
-    For the TCM-20 platoon: The AAA values are from \emph{Eagles of the Gulf}.
+The TCM-20 is an Israeli adaptation of the M55, with two Hispano-Suiza 20mm guns from obsolete aircraft replacing the four .50 cal machine guns. As with the M55, the fire-control system is entirely optical. A platoon has four gun mounts.\textnote
+{TCM-20 Platoon}{
+    The AAA values are from \emph{Eagles of the Gulf}.
 }
 
 The TCM-20 was employed by Israeli forces from 1970 and subsequently saw combat in the 1973 Arab-Israeli War and the 1982 Lebanon War.
 
 \paragraph{M3 TCM-20 Section.}
 
-The M3 TCM-20 has a TCM-20 turret mounted in an adapted M3 half-track, like the earlier M16. A section has two vehicles.%
-\note{
-    For the M3 TCM-20 section: The AAA values are from \emph{Eagles of the Gulf}.
+The M3 TCM-20 has a TCM-20 turret mounted in an adapted M3 half-track, like the earlier M16. A section has two vehicles.\textnote
+{M3 TCM-20 Section}{
+    The AAA values are from \emph{Eagles of the Gulf}.
 }
 
 The M3 TCM-20 was used by Israeli forces in the 1973 Arab-Israeli War and the 1982 Lebanon War.
 
 \paragraph{Rh-202 Battery.}
 
-The Rheinmetall Rh-202 has a single or twin 20mm gun in an open mount on a towed carriage. The fire-control system is entirely optical. The most common version is the twin mount. A battery has six gun mounts.%
-\note{
-    For the single and twin Rh-202 batteries: All AAA mounts seem to be twin. The AAA values are from \emph{Air Strike}, with the hit values for the single mount changed from 3/2/1 to 4/3/2 and the damage value for the twin mount changed from 2 to 3, as described in the extended note above.
+The Rheinmetall Rh-202 has a single or twin 20mm gun in an open mount on a towed carriage. The fire-control system is entirely optical. The most common version is the twin mount. A battery has six gun mounts.\textnote
+{Rh-202 Battery}{
+    \emph{Air Strike} has single and twin Rh-202 batteries, but all AAA mounts seem to be twin. The AAA values are from \emph{Air Strike}, with the hit values for the single mount changed from 3/2/1 to 4/3/2 and the damage value for the twin mount changed from 2 to 3, as described in the extended note above.
 }
 
 The twin version entered service with West German forces in 1972 and was used for airfield defense. Subsequently, it was exported and notably used by the Argentine Air Force in the 1982 South Atlantic War in the defense of BAM Malvinas (Port Stanley Airport) and BAM Condor (Goose Green Airfield).
 
 \paragraph{Panhard M3 DCA Section.}
 
-The Panhard M3 DCA vehicles have an armored turret for twin 20~mm guns mounted on the Panhard M3 APC. The guns have optical sights, but typically one vehicle in each section or platoon is equipped with a search-and-ranging radar and can share this information automatically with the others. A section has two vehicles.%
-\note{
-    For the Panhard M3 DCA section:
+The Panhard M3 DCA vehicles have an armored turret for twin 20~mm guns mounted on the Panhard M3 APC. The guns have optical sights, but typically one vehicle in each section or platoon is equipped with a search-and-ranging radar and can share this information automatically with the others. A section has two vehicles.\textnote
+{Panhard M3 DCA Section}{
     The AAA data are from \emph{Air Strike}, but modified as described in the extended note above to give hit rolls of 3/3/2 without FCR. However, the Panhard M3 DCA radar-equipped vehicle seems to be able to search and share speed and range information with the other vehicle in the section, which seems equivalent to FCR-R. Therefore, I have increased the hit rolls by one to give 4/4/3 with FCR-R.
 }
 
@@ -948,56 +920,56 @@ The Panhard M3 DCA served with the armed forces of Côte d'Ivoire, Niger, and th
 
 \paragraph{ZU-23 Battery.}
 
-The ZU-23 has twin 23~mm cannons in an open mount on a towed carriage. It was designed as a more powerful replacement for the ZPU-1/2/4. The fire-control system is entirely optical. A battery has six gun mounts.%
-\note{
-    For the ZU-23 battery: The AAA values are from \emph{Air Strike}, but the hit rolls are modified as from 4/3/2 to 5/3/2 and the damage rating from 2 to 3 as described in the extended note above.
-    %TSOH gives it 6 VPs and Air Strike gives it only 5. I think 6 is more appropriate, comparing to the ZPU-4 battery.
+The ZU-23 has twin 23~mm cannons in an open mount on a towed carriage. It was designed as a more powerful replacement for the ZPU-1/2/4. The fire-control system is entirely optical. A battery has six gun mounts.\textnote
+{ZU-23 Battery}{
+    The AAA values are from \emph{Air Strike}, but the hit rolls are modified as from 4/3/2 to 5/3/2 and the damage rating from 2 to 3 as described in the extended note above.
+    %TSOH gives it 6 VPs and \emph{Air Strike} gives it only 5. I think 6 is more appropriate, comparing to the ZPU-4 battery.
 }
 
 The ZU-23 was introduced into service by the Soviet Army in 1960. It later served with the armed forces of many Soviet allies, including with North Vietnam in the Vietnam War, with Egypt and Syria in the 1967 and 1973 Wars, with Soviet forces in the Soviet-Afghan War, with Iraq in the Iraq-Iran War, with Syria in the 1982 Lebanon War, and with both sides in the Afghan Civil War.
 
 \paragraph{Mobile ZU-23 Section.}
 
-This is a section of two light trucks mounting ZU-23 guns.%
-\note{
-    For the mobile ZU-23 section: The AAA values are from \emph{Air Strike} and \emph{The Speed of Heat}, but the hit rolls of 4/3/2 were obtained from those for the ZU-23 battery using the recipe described above, and the damage was modified from 2 to 3 as described in the extended note above.
-    %The VPs seem about right, as the battery has 6 VPs. Air Strike gives 5 VPs.
+This is a section of two light trucks mounting ZU-23 guns.\textnote
+{Mobile ZU-23 Section}{
+    The AAA values are from \emph{Air Strike} and \emph{The Speed of Heat}, but the hit rolls of 4/3/2 were obtained from those for the ZU-23 battery using the recipe described above, and the damage was modified from 2 to 3 as described in the extended note above.
+    %The VPs seem about right, as the battery has 6 VPs. \emph{Air Strike} gives 5 VPs.
 }
 
 As with the earlier ZPU-1/2/4, many users of the ZU-23 mount it on vehicles, including trucks, tracked carriers, and APCs, for better mobility.
 
 \paragraph{Sinai 23 Section.}
 
-The Sinai 23 has a Dassault TA20 turret with two 23~mm guns and six Ayn-al-Saqr (similar to the Strela-2M) or Stinger missiles on an M113 chassis. It has night IR sights. A section has two vehicles. Each battery operates with one vehicle equipped with an RA20S search radar.%
-\note{
-    For the Sinai 23 section: The turret seems to be similar to the LAV-AD turret, but with a pair of 23~mm guns instead of a GAU-12 25~mm gun. The AAA values were taken from the mobile ZU-23 battery. I don't know which model of Stinger was used; I would guess the FIM-92A.
+The Sinai 23 has a Dassault TA20 turret with two 23~mm guns and six Ayn-al-Saqr (similar to the Strela-2M) or Stinger missiles on an M113 chassis. It has night IR sights. A section has two vehicles. Each battery operates with one vehicle equipped with an RA20S search radar.\textnote
+{Sinai 23 Section}{
+    The turret seems to be similar to the LAV-AD turret, but with a pair of 23~mm guns instead of a GAU-12 25~mm gun. The AAA values were taken from the mobile ZU-23 battery. I don't know which model of Stinger was used; I would guess the FIM-92A.
 }
 
 The Sinai 23 entered service with the Egyptian Army in 1991.
 
 \paragraph{ZSU-23-4 Section.}
 
-The ZSU-23-4 has four radar-controlled 23~mm guns, similar to those in the ZU-23, mounted in an armored turret on a hull adapted from the PT-76 light tank. A section has two vehicles.%
-\note{
-    For the ZSU-23-4 section: The AAA values are from \emph{Air Strike}.
+The ZSU-23-4 has four radar-controlled 23~mm guns, similar to those in the ZU-23, mounted in an armored turret on a hull adapted from the PT-76 light tank. A section has two vehicles.\textnote
+{ZSU-23-4 Section}{
+    The AAA values are from \emph{Air Strike}.
 }
 
 The ZSU-23-4 entered service in the Soviet Army in 1965, replacing the ZSU-57-2 and outclassing all NATO anti-aircraft guns at that time. A platoon of four was assigned to the air-defense battery of tank and motor-rifle regiments and later complemented by a platoon of four SA-9 vehicles. It was exported to Soviet allies and saw extensive combat with Arab forces in the 1973 Arab-Israeli War and with Iraqi forces in the Iran-Iraq War and the 1991 Gulf War.
 
 \paragraph{LAV-AD Section.}
 
-The LAV-AD has a 25~mm GAU-12 rotary cannon and eight FIM-92D Stinger missiles mounted in a turret on the LAV-25 vehicle. It does not have radar, but is equipped with a passive night IR sight. A section has two vehicles.%
-\note{
-    For the LAV-AD section: The system seems similar to the Blazer, but without radar and with night IR sights. I've adopted the range and damage rating for the Gemag battery in \emph{Air Strike} with the hit rolls reduced by one for being a section and one again for not having FCR-R giving 4/3/2.
+The LAV-AD has a 25~mm GAU-12 rotary cannon and eight FIM-92D Stinger missiles mounted in a turret on the LAV-25 vehicle. It does not have radar, but is equipped with a passive night IR sight. A section has two vehicles.\textnote
+{LAV-AD Section}{
+    The system seems similar to the Blazer, but without radar and with night IR sights. I've adopted the range and damage rating for the Gemag battery in \emph{Air Strike} with the hit rolls reduced by one for being a section and one again for not having FCR-R giving 4/3/2.
 }
 
 The LAV-AD entered service with the USMC in 1997, but was retired after only a few years.
 
 \paragraph{M53/59 Section.}
 
-The M53/59 has a twin M53 30~mm gun mount on a partially armored truck. The fire-control system is entirely optical. A section has two vehicles.%
-\note{
-    For the M53/59 section: The AAA values are from \emph{Air Strike}, but the hit rolls were reduced from 4/3/2 to 3/2/1 as described in the extended note above.
+The M53/59 has a twin M53 30~mm gun mount on a partially armored truck. The fire-control system is entirely optical. A section has two vehicles.\textnote
+{M53/59 Section}{
+    The AAA values are from \emph{Air Strike}, but the hit rolls were reduced from 4/3/2 to 3/2/1 as described in the extended note above.
     If the VADS is classed as armored, should this be armored too?
 }
 
@@ -1005,27 +977,29 @@ The M53/59 entered service in the Czech Army in 1959 and was used instead of the
 
 \paragraph{AMX-30SA Section.}
 
-The AMX-30SA is equipped with a pair of radar-controlled 30~mm Hispano-Suiza guns mounted in an armored turret on the hull of an AMX-30 tank. It is an improved version of the AMX-30 DCA. A section has two vehicles.%
-\note{
-    For the AMX-30SA section: I adopt the Air Strike values given for the AMX-30 DCA. The real DCA does not have radar, but the Air Strike one does, matching the SA.
+The AMX-30SA is equipped with a pair of radar-controlled 30~mm Hispano-Suiza guns mounted in an armored turret on the hull of an AMX-30 tank. It is an improved version of the AMX-30 DCA. A section has two vehicles.\textnote
+{AMX-30SA Section}{
+    I adopt the \emph{Air Strike} values given for the AMX-30 DCA. The real DCA does not have radar, but the \emph{Air Strike} one does, matching the SA.
 }
 
 The AMX-30SA served only in the Saudi Army from 1979.
 
 \paragraph{Tunguska Section.}
 
-The Tunguska has twin radar-controlled 30mm guns and four SA-19 missiles in an armored turret on an armored and tracked hull. It was designed to counter the A-10 and AH-64, against which the earlier ZSU-23-4 had weaknesses. A section has two vehicles.%
-\note{
-    For the Tunguska section: The AAA values are from \emph{Air Strike} for the ZSU-30-2. %The VP values are tentative, and might be modified once other SAM launchers are considered.
+The Tunguska has twin radar-controlled 30mm guns and four SA-19 missiles in an armored turret on an armored and tracked hull. It was designed to counter the A-10 and AH-64, against which the earlier ZSU-23-4 had weaknesses. A section has two vehicles.\textnote
+{Tunguska Section}{
+    The AAA values are from \emph{Air Strike} for the ZSU-30-2.
+    %The VP values are tentative, and might be modified once other SAM launchers are considered.
 }
 
 The Tunguska entered service in the Soviet Army in 1984. It has been used by Russia, Ukraine, and Belarus after the break-up of the Soviet Union and has been exported.
 
 \paragraph{Tunguska-M Section.}
 
-The Tunguska-M is an improved version of the Tunguska with eight missiles instead of four. A section has two vehicles.%
-\note{
-    For the Tunguska-M section: The AAA values are from \emph{Air Strike} for the ZSU-30-2. %The VP values are tentative, and might be modified once other SAM launchers are considered.
+The Tunguska-M is an improved version of the Tunguska with eight missiles instead of four. A section has two vehicles.\textnote
+{Tunguska-M Section}{
+    The AAA values are from \emph{Air Strike} for the ZSU-30-2.
+    %The VP values are tentative, and might be modified once other SAM launchers are considered.
 }
 
 The Tunguska-M entered service in the Soviet Army in 1990. It has been used by Russia, Ukraine, and Belarus after the break-up of the Soviet Union and has been exported.
@@ -1039,81 +1013,81 @@ The Tunguska-M entered service in the Soviet Army in 1990. It has been used by R
 The Oerlikon GDF has two 35~mm guns in an open mount on a towed carriage.
 A battery has six gun mounts.
 The basic fire-control system is optical, but a section is often coupled with the Super Fledermaus or Skyguard fire-control radars.
-(These radars cannot control a whole battery, only a section.)%
-\note{
-    For the Oerlikon GDF battery: The AAA values for the battery are from \emph{Air Strike} with the hit rolls reduced from 5/4/3 to 4/3/2 as described in the extended note above.
+(These radars cannot control a whole battery, only a section.)\textnote
+{Oerlikon GDF Battery}{
+    The AAA values for the battery are from \emph{Air Strike} with the hit rolls reduced from 5/4/3 to 4/3/2 as described in the extended note above.
 }
 
 The Oerlikon GDF entered service in 1963 and has served widely. Notably, it saw combat in the South Atlantic War with the Argentine forces in the defense of BAM Malvinas (Port Stanley Airport) and BAM Condor (Goose Green Airfield).
 
 \paragraph{Gepard Section.}
 
-The Gepard has two radar-controlled 35~mm guns in an armored turret on an adapted Leopard 1 tank hull. A section has two vehicles.%
-\note{
-    For the Gepard section: The AAA values are from \emph{Air Strike}.
+The Gepard has two radar-controlled 35~mm guns in an armored turret on an adapted Leopard 1 tank hull. A section has two vehicles.\textnote
+{Gepard Section}{
+    The AAA values are from \emph{Air Strike}.
 }
 
 The Gepard entered service in 1976 with the West German Army and also served with the Belgian and Dutch armies. After the end of the Cold War, they were retired by these armies, and many were sold on to other countries.
 
 \paragraph{61-K Battery.}
 
-The 61-K (M1939) has a single 37~mm gun in an open mount on a towed carriage. The fire-control system is entirely optical, and the 61-K cannot be coupled to an external fire-control radar. A battery has six gun mounts.%
-\note{
+The 61-K (M1939) has a single 37~mm gun in an open mount on a towed carriage. The fire-control system is entirely optical, and the 61-K cannot be coupled to an external fire-control radar. A battery has six gun mounts.\textnote
+{61-K Battery}{
     For the 61-K battery: The AAA values are from \emph{Air Strike} and \emph{The Speed of Heat}.
-    % but TSOH gives it 6 VPs and Air Strike only 5.
+    % but TSOH gives it 6 VPs and \emph{Air Strike} only 5.
 }
 
 After entering service in 1939 with the Soviet Army, it served in WW2 and after until replaced by the S-60 57~mm gun. It also served with many Soviet allies, and in particular with communist forces in the Korean and Vietnam Wars.
 
-The 61-K is referred to as the “M-38” in \emph{Air Strike}, \emph{Eagles of the Gulf}, and \emph{The Speed of Heat}.%
-\note{
+The 61-K is referred to as the “M-38” in \emph{Air Strike}, \emph{Eagles of the Gulf}, and \emph{The Speed of Heat}.\textnote
+{M-38 Battery}{
     I can find no sources other than \emph{Air Strike}, \emph{Eagles of the Gulf}, and \emph{The Speed of Heat} that refer to the 61-K 37~mm gun as the “M-38”. Another designation for the gun is “M-1939”, so I could understand “M-39”.
 }
 
 \paragraph{Bofors L/60 Battery.}
 
-The Bofors L/60 has a single 40~mm gun in an open mount on a towed carriage. The fire-control system is entirely optical. A battery has six gun mounts.%
-\note{
-    For the Bofors L/60 battery: The AAA values are from \emph{Eagles of the Gulf}.
+The Bofors L/60 has a single 40~mm gun in an open mount on a towed carriage. The fire-control system is entirely optical. A battery has six gun mounts.\textnote
+{Bofors L/60 Battery}{
+    The AAA values are from \emph{Eagles of the Gulf}.
 }
 
 It entered service in the 1940s and was widely used by Allied forces during WW2, both on land and sea. After the war, many continued to see service, although it was increasingly inadequate against faster jet aircraft and in many cases was replaced by the new L/70 model.
 
 \paragraph{Bofors L/70 Battery.}
 
-The Bofors L/70 has a single 40~mm gun in an open mount on a towed carriage. Between the 1930s and the end of WW2, aircraft speed increased substantially, and so the engagement time of the Bofors L/60 became inadequate. The new L/70 fired a lighter shell at a higher velocity and achieved a significant improvement in range and engagement time. The basic fire-control system is optical, but various external fire-control radars can be used with it, including the Super Fledermaus and Flycatcher systems. A battery has six gun mounts.%
-\note{
-    For the Bofors L/70 battery: The AAA values are from \emph{Air Strike}.
+The Bofors L/70 has a single 40~mm gun in an open mount on a towed carriage. Between the 1930s and the end of WW2, aircraft speed increased substantially, and so the engagement time of the Bofors L/60 became inadequate. The new L/70 fired a lighter shell at a higher velocity and achieved a significant improvement in range and engagement time. The basic fire-control system is optical, but various external fire-control radars can be used with it, including the Super Fledermaus and Flycatcher systems. A battery has six gun mounts.\textnote
+{Bofors L/70 Battery}{
+    The AAA values are from \emph{Air Strike}.
 }
 
 NATO forces and others adopted it widely starting in 1952.
 
 \paragraph{Bofors L/70 BOFI and BOFI-R Battery.}
 
-The BOFI version of the Bofors L/70 adds modern sights, a laser rangefinder, and proximity-fuzed shells. The BOFI-R version also adds an integrated fire-control radar. A battery has six gun mounts.%
-\note{
-    For the BOFI and BOFI-R battery: The AAA values are adapted from \emph{Air Strike} values for the Bofors L/70, with the hit rolls increased by one for proximity fuzes, one for the BOFI laser rangefinder (effectively FCR-R), and another one for the BOFI-R radar, giving hit rolls of 5/5/4 for BOFI and 6/6/5 for BOFI-R whereas \emph{Air Strike} gives the BOFI-R 5/5/4.
+The BOFI version of the Bofors L/70 adds modern sights, a laser rangefinder, and proximity-fuzed shells. The BOFI-R version also adds an integrated fire-control radar. A battery has six gun mounts.\textnote
+{Bofors L/70 BOFI and BOFI-R Battery}{
+    The AAA values are adapted from \emph{Air Strike} values for the Bofors L/70, with the hit rolls increased by one for proximity fuzes, one for the BOFI laser rangefinder (effectively FCR-R), and another one for the BOFI-R radar, giving hit rolls of 5/5/4 for BOFI and 6/6/5 for BOFI-R whereas \emph{Air Strike} gives the BOFI-R 5/5/4.
 }
 
-The BOFI is used by the armed forces of Brazil.%
-\note{
+The BOFI is used by the armed forces of Brazil.\textnote
+{BOFI Service}{
     I don't know when the BOFI and BOFI-R became available or who else uses them.
 }
 
 \paragraph{S-60 Battery.}
 
-The S-60 is a Soviet single 57~mm gun on an open mount on a towed carriage. The basic fire-control system is optical, but the gun is often used with the SON-9 (Fire Can) radar. A battery has six gun mounts.%
-\note{
-    For the S-60 battery: The AAA values are from \emph{Air Strike} and \emph{The Speed of Heat}.
-    % These are the same as in Air Strike, except that TSOH gives 8 VPs and Air Strike only 6.
+The S-60 is a Soviet single 57~mm gun on an open mount on a towed carriage. The basic fire-control system is optical, but the gun is often used with the SON-9 (Fire Can) radar. A battery has six gun mounts.\textnote
+{S-60 Battery}{
+    The AAA values are from \emph{Air Strike} and \emph{The Speed of Heat}.
+    % These are the same as in \emph{Air Strike}, except that TSOH gives 8 VPs and \emph{Air Strike} only 6.
 }
 
 It entered service in 1950 with Soviet forces as a replacement for the 61-K 37~mm gun. It was exported to many Soviet allies and saw combat with Arab forces in the 1967 and 1973 Arab-Israeli War, with communist forces in the Vietnam War, and with Iraqi forces in the Iran-Iraq War and the Gulf War. However, it was not used by communist forces in the Korean War. When paired with the SON-9 (Fire Can) radar, it was considered one of the more dangerous AAA systems faced by US aircraft in Vietnam.
 
 \paragraph{ZSU-57-2 Section.}
 
-The ZSU-57-2 has two 57~mm cannons in a lightly armored but open-topped turret on an armored and tracked hull. The cannons are similar to the S-60 cannons. The fire-control system is optical. A section has two vehicles.%
-\note{
+The ZSU-57-2 has two 57~mm cannons in a lightly armored but open-topped turret on an armored and tracked hull. The cannons are similar to the S-60 cannons. The fire-control system is optical. A section has two vehicles.\textnote
+{ZSU-57-2 Section}{
     For the ZSU-57-2 section: The AAA values are from \emph{Eagles of the Gulf}.
 }
 
@@ -1123,18 +1097,18 @@ The ZSU-57-2 entered service in the Soviet Army in 1955 and replaced the BTR-40A
 
 \paragraph{KS-12 Battery.}
 
-The KS-12 (M1939 52-K) and the very similar KS-12A (M1944 KS-1) have a single 85~mm gun in an open mount on a towed carriage. The fire-control system is optical, but the guns are often paired with the SON-9 (Fire Can) radar. A battery has six gun mounts.%
-\note{
-    For the KS-12 battery: The AAA values are from \emph{Air Strike} and \emph{The Speed of Heat}.
+The KS-12 (M1939 52-K) and the very similar KS-12A (M1944 KS-1) have a single 85~mm gun in an open mount on a towed carriage. The fire-control system is optical, but the guns are often paired with the SON-9 (Fire Can) radar. A battery has six gun mounts.\textnote
+{KS-12 Battery}{
+    The AAA values are from \emph{Air Strike} and \emph{The Speed of Heat}.
 }
 
 It entered service with Soviet forces in 1939. After WW2, it began to be replaced in Soviet service by the KS-19 100~mm and KS-30 130~mm guns, but was widely used by Soviet allies and saw combat with communist forces in the Korean War and the Vietnam War.
 
 \paragraph{KS-19 Battery.}
 
-The KS-19 has a single 100~mm gun in an open mount on a towed carriage. The fire-control system is optical, but like other contemporary Soviet guns, it was often paired with the SON-9 (Fire Can) radar. A battery has six gun mounts.%
-\note{
-    For the KS-19 battery: The AAA values are from \emph{Air Strike}.
+The KS-19 has a single 100~mm gun in an open mount on a towed carriage. The fire-control system is optical, but like other contemporary Soviet guns, it was often paired with the SON-9 (Fire Can) radar. A battery has six gun mounts.\textnote
+{KS-19 Battery}{
+    The AAA values are from \emph{Air Strike}.
 }
 
 It entered service in 1948 with Soviet forces as a replacement for the KS-12 85~mm gun. It also served with many Soviet allies and saw combat with communist forces in the Korean War and Vietnam War and Iraqi forces in the Iran-Iraq and Gulf Wars.
@@ -1285,18 +1259,18 @@ Most infantry SAMs do not have true proximity fuzes. Thus, proximity hits in the
 The 9K32 Strela-2 (SA-7A Grail) was the first Soviet portable SAM. It has a rear-aspect, uncooled IR seeker.
 
 The 9K32M Strela-2M (SA-7B Grail) is similar, but uses a rear-aspect, electrically-cooled IR seeker.
-In Warsaw Pact armies, the Strela-2M was sometimes used with the PRP portable RWR receiver that was capable of passively identifying enemy aircraft by their radar emissions.%
-\note{
-    For the SA-7A: The launcher and SAM values are from \emph{Air Strike} with significant modifications:
+In Warsaw Pact armies, the Strela-2M was sometimes used with the PRP portable RWR receiver that was capable of passively identifying enemy aircraft by their radar emissions.\textnote
+{SA-7A Squad}{
+    The launcher and SAM values are from \emph{Air Strike} with significant modifications:
     \begin{itemize}
         \item Zaloga gives an in-service date of 1968.
         \item \emph{Air Strike} gives this a seeker type of I, but that does seem appropriate for an uncooled PbS seeker. Instead, I use a seeker type of E, by analogy with the uncooled seeker in the AIM-9B, and works at about 2 microns.
         \item \emph{Air Strike} gives a turn rate of HT, but the control capability seems to be the same as in the SA-7B and SA-15. I will adopt BT.
         \item \emph{Air Strike} gives this a speed of 8. Zaloga gives a lifetime of 8 seconds and an average speed of 1550 km/h. This corresponds to a range of 5.2 km or about 10 hexes.
     \end{itemize}
-}%
-\note{
-    For the SA-7B: The launcher and SAM values are from \emph{Air Strike} with significant modifications:
+}\textnote
+{SA-7B Squad}{
+    The launcher and SAM values are from \emph{Air Strike} with significant modifications:
     \begin{itemize}
         \item \emph{Air Strike} gives this a seeker type of I. That seems about right. The seeker was PbS and cooled electrically, like the AIM-9E which also has a type I seeker.
         \item \emph{Air Strike} gives a turn rate of BT, which I adopt.
@@ -1312,9 +1286,9 @@ In particular, the Strela-2M was used heavily by North Vietnamese forces in the 
 
 The 9K34 Strela-3 (SA-14 Gremlin) is a development of the earlier Strela-2M.
 It has a rear-aspect, cryogen-cooled IR seeker.
-In Warsaw Pact armies, the Strela-3 was sometimes used with the PRP portable RWR receiver that was capable of passively identifying enemy aircraft by their radar emissions.%
-\note{
-    For the SA-14: The launcher and SAM values are from \emph{Air Strike} with significant modifications:
+In Warsaw Pact armies, the Strela-3 was sometimes used with the PRP portable RWR receiver that was capable of passively identifying enemy aircraft by their radar emissions.\textnote
+{SA-14 Squad}{
+    The launcher and SAM values are from \emph{Air Strike} with significant modifications:
     \begin{itemize}
         \item The seeker is cryogenically cooled at works at about 4 microns (Zaloga). \emph{Air Strike} gives this a type A seeker, but that does seem appropriate; the first type A seekers in Soviet AAMs did not appear until 1985 in the AA-8C. Also, type A seekers have all-aspect capability Zaloga says that the seeker has similar performance to the RIM-43C, but only limited all-aspect capability. A type M seeker seems to be more appropriate.
         \item \emph{Air Strike} gives a turn rate of ET, but the control capability seems to be the same as in the SA-7A and SA-7B. I will adopt BT.
@@ -1332,9 +1306,9 @@ In particular, it was used by Iraqi forces in the 1991 Gulf War.
 9K310 Igla-1 (SA-16 Gimlet) and 9K38 Igla (SA-18 Grouse) use very similar missiles and launchers, but the Igla-1 has a single-channel IR seeker similar to the SA-14, and the Igla uses a dual-channel IR seeker to reduce its susceptibility to flares.
 The warhead was similar to the SA-7/14, but also exploded any remaining rocket fuel.
 In the game, this is simulated by increasing the damage rating by one if the missile attacks before expending more than half of its FPs (round down).
-Both incorporate IFF interrogators, but these were only used in Warsaw Pact armies.%
-\note{
-    For the SA-16/18:  The launcher and SAM values are from Malcolm Pipes with significant modifications:
+Both incorporate IFF interrogators, but these were only used in Warsaw Pact armies.\textnote
+{SA-16/18 Squad}{
+    The launcher and SAM values are from Malcolm Pipes with significant modifications:
     \begin{itemize}
         \item The warhead of the SA-16/18 is 1.17 kg, identical to the 1.17 kg of the SA-7 and similar to the 1.1 kg of the SA-14. Only later Iglas had heavier warheads. Therefore, I have reduced the damage ratings to match the SA-7.
         \item Carl comments that the warhead explodes any remaining rocket fuel. I increase the damage rating by one if the target is reached in the first half of the FPs.
@@ -1351,9 +1325,9 @@ The Igla was used by Iraqi forces in the 1991 Gulf War, by the Peruvian Army in 
 \paragraph{FIM-43C Squad.}
 
 The FIM-43C Redeye Block III was the first US infantry SAM to reach production and enter service.
-It has a rear-aspect, cryogen-cooled IR seeker.%
-\note{
-    For the FIM-43: The launcher and SAM values are from \emph{Air Strike}.
+It has a rear-aspect, cryogen-cooled IR seeker.\textnote
+{FIM-43C Squad}{
+    The launcher and SAM values are from \emph{Air Strike}.
 }
 
 The FIM-43C entered service with the US Army in 1968 and subsequently was used by Australia, Chad, Denmark, West Germany, Greece, Israel, Jordan, Saudi Arabia, Somalia, Sudan, Sweden, and Turkey. It was also supplied by the CIA to the Afghan Mujahedeen and the Nicaraguan Contras.
@@ -1364,9 +1338,9 @@ The FIM-92A Stinger has an all-angle, second-generation, cryogen-cooled IR seeke
 Its warhead weight 3 kg and was significantly more lethal than in earlier missiles.
 The FIM-92B Stinger POST adds a UV seeker to distinguish flares from aircraft.
 The FIM-92C/D Stinger RMP have software updates to further improve the performance against flares.
-All have an IFF interrogator to help avoid fratricide.%
-\note{
-    For the FIM-92: The launcher and SAM values for the A model are from \emph{Air Strike}. Those for the B/C/D models are from Malcolm Pipes compendium.
+All have an IFF interrogator to help avoid fratricide.\textnote
+{FIM-92A/B/C/D Squad}{
+    The launcher and SAM values for the A model are from \emph{Air Strike}. Those for the B/C/D models are from Malcolm Pipes compendium.
     \begin{itemize}
         \item I have increased the flare susceptibility of the FIM-92A from 2 to 3. It did not seem to have significant protection.
         \item Wikipedia gives an effective range of 5 miles, which is equivalent to a speed of 15. I have left the speed at 14, as that is close enough.
@@ -1380,9 +1354,9 @@ The FIM-92A entered service with the US Army in 1981, the FIM-92B in 1986, the F
 \paragraph{Blowpipe Squad.}
 
 Blowpipe is an MCLOS optically-guided missile.
-While in theory this gave it an all-aspect capability, in practice guiding the missile to the target in combat proved to be very difficult.%
-\note{
-    For the Blowpipe: The launcher and SAM values are from \emph{Air Strike}.
+While in theory this gave it an all-aspect capability, in practice guiding the missile to the target in combat proved to be very difficult.\textnote
+{Blowpipe Squad}{
+    The launcher and SAM values are from \emph{Air Strike}.
 }
 
 Blowpipe entered service with the British Army and Royal Marines in 1975.
@@ -1393,9 +1367,9 @@ Finally, it was also used in the 1995 Cenepa War by Ecuador.
 
 \paragraph{Javelin/Starburst Squad.}
 
-Given the poor performance of Blowpipe in the 1982 South Atlantic War, Javelin was quickly developed as an upgraded version of Blowpipe with SACLOS guidance in place of MCLOS guidance. Starburst then replaced the radio-link with laser guidance. Javelin is also called “Javelin GL” and Starburst was originally called “Javelin S15”.%
-\note{
-    For the Javelin/Starburst: The launcher and SAM values for Javelin are from \emph{Air Strike}. The launcher and SAM values for Javelin are just those for Javelin but with the OG guidance replaced by LG guidance. I have seen mention of a Javelin LML; did anyone use it or was it just a prototype?
+Given the poor performance of Blowpipe in the 1982 South Atlantic War, Javelin was quickly developed as an upgraded version of Blowpipe with SACLOS guidance in place of MCLOS guidance. Starburst then replaced the radio-link with laser guidance. Javelin is also called “Javelin GL” and Starburst was originally called “Javelin S15”.\textnote
+{Javelin/Starburst Squad}{
+    The launcher and SAM values for Javelin are from \emph{Air Strike}. The launcher and SAM values for Javelin are just those for Javelin but with the OG guidance replaced by LG guidance. I have seen mention of a Javelin LML; did anyone use it or was it just a prototype?
 }
 
 Javelin replaced Blowpipe in the British Army and Royal Marines in 1984.
@@ -1407,9 +1381,9 @@ Starburst served with the British Army in the 1991 Gulf War, but was not used in
 
 \paragraph{Starstreak Squad.}
 
-Starstreak is a high-speed laser-guided missile. As the missile approaches the target, it launches three independent explosive darts. The darts have contact fuzes, but not proximity fuzes.%
-\note{
-    For the Starstreak: The launcher and SAM values are from Malcolm Pipes. The real darks do not have proximity fuzes, but the missile in the game can obtain a proximity hit. Perhaps a proximity hit here means a hit with only one die?
+Starstreak is a high-speed laser-guided missile. As the missile approaches the target, it launches three independent explosive darts. The darts have contact fuzes, but not proximity fuzes.\textnote
+{Starstreak Squad}{
+    The launcher and SAM values are from Malcolm Pipes. The real darks do not have proximity fuzes, but the missile in the game can obtain a proximity hit. Perhaps a proximity hit here means a hit with only one die?
 }
 
 Starstreak replaced Javelin in the British Army and Royal Marines in 2000 and is also used by the South African Army and the Armed Forces of Ukraine.
@@ -1417,9 +1391,9 @@ Starstreak served with the British Army in the 2003 Invasion of Iraq, but was no
 
 \paragraph{Starstreak LML Squad.}
 
-The Starstreak Light Multiple Launcher (LML) has three ready-to-fire Starstreak missiles on a pedestal mount with a single sighting unit. The launcher and its associated equipment are heavy and will normally be transported by a vehicle unit.%
-\note{
-    For the Starstreak LML: The SAM values are from Malcolm Pipes. I have guessed the launcher values are the same as for shoulder-launched version, just that the launcher has three ready missiles. I don't know if the launcher has reloads. Is the launcher really portable or does it have to be transported by a vehicle?
+The Starstreak Light Multiple Launcher (LML) has three ready-to-fire Starstreak missiles on a pedestal mount with a single sighting unit. The launcher and its associated equipment are heavy and will normally be transported by a vehicle unit.\textnote
+{Starstreak LML Squad}{
+    The SAM values are from Malcolm Pipes. I have guessed the launcher values are the same as for shoulder-launched version, just that the launcher has three ready missiles. I don't know if the launcher has reloads. Is the launcher really portable or does it have to be transported by a vehicle?
 }
 
 Starstreak LML entered service with the British Army and Royal Marines in 2000.
@@ -1427,17 +1401,17 @@ It is also used by Indonesia, Malaysia, and South Africa.
 
 \paragraph{Mistral Squad.}
 
-The Mistral is a French IR-homing missile on a pedestal mount. The missile has a considerably larger warhead than either the Stinger or Igla missiles, but this comes at a cost in portability. The launcher and its associated equipment are heavy and will normally be transported by a vehicle unit.%
-\note{
-    For the Mistral: The launcher and SAM values are from \emph{Air Strike}. Is the launcher really portable or does it have to be transported by a vehicle?
+The Mistral is a French IR-homing missile on a pedestal mount. The missile has a considerably larger warhead than either the Stinger or Igla missiles, but this comes at a cost in portability. The launcher and its associated equipment are heavy and will normally be transported by a vehicle unit.\textnote
+{Mistral Squad}{
+    The launcher and SAM values are from \emph{Air Strike}. Is the launcher really portable or does it have to be transported by a vehicle?
 }
 
 The Mistral entered service with the French Army in 1990. It was subsequently exported to many other countries.
 
 \paragraph{RBS 70 Squad.}
 
-The RBS 70 is a Swedish laser-guided missile on a pedestal mount. The launcher and its associated equipment are heavy and will normally be transported by a vehicle unit.%
-\note{
+The RBS 70 is a Swedish laser-guided missile on a pedestal mount. The launcher and its associated equipment are heavy and will normally be transported by a vehicle unit.\textnote
+{RBS 70 Squad}{
     For the RBS 70: The launcher and SAM values are from \emph{Air Strike}. Is the launcher really portable or does it have to be transported by a vehicle?
 }
 
@@ -1445,9 +1419,9 @@ The RBS 70 entered service with the Swedish Army in 1977. It was subsequently us
 
 \paragraph{Ayn-al-Saqr Squad.}
 
-The Ayn-al-Saqr (“Eye of the Hawk”) missile is a  licensed version of the 9M32M Strela-2m (SA-7B Grail) manufactured in Egypt. It equips one version of the Sinai 23 air-defense vehicle.%
-\note{
-    For the Ayn-al-Saqr missile: The launcher and SAM values are taken to be equal to those of the SA-7B.
+The Ayn-al-Saqr (“Eye of the Hawk”) missile is a  licensed version of the 9M32M Strela-2m (SA-7B Grail) manufactured in Egypt. It equips one version of the Sinai 23 air-defense vehicle.\textnote
+{Ayn-al-Saqr Squad}{
+    The launcher and SAM values are taken to be equal to those of the SA-7B.
 }
 
 It entered service with the Egyptian Army in 1984.
@@ -1677,12 +1651,14 @@ This appendix contains a number of example orders of battle and their correspond
 \begin{itemize}
     \item Table~\ref{table:ob-two-para}: 2 Para Battalion at the 1982 Battle of Goose Green. At this time, the battalion had attached half a battery of 105~mm Light Guns from Alma Battery of 29 Commando Regiment, RA, a section of Blowpipes from 43rd Air Defence Battery, RA, and a Recce Troop of 59 Independent Commando Squadron, RE.
 
-    \item Table~\ref{table:ob-twelth-infantry}: 12th Infantry Regiment at the 1982 Battle of Goose Green, with attachments from the 25th Infantry Regiment, 4th Airborne Artillery Regiment, 601st Anti-Aircraft Artillery Group.RA, and a Recce Troop of 59 Independent Commando Squadron, RE.
+    \item Table~\ref{table:ob-twelth-infantry}: 12th Infantry Regiment at the 1982 Battle of Goose Green, with attachments from the 25th Infantry Regiment, 4th Airborne Artillery Regiment, 601st Anti-Aircraft Artillery Group.
 
-    \item Table~\ref{table:ob-british-armored-regiment-1960}: An armored regiment (battalion) of the British Army from about 1960.%
-        \note{
-            This is from the document “Modern British TOEs” by Richard A. Rinaldi (2002).
+    \item Tables~\ref{table:ob-british-armored-regiment-early-1960s}, \ref{table:ob-british-apc-infantry-battalion-early-1960s}, \ref{table:ob-british-armored-regiment-early-1960s}, \ref{table:ob-british-infantry-battalion-early-1960s}, \ref{table:ob-british-field-artillery-regiment-early-1960s}, and \ref{table:ob-british-heavy-artillery-regiment-early-1960s}: An armored regiment, APC infantry battalion, infantry battalion, field artillery regiment, and heavy artillery regiment of the British Army from about 1960. In the British Army, regiments are battalion-sized units.\textnote
+        {British Army Units}{
+            The generic British Army formations from 1960 and 1985 are from the document “Modern British TOEs” by Richard A. Rinaldi (2002).
         }
+
+    \item Table~\ref{table:ob-british-armored-regiment-mid-1980s}: An armored regiment of the British Army from about 1985.
 \end{itemize}
 
 \begin{table*}[p]
@@ -1786,29 +1762,21 @@ This appendix contains a number of example orders of battle and their correspond
 \begin{table*}[p]
     \centering
     \caption{British Army Armored Regiment (Early 1960s)}
-    \label{table:ob-british-armored-regiment-early-1960}
+    \label{table:ob-british-armored-regiment-early-1960s}
     \small
     \begin{tabularx}{0.9\linewidth}{LLL}
         \toprule
         Element&Game Ground Unit&Notes\\
         \midrule
-        Regimental HQ
+        \binarymultiply{1}{Regimental HQ}
         &\binarymultiply{1}{armored HQ platoon}\\
 
-        Reconnaissance Squadron
-        &\binarymultiply{3}{light tank platoon}&Ferret/Saladin\\
+        \binarymultiply{1}{Reconnaissance Squadron}
+        &\binarymultiply{3}{light tank platoon}&\binarymultiply{15}{Ferret/Saladin}\\
 
-        A Tank Squadron
-        &\binarymultiply{3}{medium tank platoon}&Centurion\\
-        &\binarymultiply{1}{heavy tank platoon}&Conqueror\\
-
-        B Tank Squadron
-        &\binarymultiply{3}{medium tank platoon}&Centurion\\
-        &\binarymultiply{1}{heavy tank platoon}&Conqueror\\
-
-        C Tank Squadron
-        &\binarymultiply{3}{medium tank platoon}&Centurion\\
-        &\binarymultiply{1}{heavy tank platoon}&Conqueror\\
+        \binarymultiply{3}{Tank Squadrons} (A/B/C) each:
+        &\binarymultiply{3}{medium tank platoon}&\binarymultiply{14}{Centurion}\\
+        &\binarymultiply{1}{heavy tank platoon}&\binarymultiply{3}{Conqueror}\\
 
         \bottomrule
     \end{tabularx}
@@ -1817,29 +1785,19 @@ This appendix contains a number of example orders of battle and their correspond
 \begin{table*}[p]
     \centering
     \caption{British Army APC Infantry Battalion (Early 1960s)}
-    \label{table:ob-british-apc-infantry-battalion-early-1960}
+    \label{table:ob-british-apc-infantry-battalion-early-1960s}
     \small
     \begin{tabularx}{0.9\linewidth}{LLL}
         \toprule
         Element&Game Ground Unit&Notes\\
         \midrule
-        Battalion HQ
+        \binarymultiply{1}{Battalion HQ}
         &\binarymultiply{1}{armored HQ platoon}\\
 
-        A Company
+        \binarymultiply{3}{Infantry Companies} (A/B/C) each:
         &\binarymultiply{3}{infantry platoon}&\\
         &\binarymultiply{1}{infantry weapons platoon}&\\
-        &\binarymultiply{4}{light APC platoon}&Saracen/FV432\\
-
-        B Company
-        &\binarymultiply{3}{infantry platoon}&\\
-        &\binarymultiply{1}{infantry weapons platoon}&\\
-        &\binarymultiply{4}{light APC platoon}&Saracen/FV432\\
-
-        C Company
-        &\binarymultiply{3}{infantry platoon}&\\
-        &\binarymultiply{1}{infantry weapons platoon}&\\
-        &\binarymultiply{4}{light APC platoon}&Saracen/FV432\\
+        &\binarymultiply{4}{light APC platoon}&\binarymultiply{17}{Saracen/FV432}\\
 
         \bottomrule
     \end{tabularx}
@@ -1848,32 +1806,17 @@ This appendix contains a number of example orders of battle and their correspond
 \begin{table*}[p]
     \centering
     \caption{British Army Infantry Battalion (Early 1960s)}
-    \label{table:ob-british-apc-infantry-battalion-early-1960}
+    \label{table:ob-british-infantry-battalion-early-1960s}
     \small
     \begin{tabularx}{0.9\linewidth}{LLL}
         \toprule
         Element&Game Ground Unit&Notes\\
         \midrule
-        Battalion HQ
+        \binarymultiply{1}{Battalion HQ}
         &\binarymultiply{1}{infantry HQ platoon}\\
         &\binarymultiply{1}{truck platoon}&\\
 
-        A Company
-        &\binarymultiply{3}{infantry platoon}&\\
-        &\binarymultiply{1}{infantry weapons platoon}&\\
-        &\binarymultiply{4}{truck platoon}&\\
-
-        B Company
-        &\binarymultiply{3}{infantry platoon}&\\
-        &\binarymultiply{1}{infantry weapons platoon}&\\
-        &\binarymultiply{4}{truck platoon}&\\
-
-        C Company
-        &\binarymultiply{3}{infantry platoon}&\\
-        &\binarymultiply{1}{infantry weapons platoon}&\\
-        &\binarymultiply{4}{truck platoon}&\\
-
-        D Company
+        \binarymultiply{4}{Infantry Companies} (A/B/C/D) each:
         &\binarymultiply{3}{infantry platoon}&\\
         &\binarymultiply{1}{infantry weapons platoon}&\\
         &\binarymultiply{4}{truck platoon}&\\
@@ -1885,27 +1828,40 @@ This appendix contains a number of example orders of battle and their correspond
 \begin{table*}[p]
     \centering
     \caption{British Army Field Artillery Regiment (Early 1960s)}
-    \label{table:ob-british-apc-infantry-battalion-early-1960}
+    \label{table:ob-british-field-artillery-regiment-early-1960s}
     \small
     \begin{tabularx}{0.9\linewidth}{LLL}
         \toprule
         Element&Game Ground Unit&Notes\\
         \midrule
-        Regimental HQ
-        &\binarymultiply{1}{infantry HQ platoon}\\
+        \binarymultiply{1}{Regimental HQ}
+        &\binarymultiply{1}{mobile HQ platoon}\\
+
+        \binarymultiply{4}{Batteries} (A/B/C/D) each:
+        &\binarymultiply{1}{tracked artillery battery}&\binarymultiply{6}{Cardinal (M44)}\\
+
+        \bottomrule
+    \end{tabularx}
+\end{table*}
+
+\begin{table*}[p]
+    \centering
+    \caption{British Army Heavy Artillery Regiment (Early 1960s)}
+    \label{table:ob-british-heavy-artillery-regiment-early-1960s}
+    \small
+    \begin{tabularx}{0.9\linewidth}{LLL}
+        \toprule
+        Element&Game Ground Unit&Notes\\
+        \midrule
+        \binarymultiply{1}{Regimental HQ}
+        &\binarymultiply{1}{mobile HQ platoon}\\
+
+        \binarymultiply{2}{Batteries} (A/B) each:
+        &\binarymultiply{1}{mobile rocket section}&\binarymultiply{2}{Honest John}\\
+
+        \binarymultiply{2}{Batteries} (C/D) each:
+        &\binarymultiply{1}{towed artillery battery}&\binarymultiply{4}{8-inch Gun M1}\\
         &\binarymultiply{1}{truck platoon}&\\
-
-        A Battery
-        &\binarymultiply{1}{tracked artillery battery}&Cardinal (M44)\\
-
-        B Battery
-        &\binarymultiply{1}{tracked artillery battery}&Cardinal (M44)\\
-
-        C Battery
-        &\binarymultiply{1}{tracked artillery battery}&Cardinal (M44)\\
-
-        D Battery
-        &\binarymultiply{1}{tracked artillery battery}&Cardinal (M44)\\
 
         \bottomrule
     \end{tabularx}
@@ -1922,23 +1878,17 @@ This appendix contains a number of example orders of battle and their correspond
         \toprule
         Element&Game Ground Unit&Notes\\
         \midrule
-        Regimental HQ
+        \binarymultiply{1}{Regimental HQ}
         &\binarymultiply{1}{armored HQ platoon}\\
 
-        Reconnaissance Troop
-        &\binarymultiply{2}{light tank platoon}&Scorpion\\
+        \binarymultiply{1}{Reconnaissance Troop}
+        &\binarymultiply{2}{light tank platoon}&\binarymultiply{8}{Scorpion}\\
 
-        ATGW Troop
-        &\binarymultiply{3}{light anti-tank platoon}&FV438\\
+        \binarymultiply{1}{ATGW Troop}
+        &\binarymultiply{3}{light anti-tank platoon}&\binarymultiply{9}{FV438}\\
 
-        A Tank Squadron
-        &\binarymultiply{4}{heavy tank platoon}&Chieftain\\
-
-        B Tank Squadron
-        &\binarymultiply{4}{heavy tank platoon}&Chieftain\\
-
-        C Tank Squadron
-        &\binarymultiply{4}{heavy tank platoon}&Chieftain\\
+        \binarymultiply{3}{Tank Squadrons} (A/B/C) each:
+        &\binarymultiply{4}{heavy tank platoon}&\binarymultiply{14}{Chieftain}\\
 
         \bottomrule
     \end{tabularx}
