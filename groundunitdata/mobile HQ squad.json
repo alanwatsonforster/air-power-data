@@ -1,0 +1,9 @@
+{
+    "name": "mobile HQ",
+    "description": "armored HQ squad",
+    "symbols": "truck/headquarters/squad",
+    "defensestrength": "2",
+    "sightingrange": 12,
+    "mobility": "G/P",
+    "VP3D": 10
+}

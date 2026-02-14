@@ -1,0 +1,9 @@
+{
+    "name": "light reconnaissance",
+    "description": "light reconnaissance section",
+    "symbols": "armor/reconnaissance/light/section",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 6
+}

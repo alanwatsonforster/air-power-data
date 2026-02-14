@@ -1,0 +1,13 @@
+{
+    "name": "light reconnaissance",
+    "description": "light reconnaissance platoon",
+    "symbols": "armor/reconnaissance/light/platoon",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "aaa": {
+        "class": "B",
+        "maximumrelativealtitude": 3
+    },
+    "VP3D": 6
+}

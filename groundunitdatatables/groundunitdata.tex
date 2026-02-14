@@ -90,7 +90,7 @@ An infantry FAC squad has a specialized forward air controller with other soldie
 
 Infantry SAM and heavy SAM squads are equipped with shoulder-launched and pedestal-launched SAMs, respectively, with one launcher per squad. Their SAM capabilities and VP values are given in a subsequent section. An infantry SAM squad will often form a composite platoon with an infantry or infantry weapons platoon. If operating independently, it will often be transported by a light truck squad.
 
-\subsection{Tank and Anti-Tank Units}
+\subsection{Tank, Anti-Tank, and Reconnaissance Units}
 
 Tanks are armored vehicles that are specialized for direct fire with a gun.
 Here, the gun does not have to be mounted in a turret; tank destroyers with casemate guns such as the SU-100, Kanonenjagdpanzer, and Stridsvagn 103 are also considered to be tanks.
@@ -106,6 +106,10 @@ Conventional gun-armed anti-tank vehicles are considered to be tanks.\textnote{A
     Anti-tank units are mainly chrome.
     However, in ground combat, we might give them more effectiveness against vehicular or towed targets and less against infantry targets.
 }
+
+Reconnaissance vehicles are armored vehicles specialized in scounting and observation and with no significant offensive weapons.
+They are armed only with machine guns.
+Vehicles used for reconnaissance that do have significant offensive weapons (e.g, 20 mm or larger guns) are typically classified as light tanks.
 
 \paragraph{Heavy Tank Platoon}
 
@@ -183,11 +187,11 @@ These have light tanks such as those from Table~\ref{table:vehicle-types}.\textn
         \item The WRG 1950--1985 rules give class II and III (i.e., light) protection to the:
             AMX 10RC,
             AMX 13
-            Ferret,
             Fox,
             SpPz Luchs,
             M24,
             M41,
+            M114A2,
             M551
             Panhard AML,
             Panhard EBR,
@@ -238,6 +242,18 @@ These have light anti-tank vehicles such as those from Table~\ref{table:vehicle-
         \item VAB HOT: This is derived from the VAB APC (light).
         \item YP-408 PRAT: This is derived from the YPR-408 APC (light).
         \item YPR-765 PRAT: This is derived from the YPR-765 APC (light).
+    \end{itemize}
+}
+
+\paragraph{Light Reconnaissance Platoon}
+
+These have light reconnaissance vehicles such as those from Table~\ref{table:vehicle-types}.\textnote{Light  Reconnaissance Vehicles}{
+    Regarding the protection class:
+    \begin{itemize}
+        \item The WRG 1950--1985 rules give class II or III (i.e., light) protection to the:
+            BRDM-2,
+            Ferret,
+            M114.
     \end{itemize}
 }
 
@@ -308,7 +324,6 @@ These have light APCs such as those from Table~\ref{table:vehicle-types}.\textno
             FV432,
             LVTP-7,
             M113,
-            M115,
             M59,
             Saracen,
             Spartan,
@@ -540,10 +555,10 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \midrule
             \vehicle{AMX-10 RC}{France}{1981}\\
             \vehicle{AMX-13}{France}{1953}\\
-            \vehicle{Ferret}{UK}{1952}\\
             \vehicle{Fox}{UK}{1975}\\
             \vehicle{M24 Chaffee}{USA}{1944}\\
             \vehicle{M41 Walker Bulldog}{USA}{1953}\\
+            \vehicle{M114A2}{USA}{1969}\\
             \vehicle{M551 Sheridan}{USA}{1969}\\
             \vehicle{M1128 Stryker MGS}{USA/Canada}{2006}\\
             \vehicle{Panhard AML}{France}{1961}\\
@@ -573,8 +588,8 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \midrule
             \multicolumn{1}{c}{\bfseries Light Anti-Tank Vehicles}\\
             \midrule
-            \vehicle{BRDM-2}{Soviet Union}{1973}\\
-            \vehicle{BRDM-3}{Soviet Union}{1973}\\
+            \vehicle{BRDM-2 ATGM}{Soviet Union}{1973}\\
+            \vehicle{BRDM-3 ATGM}{Soviet Union}{1973}\\
             \vehicle{FV438 Swingfire}{UK}{1971}\\
             \vehicle{M150}{USA}{1973}\\
             \vehicle{M901 ITV}{USA}{1979}\\
@@ -584,6 +599,12 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \vehicle{YP-408 PRAT}{Netherlands}{1976}\\
             \vehicle{YPR-765 PRAT}{Netherlands}{1980}\\
 
+            \midrule
+            \multicolumn{1}{c}{\bfseries Light Reconnaissance Vehicles}\\
+            \midrule
+            \vehicle{BRDM-2}{Soviet Union}{1973}\\
+            \vehicle{Ferret}{UK}{1952}\\
+            \vehicle{M114}{USA}{1962}\\
             \bottomrule
 
         \end{tabular}
@@ -637,7 +658,6 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \vehicle{M59}{USA}{1954}\\
             \vehicle{M75}{USA}{1952}\\
             \vehicle{M113}{USA}{1960}\\
-            \vehicle{M114}{USA}{1962}\\
             \vehicle{OT-64 SKOT}{Czechoslovakia/Poland}{1963}\\
             \vehicle{OT-810 half-track}{Czechoslovakia}{1958}\\
             \vehicle{Saracen}{UK}{1952}\\
@@ -764,7 +784,6 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
     % TODO: SPz Puma
     % TODO: Boxer
     % TODO: Mowag Piranha
-    % TODO: M1131/2 Lynx
     % TODO: Type 77
 
 \end{table*}
@@ -2043,7 +2062,7 @@ This appendix contains a number of example orders of battle and their correspond
         &\binarymultiply{1}{armored HQ platoon}\\
 
         \binarymultiply{1}{Reconnaissance Squadron}
-        &\binarymultiply{3}{light tank platoon}&\binarymultiply{15}{Ferret/Saladin}\\
+        &\binarymultiply{3}{light reconnaissance/tank platoon}&\binarymultiply{15}{Ferret/Saladin}\\
 
         \binarymultiply{3}{Tank Squadrons} (A/B/C) each:
         &\binarymultiply{3}{medium tank platoon}&\binarymultiply{14}{Centurion}\\
