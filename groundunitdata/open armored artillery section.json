@@ -1,0 +1,12 @@
+{
+    "name": "open armored artillery",
+    "description": "open armored artillery section",
+    "symbols": "artillery/armor/open/section",
+    "defensestrength": "4O",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VPs": [
+        8,
+        4
+    ]
+}

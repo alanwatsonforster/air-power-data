@@ -1,0 +1,11 @@
+{
+    "name": "open armored artillery",
+    "description": "open armored artillery squad",
+    "symbols": "artillery/armor/open/squad",
+    "defensestrength": "4O",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VPs": [
+        4
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "light armored artillery",
+    "description": "light armored artillery section",
+    "symbols": "artillery/armor/light/section",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VPs": [
+        8,
+        4
+    ]
+}
