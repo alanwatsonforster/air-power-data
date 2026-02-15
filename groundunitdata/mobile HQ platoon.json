@@ -1,8 +1,8 @@
 {
     "name": "mobile HQ",
     "description": "armored HQ platoon",
-    "symbols": "truck/headquarters/platoon",
-    "defensestrength": "2",
+    "symbols": "truck/limitedwheeled/headquarters/platoon",
+    "defensestrength": "2S",
     "sightingrange": 12,
     "mobility": "G/P",
     "VP3D": 10

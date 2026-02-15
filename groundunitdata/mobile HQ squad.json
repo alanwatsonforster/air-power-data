@@ -1,8 +1,8 @@
 {
     "name": "mobile HQ",
     "description": "armored HQ squad",
-    "symbols": "truck/headquarters/squad",
-    "defensestrength": "2",
+    "symbols": "truck/limitedwheeled/headquarters/squad",
+    "defensestrength": "2S",
     "sightingrange": 12,
     "mobility": "G/P",
     "VP3D": 10
