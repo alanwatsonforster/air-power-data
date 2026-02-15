@@ -3,7 +3,7 @@
     "description": "towed mortar platoon",
     "symbols": "mortar/platoon",
     "sightingrange": 12,
-    "defensestrength": "4S",
+    "defensestrength": "3S",
     "mobility": "T",
     "VP3D": 7
 }

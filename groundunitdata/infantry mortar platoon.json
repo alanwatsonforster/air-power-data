@@ -2,7 +2,7 @@
     "name": "infantry weapons",
     "description": "infantry mortar platoon",
     "symbols": "infantry/mortar/platoon",
-    "defensestrength": "4S",
+    "defensestrength": "3S",
     "sightingrange": 6,
     "mobility": "U",
     "aaa": {

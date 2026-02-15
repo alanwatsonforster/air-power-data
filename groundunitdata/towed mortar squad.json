@@ -3,7 +3,7 @@
     "description": "towed mortar squad",
     "symbols": "mortar/squad",
     "sightingrange": 12,
-    "defensestrength": "4S",
+    "defensestrength": "3S",
     "mobility": "T",
     "VP3D": 7
 }

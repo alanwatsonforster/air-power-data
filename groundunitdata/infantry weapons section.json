@@ -2,7 +2,7 @@
     "name": "infantry weapons",
     "description": "infantry weapons section",
     "symbols": "infantry/weapons/section",
-    "defensestrength": "4S",
+    "defensestrength": "3S",
     "sightingrange": 6,
     "mobility": "U",
     "VP3D": 6
