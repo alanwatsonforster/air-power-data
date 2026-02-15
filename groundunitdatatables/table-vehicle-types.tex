@@ -1,0 +1,350 @@
+%!TEX root = groundunitdata.tex
+% LTeX: enabled=false
+
+\begin{table*}[p]
+
+    \newcommand\vehicle[3]{#1\hfill#2\hspace{\tabcolsep}\wbox{0000}{#3}}
+
+    \newcommand\vehiclecolumnA{
+        \begin{tabular}[t]{@{}p{0.24\linewidth}@{}}
+
+            \toprule
+            \multicolumn{1}{c}{\bfseries Heavy Tanks}\\
+            \midrule
+            \vehicle{Al-Khalid/VT-1A}{China/Pakistan}{2001}\\
+            \vehicle{Ariete}{Italy}{1995}\\
+            \vehicle{Arjun}{India}{2004}\\
+            \vehicle{Challenger 1}{UK}{1983}\\
+            \vehicle{Challenger 2}{UK}{1998}\\
+            \vehicle{Chieftain}{UK}{1967}\\
+            \vehicle{Conqueror}{UK}{1955}\\
+            \vehicle{IS-2}{Soviet Union}{1944}\\
+            \vehicle{IS-3}{Soviet Union}{1945}\\
+            \vehicle{K1}{South Korea}{1987}\\
+            \vehicle{Leclerc}{France}{1992}\\
+            \vehicle{Leopard 2}{West Germany}{1979}\\
+            \vehicle{M-84}{Yugoslavia}{1985}\\
+            \vehicle{M1 Abrams}{USA}{1980}\\
+            \vehicle{Merkava 1}{Israel}{1979}\\
+            \vehicle{Merkava 2}{Israel}{1983}\\
+            \vehicle{Merkava 3}{Israel}{1989}\\
+            \vehicle{Merkava 4}{Israel}{2004}\\
+            \vehicle{PT-91}{Poland}{1995}\\
+            \vehicle{Stridsvagn 103}{Sweden}{1967}\\
+            \vehicle{T-10}{Soviet Union}{1954}\\
+            \vehicle{T-64}{Soviet Union}{1966}\\
+            \vehicle{T-72}{Soviet Union}{1973}\\
+            \vehicle{T-80}{Soviet Union}{1976}\\
+            \vehicle{T-84}{Ukraine}{1999}\\
+            \vehicle{T-90}{Russia}{1992}\\
+            \vehicle{Type 90}{Japan}{1990}\\
+            \vehicle{Type 99}{China}{2001}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Medium Tanks}\\
+            \midrule
+            \vehicle{AMX-30}{France}{1966}\\
+            \vehicle{ASU-85}{Soviet Union}{1959}\\
+            \vehicle{Centurion}{UK}{1945}\\
+            \vehicle{ISU-122}{Soviet Union}{1944}\\
+            \vehicle{ISU-152}{Soviet Union}{1943}\\
+            \vehicle{Kanonen JPz}{West Germany}{1965}\\
+            \vehicle{Leopard 1}{West Germany}{1965}\\
+            \vehicle{M-50 Sherman}{Israel/France}{1956}\\
+            \vehicle{M-51 Sherman}{Israel/France}{1961}\\
+            \vehicle{M103}{USA}{1957}\\
+            \vehicle{M26 Pershing}{USA}{1944}\\
+            \vehicle{M4 Sherman}{USA}{1942}\\
+            \vehicle{M46 Patton}{USA}{1949}\\
+            \vehicle{M47 Patton}{USA}{1951}\\
+            \vehicle{M48 Patton}{USA}{1952}\\
+            \vehicle{M60}{USA}{1959}\\
+            \vehicle{Panzer 61}{Switzerland}{1965}\\
+            \vehicle{Panzer 68}{Switzerland}{1971}\\
+            \vehicle{SU-100}{Soviet Union}{1944}\\
+            \vehicle{T-34}{Soviet Union}{1940}\\
+            \vehicle{T-54}{Soviet Union}{1955}\\
+            \vehicle{T-55}{Soviet Union}{1958}\\
+            \vehicle{T-62}{Soviet Union}{1961}\\
+            \vehicle{TAM}{Argentina}{1983}\\
+            \vehicle{Type 59}{China}{1959}\\
+            \vehicle{Type 61}{Japan}{1961}\\
+            \vehicle{Type 69}{China}{1972}\\
+            \vehicle{Type 74}{Japan}{1975}\\
+            \vehicle{Type 79}{China}{1984}\\
+            \vehicle{Type 85}{China}{1988}\\
+            \vehicle{Type 88}{China}{1988}\\
+            \vehicle{Type 96}{China}{1997}\\
+            \vehicle{Type 15}{China}{2018}\\
+            \vehicle{Vickers MBT}{UK}{1965}\\
+            \vehicle{Vijayanta}{India/UK}{1965}\\
+
+            \bottomrule
+
+        \end{tabular}
+    }
+
+    \newcommand\vehiclecolumnB{
+        \begin{tabular}[t]{@{}p{0.24\linewidth}@{}}
+
+            \toprule
+            \multicolumn{1}{c}{\bfseries Light Tanks}\\
+            \midrule
+            \vehicle{AMX-10 RC}{France}{1981}\\
+            \vehicle{AMX-13}{France}{1953}\\
+            \vehicle{Fox}{UK}{1975}\\
+            \vehicle{LAV~I Cougar}{Canada}{1976}\\
+            \vehicle{LAV~II Coyote}{Canada}{1990}\\
+            \vehicle{M24 Chaffee}{USA}{1944}\\
+            \vehicle{M41 Walker Bulldog}{USA}{1953}\\
+            \vehicle{M113 C\&V with 25~mm}{USA}{1974}\\
+            \vehicle{M114A2}{USA}{1969}\\
+            \vehicle{M551 Sheridan}{USA}{1969}\\
+            \vehicle{M1128 Stryker MGS}{USA/Canada}{2006}\\
+            \vehicle{Panhard AML}{France}{1961}\\
+            \vehicle{Panhard EBR}{France}{1951}\\
+            \vehicle{PT-76}{Soviet Union}{1951}\\
+            \vehicle{Saladin}{UK}{1958}\\
+            \vehicle{Scimitar}{UK}{1974}\\
+            \vehicle{Scorpion}{UK}{1973}\\
+            \vehicle{SpPz Luchs}{West Germany}{1975}\\
+            \vehicle{Type 62}{China}{1961}\\
+            \vehicle{Type 63}{China}{1963}\\
+            \vehicle{Type 05 AAV}{China}{2005}\\
+            \vehicle{Type 08 ARV}{China}{2008}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Open Tanks}\\
+            \midrule
+            \vehicle{ASU-57}{Soviet Union}{1951}\\
+            \vehicle{SU-76}{Soviet Union}{1943}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Medium Anti-Tank Vehicles}\\
+            \midrule
+            \vehicle{Raketen JPz 1}{West Germany}{1961}\\
+            \vehicle{Raketen JPz 2}{West Germany}{1967}\\
+            \vehicle{Jaguar 1}{West Germany}{1978}\\
+            \vehicle{Jaguar 2}{West Germany}{1983}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Light Anti-Tank Vehicles}\\
+            \midrule
+            \vehicle{BRDM-2 ATGM}{Soviet Union}{1973}\\
+            \vehicle{BRDM-3 ATGM}{Soviet Union}{1973}\\
+            \vehicle{Fennek MRAT}{Germany/Netherlands}{2003}\\
+            \vehicle{FV438 Swingfire}{UK}{1971}\\
+            \vehicle{M150}{USA}{1973}\\
+            \vehicle{M901 ITV}{USA}{1979}\\
+            \vehicle{M1134 Stryker ATGM}{USA/Canada}{2003}\\
+            \vehicle{Striker}{UK}{1976}\\
+            \vehicle{VAB HOT}{France}{1978}\\
+            \vehicle{YP-408 PRAT}{Netherlands}{1976}\\
+            \vehicle{YPR-765 PRAT}{Netherlands}{1980}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Light Reconnaissance Vehicles}\\
+            \midrule
+            \vehicle{BRDM-2}{Soviet Union}{1973}\\
+            \vehicle{Fennek}{Germany/Netherlands}{2003}\\
+            \vehicle{Ferret}{UK}{1952}\\
+            \vehicle{M113 C\&V/Lynx}{USA}{1966}\\
+            \vehicle{M114}{USA}{1962}\\
+            \bottomrule
+
+        \end{tabular}
+    }
+
+    \newcommand\vehiclecolumnC{
+        \begin{tabular}[t]{@{}p{0.24\linewidth}@{}}
+
+            \toprule
+            \multicolumn{1}{c}{\bfseries Medium IFVs}\\
+            \midrule
+            \vehicle{BMP-3}{Soviet Union}{1987}\\
+            \vehicle{Boxer IFV}{Netherlands/Germany}{2011}\\
+            \vehicle{CV90}{Sweden}{1994}\\
+            \vehicle{LAV III (add-on-armor)}{Canada}{2009}\\
+            \vehicle{M2A2 (and later) Bradley}{USA}{1988}\\
+            \vehicle{M3A2 (and later) Bradley}{USA}{1988}\\
+            \vehicle{SPz Marder}{West Germany}{1971}\\
+            \vehicle{SPz Puma}{Germany}{2015}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Light IFVs}\\
+            \midrule
+            \vehicle{AIFV}{USA}{1979}\\
+            \vehicle{AMX-10P}{France}{1973}\\
+            \vehicle{BMP-1}{Soviet Union}{1966}\\
+            \vehicle{BMP-2}{Soviet Union}{1980}\\
+            \vehicle{FV432 RARDEN}{UK}{1975}\\
+            \vehicle{LAV III}{Canada}{1999}\\
+            \vehicle{LAV-25}{Canada}{1983}\\
+            \vehicle{M2 and M2A1 Bradley}{USA}{1981}\\
+            \vehicle{M3 and M3A1 Bradley}{USA}{1981}\\
+            \vehicle{M113A1 FSC}{Australia}{1972}\\
+            \vehicle{M1296 Stryker ICVD}{USA}{2018}\\
+            \vehicle{Piranha IFV}{Switzerland}{1974}\\
+            \vehicle{Pvb 302}{Sweden}{1966}\\
+            \vehicle{SPz Kurz}{France}{1959}\\
+            \vehicle{SPz Lang HS.30}{Switzerland}{1960}\\
+            \vehicle{Type 86}{China}{1992}\\
+            \vehicle{Type 92}{China}{1992}\\
+            \vehicle{Type 05 IFV}{China}{2005}\\
+            \vehicle{Type 08 IFV}{China}{2008}\\
+            \vehicle{VCBI}{France}{2008}\\
+            \vehicle{Warrior}{UK}{1987}\\
+            \vehicle{YPR-765}{Netherlands}{1977}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Medium APCs}\\
+            \midrule
+            \vehicle{Boxer APC}{Netherlands/Germany}{2011}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Light APCs}\\
+            \midrule
+            \vehicle{Bronco/Warthog}{Singapore}{2001}\\
+            \vehicle{BvS10/Viking}{Sweden}{2005}\\
+            \vehicle{BTR-50PK}{Soviet Union}{1958}\\
+            \vehicle{BTR-60PA/PAI/PB}{Soviet Union}{1965}\\
+            \vehicle{BTR-70}{Soviet Union}{1972}\\
+            \vehicle{BTR-80}{Soviet Union}{1986}\\
+            \vehicle{BTR-152K}{Soviet Union}{1959}\\
+            \vehicle{FV432}{UK}{1963}\\
+            \vehicle{LAV~I Grizzly}{Canada}{1976}\\
+            \vehicle{LAV~II Bison}{Canada}{1990}\\
+            \vehicle{LVTP-5}{USA}{1956}\\
+            \vehicle{LVTP-7 (AAV)}{USA}{1972}\\
+            \vehicle{M59}{USA}{1954}\\
+            \vehicle{M75}{USA}{1952}\\
+            \vehicle{M113}{USA}{1960}\\
+            \vehicle{M1126 Stryker ICV}{USA/Canada}{2002}\\
+            \vehicle{OT-64 SKOT}{Czechoslovakia/Poland}{1963}\\
+            \vehicle{OT-810 half-track}{Czechoslovakia}{1958}\\
+            \vehicle{Piranha APC}{Switzerland}{1974}\\
+            \vehicle{Saracen}{UK}{1952}\\
+            \vehicle{Saxon}{UK}{1983}\\
+            \vehicle{Spartan}{UK}{1978}\\
+            \vehicle{TPz Fuchs}{West Germany}{1979}\\
+            \vehicle{Type 63}{China}{1978}\\
+            \vehicle{Type 77}{China}{1978}\\
+            \vehicle{Type 89}{China}{1978}\\
+            \vehicle{Type 08 APC}{China}{2008}\\
+            \vehicle{VAB}{France}{1979}\\
+            \vehicle{YP-408}{Netherlands}{1964}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Open APCs}\\
+            \midrule
+            \vehicle{BTR-40}{Soviet Union}{1950}\\
+            \vehicle{BTR-152A}{Soviet Union}{1950}\\
+            \vehicle{BTR-50P}{Soviet Union}{1952}\\
+            \vehicle{BTR-60P}{Soviet Union}{1959}\\
+            \vehicle{M3 half-track}{USA}{1941}\\
+
+            \bottomrule
+
+        \end{tabular}
+    }
+
+    \newcommand\vehiclecolumnD{
+        \begin{tabular}[t]{@{}p{0.24\linewidth}@{}}
+
+            \toprule
+            \multicolumn{1}{c}{\bfseries Armored Mortar Carriers}\\
+            \midrule
+            %\vehicle{AMX-10P TMC-81}{France}{}\\
+            \vehicle{FV432 with 81 mm}{UK}{}\\
+            \vehicle{M106}{USA}{}\\
+            \vehicle{M125}{USA}{}\\
+            \vehicle{M1064}{USA}{}\\
+            \vehicle{M1129 Stryker MCV}{USA/Canada}{}\\
+            \vehicle{M1252 Stryker MCVV}{USA/Canada}{}\\
+            \vehicle{VTM 120}{France}{}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Armored Artillery}\\
+            \midrule
+            \vehicle{2S1 Gvozdika}{Soviet Union}{}\\
+            \vehicle{2S3 Akatsiya}{Soviet Union}{}\\
+            \vehicle{2S19 Msta-S}{Soviet Union}{}\\
+            \vehicle{Abbot}{UK}{}\\
+            \vehicle{AMX-30 AuF1}{France}{}\\
+            \vehicle{AS-90}{UK}{}\\
+            \vehicle{M109}{USA}{}\\
+            \vehicle{Panzerhaubitze 2000}{Germany}{}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Tracked Artillery}\\
+            \midrule
+            \vehicle{2S4 Tyulpan}{Soviet Union}{}\\
+            \vehicle{2S7 Pion}{Soviet Union}{}\\
+            \vehicle{M7 Priest}{USA}{}\\
+            \vehicle{M107}{USA}{}\\
+            \vehicle{M110}{USA}{}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Mobile Artillery}\\
+            \midrule
+            \vehicle{Archer}{Sweden}{}\\
+            \vehicle{CAESAR}{France}{}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Armored Rocket Artillery}\\
+            \midrule
+            \vehicle{M270 MLRS}{USA}{}\\
+            \vehicle{TOS-1}{Russia}{}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Mobile Rocket Artillery}\\
+            \midrule
+            \vehicle{BM-21 Grad}{Soviet Union}{}\\
+            \vehicle{BM-30 Smerch}{Soviet Union}{}\\
+            \vehicle{M142 HIMARS}{USA}{}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Tracked Missile Artillery}\\
+            \midrule
+            \vehicle{MGM-52 Lance}{USA}{}\\
+            \vehicle{Pluton}{France}{}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Mobile Missile Artillery}\\
+            \midrule
+            \vehicle{9K52 Luna-M (Frog)}{Soviet Union}{}\\
+            \vehicle{Corporal}{USA}{}\\
+            \vehicle{Sergeant}{USA}{}\\
+            \vehicle{M34/M50 Honest John}{USA}{}\\
+            \vehicle{M74 Redstone}{USA}{}\\
+            \vehicle{M790 Pershing 1a}{USA}{}\\
+            \vehicle{M1003 Pershing II}{USA}{}\\
+            \vehicle{OTR-21 Tochka (SS-21)}{Soviet Union}{}\\
+            \vehicle{RSD-10 Pioneer (SS-20)}{Soviet Union}{}\\
+
+            \midrule
+            \multicolumn{1}{c}{\bfseries Tracked Carrier}\\
+            \midrule
+            \vehicle{Bv~202}{Sweden}{1964}\\
+            \vehicle{Bv~206}{Sweden}{1980}\\
+            \vehicle{BvS10/Beowulf}{Sweden}{2024}\\
+            \vehicle{M548}{USA}{1960}\\
+            \vehicle{Sisu Nasu}{Finland}{1986}\\
+
+            \bottomrule
+
+        \end{tabular}
+    }
+
+    \caption{Vehicle Types}
+    \label{table:vehicle-types}
+    \centering
+    \scriptsize
+    \begin{tabular}{@{}llll@{}}
+        \vehiclecolumnA&
+        \vehiclecolumnB&
+        \vehiclecolumnC&
+        \vehiclecolumnD\\
+    \end{tabular}
+
+\end{table*}
