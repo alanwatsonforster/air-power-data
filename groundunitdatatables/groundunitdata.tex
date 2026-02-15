@@ -1,5 +1,6 @@
 %!LW recipe=latexmk (xelatex)
 %!TEX program = xelatex
+% LTeX: enabled=true
 
 \documentclass[10pt]{article}
 
@@ -134,7 +135,7 @@ medium,\textnote{Medium Tanks}{
         \item The WRG 1950--1985 rules give class IV to IIX (i.e., medium) protection to the:
             AMX-30,
             ASU-85,
-            Centuron,
+            Centurion,
             ISU-122,
             ISU-152,
             Kanonen JPz,
@@ -161,7 +162,7 @@ medium,\textnote{Medium Tanks}{
         \item Panzer 61: This is essentially an early version of the Panzer 68 (medium).
         \item Type 59/69/79: The Type 59 was Chinese version of the T-54A (medium). The Type 69 and 79 had improved equipment, some of which was derived from captured T-62s, but the same level of protection.
         \item Type 85/88/96: These have new hulls and turrets. It's not clear whether their level of protection is significantly improved over the Type 59/69/79.
-        \item Type 15: Wikipedia gives little information on the armor, but the weight is 36 tonnes (with the armor package), and that seems to corresponds more to a medium tank.
+        \item Type 15: Wikipedia gives little information on the armor, but the weight is 36 tonnes (with the armor package), and that seems to correspond more to a medium tank.
         \item Vickers MBT: This is similar to the  Vijayanta (medium).
     \end{itemize}
 }
@@ -272,7 +273,7 @@ IFVs can be medium\textnote{Medium IFVs}{
         \item The WRG 1950--1985 rules give class IV (i.e., medium) protection to the:
             Marder.
         \item BMP-3: Wikipedia says the BMP-3 has frontal protection from 30~mm rounds at 200~m.
-        \item Boxer: Wikpedia states that with the baseline armor it is protected against medium-caliber rounds. Additional armor is also available.
+        \item Boxer: Wikipedia states that with the baseline armor it is protected against medium-caliber rounds. Additional armor is also available.
         \item CV90: Wikipedia states that the CV90 has frontal protection against 30~mm APFSDS rounds. This is considerably more than typical light AFVs.
         \item LAV III (add-on-armor): Wikipedia says the basic version only has protection against small-arms rounds, but an additional armor kit developed in 2009 gives it protection against 30~mm rounds.
         \item M2A2/M2A3/M2A4: Wikipedia states their these M2A2 also has protection against 30 mm APDS rounds and RPGs. The M2A3 and M2A4 have visually similar armor.
@@ -300,9 +301,9 @@ or light.\textnote{Light IFVs}{
         \item M1295 Dragoon: This is derived from the Stryker (light).
         \item VCBI: Wikipedia says this only has protection against 14.5 mm rounds.
         \item Type 86: Wikipedia states this is reverse-engineered from the BMP-1.
-        \item Type 92: Wikpedia states that it is protected against small-arms rounds and the frontal armor can stop 12.7 mm rounds at 100 meters and 25 mm rounds at 1000 meters. This seems to correspond to light armor. The weight is also 21 tonnes, which is considerable less than most medium IFVs.
+        \item Type 92: Wikipedia states that it is protected against small-arms rounds and the frontal armor can stop 12.7 mm rounds at 100 meters and 25 mm rounds at 1000 meters. This seems to correspond to light armor. The weight is also 21 tonnes, which is considerable less than most medium IFVs.
         \item Type 05: Wikipedia states that it has protection against small-arms rounds and some protection against 12.7~mm rounds. This corresponds to light armor.
-        \item Type 08: Wikpedia states that it is protected against small-arms rounds and the frontal armor can stop 12.7 mm rounds at 200 meter. This corresponds to light armor.
+        \item Type 08: Wikipedia states that it is protected against small-arms rounds and the frontal armor can stop 12.7 mm rounds at 200 meter. This corresponds to light armor.
     \end{itemize}
 
     There are many variants of the Piranha, and the in-service date is a guess.
@@ -321,7 +322,7 @@ Examples are given in Table~\ref{table:vehicle-types}.
 APCs can be medium\textnote{Medium APCs}{
     Regarding the protection class:
     \begin{itemize}
-        \item Boxer: Wikpedia states that with the baseline armor it is protected against medium-caliber rounds. Additional armor is also available.
+        \item Boxer: Wikipedia states that with the baseline armor it is protected against medium-caliber rounds. Additional armor is also available.
     \end{itemize}
 }
 light,\textnote{Light APCs}{
@@ -351,11 +352,11 @@ light,\textnote{Light APCs}{
         \item OT-810: Wikipedia states the maximum armor is 14.5 mm.
         \item Piranha APC: Presumably similar protection to LAVs.
         \item M1126 Stryker: Wikipedia states it has some protection against 14.5 mm rounds from the front and all-round protection against small-arms fire.
-        \item Saxon: Wikpedia states that it is protected against small-arms rounds.
-        \item TPz Fuchs: Wikpedia states that it is protected against small-arms rounds.
-        \item Type 63: Wikpedia states that it is protected against small-arms rounds.
-        \item Type 77: Wikpedia states that it is based on the PT-76 (light), and its weight of 15-5 tonnes matches other light APCs.
-        \item Type 89: Wikpedia states that it is protected against small-arms rounds.
+        \item Saxon: Wikipedia states that it is protected against small-arms rounds.
+        \item TPz Fuchs: Wikipedia states that it is protected against small-arms rounds.
+        \item Type 63: Wikipedia states that it is protected against small-arms rounds.
+        \item Type 77: Wikipedia states that it is based on the PT-76 (light), and its weight of 15-5 tonnes matches other light APCs.
+        \item Type 89: Wikipedia states that it is protected against small-arms rounds.
         \item Type 08: Based on Type 08 IFV (light).
     \end{itemize}
 
@@ -458,38 +459,75 @@ armor.
 Examples are given in Table~\ref{table:vehicle-types}.
 
 \paragraph{Tracked Artillery Battery}
-These have guns or howitzers mounted on tracked vehicles that provide mobility, but do not provide protection from small arms or artillery shrapnel. \textnote{Tracked Artillery}{
+These have guns or howitzers mounted on tracked vehicles that provide mobility, but do not give at most limited protection from small arms or artillery shrapnel.\textnote{Tracked Artillery}{
     Regarding the protection class:
     \begin{itemize}
-        \item The WRG 1950--1985 rules give class I (i.e., open) protection to the AMX.155F3 (Mk F3), M107, M110. However, the only crew member protected by this seems to be the driver. The other crew members travel and operate the gun without protection.
+        \item The WRG 1950--1985 rules give class I (i.e., open) protection to the
+            AMX.155F3 (AMX-13 F3),
+            M107, and
+            M110.
+            However, the only crew member protected seems to be the driver. The other crew members travel and operate the gun without protection.
         \item Similar considerations apply to the: 2S4, 2S7 (although some of the crew travel under armor), M40, M41, and Mk F3. In all of these, the gun mount is open.
     \end{itemize}
 }
 Examples are given in Table~\ref{table:vehicle-types}.
 
 \paragraph{Mobile Artillery Battery}
-These have guns or howitzers mounted on wheeled vehicles that provide limited mobility, but do not provide protection from small arms or artillery shrapnel.
+These have howitzers mounted on wheeled vehicles that provide mobility, but give at most limited protection from small arms or artillery shrapnel.\textnote{Mobile Artillery}{
+    Regarding the protection class:
+    \begin{itemize}
+        \item CAESAR: Some models have lightly-armored cabins, but the truck as a whole does not seem to be protected.
+        \item Archer: The crew and engine compartments is protected against small-arms rounds, but the gun does not seem to be protected. Unlike the CAESAR, the gun is operated by the crew from the protected cabin. This is close to reaching the level of protection of light armored artillery.
+    \end{itemize}
+}
 Examples are given in Table~\ref{table:vehicle-types}.
 
-\paragraph{Towed Artillery Battery} These have guns or howitzers in unprotected, towed mounts.
+\paragraph{Towed Artillery Battery}
+These have guns or howitzers in unprotected, towed mounts.
 A truck platoon may transport a towed artillery battery.
 
 \paragraph{Armored Rocket Artillery Battery}
 These are rocket-armed equivalents of armored artillery batteries.
+Armored rocket artillery vehicles have light\textnote{Light Armored Artillery}{
+    Regarding the protection class:
+    \begin{itemize}
+        \item M270: I can find no definite information on the armor protection.
+        \item BM-1: According to Wikipedia, the T-72 hull was chosen to give adequate protection close to the front lines. However, it is not clear whether the rocket launcher has adequate protection.
+    \end{itemize}
+}
+armor.
 Examples are given in Table~\ref{table:vehicle-types}.
 
 \paragraph{Mobile Rocket Artillery Battery}
-These are rocket-armed equivalents of mobile artillery batteries.
+These are rocket-armed equivalents of mobile artillery batteries.\textnote{Mobile Rocket Artillery}{
+    Regarding the protection class:
+    \begin{itemize}
+        \item M142 HIMARS: The cabin has some protection, but the rest of the truck seems to be unprotected.
+        \item BM-30: The cabin appears to have some protection, but the rest of the truck seems to be unprotected.
+        \item Earlier Soviet vehicles appear to be completely unarmored.
+    \end{itemize}
+}
 Examples are given in Table~\ref{table:vehicle-types}.
 
 \paragraph{Tracked Missile Artillery Battery}
-These are missile-armed equivalents of tracked artillery batteries.
+These are missile-armed equivalents of tracked artillery batteries.\textnote{Mobile Rocket Artillery}{
+    Regarding the protection class:
+    \begin{itemize}
+        \item M752 Lance: This seems to be based on the unarmored M548.
+        \item AMX-30 Pluton: The vehicle is based on an AMX-30 hull and seems to be armored, but the missile is exposed.
+    \end{itemize}
+
+    Tracked missile artillery is mainly included to serve as a target.
+}
 Examples are given in Table~\ref{table:vehicle-types}.
 
 \paragraph{Mobile Missile Artillery Battery}
 These are missile-armed equivalents of mobile artillery batteries.
 Examples are given in Table~\ref{table:vehicle-types}.\textnote
 {Missile Artillery Batteries}{
+
+    Regarding the protection class, none of these have complete protection against small arms.
+
     Missile artillery is mainly included to serve as a target.
 }
 
