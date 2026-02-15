@@ -92,8 +92,7 @@ Infantry SAM and heavy SAM squads are equipped with shoulder-launched and pedest
 
 \subsection{Tank, Anti-Tank, and Reconnaissance Units}
 
-Tanks are armored vehicles that are specialized for direct fire with a gun.
-Here, the gun does not have to be mounted in a turret; tank destroyers with casemate guns such as the SU-100, Kanonenjagdpanzer, and Stridsvagn 103 are also considered to be tanks.
+\paragraph{Tank Platoon}
 
 \begin{figure}[t]
     \includegraphics[width=\linewidth]{photos/centurion.jpg}
@@ -101,19 +100,9 @@ Here, the gun does not have to be mounted in a turret; tank destroyers with case
     % https://commons.wikimedia.org/wiki/File:Nederlandse_leger_oefent_in_La_Courtine,_Frankrijk_oefening,_Bestanddeelnr_923-7334.jpg
 \end{figure}
 
-Anti-tank vehicles are armored vehicles equipped with anti-tank guided missiles.
-Conventional gun-armed tank destroyers are considered to be tanks.\textnote{Anti-Tank Units}{
-    Anti-tank units are mainly chrome.
-    However, in ground combat, we might give them more effectiveness against vehicular or towed targets and less against infantry targets.
-}
-
-Reconnaissance vehicles are armored vehicles specialized in scouting and observation and with no significant offensive weapons.
-They are armed only with machine guns.
-Vehicles used for reconnaissance that do have significant offensive weapons (e.g, 20 mm or larger guns) are typically classified as light tanks.
-
-\paragraph{Heavy Tank Platoon}
-
-These have heavy tanks such as those from Table~\ref{table:vehicle-types}.\textnote{Heavy Tanks}{
+Tanks are armored vehicles that are specialized for direct fire with a gun.
+Here, the gun does not have to be mounted in a turret; tank destroyers with casemate guns such as the SU-100, Kanonenjagdpanzer, and Stridsvagn 103 are also considered to be tanks.
+Tanks may be heavy,\textnote{Heavy Tanks}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class IX or X (i.e., heavy) protection to the:
@@ -139,10 +128,7 @@ These have heavy tanks such as those from Table~\ref{table:vehicle-types}.\textn
     \end{itemize}
     Post 2010 heavy tanks include: K2 (South Korea 2014) and T-14 Armata (2024).
 }
-
-\paragraph{Medium Tank Platoon}
-
-These have medium tanks such as those from Table~\ref{table:vehicle-types}.\textnote{Medium Tanks}{
+medium,\textnote{Medium Tanks}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class IV to IIX (i.e., medium) protection to the:
@@ -175,13 +161,11 @@ These have medium tanks such as those from Table~\ref{table:vehicle-types}.\text
         \item Panzer 61: This is essentially an early version of the Panzer 68 (medium).
         \item Type 59/69/79: The Type 59 was Chinese version of the T-54A (medium). The Type 69 and 79 had improved equipment, some of which was derived from captured T-62s, but the same level of protection.
         \item Type 85/88/96: These have new hulls and turrets. It's not clear whether their level of protection is significantly improved over the Type 59/69/79.
+        \item Type 15: Wikipedia gives little information on the armor, but the weight is 36 tonnes (with the armor package), and that seems to corresponds more to a medium tank.
         \item Vickers MBT: This is similar to the  Vijayanta (medium).
     \end{itemize}
 }
-
-\paragraph{Light Tank Platoon}
-
-These have light tanks such as those from Table~\ref{table:vehicle-types}.\textnote{Light Tanks}{
+light,\textnote{Light Tanks}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class II and III (i.e., light) protection to the:
@@ -203,12 +187,11 @@ These have light tanks such as those from Table~\ref{table:vehicle-types}.\textn
         \item M1128 Stryker MGS: With additional ceramic armor, this has protection against 14.5~mm but not heavier rounds, which I believe counts as III.
         \item Type 62: Wikipedia give the hull armor as being similar to the M41 (light).
         \item Type 63: Wikipedia give the hull armor as being only 10 mm.
+        \item Type 05: Based on Type 05 IFV (light).
+        \item Type 08: Based on Type 08 IFV (light).
     \end{itemize}
-}
-
-\paragraph{Open Tank Platoon}
-
-These have open tanks such as those from Table~\ref{table:vehicle-types}.\textnote{Open Tanks}{
+},
+or open.\textnote{Open Tanks}{
     These are uncommon, but we need an open target class for M3 half-track APCs, so it is easy to apply it here too.
     Regarding the protection class:
     \begin{itemize}
@@ -217,10 +200,16 @@ These have open tanks such as those from Table~\ref{table:vehicle-types}.\textno
             SU-76.
     \end{itemize}
 }
+Examples are given in Table~\ref{table:vehicle-types}.
 
-\paragraph{Medium Anti-Tank Platoon}
+\paragraph{Anti-Tank Platoon}
 
-These have medium anti-tank vehicles such as those from Table~\ref{table:vehicle-types}.\textnote{Medium  Anti-Tank Vehicles}{
+Anti-tank vehicles are armored vehicles equipped with anti-tank guided missiles.
+Conventional gun-armed tank destroyers are considered to be tanks.\textnote{Anti-Tank Units}{
+    Anti-tank units are mainly chrome.
+    However, in ground combat, we might give them more effectiveness against vehicular or towed targets and less against infantry targets.
+}
+Anti-tank vehicles may be medium\textnote{Medium  Anti-Tank Vehicles}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class IV (i.e., medium) protection to the:
@@ -228,10 +217,7 @@ These have medium anti-tank vehicles such as those from Table~\ref{table:vehicle
         \item Jaguar: This is Raketen JPz upgraded with HOT missiles.
     \end{itemize}
 }
-
-\paragraph{Light Anti-Tank Platoon}
-
-These have light anti-tank vehicles such as those from Table~\ref{table:vehicle-types}.\textnote{Light  Anti-Tank Vehicles}{
+or light.\textnote{Light  Anti-Tank Vehicles}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class II or III (i.e., light) protection to the:
@@ -246,10 +232,14 @@ These have light anti-tank vehicles such as those from Table~\ref{table:vehicle-
         \item YPR-765 PRAT: This is derived from the YPR-765 APC (light).
     \end{itemize}
 }
+Examples are given in Table~\ref{table:vehicle-types}.
 
-\paragraph{Light Reconnaissance Platoon}
+\paragraph{Reconnaissance Platoon}
 
-These have light reconnaissance vehicles such as those from Table~\ref{table:vehicle-types}.\textnote{Light  Reconnaissance Vehicles}{
+Reconnaissance vehicles are specialized in scouting and observation and with no significant offensive weapons.
+They are armed only with machine guns.
+Vehicles used for reconnaissance that do have significant offensive weapons (e.g, 20 mm or larger guns) are typically classified as light tanks.
+Reconnaissance vehicles are always light.\textnote{Light  Reconnaissance Vehicles}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class II or III (i.e., light) protection to the:
@@ -261,6 +251,7 @@ These have light reconnaissance vehicles such as those from Table~\ref{table:veh
         \item Fennek: Wikipedia states that it is protected against small-arms rounds.
     \end{itemize}
 }
+Examples are given in Table~\ref{table:vehicle-types}.
 
 \subsection{IFV and APC Units}
 
@@ -273,9 +264,9 @@ Some IFVs are also designed to allow their attached infantry to fight while moun
 }
 A mechanized infantry platoon will normally be transported by a platoon of APCs or IFVs.
 
-\paragraph{Medium IFV Platoon}
+\paragraph{IFV Platoon}
 
-These have medium IFVs such as those from Table~\ref{table:vehicle-types}.\textnote{Medium IFVs}{
+IFVs can be medium\textnote{Medium IFVs}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class IV (i.e., medium) protection to the:
@@ -288,10 +279,7 @@ These have medium IFVs such as those from Table~\ref{table:vehicle-types}.\textn
         \item Puma: Wikipedia says the frontal arc has protection against medium-caliber rounds and shaped-charge projectiles. With additional armor, the sides gain similar protection.
     \end{itemize}
 }
-
-\paragraph{Light IFV Platoon}
-
-These have light IFVs such as those from Table~\ref{table:vehicle-types}.\textnote{Light IFVs}{
+or light.\textnote{Light IFVs}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class II or III (i.e., light) protection to the:
@@ -311,10 +299,15 @@ These have light IFVs such as those from Table~\ref{table:vehicle-types}.\textno
         \item Piranha IFV: Presumably similar protection to LAVs.
         \item M1295 Dragoon: This is derived from the Stryker (light).
         \item VCBI: Wikipedia says this only has protection against 14.5 mm rounds.
+        \item Type 86: Wikipedia states this is reverse-engineered from the BMP-1.
+        \item Type 92: Wikpedia states that it is protected against small-arms rounds and the frontal armor can stop 12.7 mm rounds at 100 meters and 25 mm rounds at 1000 meters. This seems to correspond to light armor. The weight is also 21 tonnes, which is considerable less than most medium IFVs.
+        \item Type 05: Wikipedia states that it has protection against small-arms rounds and some protection against 12.7~mm rounds. This corresponds to light armor.
+        \item Type 08: Wikpedia states that it is protected against small-arms rounds and the frontal armor can stop 12.7 mm rounds at 200 meter. This corresponds to light armor.
     \end{itemize}
 
     There are many variants of the Piranha, and the in-service date is a guess.
 }
+Examples are given in Table~\ref{table:vehicle-types}.
 
 %Heavy APCs: converted heavy tanks.
 %\textnote{Heavy and Medium APCs}{
@@ -323,17 +316,15 @@ These have light IFVs such as those from Table~\ref{table:vehicle-types}.\textno
 
 % Medium APCs: converted medium tanks.
 
-\paragraph{Medium APC Platoon}
+\paragraph{APC Platoon}
 
-These have medium APCs such as those from Table~\ref{table:vehicle-types}.\textnote{Medium APCs}{
+APCs can be medium\textnote{Medium APCs}{
     Regarding the protection class:
     \begin{itemize}
         \item Boxer: Wikpedia states that with the baseline armor it is protected against medium-caliber rounds. Additional armor is also available.
     \end{itemize}
 }
-\paragraph{Light APC Platoon}
-
-These have light APCs such as those from Table~\ref{table:vehicle-types}.\textnote{Light APCs}{
+light,\textnote{Light APCs}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class II or III (i.e., light) protection to the:
@@ -362,14 +353,15 @@ These have light APCs such as those from Table~\ref{table:vehicle-types}.\textno
         \item M1126 Stryker: Wikipedia states it has some protection against 14.5 mm rounds from the front and all-round protection against small-arms fire.
         \item Saxon: Wikpedia states that it is protected against small-arms rounds.
         \item TPz Fuchs: Wikpedia states that it is protected against small-arms rounds.
+        \item Type 63: Wikpedia states that it is protected against small-arms rounds.
+        \item Type 77: Wikpedia states that it is based on the PT-76 (light), and its weight of 15-5 tonnes matches other light APCs.
+        \item Type 89: Wikpedia states that it is protected against small-arms rounds.
+        \item Type 08: Based on Type 08 IFV (light).
     \end{itemize}
 
     There are many variants of the Piranha, and the in-service date is a guess.
 }
-
-\paragraph{Open APC Platoon}
-
-These are platoons with open APCs from Table~\ref{table:vehicle-types}.\textnote{Open IFVs}{
+or open.\textnote{Open IFVs}{
     Regarding the protection class:
     \begin{itemize}
         \item The WRG 1950--1985 rules give class I (i.e., open) protection to the:
@@ -380,11 +372,11 @@ These are platoons with open APCs from Table~\ref{table:vehicle-types}.\textnote
             Half-tracks (M3).
     \end{itemize}
 }
+Examples are given in Table~\ref{table:vehicle-types}.
 
 \subsection{Armored Car and Half-Track Units}
 
 Armored cars and armored half-tracks are considered to be light tanks, light anti-tank vehicles, light reconnaissance vehicles, light IFVs, or light or open APCs according to their role and armament.
-
 For example, the AMX-10 RC is considered to be a light tank, the BRDM-2 ATGM variants are considered to be light anti-tank vehicles, the Ferret is considered to be a light reconnaissance vehicle, the LAV-25 is considered to be a light IFV, and the BTR-60 is considered to be a light APC.
 
 \subsection{HQ Units}
@@ -408,7 +400,7 @@ It is equipped with trucks, and its personnel are not specialized in fighting as
 
 \paragraph{Armored HQ Platoon}
 
-An armored HQ platoon is the HQ unit of a tank, mechanized infantry, or armored artillery battalion or regiment. It is typicallu equipped with modified APCs such as the AIFV-B-CP, BMP-1K, BMT-2K, BTR-60P/PA/PB/PBK, FV105 Sultan, M577, M1068, M1130, YP-408 PWCO, and YPR-765 PRCO-C.
+An armored HQ platoon is the HQ unit of a tank, mechanized infantry, or armored artillery battalion or regiment. It is typically equipped with modified APCs or IFVs.
 
 \subsection{Artillery Units}
 
@@ -564,6 +556,7 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \vehicle{Type 85}{China}{1988}\\
             \vehicle{Type 88}{China}{1988}\\
             \vehicle{Type 96}{China}{1997}\\
+            \vehicle{Type 15}{China}{2018}\\
             \vehicle{Vickers MBT}{UK}{1965}\\
             \vehicle{Vijayanta}{India/UK}{1965}\\
 
@@ -598,6 +591,8 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \vehicle{SpPz Luchs}{West Germany}{1975}\\
             \vehicle{Type 62}{China}{1961}\\
             \vehicle{Type 63}{China}{1963}\\
+            \vehicle{Type 05 AAV}{China}{2005}\\
+            \vehicle{Type 08 ARV}{China}{2008}\\
 
             \midrule
             \multicolumn{1}{c}{\bfseries Open Tanks}\\
@@ -674,6 +669,10 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \vehicle{Pvb 302}{Sweden}{1966}\\
             \vehicle{SPz Kurz}{France}{1959}\\
             \vehicle{SPz Lang HS.30}{Switzerland}{1960}\\
+            \vehicle{Type 86}{China}{1992}\\
+            \vehicle{Type 92}{China}{1992}\\
+            \vehicle{Type 05 IFV}{China}{2005}\\
+            \vehicle{Type 08 IFV}{China}{2008}\\
             \vehicle{VCBI}{France}{2008}\\
             \vehicle{Warrior}{UK}{1987}\\
             \vehicle{YPR-765}{Netherlands}{1977}\\
@@ -708,7 +707,11 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \vehicle{Saracen}{UK}{1952}\\
             \vehicle{Saxon}{UK}{1983}\\
             \vehicle{Spartan}{UK}{1978}\\
-            \vehicle{TPz Fuchs}{West Germany}1979{}
+            \vehicle{TPz Fuchs}{West Germany}{1979}\\
+            \vehicle{Type 63}{China}{1978}\\
+            \vehicle{Type 77}{China}{1978}\\
+            \vehicle{Type 89}{China}{1978}\\
+            \vehicle{Type 08 APC}{China}{2008}\\
             \vehicle{VAB}{France}{1979}\\
             \vehicle{YP-408}{Netherlands}{1964}\\
 
@@ -720,15 +723,6 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \vehicle{BTR-50P}{Soviet Union}{1952}\\
             \vehicle{BTR-60P}{Soviet Union}{1959}\\
             \vehicle{M3 half-track}{USA}{1941}\\
-
-            \midrule
-            \multicolumn{1}{c}{\bfseries Tracked Carrier}\\
-            \midrule
-            \vehicle{Bv~202}{Sweden}{1964}\\
-            \vehicle{Bv~206}{Sweden}{1980}\\
-            \vehicle{BvS10/Beowulf}{Sweden}{2024}\\
-            \vehicle{M548}{USA}{1960}\\
-            \vehicle{Sisu Nasu}{Finland}{1986}\\
 
             \bottomrule
 
@@ -809,6 +803,15 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
             \vehicle{OTR-21 Tochka (SS-21)}{Soviet Union}{}\\
             \vehicle{RSD-10 Pioneer (SS-20)}{Soviet Union}{}\\
 
+            \midrule
+            \multicolumn{1}{c}{\bfseries Tracked Carrier}\\
+            \midrule
+            \vehicle{Bv~202}{Sweden}{1964}\\
+            \vehicle{Bv~206}{Sweden}{1980}\\
+            \vehicle{BvS10/Beowulf}{Sweden}{2024}\\
+            \vehicle{M548}{USA}{1960}\\
+            \vehicle{Sisu Nasu}{Finland}{1986}\\
+
             \bottomrule
 
         \end{tabular}
@@ -824,8 +827,6 @@ These are platoons with tracked carrier vehicles from Table~\ref{table:vehicle-t
         \vehiclecolumnC&
         \vehiclecolumnD\\
     \end{tabular}
-
-    % TODO: Type 77
 
 \end{table*}
 
