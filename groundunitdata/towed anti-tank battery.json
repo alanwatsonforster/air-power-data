@@ -1,0 +1,13 @@
+{
+    "name": "towed anti-tank",
+    "description": "towed anti-tank battery",
+    "symbols": "gun/battery",
+    "sightingrange": 12,
+    "defensestrength": "4S",
+    "mobility": "T",
+    "VPs": [
+        8,
+        5,
+        3
+    ]
+}
