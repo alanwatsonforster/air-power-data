@@ -1,0 +1,9 @@
+{
+    "name": "open reconnaissance",
+    "description": "open reconnaissance squad",
+    "symbols": "armor/reconnaissance/open/squad",
+    "defensestrength": "4O",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 5
+}

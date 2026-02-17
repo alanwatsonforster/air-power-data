@@ -1,0 +1,9 @@
+{
+    "name": "open reconnaissance",
+    "description": "open reconnaissance section",
+    "symbols": "armor/reconnaissance/open/section",
+    "defensestrength": "4O",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 5
+}
