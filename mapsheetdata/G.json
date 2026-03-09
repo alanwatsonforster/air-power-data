@@ -5,8 +5,8 @@
         12.5
     ],
     "base": "land",
-    "seahexes": [],
-    "level0hexes": [],
+    "seahexes": [ ],
+    "level0hexes": [ ],
     "level1hexes": [
         "0121",
         "0122",
@@ -28,20 +28,21 @@
         "0523",
         "0623"
     ],
-    "level2hexes": [],
-    "level0ridgepaths": [],
-    "level1ridgepaths": [],
-    "level2ridgepaths": [],
+    "level2hexes": [ ],
+    "level0ridgepaths": [ ],
+    "level1ridgepaths": [ ],
+    "level2ridgepaths": [ ],
     "foresthexes": [
         "0123",
         "0124",
         "0218",
         "0222",
         "0223",
+        "0313",
         "0319",
         "0320",
         "0321",
-        "0313",
+        "0323",
         "0408",
         "0411",
         "0419",
@@ -96,13 +97,13 @@
         "1503",
         "1525"
     ],
-    "town2hexes": [],
+    "town2hexes": [ ],
     "town3hexes": [
         "0909",
         "0910",
         "1009"
     ],
-    "town4hexes": [],
+    "town4hexes": [ ],
     "town5hexes": [
         "0412",
         "0413",
@@ -344,13 +345,13 @@
             ]
         ]
     ],
-    "wideriverpaths": [],
-    "seapaths": [],
-    "wideseapaths": [],
-    "clearingpaths": [],
-    "level0trailpaths": [],
-    "level1trailpaths": [],
-    "level2trailpaths": [],
+    "wideriverpaths": [ ],
+    "seapaths": [ ],
+    "wideseapaths": [ ],
+    "clearingpaths": [ ],
+    "level0trailpaths": [ ],
+    "level1trailpaths": [ ],
+    "level2trailpaths": [ ],
     "roadpaths": [
         [
             [
@@ -765,7 +766,7 @@
             ]
         ]
     ],
-    "dockpaths": [],
+    "dockpaths": [ ],
     "smallbridgepaths": [
         [
             [
@@ -832,7 +833,7 @@
             ]
         ]
     ],
-    "taxiwaypaths": [],
-    "dampaths": [],
-    "tunnelpaths": []
+    "taxiwaypaths": [ ],
+    "dampaths": [ ],
+    "tunnelpaths": [ ]
 }
