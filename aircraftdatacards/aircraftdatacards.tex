@@ -5,25 +5,19 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\makeatletter
-
-\let\@section\section
+\let\originalsection\section
 
 \renewcommand{\section}[1]{%
     \twocolumn[
-        \@section{#1}
+        \originalsection{#1}
         \label{type:#1}
-        \vspace{2ex}
+        %\vspace{2ex}
     ]
 }
-
-\makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Table of Contents
-
-\usepackage[bookmarks,bookmarksdepth=2,hypertexnames=false]{hyperref}
 
 \newcommand{\adclabel}[1]{\label{adc:#1}}
 \newcommand{\adcref}[1]{\hyperref[adc:#1]{#1}}
@@ -58,7 +52,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{graphicx}
 \graphicspath{{../aircraftdata/}}
 
 \usepackage{calc}
@@ -99,17 +92,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{booktabs}
-\usepackage{tabularx}
 \setlength{\tabcolsep}{0.3em}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{enumitem}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{graphicx} % For \resizebox
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -119,20 +104,6 @@
 \newcommand\spacebelow{\rule[-1.0ex]{0pt}{0pt}}   % = `bottom' strut
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Use slightly less tight line spacing by default.
-\usepackage{setspace}
-\setstretch{1.05}
-
-\usepackage{tabularx}
-
-\newcolumntype{P}{X}%
-\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
-\newcolumntype{C}{>{\centering\arraybackslash}X}%
-\newcolumntype{q}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
-
-\usepackage{multirow}
 
 \setlength{\extrarowheight}{2pt}
 

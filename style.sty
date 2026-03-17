@@ -9,27 +9,8 @@
     lmargin=1.5cm,
     rmargin=1.5cm,
     tmargin=1.5cm,
-    bmargin=2.4cm
+    bmargin=1.5cm
 ]{geometry}
-
-% This is what was originally used for the ADCs document.
-
-% \usepackage[
-%     paper=letterpaper,
-%     lmargin=1.5cm,
-%     rmargin=1.5cm,
-%     tmargin=1.5cm,
-%     bmargin=2.4cm
-% ]{geometry}
-
-% This is what was originally used for the ground units document.
-
-% \usepackage[
-%     paper=letterpaper,
-%     nofoot,nomarginpar,
-%     includehead,
-%     margin=1cm
-% ]{geometry}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -43,9 +24,15 @@
 
 % Basic spacing.
 
+% Improved spacing and breaking.
+\usepackage{microtype}
+
+% Two-column text really needs relaxed line breaking.
 \sloppy
 
-\setlength{\columnsep}{2em}
+% Use slightly less tight line spacing by default.
+\usepackage{setspace}
+\setstretch{1.05}
 
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0.7ex plus 0.2ex}
@@ -53,6 +40,23 @@
 
 \usepackage{multicol}
 \setlength{\multicolsep}{0ex}
+\setlength{\columnsep}{2em}
+\setlength{\columnseprule}{0pt}
+
+% Line weights
+
+\setlength{\arrayrulewidth}{0.4pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Title page
+
+\let\originaltitle\title
+\renewcommand{\title}[1]{\originaltitle{\bfseries\huge{#1}}}
+\let\originalauthor\author
+\renewcommand{\author}[1]{\originalauthor{\parbox{0.5\linewidth}{\centering\large #1}}}
+\let\originaldate\date
+\renewcommand{\date}[1]{\originaldate{\large #1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -61,14 +65,20 @@
 \setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{1}
 
+\newlength{\interwordspace}
+\setlength{\interwordspace}{\fontdimen2\font plus \fontdimen3\font
+minus \fontdimen4\font}
+
 \makeatletter
+
+% The vertical spaces are multiples of \parskip
 
 \renewcommand
 \section{%
     \@startsection{section}{1}%
     {0pt}%
-    {-1.5ex \@plus -1.0ex \@minus -0.2ex}%
-    {2.0ex \@plus 0.2ex}%
+    {-2.1ex plus -0.6ex minus -0.3ex}%
+    {2.1ex plus 0.6ex minus 0.3ex}%
     {\normalfont\Large\bfseries\raggedright}%
 }
 
@@ -76,8 +86,8 @@
 \subsection{%
     \@startsection{subsection}{2}%
     {0pt}%
-    {-1.5ex \@plus -1.0ex \@minus -0.2ex}%
-    {1.0ex \@plus 0.2ex}%
+    {-1.4ex plus -0.4ex minus -0.2ex}%
+    {1.4ex plus 0.4ex minus-0.2ex}%
     {\normalfont\large\bfseries\raggedright}%
 }
 
@@ -85,15 +95,15 @@
 \subsubsection{%
     \@startsection{subsubsection}{3}%
     {0pt}%
-    {-\parskip}%
-    {\parskip}%
+    {-0.7ex plus -0.2ex minus -0.1ex}%
+    {1.4ex plus 0.4ex minus-0.2ex}%
     {\normalfont\bfseries\raggedright}%
 }
 
 \renewcommand\paragraph{%
     \@startsection{paragraph}{4}%
     {0pt}%
-    {-\parskip}%
+    {-0.7ex plus -0.2ex minus -0.1ex}%
     {-\interwordspace}%
     {\normalfont\normalsize\bfseries\addperiod}%
 }
@@ -101,6 +111,34 @@
 \newcommand{\addperiod}[1]{#1.}
 
 \makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Lists
+
+\usepackage{enumitem}
+
+\setlist[itemize]{
+    align=left,
+    labelwidth=1.2em,
+    labelsep=0.3em,
+    leftmargin=1.5em,
+    nosep,
+    parsep=\parskip,
+    label=--,
+}
+\setlist[enumerate]{
+    align=left,
+    leftmargin=1.5em,
+    labelwidth=1.2em,
+    labelsep=0.3em,
+    parsep=\parskip,
+}
+\setlist[enumerate,2]{
+    label=\alph*.
+}
+
+\newcommand{\itemparagraph}[1]{{\bfseries #1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -171,7 +209,61 @@
 \newcommand{\twothirds}{2/3}
 \newcommand{\threequarters}{1/4}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Special characters
+
 \renewcommand{\deg}{\ensuremath{^\circ}}
+
+% These are the corresponding Unicode characters.
+\newcommand{\textplus}{+}
+\renewcommand{\textminus}{−}
+\newcommand{\textdegrees}{°}
+\newcommand{\textmultiplication}{×}
+\newcommand{\textdivision}{÷}
+\newcommand{\textplusorminus}{±}
+\newcommand{\textlessthanorequal}{≤}
+\newcommand{\textgreaterthanorequal}{≥}
+\newcommand{\textinfinity}{∞}
+
+\newcommand{\plus}[1]{\textplus#1}
+\newcommand{\plusafter}[1]{#1\textplus}
+\newcommand{\binaryplus}[2]{\mbox{#1\space\textplus\space#2}}
+
+\newcommand{\minus}[1]{\textminus#1}
+\newcommand{\minusafter}[1]{#1\textminus}
+\newcommand{\binaryminus}[2]{\mbox{#1\space\textminus\space#2}}
+
+\newcommand{\binaryplusorminus}[2]{#1~\textplusorminus~#2}
+
+\newcommand{\multiplybefore}[1]{\textmultiplication#1}
+\newcommand{\multiplyafter}[1]{#1\textmultiplication}
+\newcommand{\binarymultiply}[2]{\mbox{#1\space\textmultiplication\space#2}}
+
+\newcommand{\binarydivide}[2]{\mbox{#1\space\textdivision#2}}
+
+\newcommand{\lessthanbefore}[1]{<#1}
+\newcommand{\lessthanorequaltobefore}[1]{\textlessthanorequal#1}
+\newcommand{\greaterthanbefore}[1]{>#1}
+\newcommand{\greaterthanorequaltobefore}[1]{\textgreaterthanorequal#1}
+
+\newcommand{\binaryrelation}[3]{#1~#2~#3}
+\newcommand{\triperelation}[5]{#1~#2~#3~#4~#5}
+
+\newcommand{\degrees}[1]{#1\textdegrees}
+
+\newcommand{\arc}[1]{\degrees{#1}}
+\newcommand{\arcline}[1]{\degrees{#1}}
+\newcommand{\arcplus}[1]{\plusafter{\degrees{#1}}}
+\newcommand{\arcminus}[1]{\minusafter{\degrees{#1}}}
+\newcommand{\arcborder}[2]{\degrees{#1}/\degrees{#2}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\superscript}[1]{$^{\textrm\scriptsize #1}$}
+
+\newcommand{\asteriskmark}{\superscript{*}}
+\newcommand{\doubleasteriskmark}{\superscript{**}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -183,7 +275,7 @@
 \newcommand{\runningtitle}[1]{\renewcommand{\therunningtitle}{#1}}
 
 \pagestyle{fancy}
-\setlength{\headsep}{1em}
+\setlength{\headsep}{1.4em}
 \fancyhead[L]{\textbf{\therunningtitle}}
 \fancyhead[C]{}
 \fancyhead[R]{\textbf{Page \thepage}}
@@ -191,6 +283,7 @@
 \setlength{\footskip}{4pt}
 \renewcommand{\headruleskip}{0.1em}
 \addtolength{\headheight}{\headruleskip}
+\renewcommand{\headrulewidth}{0.4pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -203,5 +296,98 @@
     \settowidth{\wboxwidth}{#2}%
     \makebox[\wboxwidth][#1]{#3}%
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Hyphenation
+
+\usepackage{hyphenat}
+\hyphenation{add-ed}
+\hyphenation{sight-ed un-sight-ed}
+\hyphenation{Side-wind-er}
+\hyphenation{bore-sight}
+\hyphenation{ob-struct-ed un-ob-struct-ed}
+\hyphenation{crew-mem-ber crew-mem-bers}
+\hyphenation{seek-er}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[bookmarks,bookmarksdepth=2,hypertexnames=false]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Table of Contents
+
+\usepackage{titletoc}
+
+\usepackage[toc]{multitoc}
+\renewcommand*{\multicolumntoc}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphicx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Floats
+
+\usepackage[font=bf]{caption}
+
+% Align floats in their own page or column to the top.
+% https://texfaq.org/FAQ-vertposfp
+\makeatletter
+\setlength{\@fptop}{5pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\setlength{\@fpsep}{5ex minus 0.1ex}
+\makeatother
+
+\setlength{\floatsep}{5ex minus 0.1ex}
+\setlength{\textfloatsep}{5ex plus 1fil minus 0.1ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Tables
+
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{pdflscape}
+
+\newcommand{\minitable}[3][c]{
+    \begin{tabular}[#1]{@{}#2@{}}#3
+\end{tabular}}
+
+\newcommand*\vertical{\rotatebox{90}}
+
+\newlength\samewidthlength
+\newcommand\samewidth[3][c]{%
+    \settowidth{\samewidthlength}{#2}%
+    \makebox[\samewidthlength][#1]{#3}%
+}
+
+% New tabularx columns
+
+\newcolumntype{P}{X}%
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+\newcolumntype{q}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+
+\newenvironment{tablenote}[1]{%
+    \tabularx{#1}{L}%
+    \vspace{\parskip}%
+}{%
+    \endtabularx%
+}
+
+\newcommand{\tablenotemark}[1]{\mbox{$^{#1}$}}
+\newcommand{\tablenotetext}[2]{\tablenotemark{#1}~#2}
+
+\newcommand{\tablespace}{\\[-0.5ex]}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

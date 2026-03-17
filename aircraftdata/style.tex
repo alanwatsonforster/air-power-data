@@ -9,203 +9,13 @@
 %     margin=1cm
 % ]{geometry}
 
-% Use slightly less tight line spacing by default.
-\usepackage{setspace}
-\setstretch{1.05}
-
-% These are the corresponding Unicode characters.
-\newcommand{\textplus}{+}
-\renewcommand{\textminus}{−}
-\newcommand{\textdegrees}{°}
-\newcommand{\textmultiplication}{×}
-\newcommand{\textdivision}{÷}
-\newcommand{\textplusorminus}{±}
-\newcommand{\textlessthanorequal}{≤}
-\newcommand{\textgreaterthanorequal}{≥}
-\newcommand{\textinfinity}{∞}
-
-\newcommand{\plus}[1]{\textplus#1}
-\newcommand{\plusafter}[1]{#1\textplus}
-\newcommand{\binaryplus}[2]{\mbox{#1\space\textplus\space#2}}
-
-\newcommand{\minus}[1]{\textminus#1}
-\newcommand{\minusafter}[1]{#1\textminus}
-\newcommand{\binaryminus}[2]{\mbox{#1\space\textminus\space#2}}
-
-\newcommand{\binaryplusorminus}[2]{#1~\textplusorminus~#2}
-
-\newcommand{\multiplybefore}[1]{\textmultiplication#1}
-\newcommand{\multiplyafter}[1]{#1\textmultiplication}
-\newcommand{\binarymultiply}[2]{\mbox{#1\space\textmultiplication\space#2}}
-
-\newcommand{\binarydivide}[2]{\mbox{#1\space\textdivision#2}}
-
-\newcommand{\lessthanbefore}[1]{<#1}
-\newcommand{\lessthanorequaltobefore}[1]{\textlessthanorequal#1}
-\newcommand{\greaterthanbefore}[1]{>#1}
-\newcommand{\greaterthanorequaltobefore}[1]{\textgreaterthanorequal#1}
-
-\newcommand{\binaryrelation}[3]{#1~#2~#3}
-\newcommand{\triperelation}[5]{#1~#2~#3~#4~#5}
-
-\newcommand{\degrees}[1]{#1\textdegrees}
-
-\newcommand{\arc}[1]{\degrees{#1}}
-\newcommand{\arcline}[1]{\degrees{#1}}
-\newcommand{\arcplus}[1]{\plusafter{\degrees{#1}}}
-\newcommand{\arcminus}[1]{\minusafter{\degrees{#1}}}
-\newcommand{\arcborder}[2]{\degrees{#1}/\degrees{#2}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\superscript}[1]{$^{\textrm\scriptsize #1}$}
-
-\newcommand{\asteriskmark}{\superscript{*}}
-\newcommand{\doubleasteriskmark}{\superscript{**}}
-
-\usepackage{titletoc}
-\usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{tabularx}
-\usepackage{tabulary}
-\usepackage{booktabs}
-\usepackage{microtype}
-\usepackage{multirow}
-\usepackage{pdflscape}
-\usepackage{comment}
 \usepackage{enotez}
 
 \input{../style.sty}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Hyphenation
-
-\usepackage{hyphenat}
-\hyphenation{add-ed}
-\hyphenation{sight-ed un-sight-ed}
-\hyphenation{Side-wind-er}
-\hyphenation{bore-sight}
-\hyphenation{ob-struct-ed un-ob-struct-ed}
-\hyphenation{crew-mem-ber crew-mem-bers}
-\hyphenation{seek-er}
-
-% Line weights
-
-\setlength{\arrayrulewidth}{0.4pt}
-\setlength{\columnseprule}{0.4pt}
-\renewcommand{\headrulewidth}{0.4pt}
-
-% Lists
-
-\setlist[itemize]{
-    align=left,
-    labelwidth=1.2em,
-    labelsep=0.3em,
-    leftmargin=1.5em,
-    nosep,
-    parsep=\parskip,
-    label=--,
-}
-\setlist[enumerate]{
-    align=left,
-    leftmargin=1.5em,
-    labelwidth=1.2em,
-    labelsep=0.3em,
-    parsep=\parskip,
-}
-\setlist[enumerate,2]{
-    label=\alph*.
-}
-
-\newcommand{\itemparagraph}[1]{{\bfseries #1}}
-
-% Sections
-
-\newlength{\interwordspace}
-\setlength{\interwordspace}{\fontdimen2\font plus \fontdimen3\font
-minus \fontdimen4\font}
-
-\setcounter{secnumdepth}{2}
-
-%\renewcommand{\chaptername}{Rule}
-
-\newcommand{\rulechapter}[1]{
-    \typeout{}
-    \typeout{==================================================================}
-    \chapter{#1}%
-    \addtocontents{toc}{\protect\vspace{-1ex}}%
-    \thispagestyle{fancy}%
-    \typeout{==================================================================}
-    \typeout{}
-}
-\newcommand{\appendixchapter}[1]{
-    \typeout{Appendix \thechapter: #1}
-    \chapter{#1}%
-    \addtocontents{toc}{\protect\vspace{-1ex}}%
-    \thispagestyle{fancy}%
-}
-
-\newcommand{\OLDadvancedrules}{
-    \vspace{1ex}
-    \pagebreak[1]
-    \begin{center}
-        \bfseries{\Large Advanced Rules}
-    \end{center}
-}
-
-\newif\ifbasicrulesonly
-\basicrulesonlyfalse
-
-\ifbasicrulesonly
-\excludecomment{advancedrules}
-\else
-\newenvironment{advancedrules}{
-    \vspace{1ex}
-    \pagebreak[1]
-    \begin{center}
-        \bfseries{\Large Advanced Rules}
-    \end{center}
-}{
-}
-\fi
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Table of Contents
-
-\usepackage[toc]{multitoc}
-\renewcommand*{\multicolumntoc}{2}
-\setlength{\columnseprule}{0pt}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Style for the standard title page
-
-\let\originaltitle\title
-\renewcommand{\title}[1]{\originaltitle{\bfseries\huge{#1}}}
-\let\originalauthor\author
-\renewcommand{\author}[1]{\originalauthor{\parbox{0.5\linewidth}{\centering\large #1}}}
-\let\originaldate\date
-\renewcommand{\date}[1]{\originaldate{\large #1}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Aids.
-
-% We use this flag to change formatting according to whether we are in
-% the main text or the aids.
-
-\newif\ifaids
-\aidsfalse
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Floats
-
-\usepackage[font=bf]{caption}
 
 \newenvironment{onecolumntablefloat}[1][tp]{
     \ifaids
@@ -279,17 +89,6 @@ minus \fontdimen4\font}
                     \end{figure*}
                 }
 
-                % Align floats in their own page or column to the top.
-                % https://texfaq.org/FAQ-vertposfp
-                \makeatletter
-                \setlength{\@fptop}{5pt}
-                \setlength{\@fpbot}{0pt plus 1fil}
-                \setlength{\@fpsep}{5ex minus 0.1ex}
-                \makeatother
-
-                \setlength{\floatsep}{5ex minus 0.1ex}
-                \setlength{\textfloatsep}{5ex plus 1fil minus 0.1ex}
-
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
                 % Table and figure captions.
@@ -343,45 +142,6 @@ minus \fontdimen4\font}
                     \medskip
                     #1\par
                 }
-
-                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-                % Tables
-
-                \newcommand{\minitable}[3][c]{
-                    \begin{tabular}[#1]{@{}#2@{}}#3
-                \end{tabular}}
-
-                \newcommand*\vertical{\rotatebox{90}}
-
-                \newlength\samewidthlength
-                \newcommand\samewidth[3][c]{%
-                    \settowidth{\samewidthlength}{#2}%
-                    \makebox[\samewidthlength][#1]{#3}%
-                }
-
-                % New tabularx columns
-
-                \newcolumntype{P}{X}%
-                \newcolumntype{L}{>{\raggedright\arraybackslash}X}%
-                \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
-                \newcolumntype{C}{>{\centering\arraybackslash}X}%
-                \newcolumntype{q}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
-
-                \newenvironment{tablenote}[1]{%
-                    \tabularx{#1}{L}%
-                    \vspace{\parskip}%
-                }{%
-                    \endtabularx%
-                }
-
-                \newcommand{\tablenotemark}[1]{\mbox{$^{#1}$}}
-                \newcommand{\tablenotetext}[2]{\tablenotemark{#1}~#2}
-
-                \newcommand{\advancedrulemark}{\tablenotemark{*}}
-                \newcommand{\advancedruletext}{\tablenotetext{*}{Advanced rule.\space}}
-
-                \newcommand{\tablespace}{\\[-0.5ex]}
 
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
