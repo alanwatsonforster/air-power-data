@@ -2,15 +2,12 @@
 
 % Use the full page with 1 cm margins.
 
-\usepackage[
-    paper=letterpaper,
-    nofoot,nomarginpar,
-    includehead,
-    margin=1cm
-]{geometry}
-
-\usepackage[usefilenames]{plex-otf}
-\renewcommand*\familydefault{\sfdefault}
+% \usepackage[
+%     paper=letterpaper,
+%     nofoot,nomarginpar,
+%     includehead,
+%     margin=1cm
+% ]{geometry}
 
 % Use slightly less tight line spacing by default.
 \usepackage{setspace}
@@ -67,7 +64,6 @@
 \newcommand{\doubleasteriskmark}{\superscript{**}}
 
 \usepackage{titletoc}
-\usepackage{fancyhdr}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -75,81 +71,15 @@
 \usepackage{tabularx}
 \usepackage{tabulary}
 \usepackage{booktabs}
-\usepackage{multicol}
 \usepackage{microtype}
 \usepackage{multirow}
 \usepackage{pdflscape}
 \usepackage{comment}
 \usepackage{enotez}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Text Notes
-
-\newif\iftextnotes
-
-\newcommand{\textnote}[2]{%
-    \iftextnotes%
-    \footnote{%
-        \setlength{\parindent}{0pt}%
-        \setlength{\parskip}{\smallskipamount}%
-        ~{\bfseries #1.} \ignorespaces #2%
-    }%
-    \fi%
-}
-
-\newcommand{\textnotesection}[1]{%
-    {\itshape\bfseries #1.} \ignorespaces
-}
-
-\newcommand{\cleartextnotes}{%
-    \iftextnotes%
-    \clearpage%
-    \fi%
-}
-
-% Add some space between footnotes.
-\setlength{\footnotesep}{11pt}
-
-% Don't break footnotes between columns so easily.
-\interfootnotelinepenalty=1000
+\input{../style.sty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Basic spacing.
-
-\sloppy
-
-\setlength{\columnsep}{2em}
-
-\setlength{\parindent}{0em}
-\setlength{\parskip}{0.7ex plus 0.2ex}
-\newcommand{\numberspace}{\phantom{0}}
-\setlength{\multicolsep}{0ex}
-
-\newsavebox{\fitwidthbox}
-\newenvironment{fitwidth}[1]{%
-    \def\fitwidth{#1}%
-    \begin{lrbox}{\fitwidthbox}%
-    }{%
-    \end{lrbox}%
-    \resizebox{\fitwidth}{!}{\usebox{\fitwidthbox}}%
-}
-
-\newsavebox{\fitheightbox}
-\newenvironment{fitheight}[1]{%
-    \def\fitheight{#1}%
-    \begin{lrbox}{\fitheightbox}%
-    }{%
-    \end{lrbox}%
-    \resizebox{!}{\fitheight}{\usebox{\fitheightbox}}%
-}
-
-\newlength{\wboxwidth}
-\newcommand{\wbox}[3][r]{%
-    \settowidth{\wboxwidth}{#2}%
-    \makebox[\wboxwidth][#1]{#3}%
-}
 
 % Hyphenation
 
@@ -161,21 +91,6 @@
 \hyphenation{ob-struct-ed un-ob-struct-ed}
 \hyphenation{crew-mem-ber crew-mem-bers}
 \hyphenation{seek-er}
-
-% Headers
-
-\newcommand{\therunningtitle}{}
-\newcommand{\runningtitle}[1]{\renewcommand{\therunningtitle}{#1}}
-
-\pagestyle{fancy}
-\setlength{\headsep}{1em}
-\fancyhead[L]{\textbf{\therunningtitle}}
-\fancyhead[C]{}
-\fancyhead[R]{\textbf{Page \thepage}}
-\fancyfoot[L,C,R]{}
-\setlength{\footskip}{4pt}
-\renewcommand{\headruleskip}{0.1em}
-\addtolength{\headheight}{\headruleskip}
 
 % Line weights
 
@@ -233,41 +148,6 @@ minus \fontdimen4\font}
     \thispagestyle{fancy}%
 }
 
-\makeatletter
-\renewcommand
-\section{%
-    \@startsection{section}{1}%
-    {\z@}%
-    {-1.5ex \@plus 1.0ex \@minus -0.2ex}%
-    {2.0ex \@plus 0.2ex}%
-    {\normalfont\LARGE\bfseries\raggedright}%
-}
-\renewcommand
-\subsection{%
-    \@startsection{subsection}{2}%
-    {\z@}%
-    {-1.0ex \@plus 1.0ex \@minus -0.2ex}%
-    {1.0ex \@plus 0.2ex}%
-    {\normalfont\large\bfseries\raggedright}%
-}
-\renewcommand
-\subsubsection{%
-    \@startsection{subsubsection}{3}%
-    {\z@}%
-    {-1.0ex \@plus 1.0ex \@minus -0.2ex}%
-    {1.0ex \@plus 0.2ex}%
-    {\normalfont\bfseries\raggedright}%
-}
-\renewcommand\paragraph{%
-    \@startsection{paragraph}{4}%
-    {\z@}%
-    {\parskip}%
-    {-\interwordspace}%
-    {\normalfont\normalsize\bfseries\addperiod}%
-}
-\newcommand{\addperiod}[1]{#1.}
-\makeatother
-
 \newcommand{\OLDadvancedrules}{
     \vspace{1ex}
     \pagebreak[1]
@@ -310,34 +190,6 @@ minus \fontdimen4\font}
 \renewcommand{\author}[1]{\originalauthor{\parbox{0.5\linewidth}{\centering\large #1}}}
 \let\originaldate\date
 \renewcommand{\date}[1]{\originaldate{\large #1}}
-
-% Abbreviations
-
-\newcommand{\AirSup}{\textit{Air Superiority}}
-\newcommand{\AirStr}{\textit{Air Strike}}
-\newcommand{\DF}{\textit{Desert Falcons}}
-\newcommand{\EOTG}{\textit{Eagles of the Gulf}}
-\newcommand{\TSOH}{\textit{The Speed of Heat}}
-\newcommand{\AirPow}{\textit{Air Power}}
-\newcommand{\APJ}{\textit{Air Power Journal}}
-\newcommand{\Harpoon}{\textit{Harpoon}}
-\newcommand{\HarpoonFour}{\textit{Harpoon\superscript{4}}}
-
-\newcommand{\FP}  {\text{FP}}
-\newcommand{\FPs} {\text{FPs}}
-\newcommand{\HFP} {\text{HFP}}
-\newcommand{\HFPs}{\text{HFPs}}
-\newcommand{\VFP} {\text{VFP}}
-\newcommand{\VFPs}{\text{VFPs}}
-\newcommand{\CC}  {\text{CC}}
-
-\newcommand{\onequarter}{1/4}
-\newcommand{\onethird}{1/3}
-\newcommand{\onehalf}{1/2}
-\newcommand{\twothirds}{2/3}
-\newcommand{\threequarters}{1/4}
-
-\renewcommand{\deg}{\ensuremath{^\circ}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

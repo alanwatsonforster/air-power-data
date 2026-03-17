@@ -1,0 +1,207 @@
+%LTeX: enabled=false
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    paper=letterpaper,
+    nofoot,nomarginpar,
+    includehead,
+    lmargin=1.5cm,
+    rmargin=1.5cm,
+    tmargin=1.5cm,
+    bmargin=2.4cm
+]{geometry}
+
+% This is what was originally used for the ADCs document.
+
+% \usepackage[
+%     paper=letterpaper,
+%     lmargin=1.5cm,
+%     rmargin=1.5cm,
+%     tmargin=1.5cm,
+%     bmargin=2.4cm
+% ]{geometry}
+
+% This is what was originally used for the ground units document.
+
+% \usepackage[
+%     paper=letterpaper,
+%     nofoot,nomarginpar,
+%     includehead,
+%     margin=1cm
+% ]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Use Plex
+
+\usepackage{unicode-math}
+\usepackage[usefilenames]{plex-otf}
+\renewcommand*\familydefault{\sfdefault}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Basic spacing.
+
+\sloppy
+
+\setlength{\columnsep}{2em}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.7ex plus 0.2ex}
+\newcommand{\numberspace}{\phantom{0}}
+
+\usepackage{multicol}
+\setlength{\multicolsep}{0ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Sections
+
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{1}
+
+\makeatletter
+
+\renewcommand
+\section{%
+    \@startsection{section}{1}%
+    {0pt}%
+    {-1.5ex \@plus -1.0ex \@minus -0.2ex}%
+    {2.0ex \@plus 0.2ex}%
+    {\normalfont\Large\bfseries\raggedright}%
+}
+
+\renewcommand
+\subsection{%
+    \@startsection{subsection}{2}%
+    {0pt}%
+    {-1.5ex \@plus -1.0ex \@minus -0.2ex}%
+    {1.0ex \@plus 0.2ex}%
+    {\normalfont\large\bfseries\raggedright}%
+}
+
+\renewcommand
+\subsubsection{%
+    \@startsection{subsubsection}{3}%
+    {0pt}%
+    {-\parskip}%
+    {\parskip}%
+    {\normalfont\bfseries\raggedright}%
+}
+
+\renewcommand\paragraph{%
+    \@startsection{paragraph}{4}%
+    {0pt}%
+    {-\parskip}%
+    {-\interwordspace}%
+    {\normalfont\normalsize\bfseries\addperiod}%
+}
+
+\newcommand{\addperiod}[1]{#1.}
+
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Text Notes
+
+% These commands allow the optional creation of footnotes. To include footnotes,
+% use \textnotestrue in the preamble after including this file. To omit them,
+% use \textnotesfalse.
+
+\newif\iftextnotes
+
+% Create a text note. The first argument it the title of the note and the second
+% is the text.
+\newcommand{\textnote}[2]{%
+    \iftextnotes%
+    \footnote{%
+        \setlength{\parindent}{0pt}%
+        \setlength{\parskip}{\smallskipamount}%
+        ~{\bfseries #1.} \ignorespaces #2%
+    }%
+    \fi%
+}
+
+% Create a section within a text note. The argument is the title of the section.
+\newcommand{\textnotesection}[1]{%
+    {\itshape\bfseries #1.} \ignorespaces
+}
+
+% Clear all text notes. Use this, for example, at the end of a chapter or
+% section of text.
+\newcommand{\cleartextnotes}{%
+    \iftextnotes%
+    \clearpage%
+    \fi%
+}
+
+% Add some space between footnotes.
+\setlength{\footnotesep}{11pt}
+
+% Don't break footnotes between columns so easily.
+\interfootnotelinepenalty=1000
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Abbreviations
+
+\newcommand{\AirSup}{\textit{Air Superiority}}
+\newcommand{\AirStr}{\textit{Air Strike}}
+\newcommand{\DF}{\textit{Desert Falcons}}
+\newcommand{\EOTG}{\textit{Eagles of the Gulf}}
+\newcommand{\TSOH}{\textit{The Speed of Heat}}
+\newcommand{\AirPow}{\textit{Air Power}}
+\newcommand{\APJ}{\textit{Air Power Journal}}
+\newcommand{\Harpoon}{\textit{Harpoon}}
+\newcommand{\HarpoonFour}{\textit{Harpoon\superscript{4}}}
+
+\newcommand{\FP}  {\text{FP}}
+\newcommand{\FPs} {\text{FPs}}
+\newcommand{\HFP} {\text{HFP}}
+\newcommand{\HFPs}{\text{HFPs}}
+\newcommand{\VFP} {\text{VFP}}
+\newcommand{\VFPs}{\text{VFPs}}
+\newcommand{\CC}  {\text{CC}}
+
+\newcommand{\onequarter}{1/4}
+\newcommand{\onethird}{1/3}
+\newcommand{\onehalf}{1/2}
+\newcommand{\twothirds}{2/3}
+\newcommand{\threequarters}{1/4}
+
+\renewcommand{\deg}{\ensuremath{^\circ}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Headers
+
+\usepackage{fancyhdr}
+
+\newcommand{\therunningtitle}{}
+\newcommand{\runningtitle}[1]{\renewcommand{\therunningtitle}{#1}}
+
+\pagestyle{fancy}
+\setlength{\headsep}{1em}
+\fancyhead[L]{\textbf{\therunningtitle}}
+\fancyhead[C]{}
+\fancyhead[R]{\textbf{Page \thepage}}
+\fancyfoot[L,C,R]{}
+\setlength{\footskip}{4pt}
+\renewcommand{\headruleskip}{0.1em}
+\addtolength{\headheight}{\headruleskip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newlength{\digitwidth}
+\settowidth{\digitwidth}{0}
+\newcommand{\aligninteger}[2]{\makebox[#1\digitwidth][r]{#2}}
+
+\newlength{\wboxwidth}
+\newcommand{\wbox}[3][r]{%
+    \settowidth{\wboxwidth}{#2}%
+    \makebox[\wboxwidth][#1]{#3}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
