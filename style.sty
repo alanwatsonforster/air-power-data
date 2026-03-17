@@ -142,44 +142,37 @@ minus \fontdimen4\font}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Text Notes
+% Notes
 
-% These commands allow the optional creation of footnotes. To include footnotes,
-% use \textnotestrue in the preamble after including this file. To omit them,
-% use \textnotesfalse.
+\usepackage{enotez}
 
-\newif\iftextnotes
+\newcommand{\listofnotesheading}[1]{%
+    \twocolumn[
+        \section{#1}
+    ]
+}
 
-% Create a text note. The first argument it the title of the note and the second
-% is the text.
-\newcommand{\textnote}[2]{%
-    \iftextnotes%
-    \footnote{%
+\setenotez{%
+    list-heading={\listofnotesheading{#1}},
+    reset = true,
+    backref = true
+}
+
+\newcommand{\note}[2]{%
+    \endnote{%
         \setlength{\parindent}{0pt}%
         \setlength{\parskip}{\smallskipamount}%
-        ~{\bfseries #1.} \ignorespaces #2%
+        \noteparagraph{#1} #2
     }%
-    \fi%
 }
 
-% Create a section within a text note. The argument is the title of the section.
-\newcommand{\textnotesection}[1]{%
-    {\itshape\bfseries #1.} \ignorespaces
+\newcommand{\noteparagraph}[1]{%
+    {\bfseries #1.} \ignorespaces%
 }
 
-% Clear all text notes. Use this, for example, at the end of a chapter or
-% section of text.
-\newcommand{\cleartextnotes}{%
-    \iftextnotes%
-    \clearpage%
-    \fi%
+\newcommand{\listofnotes}{
+    \printendnotes[itemize]
 }
-
-% Add some space between footnotes.
-\setlength{\footnotesep}{11pt}
-
-% Don't break footnotes between columns so easily.
-\interfootnotelinepenalty=1000
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

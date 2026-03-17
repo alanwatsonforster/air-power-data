@@ -1,7 +1,6 @@
 %LTeX: enabled=false
 
 \input{../style.sty}
-\textnotestrue
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -13,6 +12,10 @@
         \label{type:#1}
         %\vspace{2ex}
     ]
+}
+
+\newcommand{\listofnotesheading}[1]{%
+    \subsection{#1}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,31 +67,6 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{enotez}
-
-\setenotez{%
-    list-heading={
-    \subsection{#1}},
-    reset = true
-}
-
-\newcommand{\note}[1]{%
-    \endnote{%
-        \setlength{\parindent}{0pt}%
-        \setlength{\parskip}{\smallskipamount}%
-        #1
-    }%
-}
-
-\newcommand{\noteparagraph}[1]{%
-    {\bfseries #1.}%
-}
-
-\newcommand{\noteslist}{
-    \clearpage
-    \printendnotes[itemize]
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
