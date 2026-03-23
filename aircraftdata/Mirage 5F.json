@@ -1,6 +1,6 @@
 {
     "versionname": "Mirage 5F",
-    "description": "The Dassault Mirage 5F is a day attack aircraft.",
+    "description": "The Dassault Mirage 5F is a single-seat day fighter-bomber aircraft originally built for the Israeli Air Force but which served in the French Armée de l'air.",
     "crew": [
         "Pilot"
     ],
@@ -37,7 +37,7 @@
     },
     "jetengines": 1,
     "cruisespeed": 6.0,
-    "climbspeed": 0.0,
+    "climbspeed": 4.5,
     "visibility": 6,
     "sizemodifier": 0,
     "vulnerability": 0,
@@ -68,6 +68,11 @@
             4
         ],
         "BT": [
+            4,
+            5,
+            5
+        ],
+        "ET": [
             5,
             "-",
             "-"
@@ -104,8 +109,8 @@
                 10.5
             ],
             [
-                4.5,
-                8.5
+                "-",
+                "-"
             ],
             14.0
         ],
@@ -174,7 +179,7 @@
         "EH": [
             [
                 0.5,
-                "-"
+                0.0
             ],
             [
                 "-",
@@ -195,8 +200,8 @@
                 0.0
             ],
             [
-                0.5,
-                0.0
+                "-",
+                "-"
             ]
         ],
         "HI": [
@@ -257,7 +262,7 @@
         ]
     },
     "radar": {
-        "name": "Alpha-II",
+        "name": "AIDA II",
         "eccm": 0,
         "arc": "Limited",
         "trackingrange": 8,
@@ -379,5 +384,5 @@
         "PSSM",
         "HBR"
     ],
-    "notes": []
+    "notes": [ ]
 }
