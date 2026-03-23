@@ -1,0 +1,7 @@
+{
+    "versionname": "Mirage 5BD",
+    "_include": "Mirage 5BA",
+    "description": "The Mirage 5BA is a two-seat trainer and day strike aircraft built for the Belgian Air Force.",
+    "crew": [ "Pilot", "Observer" ],
+    "gun": null
+}
