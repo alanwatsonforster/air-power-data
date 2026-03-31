@@ -1,6 +1,6 @@
 {
-    "versionname": "Mirage 5F",
-    "description": "The Dassault Mirage 5F is a single-seat day fighter-bomber aircraft originally built for the Israeli Air Force but which served in the French Armée de l'air.",
+    "versionname": "Mirage IIIE",
+    "description": "The Dassault Mirage IIIE is single-seat fighter, intercepter, and strike aircraft. The E version was built for the French Armée de l'aire and served as the basis for many export versions.",
     "crew": [
         "Pilot"
     ],
@@ -9,19 +9,19 @@
             2.5,
             2.0,
             1.5,
-            5
+            5.0
         ],
         "M": [
             1.5,
             1.0,
             1.0,
-            2
+            2.0
         ],
         "N": [
             0.0,
             0.0,
             0.0,
-            1
+            1.0
         ],
         "I": [
             0.5,
@@ -31,7 +31,7 @@
         ],
         "SPBR": [
             0.5,
-            1.0,
+            0.5,
             1.0
         ]
     },
@@ -43,7 +43,7 @@
     "vulnerability": 0,
     "restrictedarcs": "",
     "blindarcs": "30-",
-    "internalfuel": 325,
+    "internalfuel": 285,
     "atarefuel": false,
     "ejectionseat": "standard",
     "maneuvertable": {
@@ -58,36 +58,36 @@
     },
     "turndragtable": {
         "TT": [
-            2,
+            1,
             2,
             2
         ],
         "HT": [
+            2,
             3,
-            3,
-            4
+            3
         ],
         "BT": [
+            3,
             4,
-            5,
             5
         ],
         "ET": [
-            5,
+            4,
             "-",
             "-"
         ]
     },
     "ceilingtable": [
-        52,
-        44,
-        35
+        54,
+        48,
+        40
     ],
     "speedtable": {
         "EH": [
             [
                 4.5,
-                13.5
+                14.0
             ],
             [
                 "-",
@@ -97,7 +97,7 @@
                 "-",
                 "-"
             ],
-            14.0
+            15
         ],
         "VH": [
             [
@@ -109,10 +109,10 @@
                 10.5
             ],
             [
-                "-",
-                "-"
+                4.5,
+                8.5
             ],
-            14.0
+            14
         ],
         "HI": [
             [
@@ -157,7 +157,7 @@
                 2.5,
                 6.5
             ],
-            11.0
+            11
         ],
         "LO": [
             [
@@ -200,8 +200,8 @@
                 0.0
             ],
             [
-                "-",
-                "-"
+                0.5,
+                0.0
             ]
         ],
         "HI": [
@@ -238,7 +238,7 @@
                 2.0
             ],
             [
-                2.0,
+                3.0,
                 1.0
             ],
             [
@@ -252,7 +252,7 @@
                 2.0
             ],
             [
-                2.0,
+                3.0,
                 1.0
             ],
             [
@@ -262,11 +262,13 @@
         ]
     },
     "radar": {
-        "name": "AIDA II",
+        "name": "Cyrano II",
         "eccm": 0,
-        "arc": "Limited",
-        "trackingrange": 8,
-        "trackingstrength": 8,
+        "arc": "180+",
+        "searchrange": 80,
+        "searchstrength": 15,
+        "trackingrange": 50,
+        "trackingstrength": 12,
         "lockon": 7
     },
     "gun": "Two 30 mm DEFA",
@@ -279,31 +281,26 @@
         "BT": 2
     },
     "ataradarranging": "RE",
-    "bombsystem": "Ballistic",
+    "bombsystem": "Manual",
     "ecm": {
-        "iff": true,
-        "rwr": "B"
+        "iff": true
     },
+    "technology": [ ],
     "storeslimits": [
-        6,
-        9,
-        9200
+        4,
+        8,
+        8800
     ],
     "stations": [
         [
             "pair",
             [
                 1,
-                7
+                5
             ],
             550,
             [
-                "BB",
-                "BG",
-                "RP",
-                "RK",
-                "IRM",
-                "EP"
+                "IRM"
             ]
         ],
         [
@@ -316,66 +313,49 @@
             [
                 "BB",
                 "BG",
-                "RP",
-                "RG",
-                "RS",
-                "RK",
-                "GP",
                 "DR",
+                "MR",
+                "RP",
+                "GP",
                 "FT",
-                "RPT",
                 "MRT"
-            ]
-        ],
-        [
-            "pair",
-            [
-                3,
-                5
-            ],
-            1100,
-            [
-                "BB"
             ]
         ],
         [
             "single",
             [
-                4
+                3
             ],
             2600,
             [
+                "IRM",
+                "RHM",
                 "BB",
                 "BG",
-                "RP",
-                "RG",
-                "RS",
-                "RK",
-                "GP",
-                "PP",
+                "NBB",
+                "DR",
                 "EP",
-                "WR",
-                "WP",
+                "ARM",
                 "FT",
-                "IRM"
+                "DR"
             ]
         ]
     ],
     "loadnotes": [
-        "Turns limited to HT/TT if more than 2600/1300 lb carried on either of stations 2 or 6.",
-        "Stations 3 and 5 are under the rear fuselage.",
-        "May carry two BBs on station 4 without using a WR.",
-        "May carry AIM-9 and Matra 550 IRMs on stations 1 and 7",
-        "May carry Matra 530 IRMs on station 4.",
-        "May carry AS.30 RGs.",
-        "May carry TK-500 MRTs on stations 2 and 6.",
-        "May carry 500L, 600L, 1300L, or 1700L FTs on station 2 and 6 and 600L or 1300L FTs on station 4.",
+        "Turns limited to HT/TT if more than 2600/1300 lb carried on either of stations 2 or 4.",
+        "May carry two BBs or two DRs with four BBs on station 3.",
+        "May carry Matra R.550 Magic IRMs on stations 1 and 5",
+        "May carry Matra R.530 IRMs or RHMs on station 3.",
+        "May carry the AN-52 NBB on station 3.",
+        "May carry AS.30 RG or AS.37 Martel ARMs.",
+        "May carry TK-500 MRTs on stations 2 and 4.",
+        "May carry 500L, 600L, 1300L, or 1700L FTs on station 2 and 4 and 600L or 1300L FTs on station 3.",
         "No supersonic flight while carrying 600L, 1300L, or 1700L FTs."
     ],
     "VPs": [
-        21,
+        22,
         14,
-        6,
+        7,
         3
     ],
     "properties": [
@@ -383,5 +363,7 @@
         "PSSM",
         "HBR"
     ],
-    "notes": [ ]
+    "notes": [
+        "Rocket Motor. A SEPR 841 rocket motor may be installed in place of 45 fuel points of internal fuel. When ignited, it gives 1.0 APs at any altitude for six game turns."
+    ]
 }

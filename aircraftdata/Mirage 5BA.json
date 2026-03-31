@@ -2,10 +2,80 @@
     "versionname": "Mirage 5BA",
     "_include": "Mirage 5F",
     "description": "The Mirage 5BA is a single-seat day strike aircraft built for the Belgian Air Force.",
+    "stations": [
+        [
+            "pair",
+            [
+                1,
+                7
+            ],
+            550,
+            [
+                "BB",
+                "BG",
+                "RP",
+                "RK",
+                "IRM",
+                "EP"
+            ]
+        ],
+        [
+            "pair",
+            [
+                2,
+                4
+            ],
+            3400,
+            [
+                "BB",
+                "BG",
+                "RP",
+                "RK",
+                "GP",
+                "DR",
+                "FT",
+                "RPT",
+                "MRT"
+            ]
+        ],
+        [
+            "pair",
+            [
+                3,
+                5
+            ],
+            1100,
+            [
+                "BB"
+            ]
+        ],
+        [
+            "single",
+            [
+                4
+            ],
+            2600,
+            [
+                "BB",
+                "BG",
+                "RP",
+                "RK",
+                "GP",
+                "PP",
+                "EP",
+                "WR",
+                "WP",
+                "FT"
+            ]
+        ]
+    ],
     "loadnotes": [
+        "Turns limited to HT/TT if more than 2600/1300 lb carried on either of stations 2 or 4.",
         "Stations 3 and 5 are under the rear fuselage.",
-        "Stations 2 and 4 may be overloaded to 3000 lb.",
         "May carry two BBs on station 4 without using a WR.",
-        "May use AIM-9 IRMs on stations 1 and 7"
+        "May carry AIM-9 IRMs on stations 1 and 7",
+        "May carry TK-500 MRTs on stations 2 and 6.",
+        "May carry 1300L or 1700L FTs on station 2 and 6 and a 1300L FT on station 4.",
+        "No supersonic flight while carrying 1300L or 1700L FTs."
     ]
 }
