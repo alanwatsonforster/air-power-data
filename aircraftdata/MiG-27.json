@@ -178,7 +178,7 @@
                     6.0
                 ]
             },
-            "properties": []
+            "properties": [ ]
         },
         "mid": {
             "turndragtable": {
@@ -527,7 +527,7 @@
         "Laser Spot Tracker",
         "TV/IR Optics"
     ],
-    "notes": [],
+    "notes": [ ],
     "properties": [
         "SMP",
         "RPR",
@@ -543,8 +543,8 @@
         [
             "pair",
             [
-                "F1",
-                "F2"
+                "1",
+                "9"
             ],
             1730,
             [
@@ -554,10 +554,10 @@
         [
             "pair",
             [
-                1,
-                7
+                2,
+                8
             ],
-            1500,
+            2300,
             [
                 "BB",
                 "BG",
@@ -565,19 +565,37 @@
                 "RK",
                 "RG",
                 "ARM",
-                "TR",
                 "DR",
+                "MR",
                 "EP",
                 "DP",
                 "LP",
                 "IRM",
-                "FT"
+                "MDR"
             ]
         ],
         [
             "pair",
             [
-                2,
+                3,
+                7
+            ],
+            1100,
+            [
+                "BB",
+                "BG",
+                "RP",
+                "RK",
+                "DR",
+                "MR",
+                "IRM",
+                "MDR"
+            ]
+        ],
+        [
+            "pair",
+            [
+                4,
                 6
             ],
             550,
@@ -587,25 +605,9 @@
             ]
         ],
         [
-            "pair",
-            [
-                3,
-                5
-            ],
-            1100,
-            [
-                "BB",
-                "BG",
-                "RP",
-                "RK",
-                "DR",
-                "IRM"
-            ]
-        ],
-        [
             "single",
             [
-                4
+                5
             ],
             2200,
             [
@@ -615,16 +617,15 @@
                 "RG",
                 "RK",
                 "DR",
-                "TR",
+                "MR",
                 "EP",
                 "FT"
             ]
         ]
     ],
     "loadnotes": [
-        "The fixed wing stations F1 and F2 are used for ferry flights. The wings must remain forward until the FTs are jettisoned.",
-        "May use special 800L FTs.",
-        "If carrying FTs, must remain below low transonic speed.",
+        "May use special jettisonable 800L FTs (1,730 lb, 3.5/2.0 load points, and 73 fuel points). When carrying FTs, must remain below low transonic speed. When carrying FTs on the wing stations 1 and 9, the wings must remain forward.",
+        "May use IRMs from the K-13 (AA-2 Atoll) and R-60 (AA-8 Aphid) families on either stations 1 and 7 or stations 3 and 5. May use MDRs with R-60 (AA-8 Aphid) IRMs.",
         "May use AS-7, AS-10, AS-12, and AS-14 RGs."
     ],
     "VPs": [

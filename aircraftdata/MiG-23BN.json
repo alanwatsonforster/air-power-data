@@ -1,0 +1,102 @@
+{
+    "versionname": "MiG-23BN",
+    "description": "The Mikoyan-Gurevich MiG-23BN is an attack aircraft derived from the MiG-23B. The NATO reporting name for the aircraft is Flogger-H.",
+    "_include": "MiG-27",
+
+    "storeslimits": [
+        7,
+        11,
+        6600
+    ],
+    "stations": [
+        [
+            "pair",
+            [
+                "1",
+                "9"
+            ],
+            1730,
+            [
+                "FT"
+            ]
+        ],
+        [
+            "pair",
+            [
+                2,
+                8
+            ],
+            2300,
+            [
+                "BB",
+                "BG",
+                "DR",
+                "MR",
+                "RP",
+                "RK",
+                "RG",
+                "ARM",
+                "GP",
+                "EP",
+                "DP",
+                "LP",
+                "IRM",
+                "MDR"
+            ]
+        ],
+        [
+            "pair",
+            [
+                3,
+                7
+            ],
+            1100,
+            [
+                "BB",
+                "BG",
+                "DR",
+                "MR",
+                "RP",
+                "RK",
+                "IRM",
+                "MDR"
+            ]
+        ],
+        [
+            "pair",
+            [
+                4,
+                6
+            ],
+            550,
+            [
+                "BB",
+                "EP"
+            ]
+        ],
+        [
+            "single",
+            [
+                5
+            ],
+            1730,
+            [
+                "FT"
+            ]
+        ]
+    ],
+    "loadnotes": [
+        "May use special 800L FTs (1,730 lb, 3.5/2.0 load points, and 73 fuel points). When carrying FTs, must remain below low transonic speed. When carrying FTs on the wing stations 1 and 9, the wings must remain forward.",
+        "May use FAB-100/250/500 BBs, DRs for two FAB-250/500 BBs, or MRs for four FAB-100 BBs. May use the RN-40 NBB on station 7.",
+        "May use UPK-23-250 GPs.",
+        "May use UB-16-57, UB-32, and B-8 RPs and S-24 RKs",
+        "May use single K-13 (AA-2 Atoll) IRMs and R-60 (AA-8 Aphid) IRMs on MDRs.",
+        "May use AS-7, AS-10, AS-12, and AS-14 RGs."
+    ],
+    "VPs": [
+        22,
+        15,
+        7,
+        4
+    ]
+}
