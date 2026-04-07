@@ -1,0 +1,619 @@
+{
+    "versionname": "MiG-23M",
+    "description": "The Mikoyan-Gurevich MiG-23M is a single-seat fighter. The NATO reporting name for the aircraft is Flogger-B.",
+    "popularname": "",
+    "crew": [
+        "Pilot"
+    ],
+    "powertable": {
+        "AB": [
+            3.5,
+            3.0,
+            3.0,
+            9.0
+        ],
+        "M": [
+            2.0,
+            1.5,
+            1.5,
+            3.0
+        ],
+        "N": [
+            0.0,
+            0.0,
+            0.0,
+            2.5
+        ],
+        "I": [
+            0.5,
+            1.0,
+            1.0,
+            0.0
+        ],
+        "SPBR": [
+            1.0,
+            1.0,
+            1.0
+        ]
+    },
+    "jetengines": 1,
+    "cruisespeed": 5.5,
+    "climbspeed": 5.0,
+    "visibility": 6,
+    "sizemodifier": 0,
+    "vulnerability": -1,
+    "restrictedarcs": "",
+    "blindarcs": "60-",
+    "internalfuel": 430,
+    "atarefuel": false,
+    "ejectionseat": "standard",
+    "maneuvertable": {
+        "LR/DR": [
+            1.0,
+            1.0
+        ],
+        "VR": [
+            0.0,
+            0.0
+        ]
+    },
+    "ceilingtable": [
+        56,
+        50,
+        42
+    ],
+    "geometries": {
+        "forward": {
+            "turndragtable": {
+                "TT": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "HT": [
+                    2.0,
+                    "-",
+                    "-"
+                ],
+                "BT": [
+                    "-",
+                    "-",
+                    "-"
+                ],
+                "ET": [
+                    "-",
+                    "-",
+                    "-"
+                ]
+            },
+            "speedtable": {
+                "EH": [
+                    [
+                        5.0,
+                        5.0
+                    ],
+                    [
+                        5.0,
+                        5.0
+                    ],
+                    [
+                        "-",
+                        "-"
+                    ],
+                    5.0
+                ],
+                "VH": [
+                    [
+                        3.5,
+                        5.0
+                    ],
+                    [
+                        4.0,
+                        5.0
+                    ],
+                    [
+                        4.0,
+                        5.0
+                    ],
+                    5.0
+                ],
+                "HI": [
+                    [
+                        3.0,
+                        5.5
+                    ],
+                    [
+                        3.0,
+                        5.5
+                    ],
+                    [
+                        3.0,
+                        5.5
+                    ],
+                    5.5
+                ],
+                "MH": [
+                    [
+                        2.5,
+                        5.5
+                    ],
+                    [
+                        2.5,
+                        5.5
+                    ],
+                    [
+                        2.5,
+                        5.5
+                    ],
+                    5.5
+                ],
+                "ML": [
+                    [
+                        2.0,
+                        6.0
+                    ],
+                    [
+                        2.0,
+                        6.0
+                    ],
+                    [
+                        2.5,
+                        6.0
+                    ],
+                    6.0
+                ],
+                "LO": [
+                    [
+                        2.0,
+                        6.0
+                    ],
+                    [
+                        2.0,
+                        6.0
+                    ],
+                    [
+                        2.0,
+                        6.0
+                    ],
+                    6.0
+                ]
+            },
+            "properties": [ ]
+        },
+        "mid": {
+            "turndragtable": {
+                "TT": [
+                    2.0,
+                    2.0,
+                    2.0
+                ],
+                "HT": [
+                    2.0,
+                    3.0,
+                    "-"
+                ],
+                "BT": [
+                    4.0,
+                    5.0,
+                    "-"
+                ],
+                "ET": [
+                    4.0,
+                    "-",
+                    "-"
+                ]
+            },
+            "speedtable": {
+                "EH": [
+                    [
+                        5.5,
+                        6.0
+                    ],
+                    [
+                        5.5,
+                        6.0
+                    ],
+                    [
+                        "-",
+                        "-"
+                    ],
+                    6.0
+                ],
+                "VH": [
+                    [
+                        4.0,
+                        6.0
+                    ],
+                    [
+                        4.5,
+                        6.0
+                    ],
+                    [
+                        4.5,
+                        6.0
+                    ],
+                    6.0
+                ],
+                "HI": [
+                    [
+                        3.5,
+                        6.5
+                    ],
+                    [
+                        3.5,
+                        6.5
+                    ],
+                    [
+                        3.5,
+                        6.5
+                    ],
+                    6.5
+                ],
+                "MH": [
+                    [
+                        3.0,
+                        6.5
+                    ],
+                    [
+                        3.0,
+                        6.5
+                    ],
+                    [
+                        3.0,
+                        6.5
+                    ],
+                    6.5
+                ],
+                "ML": [
+                    [
+                        2.5,
+                        7.0
+                    ],
+                    [
+                        2.5,
+                        7.0
+                    ],
+                    [
+                        3.0,
+                        7.0
+                    ],
+                    7.0
+                ],
+                "LO": [
+                    [
+                        2.5,
+                        7.0
+                    ],
+                    [
+                        2.5,
+                        7.0
+                    ],
+                    [
+                        2.5,
+                        6.5
+                    ],
+                    7.0
+                ]
+            },
+            "properties": [
+                "RA"
+            ]
+        },
+        "aft": {
+            "turndragtable": {
+                "TT": [
+                    2.0,
+                    2.0,
+                    3.0
+                ],
+                "HT": [
+                    3.0,
+                    4.0,
+                    "-"
+                ],
+                "BT": [
+                    5.0,
+                    6.0,
+                    "-"
+                ],
+                "ET": [
+                    6.0,
+                    "-",
+                    "-"
+                ]
+            },
+            "speedtable": {
+                "EH": [
+                    [
+                        7.5,
+                        13.5
+                    ],
+                    [
+                        7.5,
+                        13.0
+                    ],
+                    [
+                        "-",
+                        "-"
+                    ],
+                    15.5
+                ],
+                "VH": [
+                    [
+                        6.0,
+                        14.0
+                    ],
+                    [
+                        6.5,
+                        13.5
+                    ],
+                    [
+                        6.5,
+                        6.5
+                    ],
+                    15.5
+                ],
+                "HI": [
+                    [
+                        5.5,
+                        13.5
+                    ],
+                    [
+                        5.5,
+                        12.5
+                    ],
+                    [
+                        5.5,
+                        6.5
+                    ],
+                    14.0
+                ],
+                "MH": [
+                    [
+                        5.0,
+                        11.5
+                    ],
+                    [
+                        5.0,
+                        10.5
+                    ],
+                    [
+                        5.0,
+                        6.5
+                    ],
+                    11.5
+                ],
+                "ML": [
+                    [
+                        4.5,
+                        9.5
+                    ],
+                    [
+                        4.5,
+                        9.0
+                    ],
+                    [
+                        5.0,
+                        7.0
+                    ],
+                    10.0
+                ],
+                "LO": [
+                    [
+                        4.5,
+                        8.5
+                    ],
+                    [
+                        4.5,
+                        8.0
+                    ],
+                    [
+                        4.5,
+                        7.5
+                    ],
+                    9.0
+                ]
+            },
+            "properties": [
+                "HBR",
+                "RA",
+                "LTD"
+            ]
+        }
+    },
+    "climbcapabilitytable": {
+        "EH": [
+            [
+                1.0,
+                0.5
+            ],
+            [
+                1.0,
+                0.0
+            ],
+            [
+                "-",
+                "-"
+            ]
+        ],
+        "VH": [
+            [
+                2.0,
+                1.0
+            ],
+            [
+                2.0,
+                0.5
+            ],
+            [
+                1.0,
+                0.0
+            ]
+        ],
+        "HI": [
+            [
+                4.0,
+                1.0
+            ],
+            [
+                3.0,
+                1.0
+            ],
+            [
+                1.5,
+                0.5
+            ]
+        ],
+        "MH": [
+            [
+                5.0,
+                2.0
+            ],
+            [
+                4.0,
+                1.0
+            ],
+            [
+                2.0,
+                0.5
+            ]
+        ],
+        "ML": [
+            [
+                6.0,
+                2.0
+            ],
+            [
+                5.0,
+                2.0
+            ],
+            [
+                3.0,
+                1.0
+            ]
+        ],
+        "LO": [
+            [
+                7.0,
+                3.0
+            ],
+            [
+                6.0,
+                2.0
+            ],
+            [
+                4.0,
+                1.5
+            ]
+        ]
+    },
+    "radar": {
+        "name": "RP-23Sh",
+        "eccm": 1,
+        "arc": "180+",
+        "searchrange": 130,
+        "searchstrength": 29,
+        "trackingrange": 100,
+        "trackingstrength": 15,
+        "lockon": 7
+    },
+    "gun": "One 23 mm GSh-23L",
+    "gunatatohitrolls": "6/3/1",
+    "gunammunition": 2.0,
+    "gunsightmodifiers": {
+        "TT": 0,
+        "HT": 1,
+        "BT": 2
+    },
+    "gundamagerating": "5/5",
+    "ataradarranging": "RE",
+    "bombsystem": "Manual",
+    "ecm": {
+        "iff": true,
+        "rwr": "B",
+        "ajm": "A3"
+    },
+    "technology": [
+        "Limited Look-Down",
+        "HUD Interface",
+        "IRSTS-A"
+    ],
+    "notes": [ ],
+    "properties": [
+        "SMP",
+        "RPR",
+        "EVG",
+        "EVGTT"
+    ],
+    "storeslimits": [
+        5,
+        9,
+        7750
+    ],
+    "stations": [
+        [
+            "pair",
+            [
+                1,
+                8
+            ],
+            1730,
+            [
+                "FT"
+            ]
+        ],
+        [
+            "pair",
+            [
+                2,
+                7
+            ],
+            1100,
+            [
+                "BB",
+                "RP",
+                "RK",
+                "DR",
+                "MR",
+                "IRM",
+                "RHM",
+                "MDR"
+            ]
+        ],
+        [
+            "pair",
+            [
+                3,
+                6
+            ],
+            1100,
+            [
+                "BB",
+                "RP",
+                "RK",
+                "IRM",
+                "MDR"
+            ]
+        ],
+        [
+            "single",
+            [
+                4
+            ],
+            1730,
+            [
+                "FT"
+            ]
+        ]
+    ],
+    "loadnotes": [
+        "May use special jettisonable 800L FTs (1,730 lb, 3.5/2.0 load points, and 73 fuel points). When carrying FTs, must remain below low transonic speed. When carrying FTs on the wing stations 1 and 9, the wings must remain forward.",
+        "May use R-3 (AA-2 Atoll), R-23 (AA-7 Archer), and R-60 (AA-8 Aphic) IRMs and R-23 (AA-7) RHMs. May use MDRs with R-60 (AA-8 Aphid) IRMs."
+    ],
+    "VPs": [
+        28,
+        20,
+        12,
+        6
+    ]
+}
