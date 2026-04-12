@@ -289,10 +289,7 @@ def blockC(data, geometry=None):
             )
             return "%s/%s" % (formatdrag(drag), formatdrag(lowspeedliftdevicedrag))
 
-    if version == 3:
-        writelatex(r"\renewcommand{\Caa}{}")
-    else:
-        writelatex(r"\renewcommand{\Caa}{%s}" % rollhfp())
+    writelatex(r"\renewcommand{\Caa}{%s}" % rollhfp())
     writelatex(r"\renewcommand{\Cab}{%s}" % maneuverdrag("DR"))
     writelatex(r"\renewcommand{\Cb}{%s}" % maneuverdrag("VR"))
 
