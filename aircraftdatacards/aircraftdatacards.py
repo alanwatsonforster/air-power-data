@@ -786,15 +786,25 @@ def blockF(data, geometry=None):
                 % (data.gunatadamagerating(), data.gunatgdamagerating())
             )
 
-    s = data.bombsystem().capitalize()
-    if "/" in s:
+    t = ""
+    for s in data.bombsystem().split("/"):
+        s = s.capitalize()
+        if s == "Manual":
+            modifier = +0
+        elif s == "Ballistic":
+            modifier = -1
+        elif s == "Computed":
+            modifier = -2
+        elif s == "Advanced":
+            modifier = -3
+        t += "%s (%+d)\\\\" % (s, modifier)
+    if len(data.bombsystem().split("/")) > 1:
         prefix = r"\parbox{\linewidth}{\centering\scriptsize "
         suffix = r"}"
-        s = re.sub(r"/", r"\\\\", s)
     else:
         prefix = ""
         suffix = ""
-    writelatex(r"\renewcommand{\Fm}{%s%s%s}" % (prefix, s, suffix))
+    writelatex(r"\renewcommand{\Fm}{%s%s%s}" % (prefix, t, suffix))
 
     s = ""
     for turnrate in ["TT", "HT", "BT"]:
