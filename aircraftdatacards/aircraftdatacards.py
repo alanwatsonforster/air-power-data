@@ -789,7 +789,9 @@ def blockF(data, geometry=None):
     t = ""
     for s in data.bombsystem().split("/"):
         s = s.capitalize()
-        if s == "Manual":
+        if s == "None":
+            modifier = None
+        elif s == "Manual":
             modifier = +0
         elif s == "Ballistic":
             modifier = -1
@@ -797,7 +799,12 @@ def blockF(data, geometry=None):
             modifier = -2
         elif s == "Advanced":
             modifier = -3
-        t += "%s (%+d)\\\\" % (s, modifier)
+        else:
+            raise RuntimeError("invalid bomb system %r." % s)
+        if s == "None":
+            t += r"%s\\" % (s)
+        else:
+            t += r"%s (%+d)\\" % (s, modifier)
     if len(data.bombsystem().split("/")) > 1:
         prefix = r"\parbox{\linewidth}{\centering\scriptsize "
         suffix = r"}"
