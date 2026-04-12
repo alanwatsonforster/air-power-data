@@ -61,6 +61,6 @@ See White Ensign and South Atlantic War
 ## References
 
 - [BAE](https://www.baesystems.com/heritage/page/hawker-siddeley-nimrod)
-- [Goebel](https://www.airvectors.net/avatl.html#m3)
+- [Goebel](https://airvectors.net/avatl.html#m3)
 - Kettle, “South Atlantic War”
 - Doty, “White Ensign”

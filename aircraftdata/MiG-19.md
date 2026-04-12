@@ -50,5 +50,5 @@ See [#208](https://github.com/alanwatsonforster/glass/issues/208).
 
 ## Bibliography
 
-- [Goebel](https://www.airvectors.net/avmig15_3.html)
+- [Goebel](https://airvectors.net/avmig15_3.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-19)

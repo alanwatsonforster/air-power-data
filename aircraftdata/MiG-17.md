@@ -46,5 +46,5 @@ Introduced in October 1952 (Wikipedia).
 
 ## Bibliography
 
-- [Goebel](https://www.airvectors.net/avmig15.html)
+- [Goebel](https://airvectors.net/avmig15.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-17)

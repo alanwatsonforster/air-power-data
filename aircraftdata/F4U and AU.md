@@ -125,7 +125,7 @@ The undercarriage could be lowered or trailed to act as a dive break. They could
 - Brehm, “[Action Report of CVG-101](https://www.history.navy.mil/content/dam/nhhc/research/archives/action-reports/Korean%20War%20Carrier%20Air%20Group%20Combat/PDF%27s/cvg101-30apr-4jun51.pdf)”, 30 April to 4 June 1951
 - Daniels, “[Action Report of ATG2](https://www.history.navy.mil/content/dam/nhhc/research/archives/action-reports/Korean%20War%20Carrier%20Air%20Group%20Combat/PDF%27s/atg2a-52.pdf)”, 18 July to 4 September 1952.
 - Dial, “The Chance Vought F4U Corsair,” Profile Publications, 1965
-- [Goebel](https://www.airvectors.net/avf4u.html)
+- [Goebel](https://airvectors.net/avf4u.html)
 - Lantham, “[Action Report of CVG-5](https://www.history.navy.mil/content/dam/nhhc/research/archives/action-reports/Korean%20War%20Carrier%20Air%20Group%20Combat/PDF%27s/cvg5-16-31jul50.pdf)”, 16 to 31 July 1950.
 - [Manual for F4U-5N](https://stephentaylorhistorian.com/wp-content/uploads/2020/04/f4u-5n-corsair.pdf)
 - [SAC for F4U-4](https://www.aahs-online.org/images/Navy_SAC/F4U-4.pdf)

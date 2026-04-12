@@ -55,6 +55,6 @@ Introduced in December 1952.
 
 ## Bibliography
 
-- [Goebel](https://www.airvectors.net/avf9f.html#m4)
+- [Goebel](https://airvectors.net/avf9f.html#m4)
 - SAC of F9F-6/-6P/-8/-8P/-8T/-8B
 - [Wikipedia](https://en.wikipedia.org/wiki/Grumman_F-9_Cougar)

@@ -72,6 +72,6 @@ DT = 1/3 fuel and 2200 bombs in internal bay plus two 2200 lb (4.0 each) externa
 
 ## References
 
-- [Goebel](https://www.airvectors.net/avtu2.html)
+- [Goebel](https://airvectors.net/avtu2.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Tupolev_Tu-2)
 - Moore, Jason Nicolas, ”Tupolev Tu-2: The Forgotten Medium Bomber”

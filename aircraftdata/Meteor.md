@@ -66,7 +66,7 @@ Used by No. 77 Squadron RAAF in Korea from July 1951 (Wikipedia).
 
 ## Bibliography
 
-- [Goebel](https://www.airvectors.net/avmeteor.html)
+- [Goebel](https://airvectors.net/avmeteor.html)
 - [Tempora Aviation Museum](https://aviationmuseum.com.au/gloster-meteor-f-8/)
 - [Wikipedia on Meteor](https://en.wikipedia.org/wiki/Gloster_Meteor)
 - [Wikipedia on No 77 Squadron RAAF](https://en.wikipedia.org/wiki/No._77_Squadron_RAAF)

@@ -12,7 +12,7 @@ Officially RB-89As, but referred to as P2V-7U by the CIA
 
 The photo at Wikipedia shows no armament.
 
-- <https://www.airvectors.net/avp2v.html#m6>
+- <https://airvectors.net/avp2v.html#m6>
 
 - Cruise speed: 188 mph
 - Maximum speed: 364 mph

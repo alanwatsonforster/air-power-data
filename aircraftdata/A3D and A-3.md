@@ -32,6 +32,6 @@ Introduced March 1956.
 
 ## Bibliography
 
-- [Goebel](https://www.airvectors.net/avskywar.html)
+- [Goebel](https://airvectors.net/avskywar.html)
 - SAC for A3D-2
 - [Wikipedia](https://en.wikipedia.org/wiki/Douglas_A-3_Skywarrior)

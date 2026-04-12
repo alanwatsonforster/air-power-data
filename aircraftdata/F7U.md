@@ -53,7 +53,7 @@ Introduced in January 1953.
 
 ## Bibliography
 
-- [Goebel](https://www.airvectors.net/avcrus_1.html#m2)
+- [Goebel](https://airvectors.net/avcrus_1.html#m2)
 - SAC for -3 and -3M.
 - Thompson, "[THE F7U CUTLASS: VOUGHT’S VISIONARY FIGHTER](https://www.historynet.com/voughts-visionary-fighter/)"
 - [Wikipedia](https://en.wikipedia.org/wiki/Vought_F7U_Cutlass)

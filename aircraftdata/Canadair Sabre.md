@@ -55,5 +55,5 @@ Later production featured the slatted 6-3 wing from the F-40 (Goebel, Curtis). F
 ## Bibliography
 
 - Curtis, “North American F-86 Sabre,” Crowood, 2000
-- [Goebel](http://www.airvectors.net/avf86_3.html#m4)
+- [Goebel](http://airvectors.net/avf86_3.html#m4)
 - [Wikipedia](https://en.wikipedia.org/wiki/Canadair_Sabre)

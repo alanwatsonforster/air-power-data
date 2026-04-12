@@ -18,5 +18,5 @@ Introduced in 1959 (Wikipedia).
 
 ## Bibliography
 
-- [Goebel](http://www.airvectors.net/avsu15.html#m2)
+- [Goebel](http://airvectors.net/avsu15.html#m2)
 - [Wikipedia](https://en.wikipedia.org/wiki/Sukhoi_Su-9)

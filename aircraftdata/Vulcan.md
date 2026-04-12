@@ -40,5 +40,5 @@ Malcolm Pipes allows two fuel tanks, but has the limit for the bomb bay as 28,00
 ## Bibliography
 
 - [Axe](https://nationalinterest.org/blog/reboot/avro-vulcan-bomber-modification-never-happened-196791)
-- [Goebel](https://www.airvectors.net/avvulcan.html)
+- [Goebel](https://airvectors.net/avvulcan.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Avro_Vulcan)

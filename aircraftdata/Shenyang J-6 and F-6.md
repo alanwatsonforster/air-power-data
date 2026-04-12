@@ -60,5 +60,5 @@ See [#208](https://github.com/alanwatsonforster/glass/issues/208).
 
 ## Bibliography
 
-- [Goebel](https://www.airvectors.net/avmig15_3.html#m5)
+- [Goebel](https://airvectors.net/avmig15_3.html#m5)
 - [Wikipedia](https://en.wikipedia.org/wiki/Shenyang_J-6)

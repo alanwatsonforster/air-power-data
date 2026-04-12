@@ -57,7 +57,7 @@ Jackson:
 ## Bibliography
 
 - Jackson, Robert, “Air War Korea 1950-1953,” Motorbooks
-- [Goebel](https://www.airvectors.net/ava1spad.html)
+- [Goebel](https://airvectors.net/ava1spad.html)
 - [SAC for AD-4](https://www.aahs-online.org/images/Navy_SAC/AD-4.pdf)
 - [SAC for AD-5](https://www.aahs-online.org/images/Navy_SAC/AD-5.pdf)
 - [SAC for AD-5N](https://www.aahs-online.org/images/Navy_SAC/AD-5N.pdf)

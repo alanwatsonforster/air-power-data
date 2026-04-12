@@ -7,5 +7,5 @@
 
 ## Bibliography
 
-- [Goebel](https://www.airvectors.net/avmig15_1.html)
+- [Goebel](https://airvectors.net/avmig15_1.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-15)

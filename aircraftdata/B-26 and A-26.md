@@ -127,7 +127,7 @@ Two in Farm Gate
 - [Baughter](http://www.joebaugher.com/usattack/a26.html)
 - Drendel, "A/B-26 Invader Illustrated"
 - Fucci, “The 37th Bombardment Squadron (L) Night Intruder Black Nights — Korea”, JAAHS, Spring 2018
-- [Goebel](https://www.airvectors.net/ava26.html)
+- [Goebel](https://airvectors.net/ava26.html)
 - Graham, “Fly By Knights”
 - McAuliffe, Letter to JAAHS, Fall 1990.
 - Jamison, “Nightmare of the Korean Hills,” JAAHS, Spring 1991

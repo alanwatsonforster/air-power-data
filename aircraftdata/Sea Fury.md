@@ -38,5 +38,5 @@ The Sea Fury FB.11 saw service in the Korean War from October 1950 onwards, with
 ## Bibliography
 
 - [BAE](https://heritage.baesystems.com/page/hawker-fury-and-sea-fury)
-- [Goebel](https://www.airvectors.net/avcfury.html)
+- [Goebel](https://airvectors.net/avcfury.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Hawker_Sea_Fury)

@@ -48,5 +48,5 @@ No hint of BG or RG.
 
 ## Bibliography
 
-- [Goebel](https://www.airvectors.net/avtu22.html)
+- [Goebel](https://airvectors.net/avtu22.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Tupolev_Tu-22M)

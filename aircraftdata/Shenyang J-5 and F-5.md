@@ -36,5 +36,5 @@ Introduced in 1957 (Wikipedia).
 
 ## Bibliography
 
-- [Goebel](http://www.airvectors.net/avmig15_2.html#m5)
+- [Goebel](http://airvectors.net/avmig15_2.html#m5)
 - [Wikipedia](https://en.wikipedia.org/wiki/Shenyang_J-5)

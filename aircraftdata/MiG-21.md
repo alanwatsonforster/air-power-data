@@ -153,7 +153,7 @@ Introduced in fall of 1959 (Goebel).
 
 ## Bibliography
 
-- [Goebel](http://www.airvectors.net/avmig21.html)
+- [Goebel](http://airvectors.net/avmig21.html)
 - Gordon, Mikoyan MiG-21 (Famous Russian aircraft).
 - Müller, [The MiG-21](https://mig-21.de/english/default.htm)
 - [Wikipedia on MiG-21](https://en.wikipedia.org/wiki/Mikoyan-Gurevich_MiG-21)
