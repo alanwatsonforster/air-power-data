@@ -1,0 +1,6 @@
+{
+    "versionname": "MiG-23MF",
+    "variantname": "Warsaw Pact",
+    "description": "The Mikoyan-Gurevich MiG-23MF is a single-seat fighter based on the MiG-23M. The Warsaw Pact variant is almost identical to the Soviet MiG-23M. The NATO reporting name for the aircraft is Flogger-B and for the radar is High Lark II.",
+    "_include": "MiG-23M"
+}

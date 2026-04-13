@@ -329,10 +329,24 @@
         "Su-11"
     ],
     [
+        // 1970
+        "type",
+        "MiG-23",
+        "MiG-23M",
+        "MiG-23MF (Warsaw Pact)",
+        "MiG-23BN"
+    ],
+    [
         // 1972?
         "type",
         "Tu-22M",
         "Tu-22M2"
+    ],
+    [
+        // 1975
+        "type",
+        "MiG-27",
+        "MiG-27"
     ],
     [
         "chapter",
