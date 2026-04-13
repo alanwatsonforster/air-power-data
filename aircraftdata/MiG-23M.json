@@ -1,6 +1,6 @@
 {
     "versionname": "MiG-23M",
-    "description": "The Mikoyan-Gurevich MiG-23M is a single-seat fighter. The NATO reporting name for the aircraft is Flogger-B.",
+    "description": "The Mikoyan-Gurevich MiG-23M is a single-seat fighter. The NATO reporting name for the aircraft is Flogger-B and for the radar is High Lark II.",
     "popularname": "",
     "crew": [
         "Pilot"
@@ -508,7 +508,7 @@
         ]
     },
     "radar": {
-        "name": "RP-23Sh",
+        "name": "Sapfir-23D-III",
         "eccm": 1,
         "arc": "180+",
         "searchrange": 130,
@@ -573,6 +573,7 @@
                 "BB",
                 "RP",
                 "RK",
+                "RG",
                 "DR",
                 "MR",
                 "IRM",
@@ -608,7 +609,8 @@
     ],
     "loadnotes": [
         "May use special jettisonable 800L FTs (1,730 lb, 3.5/2.0 load points, and 73 fuel points). When carrying FTs, must remain below low transonic speed. When carrying FTs on the wing stations 1 and 9, the wings must remain forward.",
-        "May use R-3 (AA-2 Atoll), R-23 (AA-7 Apex), and R-60 (AA-8 Aphid) IRMs and R-23 (AA-7) RHMs. May use MDRs with R-60 (AA-8 Aphid) IRMs."
+        "May use: R-23R (AA-7) RHMs; R-13M (AA-2 Atoll), R-23T (AA-7 Apex), and R-60/60M (AA-8 Aphid) IRMs; MDRs with R-60/60M IRMs. R-23R RHMs and R-23T IRMs may only be carried on stations 2 and 7, and both types may not be carried simultaneously.",
+        "May use: FAB-100/250/500 BBs, ZAB-500 incendiary BBs, and RBK-500 cluster BBs; a single RN-24 or RN-40 nuclear BB on station 6; UB-16-57 RPs; S-24 RKs; and Kh-23 (AS-7 Kerry) RGs."
     ],
     "VPs": [
         28,
