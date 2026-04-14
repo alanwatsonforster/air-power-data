@@ -1,7 +1,7 @@
 {
     "versionname": "MiG-23MF",
     "variantname": "Third World",
-    "description": "The Mikoyan-Gurevich MiG-23MF is a single-seat fighter based on the MiG-23M. TheThird World variant has degraded radar ECCM and other avionics. The NATO reporting name for the aircraft is Flogger-B and for the radar is High Lark II.",
+    "description": "The Mikoyan-Gurevich MiG-23MF is a single-seat fighter based on the MiG-23M. The Third World variant has degraded radar ECCM and other avionics. The NATO reporting name for the aircraft is Flogger-B and for the radar is High Lark II.",
     "radar": {
         "name": "Sapfir-23E",
         "eccm": 1,

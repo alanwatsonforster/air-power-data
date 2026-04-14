@@ -1,0 +1,33 @@
+{
+    "versionname": "MiG-23MS",
+    "variantname": null,
+    "description": "The Mikoyan-Gurevich MiG-23MS is a single-seat fighter based on the MiG-23MF. It has the older RP-22SM radar and other avionics are degraded. The NATO reporting name for the aircraft is Flogger-F and for the radar is Jay Bird.",
+    "radar": {
+        "name": "RP-22 Saphir",
+        "eccm": 0,
+        "arc": "180+",
+        "searchrange": 48,
+        "searchstrength": 12,
+        "trackingrange": 30,
+        "trackingstrength": 8,
+        "lockon": 7
+    },
+    "ecm": {
+        "iff": true,
+        "rwr": "A"
+    },
+    "technology": [
+    ],
+    "loadnotes": [
+        "May use special jettisonable 800L FTs (1,730 lb, 3.5/2.0 load points, and 73 fuel points). When carrying FTs, must remain below low transonic speed. When carrying FTs on the wing stations 1 and 9, the wings must remain forward.",
+        "May use: R-3R (AA-2 Atoll) RHMs and R-3S and R-13M (AA-2 Atoll) RHMs.",
+        "May use: FAB-100/250/500 BBs, ZAB-500 incendiary BBs, and RBK-500 cluster BBs; UB-16-57 RPs; S-24 RKs; and Kh-23 (AS-7 Kerry) RGs."
+    ],
+    "VPs": [
+        24,
+        18,
+        8,
+        4
+    ],
+    "_include": "MiG-23M"
+}
