@@ -3,7 +3,7 @@
     "variantname": null,
     "description": "The Mikoyan-Gurevich MiG-23MS is a single-seat fighter based on the MiG-23MF. It has the older RP-22SM radar and other avionics are degraded. The NATO reporting name for the aircraft is Flogger-F and for the radar is Jay Bird.",
     "radar": {
-        "name": "RP-22 Saphir",
+        "name": "RP-22 Sapfir",
         "eccm": 0,
         "arc": "180+",
         "searchrange": 48,
