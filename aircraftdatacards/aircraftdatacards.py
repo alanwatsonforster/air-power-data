@@ -55,18 +55,23 @@ def blockA(data, geometry=None):
         r"\\\\\1",
         data.fullname(),
     )
-    if data.variantname() is None and geometry is None:
-        remark = None
-    elif data.variantname() is None:
-        remark = "Wings " + geometry.title()
-    elif geometry is None:
-        remark = data.variantname()
-    else:
-        remark = data.variantname() + " — Wings " + geometry.title()
-    if remark is None:
+    if data.variantname() is None is None and geometry is None:
         writelatex(r"\renewcommand{\Aab}{%s}" % data.fullname())
+    elif geometry is None:
+        writelatex(
+            r"\renewcommand{\Aab}{%s\Aabvariant{%s}}"
+            % (data.fullname(), data.variantname())
+        )
+    elif data.variantname() is None:
+        writelatex(
+            r"\renewcommand{\Aab}{%s\Aabgeometry{Wings %s}}"
+            % (data.fullname(), geometry.title())
+        )
     else:
-        writelatex(r"\renewcommand{\Aab}{%s\\[0.2em](%s)}" % (data.fullname(), remark))
+        writelatex(
+            r"\renewcommand{\Aab}{%s\Aabvariant{%s}\Aabgeometry{Wings %s}}"
+            % (data.fullname(), data.variantname(), geometry.title())
+        )
 
     if data.propellerengines() == 0 and data.jetengines() <= 4:
         writelatex(

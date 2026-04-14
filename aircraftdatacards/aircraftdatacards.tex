@@ -114,7 +114,7 @@
     \typeout{Block A}%
     \parbox[b][\blockABCheight][t]{\blockAcells\cellwidth}{%
         \begin{tabularx}{\blockAcells\cellwidth}{lCCCc}
-            \multicolumn{5}{c}{\large\bfseries\itshape\parbox[c][4.4em]{4\cellwidth}{\centering \Aab}}\\
+            \multicolumn{5}{c}{\large\bfseries\parbox[c][4.4em]{4\cellwidth}{\centering \Aab}}\\
             \hline
             \multicolumn{5}{l}{%
                 \ifversionone
@@ -142,6 +142,8 @@
 
 \newcommand{\Aaa}{F-4D Phantom II} % Name
 \newcommand{\Aab}{F-4D\\Phantom II} % Split name
+\newcommand{\Aabvariant}[1]{\\{{\normalfont\bfseries\small (#1)}}}
+\newcommand{\Aabgeometry}[1]{\\{\normalfont\small #1}}
 \newcommand{\Ac}{\jetengine\jetengine} % Engines
 \newcommand{\Ada}{AB} % AB or FT
 \newcommand{\Adb}{3.5} % AB/FT power CL
