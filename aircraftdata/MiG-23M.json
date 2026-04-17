@@ -538,7 +538,9 @@
         "HUD Interface",
         "IRSTS-A"
     ],
-    "notes": [ ],
+    "notes": [
+        "Until 1977, apply a -1 modifier to GLOC rolls."
+    ],
     "properties": [
         "SMP",
         "RPR",
