@@ -1,14 +1,14 @@
 {
     "versionname": "MiG-23MF",
     "variantname": "Third World",
-    "description": "The Mikoyan-Gurevich MiG-23MF is a single-seat fighter based on the MiG-23M. The Third World variant has degraded radar ECCM and other avionics. The NATO reporting name for the aircraft is Flogger-B and for the radar is High Lark II.",
+    "description": "The Mikoyan-Gurevich MiG-23MF is a single-seat fighter based on the MiG-23M. The Third World variant has degraded radar ECCM and other avionics. The NATO reporting name for the aircraft is Flogger-B and for the radar is High Lark B.",
     "radar": {
         "name": "Sapfir-23E",
-        "eccm": 1,
-        "arc": "180+",
-        "searchrange": 130,
-        "searchstrength": 29,
-        "trackingrange": 100,
+        "eccm": 0,
+        "arc": "150+",
+        "searchrange": 120,
+        "searchstrength": 20,
+        "trackingrange": 90,
         "trackingstrength": 15,
         "lockon": 7
     },
@@ -16,6 +16,13 @@
         "iff": true,
         "rwr": "A"
     },
+    "technology": [
+        "Limited Look-Down",
+        "HUD Interface",
+        "IRSTS-A"
+    ],
+    "notes": [
+    ],
     "loadnotes": [
         "May use special jettisonable 800L FTs (1,730 lb, 3.5/2.0 load points, and 73 fuel points). When carrying FTs, must remain below low transonic speed. When carrying FTs on the wing stations 1 and 9, the wings must remain forward.",
         "May use: R-23R (AA-7) RHMs; R-13M (AA-2 Atoll), R-23T (AA-7 Apex), and R-60/60M (AA-8 Aphid) IRMs; MDRs with R-60/60M IRMs. R-23R RHMs and R-23T IRMs may only be carried on stations 2 and 7, and both types may not be carried simultaneously. May use R-60/60M IRMs from 1981.",
