@@ -19,7 +19,9 @@
     "technology": [
         "HUD Interface"
     ],
-    "notes": [ ],
+    "notes": [
+        "Until 1977, apply a -1 modifier to GLOC rolls."
+    ],
     "loadnotes": [
         "May use special jettisonable 800L FTs (1,730 lb, 3.5/2.0 load points, and 73 fuel points). When carrying FTs, must remain below low transonic speed. When carrying FTs on the wing stations 1 and 9, the wings must remain forward.",
         "May use: R-3R (AA-2 Atoll) RHMs and R-3S and R-13M (AA-2 Atoll) RHMs.",
