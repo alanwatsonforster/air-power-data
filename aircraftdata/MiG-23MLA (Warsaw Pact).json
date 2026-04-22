@@ -1,0 +1,7 @@
+{
+
+    "versionname": "MiG-23MLA",
+    "variantname": "Warsaw Pact",
+    "description": "The Mikoyan-Gurevich MiG-23MLA is a single-seat fighter based on the MiG-23ML. The Warsaw Pact variant is very similar to the base variant for the VVS. The NATO reporting name for the aircraft is Flogger-G and for the radar is High Lark.",
+    "_include": "MiG-23MLA"
+}
