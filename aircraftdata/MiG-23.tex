@@ -37,6 +37,33 @@ The Mikoyan-Gurevich MiG-23 is single-seat fighter, interceptor, and ground-atta
 
 \subsection{Versions}
 
+\begin{table*}
+    \centering
+    \caption*{MiG-23 Version and Variant Summary}
+    \footnotesize
+    \begin{tabularx}{0.9\linewidth}{lcccL}
+        \toprule
+        Version (Variant)&NATO&In&ADC&Notes\\
+        &Subtype&Service\\
+        \midrule
+        MiG-23S&A&1970&N&Initial version with smaller wings, with leading-edge slats, and with the RP-22SM Sapfir-21 (Jay Bird) radar. Able to use only R-3/R-13 (AA-2A/B/C) AAMs. No external FTs.\\
+        MiG-23&&1971&N&Improved version of the MiG-23S with larger wings without leading-edge slats, the Sapfir-23L (High Lark) radar without look-down, and an IRST. Able to use R-23 (AA-7A/B) AAMs of the same type and R-3/R-13 (AA-2A/C) IRMs. Centerline FT, but no wing FTs.\\
+        MiG-23M&B&1973&Y&Improved version of the MiG-23 with leading-edge slats, with the Sapfir-23D radar with limited look-down, and also able to use R-60 (AA-8) IRMs. Centerline and wing FTs.\\
+        MiG-23MS&F&1974&Y&Export version based on the MiG-23M, but with the RP-22SM Sapfir-21 (Jay Bird) radar and no IRST. Able to use only R-3/R-13 (AA-2A/B/C) AAMs, and with degraded ECM.\\
+        MiG-23ML&G&1976&Y&Improved version of the MiG-23M, with a lightened airframe, more powerful engine, and the Sapfir-23ML radar with full look-down. Able to use R-23 (AA-7A/B) AAMs of different types simultaneously.\\
+        MiG-23MF (Warsaw Pact)&B&1978&Y&Export version of the MiG-23M very similar to the base version.\\
+        MiG-23MF (Export)&B&1978&Y&Export version of the MiG-23M with degraded radar and ECM.\\
+        MiG-23MLA&G&1978&Y&Improved version of the MiG-23ML, with a very similar airframe but improved Sapfir-23MLA radar. Able to carry the R-24 (AA-7C/D) AAM.\\
+        MiG-23MLA (Warsaw Pact)&G&1981&Y&Export version of the MiG-23MLA very similar to the base version.\\
+        MiG-23MLA (Export)&G&1981&Y&Export version of the MiG-23MLA with degraded radar and ECM.\\
+        MiG-23MLD\\
+        MiG-23P\\
+        MiG-23B\\
+        MiG-23BM\\
+        \bottomrule
+    \end{tabularx}
+\end{table*}
+
 \subsubsection{MiG-23S}
 
 The MiG-23S is the initial production fighter version. Its NATO reporting name is Flogger-A.%
@@ -52,7 +79,7 @@ It is equipped with the R-27F-300 or R-27F2-300 engine and early wings with lead
 The MiG-23S is equipped with the RP-22SM Sapfir-21 (Jay Bird) radar from MiG-21S/SM, as the intended RP-23 Sapfir-23 radar was not ready.
 It also lacks the IRST and HUD of later versions.
 
-In addition to the internal 23~mm GSh-23L cannon, it has two stations under the wing gloves and two more under the fuselage for R-3S or R-13M (AA-2 Atoll) IRMs, R-3R (AA-2 Atoll) RHMs, or air-to-ground ordnance including the Kh-23 (AA-7 Kerry) RG.
+In addition to the internal 23~mm GSh-23L cannon, it has two stations under the wing gloves and two more under the fuselage for R-3S or R-13M (AA-2A/C Atoll) IRMs, R-3R (AA-2B Atoll) RHMs, or air-to-ground ordnance including the Kh-23 (AA-7 Kerry) RG.
 
 As the Soviet Union's first swing-wing combat aircraft, the MiG-23S represented a step-change in complexity for manufacturers, maintainers, and flight crew, and suffered from reliability problems. The most serious defects were cracks in the airframe, which limited it to 4G, and a propensity to enter a spin at a high angle-of-attack.
 
@@ -76,8 +103,8 @@ It continues to use the R-27F2-300 engine of later MiG-23S aircraft, but has a m
 It is equipped with the Sapfir-23L (High Lark A) radar. However, while a great improvement on the Sapfir-21 radar of the MiG-21S, this version of the radar lacks the look-down/shoot-down capability of later versions.
 It is also equipped with an IRST and HUD.
 
-Its principal armament is a pair of R-23R RHMs or R-23T IRMs (AA-7 Apex), but only one kind can be carried on each mission.
-The secondary armament is a pair of R-3S or R-13M (AA-2 Atoll) IRMs.
+Its principal armament is a pair of R-23R RHMs or R-23T IRMs (AA-7A/B Apex), but only one kind can be carried on each mission.
+The secondary armament is a pair of R-3S or R-13M (AA-2A/C Atoll) IRMs.
 
 The changes in the airframe did not resolve the dangerous behavior at high angle-of-attack or doubts about its ability to survive more than 4G.
 
@@ -137,6 +164,28 @@ The MiG-23MS was manufactured from 1973 to 1978, and served in the air forces of
 
 The MiG-23MS undoubtedly suffered the same maneuvering restrictions as the MiG-23M, and also will have a \minus{1} modifier for GLOC rolls.
 
+\subsubsection{MiG-23ML}
+
+The MiG-23ML is an improved version of the MiG-23M.
+Its NATO reporting name is Flogger-G.%
+\note{MiG-23ML ADC and Technical Data}{
+    See Mladenov, Goebel, and Wikipedia on the MiG-23.
+    The ADC is based on the ADC by Malcolm Pipes.
+
+    \noteparagraph{Fuel} Mladenov states that the No.\ 4 fuel tank (470L) was removed, which would give a total internal capacity of 4,250 lb or 363 fuel points (at 6.5 lb/gal and 20 lb/point). I have changed the internal fuel capacity to 365 fuel points.
+
+    \noteparagraph{Fuel Consumption} Mladenov notes that its specific fuel use was 93\% of that of the 23M in full afterburner, but its thrust is 106\% larger, and these two factors even out to give it the same fuel consumption as the 23M. I have modified the ADC accordingly.
+}
+
+The MiG-23ML has a redesigned and lightened fuselage, a more powerful R-35F-300 engine, with 18,850~lb of dry thrust and 28,800~lb of afterburner thrust. The airframe is strengthened and does not suffer from the robustness problems that plagued earlier version. These improvements give significantly better performance than the MiG-23M. The avionics are also improved. The internal fuel capacity is slightly reduced.
+
+The Sapfir-23ML radar has a considerably improved look-down/shoot-down capability compared to the previous Sapfir-23D-III. Additionally, both the R-23R RHM and the R-23T IRM can be employed on the same mission. The IRSTS is improved too.
+
+The MiG-23ML was manufactured from 1975 to 1977. It entered service with the VVS in 1976.%
+\note{MiG-23ML Service History}{
+    See Mladenov, Goebel, and Wikipedia on the MiG-23.
+}
+
 \subsubsection{MiG-23MF}
 
 The MiG-23MF is a second export version derived from the MiG-23M.
@@ -162,28 +211,6 @@ The Warsaw Pact variant served in the air forces of Bulgaria, Czechoslovakia, Ea
     See Mladenov, Goebel, and Wikipedia on the MiG-23.
 }
 
-\subsubsection{MiG-23ML}
-
-The MiG-23ML is an improved version of the MiG-23M.
-Its NATO reporting name is Flogger-G.%
-\note{MiG-23ML ADC and Technical Data}{
-    See Mladenov, Goebel, and Wikipedia on the MiG-23.
-    The ADC is based on the ADC by Malcolm Pipes.
-
-    \noteparagraph{Fuel} Mladenov states that the No.\ 4 fuel tank (470L) was removed, which would give a total internal capacity of 4,250 lb or 363 fuel points (at 6.5 lb/gal and 20 lb/point). I have changed the internal fuel capacity to 365 fuel points.
-
-    \noteparagraph{Fuel Consumption} Mladenov notes that its specific fuel use was 93\% of that of the 23M in full afterburner, but its thrust is 106\% larger, and these two factors even out to give it the same fuel consumption as the 23M. I have modified the ADC accordingly.
-}
-
-The MiG-23ML has a redesigned and lightened fuselage, a more powerful R-35F-300 engine, with 18,850~lb of dry thrust and 28,800~lb of afterburner thrust. The airframe is strengthened and does not suffer from the robustness problems that plagued earlier version. These improvements give significantly better performance than the MiG-23M. The avionics are also improved. The internal fuel capacity is slightly reduced.
-
-The Sapfir-23ML radar has a considerably improved look-down/shoot-down capability compared to the previous Sapfir-23D-III. Additionally, both the R-23R RHM and the R-23T IRM can be employed on the same mission. The IRSTS is improved too.
-
-The MiG-23MLA was manufactured from 1975 to 1978. It entered service with the VVS in 1976.%
-\note{MiG-23ML Service History}{
-    See Mladenov, Goebel, and Wikipedia on the MiG-23.
-}
-
 \subsubsection{MiG-23MLA}
 
 The MiG-23MLA is an improved version of the MiG-23ML.
@@ -192,14 +219,15 @@ Its NATO reporting name is Flogger-G.%
     See Mladenov, Goebel, and Wikipedia on the MiG-23.
     The ADC is based on the ADC by Malcolm Pipes.
 
-    I am assuming that the Export version has ECCM of zero, RWR-A only, and cannot use R-24s.
+    I am assuming that the Export version has ECCM of zero and RWR-A only.
+
 }
 
 The airframe of the MiG-23MLA is identical to that of the MiG-23ML, but the radar, gunsight, and missile systems are significantly improved. The Sapfir-23MLA radar has better range, reliability, ECM, and avoids mutual interference. The longer-ranged and more lethal R-24R/T (AA-7C/D Apex) RHMs/IRMs can be carried.
 
-The Warsaw Pact variant was very similar to the base variant for the VVS. The export variant had downgraded radar, weapons systems, and ECM/ECCM.
+The Warsaw Pact variant is very similar to the base variant for the VVS. The export variant has downgraded radar and ECM.
 
-The MiG-23MLA was manufactured from 1978 to 1983. It entered service with the VVS in 1976 and with the air forces of Bulgaria, Czechoslovakia, and East Germany in 1981. The export version entered service with the air forces of Angola, Cuba, Iraq, North Korea, and Yemen in the early 1980s.%
+The MiG-23MLA was manufactured from 1977 to 1983 and entered service with the VVS in 1978. The Warsaw Pact version entered service with the air forces of Bulgaria, Czechoslovakia, and East Germany in 1981. The export version entered service with the air forces of Angola, Cuba, Iraq, North Korea, and Yemen in the early 1980s.%
 \note{MiG-23ML Service History}{
     See Mladenov, Goebel, and Wikipedia on the MiG-23.
 }
@@ -302,13 +330,16 @@ The MiG-23ML/MLA/MLD can carry UPK-23-250 23~mm gun pods on the wing-glove stati
 }
 
 \paragraph{Air-to-Air Weapons}
-The MiG-23S/MS, with their radar and fire-control system derived from the MiG-21S, can only carry R-3S and R-13M IRMs and R-3R RHMs.
+The MiG-23S/MS, with their radar and fire-control system derived from the MiG-21S, can only carry R-3S/R-13M (AA-2A/C Atoll) IRMs and R-3R RHMs (AA-2B Atoll).
 
 The MiG-23/23M/MF/ML can carry the R-23R RHM or R-23T IRM (AA-7A/B Apex) on the wing-glove stations, but the MiG-23/23M/MF can only carry one kind at time, and the R-3S or R-13M IRMs on the fuselage stations. The MiG-23MLA can carry the improved R-24R RHM or R-24T IRM (AA-7C/D Apex) from 1981.
 
 The MiG-23M/MF/ML can also carry the R-60/60M IRM (AA-8 Aphid) on the fuselage stations, either singly or in pairs on MDRs.%
 \note{Air-to-Air Weapons}{
     See Mladenov and Goebel.
+
+    Wikipedia on the R-23 states that the R-24 was used by Syria, Iraq, Angola, presumably by MiG-23MLA (Export).
+
 }
 
 \paragraph{Air-to-Ground Weapons}%
@@ -360,9 +391,9 @@ ADCs are provided for:
 \begin{adclist}
     \adcitem{MiG-23M}
     \adcitem{MiG-23MS}
+    \adcitem{MiG-23ML}
     \adcitem{MiG-23MF (Warsaw Pact)}
     \adcitem{MiG-23MF (Export)}
-    \adcitem{MiG-23ML}
     \adcitem{MiG-23MLA}
     \adcitem{MiG-23MLA (Warsaw Pact)}
     \adcitem{MiG-23MLA (Export)}
