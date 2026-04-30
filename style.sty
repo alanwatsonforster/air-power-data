@@ -123,6 +123,41 @@ minus \fontdimen4\font}
 
 \usepackage{wrapfig2}
 
+% The wrapfigure environment adds \columnsep between the float and the text.
+% For a counter, the usual value is too much. Setting it to a smaller value
+% causes problems for its use to separate the real columns. The solution is
+% to set the space explicitly.
+%
+% The wrapfigure environment also adds \intextsep above and below the
+% contents, but this is easier to eliminate.
+
+\newcommand{\leftcounter}[1]{
+    \begin{wrapfigure}[4]{l}{3.0\baselineskip}
+        \vspace{-\intextsep}
+        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#1}}
+        \vspace{-\intextsep}
+    \end{wrapfigure}
+}
+
+\newcommand{\leftdoublecounter}[2]{
+    \begin{wrapfigure}[8]{l}{3.0\baselineskip}
+        \vspace{-\intextsep}
+        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#1}}\par
+        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#2}}
+        \vspace{-\intextsep}
+    \end{wrapfigure}
+}
+
+\newcommand{\leftquadruplecounter}[4]{
+    \begin{wrapfigure}[8]{l}{7.0\baselineskip}
+        \vspace{-\intextsep}
+        \includegraphics[width=3.5\baselineskip]{#1}
+        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#2}}\par
+        \includegraphics[width=3.5\baselineskip]{#3}
+        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#4}}
+        \vspace{-\intextsep}
+    \end{wrapfigure}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Lists
@@ -279,15 +314,13 @@ minus \fontdimen4\font}
 \newcommand{\runningtitle}[1]{\renewcommand{\therunningtitle}{#1}}
 
 \pagestyle{fancy}
-\setlength{\headsep}{1.4em}
+\setlength{\headsep}{0em}
 \fancyhead[L]{\textbf{\therunningtitle}}
 \fancyhead[C]{}
 \fancyhead[R]{\textbf{Page \thepage}}
 \fancyfoot[L,C,R]{}
 \setlength{\footskip}{4pt}
-\renewcommand{\headruleskip}{0.1em}
-\addtolength{\headheight}{\headruleskip}
-%\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

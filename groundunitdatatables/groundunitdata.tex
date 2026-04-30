@@ -55,7 +55,7 @@ Ground combat units are formations of infantry, tanks, IFVs, APCs, other AFVs, o
 
 Table~\ref{table:ground-combat-units} summarizes the properties of ground combat and transport units, and Figure~\ref{figure:ground-combat-units} shows their representation as counters.
 All platoons and batteries in Table~\ref{table:ground-combat-units} are also available as sections and squads.
-AFVs have light, medium, or heavy armor protection.
+AFVs have heavy, medium, light, or open armor protection.
 The AAA class is B2 for infantry platoons and B3 for AFV platoons, indicating that they are capable of barrage fire to altitudes of 2 and 3 levels, respectively.
 Infantry and AFV sections and squads are not capable of barrage fire.
 
@@ -63,36 +63,52 @@ Table~\ref{table:vehicle-types} gives an extensive but not exhaustive list of ve
 
 \subsection{Infantry Units}
 
-Infantry are soldiers trained to fight on foot. In some cases, they are also trained to fight from IFVs. Mechanized infantry are transported by APCs or IFVs. Motorized infantry are transported by trucks.
+Infantry are soldiers trained to fight on foot.
+In some cases, they are also trained to fight from IFVs.
+Their primary roles in modern warfare are seizing, clearing, and holding ground, often as part of a combined-arms formation with tanks and artillery, highly mobile offensive and defensive operations in combination with helicopters, and combat in difficult terrain, including urban areas, mountainous zones, and dense jungle or forest.
+An important secondary characteristic of infantry is any associated transport.
+Motorized infantry units are transported by trucks, giving them operational mobility.
+Mechanized infantry are transported by APCs or IFVs, giving them both tactical and operational mobility.
+Light infantry units have no or fewer supporting vehicles, although modern light infantry is often airborne.
 
 \paragraph{Infantry Platoon}
 
-An infantry platoon is armed with small arms, light machine guns, grenade launchers, and portable anti-tank weapons such as bazookas, LAWs, MAWs, RPGs, and portable ATGMs.
+\leftcounter{counters/infantry platoon.png}
+
+Infantry platoons are armed principally with small arms, often supplemented with light machine guns and sometimes with light grenade launchers and portable anti-tank weapons such as bazookas, LAWs, MAWs, and portable ATGMs. They are the primary combat units in larger infantry formations.
 
 \paragraph{Infantry Weapons Platoon}
 
-An infantry weapons platoon is equipped with heavier weapons, including medium or heavy machine guns, recoilless rifles, portable ATGMs, and automatic grenade launchers.
-It is often a battalion-level asset.%
+\leftcounter{counters/infantry weapons platoon.png}
+
+These are equipped with a mix of heavier weapons, such as medium or heavy machine guns, recoilless rifles, portable ATGMs, and automatic grenade launchers.
+They are often battalion-level assets, and their role is to provide longer-range direct-fire support to the associated infantry units.
 \note{Infantry Weapons Platoon}{
     An infantry weapons platoon is not strictly necessary, but it adds to the look-and-feel, and we might consider giving them longer range in ground-to-ground combat. Having a single type is probably more appropriate than having separate types for  grenade launchers, recoilless rifles, ATGMs, and machine guns. One might think that the .50 cal or DShK infantry AAA unit could serve as a machine-gun weapons platoon, but I would imagine most machine-gun weapons platoons have low tripods for ground combat rather than high ones for AAA.
 }
 
 \paragraph{Infantry Mortar Platoon}
 
-An infantry mortar platoon is equipped with portable 60-mm, 81-mm, 82-mm, or similar mortars.
-It is often a battalion-level asset.
+\leftcounter{counters/infantry mortar platoon.png}
+
+These are equipped with somewhat portable 60-mm, 81-mm, 82-mm, or similar mortars.
+They are often battalion-level assets, and their role is to provide indirect fire support and smokescreens for associated infantry units.
+Due to the weight of ammunition required for sustained fire, an infantry mortar platoon will often be transported by a light truck platoon even if the other infantry units in its formation do not have transport.
 
 \paragraph{Infantry FAQ Squad}
+\leftcounter{counters/infantry FAC squad.png}
 
 An infantry FAC squad has a specialized forward air controller with other soldiers providing communication and protection. An infantry FAC squad will often form a composite platoon with an infantry or infantry weapons platoon. If operating independently, it will often be transported by a light truck squad.
 
-\paragraph{Infantry SAM and Heavy SAM Squad}
+\paragraph{Infantry SAM and Infantry Heavy SAM Squads}
+\leftdoublecounter{counters/infantry SAM squad.png}{counters/infantry heavy SAM squad.png}
 
-Infantry SAM and heavy SAM squads are equipped with shoulder-launched and pedestal-launched SAMs, respectively, with one launcher per squad. Their SAM capabilities and VP values are given in a subsequent section. An infantry SAM squad will often form a composite platoon with an infantry or infantry weapons platoon. If operating independently, it will often be transported by a light truck squad.
+Infantry SAM and infantry heavy SAM squads are equipped with shoulder-launched and pedestal-launched SAMs, respectively, with one launcher per squad. Their SAM capabilities and VP values are given in a subsequent section. An infantry SAM squad will often form a composite platoon with an infantry or infantry weapons platoon. If operating independently, it will often be transported by a light truck squad.
 
 \subsection{Tank, Anti-Tank, and Reconnaissance Units}
 
 \paragraph{Tank Platoon}
+\leftquadruplecounter{counters/heavy tank platoon.png}{counters/medium tank platoon.png}{counters/light tank platoon.png}{counters/open tank platoon.png}
 
 \begin{figure}[t]
     \includegraphics[width=\linewidth]{photos/centurion.jpg}
@@ -213,9 +229,10 @@ or open.\note{Open Tanks}{
 }
 Examples are given in Table~\ref{table:vehicle-types}.
 
-\paragraph{Anti-Tank Platoon}
+\paragraph{Anti-Tank Missile Platoon}
+\leftdoublecounter{counters/medium anti-tank platoon.png}{counters/light anti-tank platoon.png}
 
-Anti-tank vehicles are armored vehicles equipped with anti-tank guided missiles which mission is the destruction of other armored vehicles.
+Anti-tank missile vehicles are armored vehicles equipped with anti-tank guided missiles which mission is the destruction of other armored vehicles.
 Conventional gun-armed tank destroyers are considered to be tanks.\note{Anti-Tank Units}{
     Anti-tank units are mainly chrome.
     However, in ground combat, we might give them more effectiveness against vehicular or towed targets and less against infantry targets.
@@ -243,11 +260,16 @@ or light.\note{Light  Anti-Tank Vehicles}{
         \item YPR-765 PRAT: This is derived from the YPR-765 APC (light).
     \end{itemize}
 }
+It is often a battalion or regimental asset.
 Examples are given in Table~\ref{table:vehicle-types}.
 
-\paragraph{Towed Anti-Tank Battery}
-These have anti-tank guns in unprotected, towed mounts.
+\paragraph{Towed Anti-Tank Gun Battery}
+\leftcounter{counters/towed anti-tank battery.png}
+
+These have anti-tank guns in towed mounts with only very limited protection.
 A truck, tracked carrier, or APC platoon may transport a towed anti-tank battery.
+It is often a regimental or divisional asset.
+
 \paragraph{Reconnaissance Platoon}
 
 Reconnaissance vehicles are specialized in scouting and observation and with no significant offensive weapons.
@@ -265,7 +287,7 @@ Reconnaissance vehicles may be light\note{Light  Reconnaissance Vehicles}{
         \item Fennek: Wikipedia states that it is protected against small-arms rounds, which corresponds to light.
     \end{itemize}
 }
-or open.\note{Light  Reconnaissance Vehicles}{
+or open.\note{Light Reconnaissance Vehicles}{
     Regarding the protection class:
     \begin{itemize}
         \item M20: Open version of the M8 (light) with no turret and armed only with a .50-cal machine gun.
