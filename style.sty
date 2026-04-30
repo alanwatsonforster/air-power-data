@@ -22,6 +22,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Use 9pt for the body instead of 10 pt.
+
+\usepackage[fontsize=9pt]{fontsize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Basic spacing.
 
 % Improved spacing and breaking.
@@ -32,15 +38,15 @@
 
 % Use slightly less tight line spacing by default.
 \usepackage{setspace}
-\setstretch{1.05}
+%\setstretch{1.05}
 
-\setlength{\parindent}{0em}
-\setlength{\parskip}{0.7ex plus 0.2ex}
+\setlength{\parindent}{1.0em}
+\setlength{\parskip}{0ex}
 \newcommand{\numberspace}{\phantom{0}}
 
 \usepackage{multicol}
 \setlength{\multicolsep}{0ex}
-\setlength{\columnsep}{2em}
+\setlength{\columnsep}{1.5em}
 \setlength{\columnseprule}{0pt}
 
 % Line weights
@@ -77,40 +83,45 @@ minus \fontdimen4\font}
 \section{%
     \@startsection{section}{1}%
     {0pt}%
-    {-2.1ex plus -0.6ex minus -0.3ex}%
-    {2.1ex plus 0.6ex minus 0.3ex}%
-    {\normalfont\Large\bfseries\raggedright}%
+    {-2.0ex plus -0.6ex minus -0.3ex}%
+    {1.0ex plus 0.6ex minus 0.3ex}%
+    {\normalfont\large\bfseries\raggedright}%
 }
 
 \renewcommand
 \subsection{%
     \@startsection{subsection}{2}%
+    {\parindent}%
     {0pt}%
-    {-1.4ex plus -0.4ex minus -0.2ex}%
-    {1.4ex plus 0.4ex minus-0.2ex}%
-    {\normalfont\large\bfseries\raggedright}%
+    {-\interwordspace}%
+    {\normalfont\normalsize\bfseries\addcolon}%
 }
 
 \renewcommand
 \subsubsection{%
     \@startsection{subsubsection}{3}%
+    {2\parindent}%
     {0pt}%
-    {-0.7ex plus -0.2ex minus -0.1ex}%
-    {1.4ex plus 0.4ex minus-0.2ex}%
-    {\normalfont\bfseries\raggedright}%
+    {-\interwordspace}%
+    {\normalfont\bfseries\raggedright\addcolon}%
 }
 
 \renewcommand\paragraph{%
     \@startsection{paragraph}{4}%
+    {2\parindent}%
     {0pt}%
-    {-0.7ex plus -0.2ex minus -0.1ex}%
     {-\interwordspace}%
-    {\normalfont\normalsize\bfseries\addperiod}%
+    {\normalfont\normalsize\bfseries\addcolon}%
 }
 
+\newcommand{\addcolon}[1]{#1:}
 \newcommand{\addperiod}[1]{#1.}
 
 \makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{wrapfig2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -245,7 +256,7 @@ minus \fontdimen4\font}
 
 \newcommand{\degrees}[1]{#1\textdegrees}
 
-\newcommand{\arc}[1]{\degrees{#1}}
+%\newcommand{\arc}[1]{\degrees{#1}}
 \newcommand{\arcline}[1]{\degrees{#1}}
 \newcommand{\arcplus}[1]{\plusafter{\degrees{#1}}}
 \newcommand{\arcminus}[1]{\minusafter{\degrees{#1}}}
@@ -276,7 +287,7 @@ minus \fontdimen4\font}
 \setlength{\footskip}{4pt}
 \renewcommand{\headruleskip}{0.1em}
 \addtolength{\headheight}{\headruleskip}
-\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\headrulewidth}{0.4pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
