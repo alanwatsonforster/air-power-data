@@ -2438,8 +2438,6 @@ A soft target does not have armored protection their personnel and/or weapons.%
     Most tracked SAM vehicles are classified as hard targets in {\AirStr} and {\EOTG}, despite many of them having completely exposed missiles. If an air-burst bomb explodes above a SAM-4 launcher, it is not going to shrug it off. I think many SAM vehicles are tracked mainly for \emph{mobility} and perhaps for crew protection, but in terms of a mission-kill on their weapon systems, they are soft targets. I've not changed anything yet, but we need to think about this.
 }
 
-The mobility of a ground unit may restrict the hexes it may occupy according to the terrain in and around those hexes. Infantry units, armored units (whether tracked and wheeled), and tracked units have unrestricted (U) mobility. Truck and mobile (i.e., truck-borne) units have good (G) or poor (P) mobility. All other units have towed (T) mobility.
-
 \rulesubsection{Representation}
 
 The briefing documents show the graphical representation of ground units as counters.%
@@ -2453,51 +2451,44 @@ The briefing documents show the graphical representation of ground units as coun
 The size of a unit is indicated by one, two, or three dots (for squads, sections, or platoons) or one vertical bar (for batteries) in an upper position.
 Hard targets are indicated by an underlined defense strength and open targets by an underline defense strength followed by an exclamation point.
 
-\rulesubsection{Mobility}
-
-The mobility of a ground unit may restrict the hexes it may occupy according to the terrain in and around those hexes.%
-\note{Mobility}{
-    The inspiration for this rule was \href{https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_road_through_Mitla_Pass_dotted_with_wrecked_Egyptian_vehicles_and_armour_after_Israel_air_force_attacks._June_1967._D326-013.jpg}{this photograph} of the Mitla Pass from 1967.
-    Also, I think of the Falklands War: roads could be traversed by Landrovers and AMLs, but while the off-road terrain was open it was impassable to everything except the CVR(T)s and Bv~202s.
-
-    The basic rule is effectively: don't put trucks or towed weapons in forests unless there is a road.
-    The advanced rule is effectively: if the terrain is difficult, keep your trucks and towed weapons near roads even in clear terrain.
-
-    I note that the advanced rule is not infallible: in the Falklands War the Panhard AMLs were restricted to roads and trails, and this corresponds to poor mobility but under this rule they would still have unrestricted mobility.
-    A scenario could fix this problem by explicitly giving them poor mobility.
-
-    The basic rules do not distinguish between good, poor, and towed mobility.
-}
-A unit with unrestricted mobility may occupy: any urban hex; any clear hex; or any forest hex.
-A unit with good, poor, or towed mobility may occupy: any urban hex; any clear hex; or any forest hex with a road or trail.
-
-A scenario may modify the mobility classes of ground units and the associated restrictions.
-One common modification is to explicitly indicate the hexes occupied by each ground unit; in this case this rule is largely superfluous.%
-\note{Mobility and Movement}{
-    Not entirely superfluous: if we allow ground units to move, then the restrictions are relevant.
-}
-
 \advancedrule
 
-The following restrictions supersede those in the basic rules.
+\rulesubsection{Mobility}
+
+The mobility of a ground unit restricts the hexes it can occupy according to the terrain in and around those hexes. Infantry units, armored units (whether tracked or wheeled), and tracked unarmored units have unrestricted (U) mobility. Trucks and other wheeled unarmored units have good (G) or poor (P) mobility. All other units have towed (T) mobility.%
+\note{Mobility}{
+    The inspiration for this rule was \href{https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_road_through_Mitla_Pass_dotted_with_wrecked_Egyptian_vehicles_and_armour_after_Israel_air_force_attacks._June_1967._D326-013.jpg}{this photograph} of the Mitla Pass from 1967, which shows trucks destroyed on and just off a road.
+    Also, in the the Falklands War roads could be traversed by Landrovers and AMLs, but off-road terrain was impassable to everything except the CVR(T)s and Bv~202s despite being open.
+}
+
 A unit with unrestricted mobility may occupy: any urban hex; any clear hex; or any forest hex.
 A unit with good mobility may occupy: any urban hex; any clear hex; or any forest hex with a road or trail.
 A unit with poor mobility may occupy: any urban hex; any clear or forest hex with a road, trail, or runway; or any clear hex adjacent to an urban hex or another clear hex with a road, trail, or runway.
-A unit with towed mobility may occupy hexes according to the mobility of its transport.
+A unit with towed mobility may occupy hexes according to the mobility of its transport.%
+\note{Mobility Restrictions}{
+    When trucks have good mobility, the rule is: don't put trucks or towed weapons in forests unless there is a road. When trucks have poor mobility, the rule is effectively: if the terrain is difficult, keep your trucks and towed weapons near roads even in clear terrain.
+}
 
-Figure~\ref{figure:mobility} illustrates these rules.
+%Figure~\ref{figure:mobility} illustrates these rules.
+%
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=1\linewidth]{figure-mobility.png}
+%     \caption{Mobility. {\normalfont The figure shows the hexes a ground unit may occupy according to its mobility under the advanced rule. A ground unit with poor mobility may only occupy the hexes marked with green dots; one with good mobility may occupy those marked with yellow or green dots; and one with unlimited mobility may occupy those marked with red, yellow, or green dots. No ground unit may occupy the hex marked with a black dot.}}
+%     \label{figure:mobility}
+% \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{figure-mobility.png}
-    \caption{Mobility. {\normalfont The figure shows the hexes a ground unit may occupy according to its mobility under the advanced rule. A ground unit with poor mobility may only occupy the hexes marked with green dots; one with good mobility may occupy those marked with yellow or green dots; and one with unlimited mobility may occupy those marked with red, yellow, or green dots. No ground unit may occupy the hex marked with a black dot.}}
-    \label{figure:mobility}
-\end{figure}
+When necessary, a scenario must specify whether wheeled unarmored units have good or poor mobility, according to the terrain and the capabilities of the vehicles represented, and assign transport units to towed units.\note{Truck Mobility}{
+    For example, a scenario set in the open desert of southern Iraq might specify that trucks have good mobility, but one set in the Falkland Islands might specify that they have poor mobility. Similarly, a scenario might specify that cargo trucks have poor mobility, but mobile artillery units have good mobility. Finally, a scenario might not assign an explicit transport unit to a towed artillery battery, but might state that it has been transported by helicopter and so can be placed as if it had a transport unit with good mobility.
+}
+A scenario may modify the mobility classes of ground units and the associated restrictions.
+\note{Modifying Mobility Classes}{
 
-When this advanced rule is used, a scenario must specify (or the players must agree) whether truck and mobile units have good or poor mobility, according to the terrain and the capabilities of the trucks represented, and explicitly or implicitly assign transport units to towed units.
+    One common modification is to explicitly indicate the hexes occupied by each ground unit; in this case this rule is largely superfluous (although if we allow ground units to move, then the restrictions can still be relevant).
 
-For example, a scenario set in the open desert of southern Iraq might specify that trucks have good mobility, but one set in the Falkland Islands might specify that they have poor mobility. Similarly, a scenario might specify that cargo trucks have poor mobility, but mobile artillery units have good mobility. Finally, a scenario might not assign an explicit transport unit to a towed artillery battery, but might state that it has been transported by helicopter and so can be placed as if it had a transport unit with good mobility.
-
+    Panhard AMLs are wheeled armored vehicles and so normally have unrestricted mobility. Nevertheless, in the Falklands War they were were restricted to roads and trails, and this corresponds to poor mobility.
+    A scenario could fix this problem by explicitly giving them poor mobility.
+}
 \rulesubsection{Transport}
 
 Certain ground units and targets may be \emph{transported} by certain \emph{transport} units.%
@@ -2530,8 +2521,6 @@ A dismounted unit and its transport need not occupy the same hex.%
 \note{Dismounted Units}{
     Being placed according to the mobility of its transport allows a tracked transport to place a towed unit in a forest hex.
 }
-
-\paragraph{Advanced Rule}
 
 \paragraph{Mounting and Dismounting Infantry}
 
