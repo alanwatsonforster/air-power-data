@@ -2489,61 +2489,43 @@ A scenario may modify the mobility classes of ground units and the associated re
     Panhard AMLs are wheeled armored vehicles and so normally have unrestricted mobility. Nevertheless, in the Falklands War they were were restricted to roads and trails, and this corresponds to poor mobility.
     A scenario could fix this problem by explicitly giving them poor mobility.
 }
+
 \rulesubsection{Transport}
 
-Certain ground units and targets may be \emph{transported} by certain \emph{transport} units.%
+An infantry or towed unit may be transported by a specific associated transporting IFV, APC, truck, or tracked-carrier unit of at least the same size.
+When necessary, a scenario will establish the association between units and their specific transports.
+%
 \note{Transportation}{
-    The idea of transporting units and cargo comes from the “Thunder and Fire” scenario from \emph{Eagles of the Gulf}. The rules here simply generalize it slightly, incorporate the idea of mobility, and add rules for mounting and dismounting as an advanced rule. They also generalize POL targets to POL and supplies targets.
+    The idea of transporting units and cargo comes from the “Thunder and Fire” scenario from \emph{Eagles of the Gulf}. The rules here simply generalize it slightly, incorporate the idea of mobility, and add rules for mounting and dismounting.
 }
-An infantry or towed unit may be transported by a specific associated IFV, APC, truck, or tracked-carrier unit of at least the same size.
-Furthermore, the transported unit may be \emph{mounted} or \emph{dismounted}.
-A POL or supplies target may be transported by a truck or tracked-carrier platoon as \emph{cargo}.
-Transported cargo must always be mounted.
 
-A scenario may add further restrictions on transported units or cargos and their transports beyond those in this rule.
+A transported unit is not represented by a separate counter, does not count for stacking, and may not be sighted, identified, or attacked directly. It may not attack other ground units or aircraft, may not launch SAMs, may not use radar, and may not act as a FAC.
+%Instead, a transported unit is considered to form part of the transporting unit.
 
-\paragraph{Mounted Units}
+If a transporting unit is sighted, no information is given on the transported unit. If a transporting unit is identified, no information is given on a transported infantry unit, but any transported towed unit is also identified (for example, ``the truck platoon is towing artillery'' or ``the truck platoon is towing a ZPU-4 battery''). If a transporting unit suffers damage, then its transported unit suffers the same damage.
 
-A mounted unit or mounted cargo is not represented by a separate counter, does not count for stacking, and may not be sighted, identified, or attacked directly.
-Instead, it is considered to form part of its transport unit. A mounted unit may not attack other ground units or aircraft, may not launch missiles, and may not act as a FAC.
-
-If a transport unit is sighted, no information is given on its mounted unit or cargo.
-
-If a transport unit is identified, any towed mounted unit is also identified (e.g., ``the truck platoon is towing artillery'' or ``the truck platoon is towing a ZPU-4 battery''), otherwise no information is given on its transported unit or cargo.
-
-If a transport unit suffers damage, then its mounted unit or cargo suffers the same damage.
-
-\paragraph{Dismounted Units}
-
-At the start of a game, a dismounted unit may be placed according to either its mobility or that of its transport.
-Otherwise, a dismounted unit and its transport are treated normally.
-A dismounted unit and its transport need not occupy the same hex.%
-\note{Dismounted Units}{
+A unit may start the game either transported or not. If not transported, it may be placed according to either its mobility or that of its associated transport.%
+\note{Mobility}{
     Being placed according to the mobility of its transport allows a tracked transport to place a towed unit in a forest hex.
 }
 
-\paragraph{Mounting and Dismounting Infantry}
+An infantry unit in the same hex as its associated transport may declare that it is mounting the transport at the start of a Ground Unit Interaction Phase.
+Both units must not be suppressed, and the transport must not have suffered more damage than the infantry unit.
+At the end of the Ground Unit Interaction Phase five game turns later, the unit is considered to be transported, and its counter is removed from the map.
 
-A dismounted infantry unit in the same hex as its specific associated transport may begin to mount by declaring its intention at the start of a Ground Unit Interaction Phase.
-At the start of the Ground Unit Interaction Phase five game turns later, the unit is considered to be mounted, and its counter is removed from the map.%
+An infantry unit being transported may declare that it is dismounting at the start of a Ground Unit Interaction Phase.
+The transport unit must not be suppressed.
+At the end of the Ground Unit Interaction Phase two game turns later, the unit is considered to be no longer transported, and its counter is placed on the map in the same hex as its transport.
+If placing the counter would violate stacking requirements, the unit must abort the dismounting process.
+
+During these processes, the infantry unit may not perform any other action and the transport may not move and may not carry out ground attacks, but may perform barrage fire if it has this capability.
+The infantry unit may abort either of these process at the start of any Ground Unit Interaction Phase.
+If either are suppressed during the process, the unit must abort the process in the next Ground Unit Interaction Phase.%
 \note{Mounting and Dismounting Infantry}{
     The rules for mounting and dismounting are completely new. I'm very open to suggestions about this.
 }
 
-A mounted infantry unit may begin to dismount by declaring its intention at the start of a Ground Unit Interaction Phase.
-At the start of the Ground Unit Interaction Phase two game turns later, the unit is considered to be dismounted, and its counter is placed on the map in the same hex as its transport. If placing the counter would violate stacking requirements, the mounted unit must abort the dismounting process.
-
-During these processes, the transported unit may not perform any other action and the transport may not move and may not carry out ground attacks, but may perform barrage fire if it has this capability.
-
-The transported unit may abort the process at the end of any Ground Unit Interaction Phase.
-
-\paragraph{Mounting and Dismounting Towed Units}
-
 A towed unit may not mount or dismount during the game.
-
-\subsection{Composite and Attached Units}
-
-\paragraph{Advanced Rule}
 
 \paragraph{Composite Platoons}
 
