@@ -38,7 +38,7 @@
 
 % Use slightly less tight line spacing by default.
 \usepackage{setspace}
-%\setstretch{1.05}
+\setstretch{1.05}
 
 \setlength{\parindent}{1.0em}
 \setlength{\parskip}{0ex}
@@ -81,15 +81,17 @@ minus \fontdimen4\font}
 
 \renewcommand
 \section{%
+    % broken-out, flush left, ragged right, normalsize, bold, uppercase
     \@startsection{section}{1}%
     {0pt}%
-    {-2.0ex plus -0.6ex minus -0.3ex}%
+    {2.0ex plus 0.6ex minus 0.3ex}%
     {1.0ex plus 0.6ex minus 0.3ex}%
-    {\normalfont\large\bfseries\raggedright}%
+    {\normalfont\normalsize\bfseries\raggedright\MakeUppercase}%
 }
 
 \renewcommand
 \subsection{%
+    % run-in, indented, normalsize, bold, with trailing colon.
     \@startsection{subsection}{2}%
     {\parindent}%
     {0pt}%
@@ -97,25 +99,39 @@ minus \fontdimen4\font}
     {\normalfont\normalsize\bfseries\addcolon}%
 }
 
-\renewcommand
-\subsubsection{%
-    \@startsection{subsubsection}{3}%
-    {2\parindent}%
-    {0pt}%
-    {-\interwordspace}%
-    {\normalfont\bfseries\raggedright\addcolon}%
-}
-
 \renewcommand\paragraph{%
+    % run-in, indented, normalsize, italic, with trailing colon.
     \@startsection{paragraph}{4}%
-    {2\parindent}%
+    {\parindent}%
     {0pt}%
     {-\interwordspace}%
-    {\normalfont\normalsize\bfseries\addcolon}%
+    {\normalfont\normalsize\itshape\addcolon}%
 }
 
 \newcommand{\addcolon}[1]{#1:}
 \newcommand{\addperiod}[1]{#1.}
+
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+
+\newcounter{rulesection}
+\newcommand{\rulesection}[1]{%
+    \stepcounter{rulesection}
+    \section{Rule \arabic{rulesection}: #1}
+}
+
+\newcounter{rulesubsection}[rulesection]
+\newcommand{\rulesubsection}[1]{%
+    \stepcounter{rulesubsection}
+    \subsection{\Alph{rulesubsection}. #1}
+}
+
+\newcommand{\ruleparagraph}[1]{
+    \paragraph{#1}
+}
 
 \makeatother
 
@@ -314,13 +330,15 @@ minus \fontdimen4\font}
 \newcommand{\runningtitle}[1]{\renewcommand{\therunningtitle}{#1}}
 
 \pagestyle{fancy}
-\setlength{\headsep}{0em}
+\setlength{\headsep}{1.4em}
 \fancyhead[L]{\textbf{\therunningtitle}}
 \fancyhead[C]{}
 \fancyhead[R]{\textbf{Page \thepage}}
 \fancyfoot[L,C,R]{}
 \setlength{\footskip}{4pt}
-\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headruleskip}{0.1em}
+\addtolength{\headheight}{\headruleskip}
+%\renewcommand{\headrulewidth}{0.4pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
