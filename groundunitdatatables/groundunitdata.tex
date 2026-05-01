@@ -2372,34 +2372,27 @@ A ground \emph{unit} is a combat or logistics formation of infantry, armor, tran
     Much of this section should be included in the 3A rules, but it's here for the moment.
 }
 
-\rulesubsection{Description}
+\rulesubsection{Type and Size}
 
-A ground unit will have a type, for example, “heavy tank” or “ZSU-23-4”, and a size, which will be one of squad, section, platoon, or battery according to its number of soldiers, vehicles, guns, or launchers.
+A ground unit will have a type, for example, “heavy tank” or “ZSU-23-4”, and a size, which will be one of squad, section, platoon, or battery. Typically, a squad has five to ten soldiers and/or one vehicle, gun, or launcher; a section has ten to twenty soldiers and/or two vehicles, guns, or launchers; and a platoon or battery has thirty to fifty soldiers and/or three to six vehicles, guns, or launchers.
+The term “platoon” is more commonly used for infantry and tank units and “battery” for artillery and air-defense units, but within the game they are equivalent.
 
-\ruleparagraph{Size}
+Companies, battalions, and other larger units above platoons or batteries are represented by multiple units. For example, an infantry company might be represented by three infantry platoon units.
 
-Typically a squad has five to ten soldiers and/or one vehicle, gun, or launcher; a section has ten to twenty soldiers and/or two vehicles, guns, or launchers; and a platoon or battery has thirty to fifty soldiers and/or three to six vehicles, guns, or launchers. The term “platoon” is more commonly used for infantry and tank units and “battery” for artillery and air-defense units, but within the game they are equivalent.
-
-\ruleparagraph{Larger Units}
-
-Companies, battalions, and other larger units above platoons or batteries are represented by multiple units. For example, an infantry company might be formed by three infantry platoons.
-
-\ruleparagraph{Squads and Sections}
-
-Most of the ground units described here and employed in the game are platoons or batteries, but all ground combat and transport platoons are also available as sections and squads and all AAA platoons and batteries are also available as sections.
+All ground combat and transport platoons are also available as sections and squads and all AAA platoons and batteries are also available as sections.
 A section or squad is identical in every way to a platoon or battery that has taken 1D or 2D damage, respectively, except that no VPs are awarded for this notional damage and non-AAA squads and sections may not engage in barrage fire.%
 \note{Squads and Sections as Damaged Platoons}{
     So for example sections/squads have 2D/1D damage resilience and \plus{1}/\plus{2} modifiers to AAA attacks. Similar modifiers should be applied to ground-to-ground attacks.
 }
 
-\ruleparagraph{Other Terms}
-
-In the game, ground units are uniformly referred to as squads, sections, platoons, and batteries. However, other terms are used for units even within English-speaking armies. For example, in the US Armored Cavalry, a troop is equivalent to a company and a squadron is equivalent to a battalion, but in the British Army and many Commonwealth armies, a troop is equivalent to a platoon and a squadron is the equivalent of a company.
-% Sometimes a regiment is equivalent to a battalion and other times to a brigade.
+In the game, ground units are uniformly referred to as squads, sections, platoons, and batteries. However, other terms are used for these units even within English-speaking armies.
+For example, in many Commonwealth armies a section is equivalent to a squad, a troop is equivalent to a platoon, and a squadron is equivalent to a company.
+In the US Armored Cavalry, a troop is equivalent to a company and a squadron is equivalent to a battalion.
 
 \rulesubsection{Basic Properties}
 
-The type and size of a ground unit determines its basic properties. These describe its visibility to aircraft, vulnerability to air-to-ground and ground-to-ground attacks,  capacity for ground-to-ground attacks, ability to move through difficult terrain, and value in VPs.
+The type and size of a ground unit determines its basic properties: damage resilience, defense strength, target class, mobility, and sighting range.
+
 %Many units also have properties related to their air-defense capabilities.
 
 %\begin{itemize}
@@ -2412,63 +2405,57 @@ The type and size of a ground unit determines its basic properties. These descri
 %    \item the VPs awarded for 3D/2D/D damage.
 %\end{itemize}
 
-\ruleparagraph{Damage Resilience}
-
-A ground unit has a damage resilience, which is the amount of damage it can suffer before being killed. It is determined by the size of the unit: a squad has a damage resilience of 1D; a section has a damage resilience of 2D; and a platoon or battery has a damage resilience of 3D.%
+The damage resilience is the amount of damage a ground unit can suffer before being killed. It is determined by the size of the unit: a squad has a damage resilience of 1D; a section has a damage resilience of 2D; and a platoon or battery has a damage resilience of 3D.%
 \note{Damage Resilience in \emph{Air Strike}}{
     There is a form of damage resilience in \emph{Air Strike}, in that units whose counters have white text are only able to take 1D of damage before being killed (see the last paragraph of rule 28). Such units include infantry SAMs, armored CCUs, and many vehicle SAMs. TSOH also mentions units being able to take only 2D damage, but it doesn't have any relevant units since it attaches SAM teams to infantry platoons rather than having them as separate (see below) and doesn't have a separate FAC unit. In both cases, the idea seems to have been incompletely implemented in the rules. I'm generalizing and homogenizing the idea. This is important as we need sections for mobile AAA units with two vehicles and for the Oerlikon GDF (as Skyguard can only control two guns and not a full battery). To a large degree, a section is equivalent to a platoon that has taken 1D and a squad is equivalent to a platoon that has taken 2D, so the mechanics of the game are really not impacted.
 }
 
-\ruleparagraph{Defense Strength and Target Class}
+The numerical defense strength is used to calculate the odds for air-to-ground attacks and for ground-to-ground combat.
 
-A ground unit has a numerical defense strength, which is used to calculate the odds for air-to-ground attacks and for ground-to-ground combat, and a target class, which is used to select the appropriate attack strengths of any weapons used in air-to-ground attacks.
-The target class can be a hard, open, or soft target according to the degree to which it provides armored protection to its personnel and weapons.
-
-A hard target has armored protection from both direct and top attacks and is denoted by an underlined defense strength.
+The target class is used to determine the appropriate attack strength of any weapons used in air-to-ground attacks.
+The class can be a hard, open, or soft according to the degree to which the unit enjoys armored protection.
+Many weapons have different attack strengths against targets of different classes.
+A hard target has armored protection from both direct (front, side, and rear) and top attacks.
 Hard targets are further described as light, medium, or heavy according to their degree of protection, and have corresponding defense strengths.%
-\note{Hard Targets}
-{
+\note{Hard Targets}{
     Light, medium, and heavy armor correspond to defense strengths of 4, 6, and 8 in {\AirStr}.
 
     Light armor give protection from 14.5 mm and smaller round. Medium armor gives protection from autocannons and guns up to about 90 mm. Heavy armor gives protection against guns of 100 mm or more. Obviously, this is a gross simplification as each vehicle has its own strengths and weaknesses and its armor varies between its front, side, rear, and top. Nevertheless, this rough classification seems to map to the vehicles depicted in scenarios in {\AirStr} and {\EOTG}.
 
     The protection level of tanks and other AFVs are based on the armor classes in the Wargames Research Group 1950--1985 rules: open is class I, light is class II to III, medium is class IV to IIX, and heavy is class IX and X. More modern tanks are guesses, and I'm willing to be corrected.
 }
-
-An open target has armored protection from direct attacks but not from top attacks and is denoted by an underlined defense strength followed by an exclamation point.
-It is normally treated as a hard target, but against napalm, fire, FAE, and air-burst HE bombs, it is considered to be a soft target. %
+An open target has armored protection from direct attacks but not from top attacks.
+An open target is normally treated as a hard target, but against napalm, fire, FAE, and air-burst HE bombs, it is considered to be a soft target.%
 \note{Open Targets}{
     The BTR-50P APC and the M3 half-tracked APC are examples of open targets. In the 1956 and 1967 Arab-Israeli Wars where both sides used M3 half-tracks. If an M3 is attacked by an air-burst or napalm bomb, the crew and passengers will suffer more or less as if they were in the open.
 }
-
-A soft target does not have armored protection their personnel and/or weapons and does not have an underlined defense strength. %
+A soft target does not have armored protection their personnel and/or weapons.%
 \note{Soft Targets}{
-    Examples of soft targets iinclude infantry, towed artillery, unarmored vehicles, and armored vehicles that do not fully protect their personnel and/or weapons such as the M-107 and M-110 tracked artillery vehicles.
+    Examples of soft targets include infantry, towed artillery, unarmored vehicles, and armored vehicles that do not fully protect their personnel and/or weapons such as the M-107 and M-110 tracked artillery vehicles.
 
     Nothing like the M-107 or M-110 is included in \emph{Air Strike}, but again I would assert that it is tracked mainly for mobility. Effectively, these are towed artillery installed in an exposed position on a tracked hull and have almost no protection for most of the crew.
 
     Most tracked SAM vehicles are classified as hard targets in {\AirStr} and {\EOTG}, despite many of them having completely exposed missiles. If an air-burst bomb explodes above a SAM-4 launcher, it is not going to shrug it off. I think many SAM vehicles are tracked mainly for \emph{mobility} and perhaps for crew protection, but in terms of a mission-kill on their weapon systems, they are soft targets. I've not changed anything yet, but we need to think about this.
 }
 
-\subsection{Representation}
-\begin{comment}
-Figures \ref{figure:ground combat-units}, \ref{figure:aaa-units}, \ref{figure:radar-and-ccu-units}, \ref{figure:infantry-sam-units}, and \ref{figure:sam-launcher-units} show the graphical representation of ground combat units as counters.
-\end{comment}
+The mobility of a ground unit may restrict the hexes it may occupy according to the terrain in and around those hexes. Infantry units, armored units (whether tracked and wheeled), and tracked units have unrestricted (U) mobility. Truck and mobile (i.e., truck-borne) units have good (G) or poor (P) mobility. All other units have towed (T) mobility.
 
-Figures \ref{figure:ground-combat-units}, \ref{figure:aaa-units}, \ref{figure:radar-and-ccu-units}, and \ref{figure:infantry-sam-units} show the graphical representation of ground units as counters.
+\rulesubsection{Representation}
 
-The representation is based on NATO symbols, including those for infantry, armor, anti-armor, air defense, guns, missiles, mortar, tube artillery, and rocket artillery. One addition is that a rectangle denotes an unarmored vehicle such as a truck or tracked carrier. A truck or mobile unit has two wheel symbols in the lower position, whereas a tracked carrier has a tracked symbol. The mortar symbol is modified to be simply an open circle, for compactness.
+The briefing documents show the graphical representation of ground units as counters.%
+\note{Representation}{
+    The representation is based on NATO symbols, including those for infantry, armor, anti-armor, air defense, guns, missiles, mortar, tube artillery, and rocket artillery. One addition is that a rectangle denotes an unarmored vehicle such as a truck or tracked carrier. A truck or mobile unit has two wheel symbols in the lower position, whereas a tracked carrier has a tracked symbol. The mortar symbol is modified to be simply an open circle, for compactness.
 
-All vehicular units have either an armored or unarmored vehicle symbol, all infantry units have an infantry symbol, and towed units have none of these.
+    All vehicular units have either an armored or unarmored vehicle symbol, all infantry units have an infantry symbol, and towed units have none of these.
 
-The letter T in the central position indicates a transport capacity (e.g., APCs, IFVs, cargo trucks, and tracked cargo carriers). Words and letters in the lower position indicate variants on a basic type: the letters H, M, L, and O on an armored unit indicate heavy, medium, light, and open armored protection; the word WPN or FAC on an infantry unit indicates a weapons or FAC unit; and the letter H on an infantry SAM unit indicates a heavy version of the launcher (e.g., the LML version of Starstreak).
-
+    The letter T in the central position indicates a transport capacity (e.g., APCs, IFVs, cargo trucks, and tracked cargo carriers). Words and letters in the lower position indicate variants on a basic type: the letters H, M, L, and O on an armored unit indicate heavy, medium, light, and open armored protection; the word WPN or FAC on an infantry unit indicates a weapons or FAC unit; and the letter H on an infantry SAM unit indicates a heavy version of the launcher (e.g., the LML version of Starstreak).
+}
 The size of a unit is indicated by one, two, or three dots (for squads, sections, or platoons) or one vertical bar (for batteries) in an upper position.
+Hard targets are indicated by an underlined defense strength and open targets by an underline defense strength followed by an exclamation point.
 
-\subsection{Mobility}
+\rulesubsection{Mobility}
 
-A ground unit has a mobility that may restrict the hexes it may occupy according to the terrain in and around those hexes.
-Infantry units, armored units (whether tracked and wheeled), and tracked units have unrestricted (U) mobility. Truck and mobile (i.e., truck-borne) units have good (G) or poor (P) mobility. All other units have towed (T) mobility.%
+The mobility of a ground unit may restrict the hexes it may occupy according to the terrain in and around those hexes.%
 \note{Mobility}{
     The inspiration for this rule was \href{https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_road_through_Mitla_Pass_dotted_with_wrecked_Egyptian_vehicles_and_armour_after_Israel_air_force_attacks._June_1967._D326-013.jpg}{this photograph} of the Mitla Pass from 1967.
     Also, I think of the Falklands War: roads could be traversed by Landrovers and AMLs, but while the off-road terrain was open it was impassable to everything except the CVR(T)s and Bv~202s.
@@ -2478,7 +2465,11 @@ Infantry units, armored units (whether tracked and wheeled), and tracked units h
 
     I note that the advanced rule is not infallible: in the Falklands War the Panhard AMLs were restricted to roads and trails, and this corresponds to poor mobility but under this rule they would still have unrestricted mobility.
     A scenario could fix this problem by explicitly giving them poor mobility.
+
+    The basic rules do not distinguish between good, poor, and towed mobility.
 }
+A unit with unrestricted mobility may occupy: any urban hex; any clear hex; or any forest hex.
+A unit with good, poor, or towed mobility may occupy: any urban hex; any clear hex; or any forest hex with a road or trail.
 
 A scenario may modify the mobility classes of ground units and the associated restrictions.
 One common modification is to explicitly indicate the hexes occupied by each ground unit; in this case this rule is largely superfluous.%
@@ -2486,29 +2477,13 @@ One common modification is to explicitly indicate the hexes occupied by each gro
     Not entirely superfluous: if we allow ground units to move, then the restrictions are relevant.
 }
 
-\paragraph{Basic Rule}
+\advancedrule
 
-A ground unit may occupy hexes as follows:
-\begin{itemize}
-    \item A unit with unrestricted mobility may occupy: any urban hex; any clear hex; or any forest hex.
-
-    \item A unit with good, poor, or towed mobility may occupy: any urban hex; any clear hex; or any forest hex with a road or trail.
-\end{itemize}
-
-The basic rules do not distinguish between good, poor, and towed mobility.
-
-\paragraph{Advanced Rule}
-
-The following restrictions supersede those in the basic rules:
-\begin{itemize}
-    \item A unit with unrestricted mobility may occupy: any urban hex; any clear hex; or any forest hex.
-
-    \item A unit with good mobility may occupy: any urban hex; any clear hex; or any forest hex with a road or trail.
-
-    \item A unit with poor mobility may occupy: any urban hex; any clear or forest hex with a road, trail, or runway; or any clear hex adjacent to an urban hex or another clear hex with a road, trail, or runway.
-
-    \item A unit with towed mobility may occupy hexes according to the mobility of its transport.
-\end{itemize}
+The following restrictions supersede those in the basic rules.
+A unit with unrestricted mobility may occupy: any urban hex; any clear hex; or any forest hex.
+A unit with good mobility may occupy: any urban hex; any clear hex; or any forest hex with a road or trail.
+A unit with poor mobility may occupy: any urban hex; any clear or forest hex with a road, trail, or runway; or any clear hex adjacent to an urban hex or another clear hex with a road, trail, or runway.
+A unit with towed mobility may occupy hexes according to the mobility of its transport.
 
 Figure~\ref{figure:mobility} illustrates these rules.
 
@@ -2523,21 +2498,18 @@ When this advanced rule is used, a scenario must specify (or the players must ag
 
 For example, a scenario set in the open desert of southern Iraq might specify that trucks have good mobility, but one set in the Falkland Islands might specify that they have poor mobility. Similarly, a scenario might specify that cargo trucks have poor mobility, but mobile artillery units have good mobility. Finally, a scenario might not assign an explicit transport unit to a towed artillery battery, but might state that it has been transported by helicopter and so can be placed as if it had a transport unit with good mobility.
 
-\subsection{Transportation}
+\rulesubsection{Transport}
 
 Certain ground units and targets may be \emph{transported} by certain \emph{transport} units.%
 \note{Transportation}{
     The idea of transporting units and cargo comes from the “Thunder and Fire” scenario from \emph{Eagles of the Gulf}. The rules here simply generalize it slightly, incorporate the idea of mobility, and add rules for mounting and dismounting as an advanced rule. They also generalize POL targets to POL and supplies targets.
 }
-
 An infantry or towed unit may be transported by a specific associated IFV, APC, truck, or tracked-carrier unit of at least the same size.
 Furthermore, the transported unit may be \emph{mounted} or \emph{dismounted}.
-
 A POL or supplies target may be transported by a truck or tracked-carrier platoon as \emph{cargo}.
 Transported cargo must always be mounted.
 
 A scenario may add further restrictions on transported units or cargos and their transports beyond those in this rule.
-\paragraph{Basic Rule}
 
 \paragraph{Mounted Units}
 

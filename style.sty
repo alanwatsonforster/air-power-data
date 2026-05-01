@@ -84,8 +84,8 @@ minus \fontdimen4\font}
     % broken-out, flush left, ragged right, normalsize, bold, uppercase
     \@startsection{section}{1}%
     {0pt}%
-    {2.0ex plus 0.6ex minus 0.3ex}%
-    {1.0ex plus 0.6ex minus 0.3ex}%
+    {2.0ex plus 0.6ex minus 0.2ex}%
+    {1.0ex plus 0.3ex minus 0.1ex}%
     {\normalfont\normalsize\bfseries\raggedright\MakeUppercase}%
 }
 
@@ -129,8 +129,24 @@ minus \fontdimen4\font}
     \subsection{\Alph{rulesubsection}. #1}
 }
 
+% Examples: in 40.B and 40.C.
+\newcounter{rulesubsubsection}[rulesubsection]
+\newcommand{\rulesubsubsection}[1]{%
+    \stepcounter{rulesubsubsection}
+    \subsubsection{\arabic{rulesubsubsection}. #1}
+}
+
 \newcommand{\ruleparagraph}[1]{
     \paragraph{#1}
+}
+
+\newcommand{\advancedrule}{
+    \@startsection{section}{1}%
+    {0pt}%
+    {1.0ex plus 0.3ex minus 0.1ex}%
+    {0.1ex plus 0.1ex minus 0.1ex}%
+    {\normalfont\normalsize\bfseries\raggedright}%
+    *{Advanced Rule}
 }
 
 \makeatother
@@ -181,20 +197,24 @@ minus \fontdimen4\font}
 \usepackage{enumitem}
 
 \setlist[itemize]{
-    align=left,
-    labelwidth=1.2em,
-    labelsep=0.3em,
-    leftmargin=1.5em,
-    nosep,
-    parsep=\parskip,
+    noitemsep,
+    nolistsep,
+    leftmargin=0em,
+    labelindent=\parindent,
+    labelwidth=*,
+    labelsep=\interwordspace,
+    itemindent=*,
     label=--,
 }
 \setlist[enumerate]{
-    align=left,
-    leftmargin=1.5em,
-    labelwidth=1.2em,
-    labelsep=0.3em,
-    parsep=\parskip,
+    noitemsep,
+    nolistsep,
+    leftmargin=0em,
+    labelindent=\parindent,
+    labelwidth=*,
+    labelsep=\interwordspace,
+    itemindent=*,
+    align=left
 }
 \setlist[enumerate,2]{
     label=\alph*.
