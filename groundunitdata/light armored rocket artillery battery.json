@@ -1,6 +1,6 @@
 {
-    "name": "armored rocket artillery",
-    "description": "armored rocket artillery battery",
+    "name": "light armored rocket artillery",
+    "description": "light armored rocket artillery battery",
     "symbols": "rocket/armor/light/battery",
     "sightingrange": 12,
     "defensestrength": "4H",

@@ -1,7 +1,7 @@
 {
-    "name": "towed anti-tank",
-    "description": "towed anti-tank battery",
-    "symbols": "gun/battery",
+    "name": "towed anti-tank gun",
+    "description": "towed anti-tank gun battery",
+    "symbols": "gun/antiarmor/battery",
     "sightingrange": 12,
     "defensestrength": "4S",
     "mobility": "T",

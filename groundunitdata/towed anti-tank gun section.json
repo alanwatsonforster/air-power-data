@@ -1,6 +1,6 @@
 {
-    "name": "towed anti-tank",
-    "description": "towed anti-tank section",
+    "name": "towed anti-tank gun",
+    "description": "towed anti-tank gun section",
     "symbols": "gun/section",
     "sightingrange": 12,
     "defensestrength": "4S",

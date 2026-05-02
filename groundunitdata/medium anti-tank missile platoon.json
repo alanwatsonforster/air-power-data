@@ -1,7 +1,7 @@
 {
-    "name": "medium anti-tank",
-    "description": "medium anti-tank platoon",
-    "symbols": "armor/antiarmor/medium/platoon",
+    "name": "medium anti-tank missile",
+    "description": "medium anti-tank missile platoon",
+    "symbols": "armor/antiarmor/missile/medium/platoon",
     "defensestrength": "6H",
     "sightingrange": 12,
     "mobility": "U",

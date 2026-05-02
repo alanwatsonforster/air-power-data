@@ -111,6 +111,9 @@ minus \fontdimen4\font}
 \newcommand{\addcolon}[1]{#1:}
 \newcommand{\addperiod}[1]{#1.}
 
+\newcommand{\example}[2][Example]{{\itshape #1:} #2}
+\newcommand{\examples}[2][Examples]{{\itshape #1:} #2}
+
 \makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -153,43 +156,48 @@ minus \fontdimen4\font}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{wrapfig2}
+% I've tried to get this to work with wrapfig2, but I had problems with columns breaking unexpectedly.
 
-% The wrapfigure environment adds \columnsep between the float and the text.
-% For a counter, the usual value is too much. Setting it to a smaller value
-% causes problems for its use to separate the real columns. The solution is
-% to set the space explicitly.
-%
-% The wrapfigure environment also adds \intextsep above and below the
-% contents, but this is easier to eliminate.
-
-\newcommand{\leftcounter}[1]{
-    \begin{wrapfigure}[4]{l}{3.0\baselineskip}
-        \vspace{-\intextsep}
-        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#1}}
-        \vspace{-\intextsep}
-    \end{wrapfigure}
+\newcommand{\counter}[1]{%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}%
+}
+\newcommand{\twocounters}[2]{%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
+    \vspace{0.15em}%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#2.png}}}%
+}
+\newcommand{\threecounters}[3]{%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
+    \vspace{0.15em}%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#2.png}}}\par%
+    \vspace{0.15em}%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#3.png}}}%
+}
+\newcommand{\fourcounters}[4]{%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
+    \vspace{0.15em}%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#2.png}}}\par%
+    \vspace{0.15em}%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#3.png}}}\par%
+    \vspace{0.15em}%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#4.png}}}%
 }
 
-\newcommand{\leftdoublecounter}[2]{
-    \begin{wrapfigure}[8]{l}{3.0\baselineskip}
-        \vspace{-\intextsep}
-        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#1}}\par
-        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#2}}
-        \vspace{-\intextsep}
-    \end{wrapfigure}
+\newlength{\textwidthwithcounter}
+
+\newcommand{\subsectionwithcounter}[3]{%
+    \vspace{0.13em}
+    \noindent
+    \setlength{\textwidthwithcounter}{\linewidth}%
+    \addtolength{\textwidthwithcounter}{-4em}%
+    \addtolength{\textwidthwithcounter}{-\tabcolsep}%
+    % I do not understand why I need to subtract an extra 2.7pt, but if I do not I get an overfull hbox warning.
+    \addtolength{\textwidthwithcounter}{-2.7pt}%
+    \begin{tabular}{@{}p{4em}p{\textwidthwithcounter}@{}}
+        #2&{\bfseries #1:} \ignorespaces #3\\
+    \end{tabular}
 }
 
-\newcommand{\leftquadruplecounter}[4]{
-    \begin{wrapfigure}[8]{l}{7.0\baselineskip}
-        \vspace{-\intextsep}
-        \includegraphics[width=3.5\baselineskip]{#1}
-        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#2}}\par
-        \includegraphics[width=3.5\baselineskip]{#3}
-        \makebox[0pt][l]{\includegraphics[width=3.5\baselineskip]{#4}}
-        \vspace{-\intextsep}
-    \end{wrapfigure}
-}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Lists
@@ -244,12 +252,12 @@ minus \fontdimen4\font}
     \endnote{%
         \setlength{\parindent}{0pt}%
         \setlength{\parskip}{\smallskipamount}%
-        \noteparagraph{#1} #2
+        {\bfseries #1.}\par #2
     }%
 }
 
 \newcommand{\noteparagraph}[1]{%
-    {\bfseries #1.} \ignorespaces%
+    \par{\bfseries\itshape #1.} \ignorespaces%
 }
 
 \newcommand{\listofnotes}{

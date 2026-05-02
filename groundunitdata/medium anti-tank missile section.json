@@ -1,0 +1,9 @@
+{
+    "name": "medium anti-tank missile",
+    "description": "medium anti-tank missile section",
+    "symbols": "armor/antiarmor/missile/medium/section",
+    "defensestrength": "6H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 12
+}
