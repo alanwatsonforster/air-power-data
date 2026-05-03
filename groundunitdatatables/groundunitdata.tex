@@ -2,7 +2,7 @@
 %!TEX program = xelatex
 % LTeX: enabled=true
 
-\documentclass{article}
+\documentclass{report}
 
 \input{../style.sty}
 
@@ -20,9 +20,11 @@
 
     \maketitle
 
-    \section{Introduction}
 ]
 \thispagestyle{empty}
+
+\clearpage
+\section*{Introduction}
 
 For many, the principal focus of the \emph{Air Power} game is air-to-air combat.
 That said, no less an authority on air-to-air combat than Robin Olds stated:%
@@ -40,9 +42,10 @@ Much of the data here is adapted from \emph{Air Strike}, \emph{Eagles of the Gul
 
 Extensive notes accompany the main text, providing provenance of data, explanations of changes, sources of information, and justifications for decisions.
 
-\clearpage
+\setcounter{tocdepth}{1}
+\tableofcontents
 
-\section{Ground-Combat and Transport Units}
+\chapter{Ground-Combat and Transport Units}
 \raggedbottom
 
 Ground-combat units are formations of infantry, tanks, IFVs, APCs, other AFVs, or artillery whose primary role is combat with other ground units. Transport units provide strategic mobility to infantry and towed artillery and are the life-blood of logistic networks.
@@ -668,8 +671,7 @@ Towed weapons is typically used away from direct combat and provided with approp
     \input{table-vehicle-types}
 \end{table*}
 
-\clearpage
-\section{AAA Units}
+\chapter{AAA Units}
 
 % \begin{figure}[ht]
 %     \includegraphics[width=\linewidth]{photos/gepard.jpg}
@@ -1808,9 +1810,7 @@ When attacking a bunker entrance, a tunnel entrance hex, or a shelter, the attac
 \flushbottom
 \appendix
 
-\twocolumn[
-    \section{Example Orders of Battle}
-]
+\chapter{Example Orders of Battle}
 
 This appendix contains a number of example orders of battle and their correspondence in game units.
 
@@ -2389,6 +2389,8 @@ This appendix contains a number of example orders of battle and their correspond
         \end{table*}
 
 \end{itemize}
+
+\chapter{Additional Rules}
 
 \rulesection{Ground Units}
 

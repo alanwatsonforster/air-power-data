@@ -14,40 +14,43 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Use Plex
+% FONTS
+
+% Use Plex.
 
 \usepackage{unicode-math}
 \usepackage[usefilenames]{plex-otf}
 \renewcommand*\familydefault{\sfdefault}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % Use 9pt for the body instead of 10 pt.
 
 \usepackage[fontsize=9pt]{fontsize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Basic spacing.
-
 % Improved spacing and breaking.
 \usepackage{microtype}
 
-% Two-column text really needs relaxed line breaking.
-\sloppy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Use slightly less tight line spacing by default.
-\usepackage{setspace}
-\setstretch{1.05}
+% PAGE LAYOUT.
+
+\usepackage{multicol}
+
+\setlength{\multicolsep}{0ex}
+\setlength{\columnsep}{1.5em}
+\setlength{\columnseprule}{0pt}
 
 \setlength{\parindent}{1.0em}
 \setlength{\parskip}{0ex}
 \newcommand{\numberspace}{\phantom{0}}
 
-\usepackage{multicol}
-\setlength{\multicolsep}{0ex}
-\setlength{\columnsep}{1.5em}
-\setlength{\columnseprule}{0pt}
+% Two-column text really needs relaxed line breaking.
+
+\sloppy
+
+% Use slightly less tight line spacing by default.
+
+\usepackage{setspace}
+\setstretch{1.05}
 
 % Line weights
 
@@ -66,53 +69,143 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Sections
+% CHAPTERS AND SECTIONS
 
 \setcounter{secnumdepth}{0}
-\setcounter{tocdepth}{1}
 
 \newlength{\interwordspace}
-\setlength{\interwordspace}{\fontdimen2\font plus \fontdimen3\font
-minus \fontdimen4\font}
+\setlength{\interwordspace}{
+    \fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font
+}
 
 \makeatletter
 
-% The vertical spaces are multiples of \parskip
+% Chapter headings start a new page, as full width, broken-out, flush left,
+% ragged right, \Large, bold, and uppercase. Chapters are never numbered.
+% Chapters are not handled by \@startsection, so we have to redefine them
+% manually.
 
-\renewcommand
-\section{%
-    % broken-out, flush left, ragged right, normalsize, bold, uppercase
+\newcommand{\chapter@star}[1]{%
+    \stepcounter{chapter}%
+    \clearpage%
+    \twocolumn[%
+        \vspace*{1.5ex}%
+        \normalfont{\Large\bfseries\raggedright\MakeUppercase{#1}}\par
+        \vspace{2.0ex}%
+    ]%
+}
+\newcommand{\chapter@nostar}[1]{%
+    \chapter@star{#1}%
+    \addcontentsline{toc}{chapter}{\MakeUppercase{#1}}%
+}
+\renewcommand{\chapter}{\@ifstar{\chapter@star}{\chapter@nostar}}
+
+% Section headings are broken-out, flush left, ragged right, \normalsize, bold,
+% and uppercase.
+
+\newcommand{\section@handler}{%
     \@startsection{section}{1}%
     {0pt}%
     {2.0ex plus 0.6ex minus 0.2ex}%
     {1.0ex plus 0.3ex minus 0.1ex}%
-    {\normalfont\normalsize\bfseries\raggedright\MakeUppercase}%
+    {\normalfont\normalsize\bfseries\raggedright}%
 }
+\newcommand{\section@star}[1]{%
+    \section@handler*{\MakeUppercase{#1}}%
+}
+\newcommand{\section@nostar}[1]{%
+    \section@handler{\MakeUppercase{#1}}%
+}
+\renewcommand{\section}{\@ifstar{\section@star}{\section@nostar}}
 
-\renewcommand
-\subsection{%
-    % run-in, indented, normalsize, bold, with trailing colon.
+% Subsections headings are run-in, indented, normalsize, bold, with a trailing
+% colon.
+
+\renewcommand{\subsection}{%
     \@startsection{subsection}{2}%
     {\parindent}%
     {0pt}%
     {-\interwordspace}%
-    {\normalfont\normalsize\bfseries\addcolon}%
+    {\normalfont\normalsize\bfseries\@addcolon}%
 }
+\newcommand{\@addcolon}[1]{#1:}
+
+% Paragraph headings are run-in, indented, normalsize, italic, with a trailing
+% colon.
 
 \renewcommand\paragraph{%
-    % run-in, indented, normalsize, italic, with trailing colon.
     \@startsection{paragraph}{4}%
     {\parindent}%
     {0pt}%
     {-\interwordspace}%
-    {\normalfont\normalsize\itshape\addcolon}%
+    {\normalfont\normalsize\itshape\@addcolon}%
 }
 
-\newcommand{\addcolon}[1]{#1:}
-\newcommand{\addperiod}[1]{#1.}
+\makeatother
+
+% Example paragraphs.
 
 \newcommand{\example}[2][Example]{{\itshape #1:} #2}
-\newcommand{\examples}[2][Examples]{{\itshape #1:} #2}
+\newcommand{\examples}[1]{\example[Examples]{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% TABLE OF CONTENTS
+
+\usepackage[titles]{tocloft}
+
+\setcounter{tocdepth}{1}
+
+% Reduce the vertical space in the TOC.
+
+\setlength{\cftbeforechapskip}{0em}
+\setlength{\cftbeforesecskip}{0em}
+
+% Typeset the titles, leaders, and page number in normalfont. Use \small for
+% chapters and \footnotesize for sections.
+
+\renewcommand{\cftchapfont}{\normalfont\small}
+\renewcommand{\cftsecfont}{\normalfont\footnotesize}
+
+\renewcommand{\cftchapleader}{\normalfont\cftdotfill{\cftchapdotsep}}
+\renewcommand{\cftsecleader}{\normalfont\cftdotfill{\cftsecdotsep}}
+
+\renewcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+
+% Use leaders for both chapters and sections.
+
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+\renewcommand{\cftsecdotsep}{\cftdotsep}
+
+% Reduce the spacing between dots in the leaders.
+
+\renewcommand{\cftdotsep}{1}
+
+% By default, in the report style the TOC is set as a chapter, with a clearpage,
+% and as wide as \textwidth. I want it to be set as a section, without the
+% clearpage, and as wide as \linewidth (so that it works when set in two
+% columns).
+
+\makeatletter
+
+\let\original@tableofcontents\tableofcontents
+\renewcommand{\tableofcontents}{
+    %
+    \let\saved@clearpage\clearpage
+    \let\saved@textwidth\textwidth
+    \@ifundefined{chapter}{}{\let\saved@chapter\chapter}
+    %
+    \let\clearpage\relax
+    \let\textwidth\linewidth
+    \@ifundefined{chapter}{}{\let\chapter\section}
+    %
+    \original@tableofcontents
+    %
+    \let\clearpage\saved@clearpage
+    \let\textwidth\saved@textwidth
+    \@ifundefined{chapter}{}{\let\chapter\saved@chapter}
+}
 
 \makeatother
 
@@ -232,14 +325,14 @@ minus \fontdimen4\font}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Notes
+% END NOTES
 
 \usepackage{enotez}
 
 \newcommand{\listofnotesheading}[1]{%
-    \twocolumn[
-        \section{#1}
-    ]
+    %\twocolumn[
+    \chapter{#1}
+    %]
 }
 
 \setenotez{%
@@ -396,15 +489,6 @@ minus \fontdimen4\font}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[bookmarks,bookmarksdepth=2,hypertexnames=false]{hyperref}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Table of Contents
-
-\usepackage{titletoc}
-
-\usepackage[toc]{multitoc}
-\renewcommand*{\multicolumntoc}{2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
