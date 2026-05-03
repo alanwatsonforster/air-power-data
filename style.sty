@@ -58,25 +58,33 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Title page
+% TITLE PAGE
 
-\let\originaltitle\title
-\renewcommand{\title}[1]{\originaltitle{\bfseries\huge{#1}}}
-\let\originalauthor\author
-\renewcommand{\author}[1]{\originalauthor{\parbox{0.5\linewidth}{\centering\large #1}}}
-\let\originaldate\date
-\renewcommand{\date}[1]{\originaldate{\large #1}}
+\makeatletter
+
+\let\@originaltitle\title
+\let\@originalauthor\author
+\let\@originaldate\date
+
+\renewcommand{\title}[1]{\@originaltitle{%
+        \bfseries\huge{#1}%
+}}
+\renewcommand{\author}[1]{\@originalauthor{%
+        \parbox{0.5\linewidth}{\centering\large #1}%
+}}
+\renewcommand{\date}[1]{\@originaldate{%
+        \large #1
+}}
+
+\makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % CHAPTERS AND SECTIONS
 
-\setcounter{secnumdepth}{0}
+% No numbering by default.
 
-\newlength{\interwordspace}
-\setlength{\interwordspace}{
-    \fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font
-}
+\setcounter{secnumdepth}{0}
 
 \makeatletter
 
@@ -129,6 +137,10 @@
     {\normalfont\normalsize\bfseries\@addcolon}%
 }
 \newcommand{\@addcolon}[1]{#1:}
+\newlength{\interwordspace}
+\setlength{\interwordspace}{
+    \fontdimen2\font plus \fontdimen3\font minus \fontdimen4\font
+}
 
 % Paragraph headings are run-in, indented, normalsize, italic, with a trailing
 % colon.
@@ -211,6 +223,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% RULES SECTIONS
+
+% Rule sections are built upon normal section.
+
 \makeatletter
 
 \newcounter{rulesection}
@@ -248,6 +264,8 @@
 \makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SECTIONS WITH COUNTERS
 
 % I've tried to get this to work with wrapfig2, but I had problems with columns breaking unexpectedly.
 
