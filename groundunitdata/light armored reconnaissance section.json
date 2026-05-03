@@ -1,6 +1,6 @@
 {
-    "name": "light reconnaissance",
-    "description": "light reconnaissance section",
+    "name": "light armored reconnaissance",
+    "description": "light armored reconnaissance section",
     "symbols": "armor/reconnaissance/light/section",
     "defensestrength": "4H",
     "sightingrange": 12,

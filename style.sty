@@ -363,6 +363,10 @@
     label=\alph*.
 }
 
+\setlist[itemize,2]{
+    leftmargin=2em
+}
+
 \newcommand{\itemparagraph}[1]{{\bfseries #1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -387,12 +391,12 @@
     \endnote{%
         \setlength{\parindent}{0pt}%
         \setlength{\parskip}{\smallskipamount}%
-        {\bfseries #1.}\par #2
+        {\bfseries #1}\par\nopagebreak #2
     }%
 }
 
 \newcommand{\noteparagraph}[1]{%
-    \par{\bfseries\itshape #1.} \ignorespaces%
+    \par{\itshape #1:} \ignorespaces%
 }
 
 \newcommand{\listofnotes}{

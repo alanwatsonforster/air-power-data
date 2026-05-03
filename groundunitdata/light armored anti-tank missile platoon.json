@@ -1,6 +1,6 @@
 {
-    "name": "light anti-tank missile",
-    "description": "light anti-tank missile platoon",
+    "name": "light armored anti-tank missile",
+    "description": "light armored anti-tank missile platoon",
     "symbols": "armor/antiarmor/missile/light/platoon",
     "defensestrength": "4H",
     "sightingrange": 12,

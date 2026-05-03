@@ -1,6 +1,6 @@
 {
-    "name": "light reconnaissance",
-    "description": "light reconnaissance platoon",
+    "name": "light armored reconnaissance",
+    "description": "light armored reconnaissance platoon",
     "symbols": "armor/reconnaissance/light/platoon",
     "defensestrength": "4H",
     "sightingrange": 12,

@@ -1,6 +1,6 @@
 {
-    "name": "medium anti-tank missile",
-    "description": "medium anti-tank missile section",
+    "name": "medium armored anti-tank missile",
+    "description": "medium armored anti-tank missile section",
     "symbols": "armor/antiarmor/missile/medium/section",
     "defensestrength": "6H",
     "sightingrange": 12,

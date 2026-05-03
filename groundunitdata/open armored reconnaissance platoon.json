@@ -1,6 +1,6 @@
 {
-    "name": "open reconnaissance",
-    "description": "open reconnaissance platoon",
+    "name": "open armored reconnaissance",
+    "description": "open armored reconnaissance platoon",
     "symbols": "armor/reconnaissance/open/platoon",
     "defensestrength": "4O",
     "sightingrange": 12,

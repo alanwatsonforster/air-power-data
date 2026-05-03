@@ -1,0 +1,9 @@
+{
+    "name": "mobile anti-tank missile",
+    "description": "mobile anti-tank missile platoon",
+    "symbols": "truck/antiarmor/missile/platoon",
+    "defensestrength": "2S",
+    "sightingrange": 12,
+    "mobility": "G/P",
+    "VP3D": 8
+}

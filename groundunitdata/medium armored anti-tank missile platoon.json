@@ -1,6 +1,6 @@
 {
-    "name": "medium anti-tank missile",
-    "description": "medium anti-tank missile platoon",
+    "name": "medium armored anti-tank missile",
+    "description": "medium armored anti-tank missile platoon",
     "symbols": "armor/antiarmor/missile/medium/platoon",
     "defensestrength": "6H",
     "sightingrange": 12,

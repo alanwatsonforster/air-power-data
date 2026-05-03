@@ -1,6 +1,6 @@
 {
-    "name": "light anti-tank missile",
-    "description": "light anti-tank missile section",
+    "name": "light armored anti-tank missile",
+    "description": "light armored anti-tank missile section",
     "symbols": "armor/antiarmor/missile/light/section",
     "defensestrength": "4H",
     "sightingrange": 12,

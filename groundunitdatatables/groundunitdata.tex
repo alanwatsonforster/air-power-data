@@ -42,7 +42,7 @@ Much of the data here is adapted from \emph{Air Strike}, \emph{Eagles of the Gul
 
 Extensive notes accompany the main text, providing provenance of data, explanations of changes, sources of information, and justifications for decisions.
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \tableofcontents
 
 \chapter{Ground-Combat and Transport Units}
@@ -80,7 +80,7 @@ Light infantry units have no or fewer supporting vehicles, although modern light
 
     It is often a company- or battalion-level asset, and its role is to provide direct-fire support to the infantry platoons in its formation.
     \note{Infantry Weapons Platoon}{
-        An infantry weapons platoon is not strictly necessary, but it adds to the look-and-feel, and we might consider giving them longer range in ground-to-ground combat. Having a single type is probably more appropriate than having separate types for  grenade launchers, recoilless rifles, ATGMs, and machine guns. One might think that the .50 cal or DShK infantry AAA unit could serve as a machine-gun weapons platoon, but I would imagine most machine-gun weapons platoons have low tripods for ground combat rather than high ones for AAA.
+        An infantry weapons platoon is not strictly necessary, but it adds to the look-and-feel, and we might consider giving them longer range in ground-to-ground combat. Having a single type is probably more appropriate than having separate types for  grenade launchers, recoilless rifles, ATGMs, and machine guns. One might think that the .50 cal or DShK infantry AAA unit could serve as a machine-gun weapons platoon, but machine-gun weapons platoons have low tripods for ground combat rather than high ones for AAA.
     }
 }
 
@@ -111,7 +111,10 @@ Light infantry units have no or fewer supporting vehicles, although modern light
 }
 
 \subsectionwithcounter{Infantry HQ Platoon}{\counter{infantry HQ platoon}}{
-    An infantry HQ platoon is the HQ unit of an infantry battalion or regiment. It consists of the formation commander, their staff, and their protection detail.
+    An infantry HQ platoon is the HQ unit of an infantry battalion or regiment. It consists of the formation commander, their staff, and their protection detail.%
+    \note{Infantry HQs}{
+        In the \emph{Air Strike} scenarios HQ platoons are included at a ratio of about one to every nine normal platoons, so they seem to be battalion HQs.
+    }
 }
 
 \section{Armored Vehicle Units}
@@ -135,22 +138,32 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
     Its role is the support of infantry and the destruction of other tanks and armored vehicles.
     A tank platoon may have heavy, medium, light, or open armor.
     \note{Tanks}{
+        \noteparagraph{Protection Levels}
+        My basic source for protection levels for tanks and other AFVs is the Wargames Research Group (WRG) 1950--1985 miniatures rules. These give armor classes of I to X for a range of AFVs. Comparing to the scenarios in {\AirStr} and {\EOTG}, the correspondence seems to be:
+        \begin{itemize}
+            \item Open = \underline{4}! class I.
+            \item Light = \underline{4} = classes II to III.
+            \item Medium = \underline{6} = classes IV to VIII.
+            \item Heavy = \underline{8} = classes IX and X.
+        \end{itemize}
+        Since these rules are from 1979 and from unclassified sources, their reliability for the more modern vehicles is somewhat in doubt. Nevertheless, they are probably fine for older vehicles.
 
         \noteparagraph{Heavy Tanks}
+        The WRG 1950--1985 rules give class IX or X (i.e., heavy) protection to the
+        Chieftain,
+        Conqueror,
+        EPC (Leclerc),
+        IS-3,
+        Leopard~2,
+        Merkava~1,
+        Shir~2 (Challenger~1),
+        Stridsvagn~103,
+        T-10,
+        T-64,
+        T-72, and
+        T-80.
+        Beyond these, we have:
         \begin{itemize}
-            \item The WRG 1950--1985 rules give class IX or X (i.e., heavy) protection to the:
-                Chieftain,
-                Conqueror,
-                EPC (Leclerc),
-                IS-3,
-                Leopard~2,
-                Merkava~1,
-                Shir~2 (Challenger~1),
-                Stridsvagn~103,
-                T-10,
-                T-64,
-                T-72, and
-                T-80.
             \item Al-Kalid/VT-1A and Type 99: These are based on the Type 90-II prototype, which in turn is based on the T-72 (heavy).
             \item Ariete: This weighs 54 tonnes, only slightly less than the M1A1 (heavy) which also has a crew of four, and therefore presumably has similar protection.
             \item Arjun: The weights 59--68 tonnes and has crew of four, similar to the M1A1 (heavy), and so presumably has similar protection.
@@ -167,34 +180,35 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
             \item Type 99: The has a crew of three and weights 51--55 tonnes, and so presumably has protection at least the equal of the lighter T-72 (heavy).
         \end{itemize}
         \noteparagraph{Medium Tanks}
+        The WRG 1950--1985 rules give class IV to IIX (i.e., medium) protection to the
+        AMX-30,
+        ASU-85,
+        Centurion,
+        Comet,
+        Cromwell,
+        ISU-122,
+        ISU-152,
+        Kanonen JPz,
+        Leopard 1,
+        M103,
+        M4 Sherman,
+        M46,
+        M47,
+        M48,
+        M48,
+        M60,
+        Panzer 68,
+        SU-100,
+        T-34,
+        T-54,
+        T-55,
+        T-62,
+        TAM,
+        Type 61,
+        Type 74, and
+        Vijayanta.
+        Beyond these, we have:
         \begin{itemize}
-            \item The WRG 1950--1985 rules give class IV to IIX (i.e., medium) protection to the:
-                AMX-30,
-                ASU-85,
-                Centurion,
-                Comet,
-                Cromwell,
-                ISU-122,
-                ISU-152,
-                Kanonen JPz,
-                Leopard 1,
-                M103,
-                M4 Sherman,
-                M46,
-                M47,
-                M48,
-                M48,
-                M60,
-                Panzer 68,
-                SU-100,
-                T-34,
-                T-54,
-                T-55,
-                T-62,
-                TAM,
-                Type 61,
-                Type 74, and
-                Vijayanta.
             \item M26: The M46 (medium) is largely an M26 with an improved engine.
             \item M-50 and M-51 Sherman: These are based on the M4 (medium) and have improved armament and engines.
             \item Panzer 61: This is essentially an early version of the Panzer 68 (medium).
@@ -204,25 +218,26 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
             \item Vickers MBT: This is similar to the  Vijayanta (medium).
         \end{itemize}
         \noteparagraph{Light Tanks}
+        The WRG 1950--1985 rules give class II and III (i.e., light) protection to the
+        AMX 10RC,
+        AMX 13,
+        Commando,
+        Cougar,
+        Fox,
+        SpPz Luchs,
+        M8,
+        M24,
+        M41,
+        M114A2,
+        M551
+        Panhard AML,
+        Panhard EBR,
+        PT-76,
+        Saracen,
+        Scimitar, and
+        Scorpion
+        Beyond these, we have:
         \begin{itemize}
-            \item The WRG 1950--1985 rules give class II and III (i.e., light) protection to the:
-                AMX 10RC,
-                AMX 13,
-                Commando,
-                Cougar,
-                Fox,
-                SpPz Luchs,
-                M8,
-                M24,
-                M41,
-                M114A2,
-                M551
-                Panhard AML,
-                Panhard EBR,
-                PT-76,
-                Saracen,
-                Scimitar, and
-                Scorpion
             \item Stryker MGS: With additional ceramic armor, this has protection against 14.5~mm but not heavier rounds, which I believe counts as III.
             \item Strv 74: This has a similar weight to the M41 (light).
             \item Type 62: Wikipedia give the hull armor as being similar to the M41 (light).
@@ -231,12 +246,9 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
             \item Type 08: Based on Type 08 IFV (light).
         \end{itemize}
         \noteparagraph{Open Tanks}
-        Open tanks are uncommon, but we need an open target class for M3 half-track APCs, so it is easy to apply it here too.
-        \begin{itemize}
-            \item The WRG 1950--1985 rules give class I (i.e., open) protection to the:
-                ASU-57 and
-                SU-76.
-        \end{itemize}
+        Open tanks are uncommon, but we need an open target class for M3 half-track APCs, so it is easy to apply it here too. The WRG 1950--1985 rules give class I (i.e., open) protection to the
+        ASU-57 and
+        SU-76.
     }
 
     \example[Heavy examples]{M1 Abrams and T-64/72/80.}
@@ -248,81 +260,18 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
     \example[Open example]{ASU-57.}
 }
 
-\subsectionwithcounter{Anti-Tank Missile Platoon}{\twocounters{medium anti-tank missile platoon}{light anti-tank missile platoon}}{
-    An anti-tank missile platoon has armored vehicles equipped with anti-tank guided missiles.
-    Its mission is the destruction of other armored vehicles.
-    Conventional gun-armed tank destroyers are considered to be tanks.
-    It is often a battalion- or regiment-level asset.
-    An anti-tank platoon may have medium or light armor.%
-    \note{Anti-Tank Missile Vehicles}{
-        Anti-tank units are mainly chrome.
-        However, in ground combat, we might give them more effectiveness against vehicular or towed targets and less against infantry targets.
-
-        \noteparagraph{Medium Anti-Tank Missile Vehicles}
-        \begin{itemize}
-            \item The WRG 1950--1985 rules give class IV (i.e., medium) protection to the:
-                Raketen JPz.
-            \item Jaguar: This is Raketen JPz (medium) upgraded with HOT missiles.
-        \end{itemize}
-        \noteparagraph{Light Anti-Tank Missile Vehicles}
-        \begin{itemize}
-            \item The WRG 1950--1985 rules give class II or III (i.e., light) protection to the:
-                BRDM and
-                Striker.
-            \item Fennek MRAT: Based on the Fennek (light).
-            \item FV438: This is derived from the FV432 APC (light).
-            \item M150 and M901: These are derived from the M113 APC (light).
-            \item M1134 Stryker ATGM: These are derived from the Stryker APC (light).
-            \item VAB HOT: This is derived from the VAB APC (light).
-            \item YP-408 PRAT: This is derived from the YPR-408 APC (light).
-            \item YPR-765 PRAT: This is derived from the YPR-765 APC (light).
-        \end{itemize}
-    }
-
-    \example[Medium example]{Rakaten Jpz.}
-
-    \example[Light examples]{M901 and BRDM.}
-}
-
-\subsectionwithcounter{Reconnaissance Platoon}{\twocounters{light reconnaissance platoon}{open reconnaissance platoon}}{
-    A reconnaissance platoon has armored vehicles specialized in scouting and observation and have no offensive weapons more powerful than machine guns.
-    Vehicles used for reconnaissance that do have significant offensive weapons (e.g, 20 mm or larger guns) are typically classified as light tanks.
-    A reconnaissance platoon may have light or open armor.%
-    \note{Reconnaissance Vehicles}{
-        Again, reconnaissance vehicles are mainly chrome.
-        \noteparagraph{Light  Reconnaissance Vehicles}
-        \begin{itemize}
-            \item The WRG 1950--1985 rules give class II or III (i.e., light) protection to the:
-                BRDM-2,
-                Ferret,
-                Lynx (M113½ Lynx), and
-                M114.
-            \item LAV II Coyote: Wikipedia states that it is protected against small-arms rounds, which corresponds to light.
-            \item Fennek: Wikipedia states that it is protected against small-arms rounds, which corresponds to light.
-        \end{itemize}
-        \noteparagraph{Light Reconnaissance Vehicles}
-        \begin{itemize}
-            \item M20: Open version of the M8 (light) with no turret and armed only with a .50-cal machine gun.
-        \end{itemize}
-    }
-
-    \example[Light examples]{M114 and BRDM-2.}
-
-    \example[Open example]{M20.}
-}
-
 \subsectionwithcounter{IFV Platoon}{\twocounters{medium IFV platoon}{light IFV platoon}}{
-    An IFV platoon is equipped with armored vehicles that transport infantry and provide fire support.
-    They are distinguished from APCs by their armament of a 20~mm or larger cannon and sometimes an anti-tank missile.
+    An infantry fighting vehicle (IFV) platoon is equipped with armored vehicles that transport infantry and provide them with fire support, being armed with a 20~mm or larger cannon and sometimes an anti-tank missile.
     Some IFVs are also designed to allow their infantry to fight while mounted.
     An IFV platoon may have medium or light armor.%
     \note{IFV Units}{
         We might distinguish APCs and IFVs in ground-to-ground combat.
         Bradley IFVs made mincemeat of Iraqi tank regiments; M113 APCs would not have had the same impact.
         \noteparagraph{Medium IFVs}
+        The WRG 1950--1985 rules give class IV (i.e., medium) protection to the
+        Marder.
+        Beyond these, we have:
         \begin{itemize}
-            \item The WRG 1950--1985 rules give class IV (i.e., medium) protection to the:
-                Marder.
             \item BMP-3: Wikipedia says the BMP-3 has frontal protection from 30~mm rounds at 200~m.
             \item Boxer: Wikipedia states that with the baseline armor it is protected against medium-caliber rounds. Additional armor is also available.
             \item Strf 9040/CV90: Wikipedia states that the CV90 has frontal protection against 30~mm APFSDS rounds. This is considerably more than typical light AFVs.
@@ -331,19 +280,20 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
             \item Puma: Wikipedia says the frontal arc has protection against medium-caliber rounds and shaped-charge projectiles. With additional armor, the sides gain similar protection.
         \end{itemize}
         \noteparagraph{Light IFVs}
+        The WRG 1950--1985 rules give class II or III (i.e., light) protection to the
+        AMX-10P,
+        BMD,
+        BMP-1,
+        Commando,
+        Dutch AIFV (YPR-765),
+        FV432 (FV432 RARDEN),
+        HS.30 (SPz Lang),
+        M113 (M113 FSC),
+        Spz Kurz,
+        UK MICV (Warrior), and
+        XM723 (M2/M3 Bradley).
+        Beyond these, we have:
         \begin{itemize}
-            \item The WRG 1950--1985 rules give class II or III (i.e., light) protection to the:
-                AMX-10P,
-                BMD,
-                BMP-1,
-                Commando,
-                Dutch AIFV (YPR-765),
-                FV432 (FV432 RARDEN),
-                HS.30 (SPz Lang),
-                M113 (M113 FSC),
-                Spz Kurz,
-                UK MICV (Warrior), and
-                XM723 (M2/M3 Bradley).
             \item BMP-2: Wikipedia says the BMP-2 has similar protection to the BMP-1.
             \item LAV-25: Wikipedia says this only has protection against small-arms rounds.
             \item LAV III: Wikipedia says the basic version only has protection against small-arms rounds, but an additional armor kit developed in 2009 gives it protection against 30~mm rounds.
@@ -367,7 +317,8 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
 
 \subsectionwithcounter{APC Platoon}{\fourcounters{heavy APC platoon}{medium APC platoon}{light APC platoon}{open APC platoon}}{
     An APC platoon is equipped with armored vehicles that transport infantry, but unlike IFVs are not equipped to provide fire support and at most are armed with a heavy machine gun.
-    An APC platoon may have heavy, medium, light, or open armor.%
+    An APC platoon may have heavy, medium, light, or open armor.
+    Heavy and medium APCs are typically converted tanks.%
     \note{APC Units}{
         \noteparagraph{Heavy APCs}
         These are converted tanks.
@@ -388,21 +339,22 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
         \end{itemize}
         The in-service dates for the Nagmashot (1990) and Nagmachon (2000) are guesses.
         \noteparagraph{Light APCs}
+        The WRG 1950--1985 rules give class II or III (i.e., light) protection to the
+        BTR-50PK,
+        BTR-60PB,
+        BTR-152K,
+        Commando,
+        Grizzly,
+        FV432,
+        LVTP-7,
+        M113,
+        M59,
+        Saracen,
+        Spartan,
+        VAB, and
+        YPR-408.
+        Beyond these, we have:
         \begin{itemize}
-            \item The WRG 1950--1985 rules give class II or III (i.e., light) protection to the:
-                BTR-50PK,
-                BTR-60PB,
-                BTR-152K,
-                Commando,
-                Grizzly,
-                FV432,
-                LVTP-7,
-                M113,
-                M59,
-                Saracen,
-                Spartan,
-                VAB, and
-                YPR-408.
             \item Bronco/Warthog: Wikipedia says it has protection against 7.62~mm rounds.
             \item BVS10/Viking: Wikipedia says it has protection against small-arms fire and can have additional armor to protect against 14.5~mm rounds.
             \item BTR-70: Wikipedia states the frontal armor is only 9 mm.
@@ -424,15 +376,15 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
 
         There are many variants of the Piranha, and the in-service date is a guess.
         \noteparagraph{Open APCs}
-
+        The WRG 1950--1985 rules give class I (i.e., open) protection to the
+        AT-P,
+        BTR-40,
+        BTR-50P,
+        BTR-60P,
+        BTR-152A, and
+        Half-tracks (M3).
+        Beyond these, we have:
         \begin{itemize}
-            \item The WRG 1950--1985 rules give class I (i.e., open) protection to the:
-                AT-P,
-                BTR-40,
-                BTR-50P,
-                BTR-60P,
-                BTR-152A, and
-                Half-tracks (M3).
             \item SKP/VKP/SKPF/VKPF: Wikipedia states the armor is 8 to 20~mm, which is light.
         \end{itemize}
     }
@@ -446,12 +398,81 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
     \example[Open examples]{M3 half-track and BTR-50P/60P.}
 }
 
+\subsectionwithcounter{Armored Anti-Tank Missile Platoon}{\twocounters{medium armored anti-tank missile platoon}{light armored anti-tank missile platoon}}{
+    An armored anti-tank missile platoon has armored vehicles equipped with anti-tank guided missiles.
+    Its mission is the destruction of other armored vehicles.
+    Conventional gun-armed tank destroyers are considered to be tanks.
+    It is often a battalion- or regiment-level asset.
+    An anti-tank platoon may have medium or light armor.%
+    \note{Anti-Tank Missile Vehicles}{
+        Anti-tank units are mainly chrome.
+        However, in ground combat, we might give them more effectiveness against vehicular or towed targets and less against infantry targets.
+
+        \noteparagraph{Medium Anti-Tank Missile Vehicles}
+        The WRG 1950--1985 rules give class IV (i.e., medium) protection to the
+        Raketen JPz.
+        Beyond this, we have:
+        \begin{itemize}
+            \item Jaguar: This is Raketen JPz (medium) upgraded with HOT missiles.
+        \end{itemize}
+        \noteparagraph{Light Anti-Tank Missile Vehicles}
+        The WRG 1950--1985 rules give class II or III (i.e., light) protection to the
+        BRDM and
+        Striker.
+        Beyond these, we have:
+        \begin{itemize}
+            \item Fennek MRAT: Based on the Fennek (light).
+            \item FV438: This is derived from the FV432 APC (light).
+            \item M150 and M901: These are derived from the M113 APC (light).
+            \item M1134 Stryker ATGM: These are derived from the Stryker APC (light).
+            \item VAB HOT: This is derived from the VAB APC (light).
+            \item YP-408 PRAT: This is derived from the YPR-408 APC (light).
+            \item YPR-765 PRAT: This is derived from the YPR-765 APC (light).
+        \end{itemize}
+    }
+
+    \example[Medium example]{Rakaten Jpz.}
+
+    \example[Light examples]{M901 and BRDM.}
+}
+
+\subsectionwithcounter{Armored Reconnaissance Platoon}{\twocounters{light armored reconnaissance platoon}{open armored reconnaissance platoon}}{
+    An armored reconnaissance platoon has armored vehicles specialized in scouting and observation and with no offensive weapons more powerful than machine guns.
+    (Vehicles used for reconnaissance that do have significant offensive weapons are typically classified as light tanks or IFVs.)
+    A reconnaissance platoon may have light or open armor.%
+    \note{Reconnaissance Vehicles}{
+        Again, reconnaissance vehicles are mainly chrome.
+        However, in ground combat we might give them reduced effectiveness.
+        \noteparagraph{Light  Reconnaissance Vehicles}
+        The WRG 1950--1985 rules give class II or III (i.e., light) protection to the
+        BRDM-2,
+        Ferret,
+        Lynx (M113½ Lynx), and
+        M114.
+        Beyond these, we have:
+        \begin{itemize}
+            \item LAV II Coyote: Wikipedia states that it is protected against small-arms rounds, which corresponds to light.
+            \item Fennek: Wikipedia states that it is protected against small-arms rounds, which corresponds to light.
+        \end{itemize}
+        \noteparagraph{Light Reconnaissance Vehicles}
+        The WRG 1950--1985 rules do not give any reconnaissance vehicles with class I (i.e., open) protection.
+        However, we have:
+        \begin{itemize}
+            \item M20: Open version of the M8 (light) with no turret and armed only with a .50-cal machine gun.
+        \end{itemize}
+    }
+
+    \example[Light examples]{M114 and BRDM-2.}
+
+    \example[Open example]{M20.}
+}
+
 \subsectionwithcounter{Armored Mortar Platoon}{\counter{light armored mortar platoon}}{
-    An armored mortar platoon has mortars mounted in armored vehicles (typically converted APCs or IFVs).
-    It is typically a battalion-level in mechanized-infantry or tank battalions, and its role is indirect fire support.
+    An armored mortar platoon has mortars mounted in armored vehicles (most commonly converted APCs or IFVs).
+    It is typically a battalion-level asset in mechanized-infantry or tank battalions, and its role is indirect fire support.
     An armored mortar platoon has light armor.%
     \note{Armored Mortars}{
-        Regarding the protection class:
+        For the protection class, we have:
         \begin{itemize}
             \item FV432: based on FV432 (light).
             \item M106/M125/M1064: based on M113 (light).
@@ -467,31 +488,32 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
 \subsectionwithcounter{Armored Artillery Battery}{\twocounters{light armored artillery battery}{open armored artillery battery}}{
     An armored artillery battery has guns or howitzers in armored vehicles.
     It is typically a regiment-, brigade-, or division-level asset, and its role is indirect fire support.
-    An armored artillery batteries may have light or open armor.%
+    An armored artillery battery may have light or open armor.%
     \note{Armored Artillery}{
         \noteparagraph{Light Armored Artillery}
+        The WRG 1950--1985 rules give class II (i.e., light) protection to the
+        Abbot,
+        AMC-155GCT (AMX-30 AuF1),
+        L33,
+        M52,
+        M108,
+        M109,
+        SP.73 (2S3),
+        SP.74 (2S1), and
+        VK.155 (BKan 1).
+        Beyond these, we have:
         \begin{itemize}
-            \item The WRG 1950--1985 rules give class II (i.e., light) protection to the:
-                Abbot,
-                AMC-155GCT (AMX-30 AuF1),
-                L33,
-                M52,
-                M108,
-                M109,
-                SP.73 (2S3),
-                SP.74 (2S1), and
-                VK.155 (BKan 1).
             \item 2S19 Msta-S: Wikipedia states this all-round protection from 15~mm of steel armor. This corresponds to light armor.
             \item AS-90: Wikipedia states this has up to 17~mm of steel armor. This corresponds to light armor.
             \item Panzerhaubitze 2000:  Wikipedia states this all-round protection from 14.5~mm of steel armor. This corresponds to light armor.
         \end{itemize}
         \noteparagraph{Open Armored Artillery}
-        Regarding the protection class:
+        The WRG 1950--1985 rules give class I (i.e., open) protection to the
+        AMX-105A,
+        M7, and
+        M44.
+        Beyond these, we have:
         \begin{itemize}
-            \item The WRG 1950--1985 rules give class I (i.e., open) protection to the:
-                AMX-105A,
-                M7, and
-                M44.
             \item The M-50 has frontal and side armor, like the M7 and unlike for example the M107 and M108.
             \item The M40 also has frontal and side armor. The rear door is probably armored too, but is open when the gun is used.
         \end{itemize}
@@ -505,6 +527,7 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
     An armored rocket artillery battery has light armor.%
     \note{Armored Rocket Artillery}{
         \noteparagraph{Light Armored Rocket Artillery}
+        For the protection class, we have:
         \begin{itemize}
             \item M270: I can find no definite information on the armor protection.
             \item BM-1: According to Wikipedia, the T-72 hull was chosen to give adequate protection close to the front lines. However, it is not clear whether the rocket launcher has adequate protection.
@@ -525,17 +548,17 @@ That is, the means of traction — tracked, half-tracked, or wheeled — is a se
 Unarmored or soft vehicles provide mobility, but do not provide armor protection (or provide only incomplete armor protection) for their crew and weapons.
 The units described here are generic, but the \hyperlink{table:vehicle-types}{Vehicle Types Table} gives the correspondence between specific vehicles and these generic vehicle types.
 
-\subsectionwithcounter{Truck Platoons}{\counter{truck platoon}}{
+\subsectionwithcounter{Truck Platoon}{\counter{truck platoon}}{
     A truck platoon has unarmored wheeled vehicles that can transport medium or heavy loads of infantry, towed weapons, and supplies, including fuel and ammunition.
 }
 
-\subsectionwithcounter{Light Truck Platoons}{\counter{light truck platoon}}{
+\subsectionwithcounter{Light Truck Platoon}{\counter{light truck platoon}}{
     A light truck platoon has unarmored wheeled vehicles that can transport light loads of infantry, towed weapons, and supplies, including fuel and ammunition.
 
-    \example[Examples]{M151 Jeep and GAZ-69.}
+    \example[Examples]{M151 Jeep, HMMWV, and GAZ-69.}
 }
 
-\subsectionwithcounter{Tracked Carrier Platoons}{\counter{tracked carrier platoon}}{
+\subsectionwithcounter{Tracked Carrier Platoon}{\counter{tracked carrier platoon}}{
     A tracked carrier platoon is equipped with unarmored tracked vehicles that can transport medium loads of infantry, towed weapons, and supplies, including fuel and ammunition.%
     \note{Tracked Carriers}{
         All the listed tracked carriers are stated as being unarmored by Wikipedia.
@@ -544,17 +567,24 @@ The units described here are generic, but the \hyperlink{table:vehicle-types}{Ve
     \example[Example]{Bv 202.}
 }
 
+\subsectionwithcounter{Mobile Anti-Tank Missile Platoon}{\counter{mobile anti-tank missile platoon}}{
+    A mobile anti-tank missile platoon is equipped with anti-tank missiles mounted on unarmored light trucks.
+
+    \example[Examples]{M151 TOW and HMMWV TOW.}
+}
+
 \subsectionwithcounter{Tracked Artillery Battery}{\counter{tracked artillery battery}}{
-    A tracked artillery battery has guns or howitzers mounted on tracked vehicles that provide mobility, but do not give at most limited protection from small arms or artillery shrapnel.
+    A tracked artillery battery has guns or howitzers mounted on tracked vehicles that provide mobility, but give only limited protection from small arms or artillery shrapnel.
     It is typically a regiment-, brigade-, or division-level asset, and its role is indirect fire support.%
     \note{Tracked Artillery}{
+        To count as a hard target, both the crew and weapons must be protected by armor.
         \begin{itemize}
             \item The WRG 1950--1985 rules give class I (i.e., open) protection to the
                 AMX.155F3 (AMX-13 F3),
                 M107, and
                 M110.
                 However, the only crew member protected seems to be the driver. The other crew members travel and operate the gun without protection.
-            \item Similar considerations apply to the: 2S4, 2S7 (although some of the crew travel under armor), M40, M41, and Mk F3. In all of these, the gun mount is open.
+            \item Similar considerations apply to the 2S4, 2S7 (although some of the crew travel under armor), M40, M41, and Mk F3. In all of these, the gun mount is open.
         \end{itemize}
     }
 
@@ -562,10 +592,10 @@ The units described here are generic, but the \hyperlink{table:vehicle-types}{Ve
 }
 
 \subsectionwithcounter{Mobile Artillery Battery}{\counter{mobile artillery battery}}{
-    A mobile artillery battery has howitzers mounted on wheeled vehicles that provide mobility, but give at most limited protection from small arms or artillery shrapnel.
+    A mobile artillery battery has howitzers mounted on wheeled vehicles that provide mobility, but give only limited protection from small arms or artillery shrapnel.
     It is typically a regiment-, brigade-, or division-level asset, and its role is indirect fire support.%
     \note{Mobile Artillery}{
-        Regarding the protection class:
+        To count as a hard target, both the crew and weapons must be protected by armor.
         \begin{itemize}
             \item CAESAR: Some models have lightly-armored cabins, but the truck as a whole does not seem to be protected.
             \item Archer: The crew and engine compartments is protected against small-arms rounds, but the gun does not seem to be protected. Unlike the CAESAR, the gun is operated by the crew from the protected cabin. This is close to reaching the level of protection of light armored artillery.
@@ -578,7 +608,7 @@ The units described here are generic, but the \hyperlink{table:vehicle-types}{Ve
 \subsectionwithcounter{Mobile Rocket Artillery Battery}{\counter{mobile rocket artillery battery}}{
     A mobile rocket artillery battery is the rocket-armed equivalent of a mobile artillery battery.%
     \note{Mobile Rocket Artillery}{
-        Regarding the protection class:
+        To count as a hard target, both the crew and weapons must be protected by armor.
         \begin{itemize}
             \item M142 HIMARS: The cabin has some protection, but the rest of the truck seems to be unprotected.
             \item BM-30: The cabin appears to have some protection, but the rest of the truck seems to be unprotected.
@@ -592,7 +622,7 @@ The units described here are generic, but the \hyperlink{table:vehicle-types}{Ve
 \subsectionwithcounter{Tracked Missile Artillery Battery}{\counter{tracked missile artillery battery}}{
     A tracked rocket artillery battery is the rocket-armed equivalent of a mobile tracked battery.%
     \note{Mobile Rocket Artillery}{
-        Regarding the protection class:
+        To count as a hard target, both the crew and weapons must be protected by armor.
         \begin{itemize}
             \item M752 Lance: This seems to be based on the unarmored M548.
             \item AMX-30 Pluton: The vehicle is based on an AMX-30 hull and seems to be armored, but the missile is exposed.
@@ -607,10 +637,10 @@ The units described here are generic, but the \hyperlink{table:vehicle-types}{Ve
 \subsectionwithcounter{Mobile Missile Artillery Battery}{\counter{mobile missile artillery battery}}{
     A mobile missile artillery battery is the missile-armed equivalent of a mobile artillery battery.%
     \note{Mobile Missile Artillery Batteries}{
+        Missile artillery is mainly included to serve as a target.
 
         Regarding the protection class, none of these have complete protection against small arms.
 
-        Missile artillery is mainly included to serve as a target.
     }
 
     \example[Examples]{M1003 Pershing II and OTR-21 Tocha (SS-21).}
@@ -618,10 +648,7 @@ The units described here are generic, but the \hyperlink{table:vehicle-types}{Ve
 
 \subsectionwithcounter{Mobile HQ Platoon}{\counter{mobile HQ platoon}}{
     A mobile HQ platoon is typically the HQ unit of a battalion, regiment, or brigade other than those of infantry, tank, mechanized infantry, or armored artillery.
-    It is equipped with trucks, and its personnel are not specialized in fighting as infantry.%
-    \note{HQ Units}{
-        I wondered if HQ platoons were also used at the company level, but looking at the \emph{Air Strike} scenarios they are included at a ratio of about one HQ platoons to nine normal platoons, so they seem to be battalion HQs.
-    }
+    It is equipped with trucks, and its personnel are not specialized in fighting as infantry.
 }
 
 \section{Towed Units}
@@ -658,7 +685,7 @@ Towed weapons is typically used away from direct combat and provided with approp
     \footnotesize
     \input{table-ground-combat-units.tex}
     \par
-    \begin{tablenote}{0.45\linewidth}
+    \begin{tablenote}{0.5\linewidth}
         \tablenotetext{a}{Platoons and batteries are available as sections and squads with corresponding modifications to their damage resiliences and VPs.}
         \tablenotetext{b}{Platoons with AAA class of B2 and B3 can employ barrage fire to altitudes of 2 and 3 levels, respectively.}
     \end{tablenote}
@@ -2581,6 +2608,7 @@ If either are suppressed during the process, the unit must abort the process in 
 A towed unit may not mount or dismount during the game.
 
 \clearpage
+\raggedbottom
 \listofnotes
 
 \end{document}
