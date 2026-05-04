@@ -708,7 +708,16 @@ Towed weapons is typically used away from direct combat and provided with approp
 AAA units use guns to destroy attacking aircraft, but also have a secondary ground-combat capability. These units are presented below with their counters.
 
 The \hyperlink{table:aaa-units}{AAA Unit Table} summarizes the properties of AAA units.
-As well as the basic properties common to all ground units, the table gives:%
+As well as the basic properties common to all ground units, the table gives:
+the AAA class (light, medium, or heavy);
+the maximum altitude;
+the limits of short, medium, and long range in hexes;
+the hit rolls at short, medium, and long range;
+the damage rating;
+whether the unit has an all-weather or ranging-only fire-control radar and its frequency band;
+whether it has night infrared sights; and
+whether it is also equipped with a SAM system.
+If the unit has a SAM, this will be described in detail in the section on SAM launcher units.%
 \note{AAA Values}{
     This long note summarizes how I have determined the AAA values for AAA units. VP values are discussed separately.
 
@@ -955,15 +964,6 @@ As well as the basic properties common to all ground units, the table gives:%
     I have adopted these changes.
 
 }
-the AAA class (light, medium, or heavy);
-the maximum altitude;
-the limits of short, medium, and long range in hexes;
-the hit rolls at short, medium, and long range;
-the damage rating;
-whether the unit has an all-weather or ranging-only fire-control radar and its frequency band;
-whether it has night infrared sights; and
-whether it is also equipped with a SAM system.
-If the unit has a SAM, this will be described in detail in the section on SAM launcher units.
 
 All AAA platoons and batteries are also available as sections (but not squads), with damage resiliences of 2, hit rolls reduced by 1, and VPs corresponding to a platoon or battery that has taken 1D damge.
 
@@ -1305,83 +1305,9 @@ All AAA platoons and batteries are also available as sections (but not squads), 
     \end{tablenote}
 \end{table*}
 
+\include{groundunitdata-fcr}
+
 \begin{comment}
-
-\clearpage
-\twocolumn[
-    \section{FCR Units}
-]
-
-Most medium and heavy AAA batteries can be associated with an add-on fire-control radar (FCR), which improves their accuracy and allows them to engage unsighted targets at night and in adverse weather.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=\linewidth]{photos/skyguard.jpg}
-    % https://commons.wikimedia.org/wiki/File:Skyguard.jpg
-\end{figure}
-
-\subsection{Properties}
-
-Table~\ref{table:fcr-units} summarizes the properties of FCR units, and Figure~\ref{figure:radar-and-ccu-units} shows their representation.
-In addition to the properties common to other ground units, Table~\ref{table:fcr-units} gives:
-\begin{itemize}
-    \item the FCR class;
-    \item the frequency band; and
-    \item its modifier to the hit roll.
-\end{itemize}
-
-\subsection{Specific FCRs}
-
-\paragraph{SON-9}
-
-The Soviet SON-9 (Fire Can) FCR-A was derived from the earlier SON-4, which in turn was derived from the US-supplied SCR-584.
-It is commonly used with 57~mm S-60, 85~mm KS-12, 100~mm KS-19, and 130~mm KS-30 batteries.\note{SON-9}{
-    Wikipedia states this was used with the 57, 85, 100, and 130~mm guns and was widely deployed in the Vietnam War. In {\TSOH} the 57~mm S-60 and 85~mm KS-12 are often combined with a FCR-A, presumably the SON-9. The service history is from Wikipedia.
-}
-
-The SON-9 entered service in 1955 with Soviet forces and was widely exported to Soviet allies.
-It has seen combat, including with North Vietnam in the Vietnam War, Egypt and Syria in the 1967 War, the War of Attrition, and the 1973 War.
-
-\paragraph{Super Fledermaus}
-
-The Contraves Super Fledermaus FCR-C can be used to control a section of two Oerlikon GDF 35~mm guns; it cannot control a whole battery.\note{Super Fledermaus}{
-    Wikipedia states there were two versions: the Feuerleitgerät (FLt Gt) 63 (from 1965) and the Feuerleitgerät 69 (from 1970). The latter had “background clutter suppression,” which probably is equivalent to MTI.
-
-    Wikipedia also states these the prototype of the Gepard used a Flt Gt 63. Since the FCR-W radar of the Gepard is equivalent to a \plus{2} modifier and has VF frequency, it corresponds to an FCR-C. We assume the Super Fledermaus does too.
-}
-
-It entered service in 1965 with the Swiss Air Force and also was used by the Argentine Air Force, Brazil, Iran, Japan, and South Africa.
-It saw combat in the 1982 South Atlantic War in the defense of BAM Malvinas (Port Stanley Airport).
-
-\paragraph{Flycatcher}
-
-The Signaal Flycatcher FCR-C can control three to six Bofors L/60 or L/70 guns or SAM launchers.
-
-Flycatcher entered service with the Royal Netherlands Air Force in 1979. It subsequently served with the Indian Armed Forces from 1985, the Irish Defense Forces from 2003, the Royal Netherlands Army from 1987,the Thai Armed Forces from 1981, Turkey, and Venezuela.
-
-\paragraph{Skyguard}
-
-The Contraves Skyguard FCR-D can control two Oerlikon GDF 35~mm guns and additionally a SAM launcher with AIM-9 Sparrow, RIM-9 Sea Sparrow, or Aspide missiles.
-
-Skyguard entered service in 1977 with the Swiss Air Force.
-It was subsequently very widely exported and used by the Argentine Army, Austria, Bahrain, Bangladesh, Brazil, Canada, Chile, China, Cyprus, Egypt, Greece, Indonesia, Iran, Italy, South Korea, Kuwait, Malaysia, Oman, Pakistan, Saudi Arabia, Spain, Taiwan, and the UK.
-It saw combat with the Argentine Army in the 1982 South Atlantic War in the defense of BAM Malvinas (Port Stanley Airport) and BAM Condor (Goose Green Airfield).
-
-\begin{figure*}[p]
-    \centering
-    \includegraphics[width=0.8\linewidth]{figure-radar-and-ccu-units.png}
-    \caption{Air-Defense Units: FCR, EWR, and CCU Units}
-    \label{figure:radar-and-ccu-units}
-\end{figure*}
-
-\begin{table*}[p]
-    \caption{Air-Defense Units: FCR Units}
-    \centering
-    \footnotesize
-    \input{table-fcr-units.tex}
-    \label{table:fcr-units}
-\end{table*}
-
 \clearpage
 \twocolumn[
     \section{SAM Units}
