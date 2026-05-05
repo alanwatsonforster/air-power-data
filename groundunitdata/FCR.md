@@ -83,6 +83,11 @@ Mobile version of SCR-584
 - Pulse Doppler search and tracking
 - Oerlikon 35 mm has FCR-D in scenario H-21/G-13 of Air Strike, and this is presumably Skyguard FCR
 
+### L4 / 5 (KL / MSS 3012)
+
+- <https://www.alamy.com/exercise-of-the-a-battery-of-a-light-air-volume-artillery-mobile-from-wezep-along-the-ijssel-between-zwolle-and-deventer-wijhe-olst-position-in-the-floodplains-in-the-foreground-an-hsa-dutch-signal-devices-l4-5-kl-mss-3012-radar-fire-ride-device-to-which-three-pieces-were-coupled-in-the-background-two-40l70-fire-premises-in-the-position-image417968958.html>
+- Mentioned as antecdent to Flycatcher <https://en.wikipedia.org/wiki/Flycatcher_(radar)>
+
 ### Mark 7 (Blue Cedar)
 
 - Has auto-follow
