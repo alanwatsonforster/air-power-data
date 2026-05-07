@@ -6,13 +6,14 @@ This appendix contains a number of example orders of battle and their correspond
 
 The orders of battle for battalions are presented with the headquarters unit in the top row, any battalion-level assets on the next row or rows, and finally the line companies on the remaining rows. Within each row, infantry or towed units appear on the left and their transport units on the right.
 
-The unit identifiers for line platoons are the platoon number, followed by the company letter or number, followed by the battalion number.  Transport platoons will have a “T” prefix. For example, “1B3” means the first platoon of B company of the third battalion, and “T1B3” is its transport platoon. Companies normally have letters in Western armies, numbers in Warsaw Pact armies, R for reconnaissance, and S for scout. The unit identifiers for battalion HQ units are HQ followed by the battalion number.
+The unit identifiers for line platoons are the platoon number, followed by the company letter or number, followed by the battalion number. If only one battalion is used, the battalion number may be omitted. Transport platoons will have a “T” prefix. For example, “1B3” means the first platoon of B company of the third battalion, and “T1B3” is its transport platoon. Companies normally have letters in Western armies and numbers in Warsaw Pact armies. Additionally, AD is used for air defense, AR for artillery, AT for anti-tank, R for reconnaissance, and S for scout, support, or security. The unit identifiers for battalion HQ units are HQ followed by the battalion number.
 
 Within the game, units are referred to as a squad, section, platoon/battery, or battalion according to their size. These terms are not used uniformly by all armies. For example, in armored formations in the British Army, the terms troop, squadron, and regiment are used in place of platoon, company, and battalion. Furthermore, even when these terms are used, they do not always refer to units of the same size. To help navigate these differences, when a different term is used for a formation, the game equivalent will appear in brackets.
 
 \newcommand{\orderofbattle}[3]{
     \subsection{#1} #3\par
-    \nopagebreak[4]\medskip\nopagebreak[4]\noindent
+    \medskip
+    \noindent
     \includegraphics[width=\linewidth]{orders-of-battle/#2.png}\par
     \medskip
 }
@@ -21,7 +22,7 @@ Within the game, units are referred to as a squad, section, platoon/battery, or 
 
 The British Army in the early 1960s was in transition. It still operated with a mixture of medium Centurion, upgraded with the L7 105~mm gun, and heavy Conqueror tanks, and operated both mechanized and motorized infantry.%
 \note{British Army Units}{
-    The British Army formations from early 1960sare from the document “Modern British TOEs” by Richard A. Rinaldi (2002).
+    The British Army formations from early 1960s are from the document “Modern British TOEs” by Richard A. Rinaldi (2002).
 }
 
 \orderofbattle{Armoured Regiment}{british-armoured-regiment-early-1960s}{
@@ -44,109 +45,28 @@ The British Army in the early 1960s was in transition. It still operated with a 
     This regiment [battalion] has four batteries A/B/C/D, of which A/B batteries [sections] each have two Honest John launchers and C/D batteries each have four towed 8-inch M1 guns with trucks.
 }
 
+\section{Battle of Goose Green}
+
+The 1982 Battle of Goose Green in the South Atlantic War was fought between 2 Para Battalion of the British Army and 12 Infantry Regiment of the Argentine Army, both with attached elements.%
+\note{
+    The primary source for the orders of battle at Goose Green is Mark Adkin's \emph{The Battle for Goose Green: A Battle is Fought to be Won} (Leo Cooper, 1992).
+}
+
+\orderofbattle{2 Para Battalion}{goose-green-2-para}{
+    2 Para at the time consisted of three line companies A/B/D each with three platoons of infantry, one patrol company C with two infantry platoons, and a support company S with one platoon of mortars [but with only 2 out of 8 mortars available, so equivalent to a squad], one platoon of sustained-fire GPMGs, one platoon with MILAN portable ATGMs, and one engineers platoon. The attached units were half a battery [equivalent to a section] of three 105~mm Light Guns from Alma Battery of 29 Commando Regiment, Royal Artillery, two squads of Blowpipes from 43  Air Defence Battery, Royal Artillery, and a Recce Troop [platoon] of 59 Independent Commando Squadron, Royal Engineers.
+}
+
+\orderofbattle{Task Force Mercedes}{goose-green-12-infantry-regiment}{
+    The Argentine Army at Goose Green was called \emph{Fuerza de Tareas Mercédes} (Task Force Mercedes). It consisted of 12th Infantry Regiment, with three line companies A/B/C, and reinforced with C company of 25th Infantry Regiment, three 105~mm pack howitzers [one section] of A Battery of 4th Airborne Artillery Regiment, an engineers platoon from the 9th Engineering Company, two Oerlikon GDF 35~mm AA guns with a Skyguard FCR of B Battery of 601st Anti-Aircraft Artillery Group, and a pair of SA-7B squads.
+}
+
+\orderofbattle{Military Airbase Condor}{goose-green-airbase-condor}{
+    The Argentine Air Force renamed the airstrip at Goose Green as \emph{Base Aérea Militar Cóndor} (Condor Military Air Base). The air-force elements at the base included a battery of two 20~mm Rh-202 AA guns of 3 Section B Battery 601AAAG with an Elta EWR and a security platoon.
+}
 \clearpage
 
+\begin{comment}
 \begin{itemize}
-
-    \item Table~\ref{table:ob-two-para}: 2 Para Battalion at the 1982 Battle of Goose Green. At this time, the battalion had attached half a battery of 105~mm Light Guns from Alma Battery of 29 Commando Regiment, RA, a section of Blowpipes from 43rd Air Defence Battery, RA, and a Recce Troop of 59 Independent Commando Squadron, RE.
-
-        \begin{table*}[p]
-            \centering
-            \caption{2 Para at Goose Green}
-            \label{table:ob-two-para}
-            \small
-            \begin{tabularx}{0.9\linewidth}{LLL}
-                \toprule
-                Element&Game Ground Unit&Notes\\
-                \midrule
-
-                Battalion HQ
-                &\binarymultiply{1}{infantry HQ platoon}\\
-
-                A Company
-                &\binarymultiply{3}{infantry platoon}\\
-
-                B Company
-                &\binarymultiply{3}{infantry platoon}\\
-
-                C Company
-                &\binarymultiply{2}{infantry platoon} &Patrol Company\\
-
-                D Company
-                &\binarymultiply{3}{infantry platoon}\\
-
-                Support Company
-                &\binarymultiply{1}{infantry mortar platoon}\\
-                &\binarymultiply{1}{infantry weapons platoon}&GPMGs\\
-                &\binarymultiply{1}{infantry weapons platoon}&MILANs\\
-                &\binarymultiply{1}{infantry platoon}&Engineers\\
-
-                Alma Battery
-                &\binarymultiply{1}{towed artillery section}&Three 105-mm Light Guns\\
-
-                Blowpipe Section
-                &\binarymultiply{2}{infantry SAM squad -- Blowpipe}\\
-
-                Engineers Troop
-                &\binarymultiply{1}{infantry platoon}\\
-
-                \bottomrule
-            \end{tabularx}
-        \end{table*}
-
-    \item Table~\ref{table:ob-twelth-infantry}: 12th Infantry Regiment at the 1982 Battle of Goose Green, with attachments from the 25th Infantry Regiment, 4th Airborne Artillery Regiment, 601st Anti-Aircraft Artillery Group.
-
-        \begin{table*}[p]
-            \centering
-            \caption{12IR at Goose Green}
-            \label{table:ob-twelth-infantry}
-            \small
-            \begin{tabularx}{0.9\linewidth}{LLL}
-                \toprule
-                Element&Game Ground Unit&Notes\\
-                \midrule
-                Regimental HQ
-                &\binarymultiply{1}{infantry HQ platoon}\\
-
-                SAM Section
-                &\binarymultiply{2}{infantry SAM squad -- SA-7B}\\
-
-                A Company 12IR
-                &\binarymultiply{5}{infantry platoon}\\
-
-                B Company 12IR
-                &\binarymultiply{3}{infantry platoon}\\
-
-                C Company 25IR
-                &\binarymultiply{2}{infantry platoon}\\
-                &\binarymultiply{1}{infantry weapons platoon}\\
-
-                C Company 12IR
-                &\binarymultiply{2}{infantry platoon}\\
-                &\binarymultiply{1}{infantry weapons platoon}\\
-
-                A Battery, 4AAR
-                &\binarymultiply{1}{towed artillery section}&Three 105-mm Pack Howitzers\\
-
-                B Battery, 601 GADA
-                &\binarymultiply{1}{Oerlikon 35~mm GDF section}&Two guns\\
-                &\binarymultiply{1}{towed FCR-D}&Skyguard\\
-
-                9th Engineering Company
-                &\binarymultiply{1}{infantry platoon}\\
-
-                \midrule
-
-                3 Section B Battery 601AAAG
-                &\binarymultiply{1}{Rh-202 20~mm battery}&Six guns\\
-                &\binarymultiply{1}{EWR}&Elta\\
-
-                Security Company
-                &\binarymultiply{1}{infantry platoon}&\\
-
-                \bottomrule
-            \end{tabularx}
-        \end{table*}
 
     \item Tables~\ref{table:ob-british-armored-regiment-early-1960s}, \ref{table:ob-british-apc-infantry-battalion-early-1960s}, \ref{table:ob-british-armored-regiment-early-1960s}, \ref{table:ob-british-infantry-battalion-early-1960s}, \ref{table:ob-british-field-artillery-regiment-early-1960s}, and \ref{table:ob-british-heavy-artillery-regiment-early-1960s}: An armored regiment, APC infantry battalion, infantry battalion, field artillery regiment, and heavy artillery regiment of the British Army from about 1960. In the British Army, regiments are battalion-level units.%
 
@@ -618,3 +538,5 @@ The British Army in the early 1960s was in transition. It still operated with a 
         \end{table*}
 
 \end{itemize}
+
+\end{comment}
