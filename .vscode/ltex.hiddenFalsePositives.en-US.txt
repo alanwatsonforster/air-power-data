@@ -68,3 +68,5 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qlight,Light Tanks Regarding the protection class: The WRG 1950–1985 rules give class II and III (i.e., light) protection to the: AMX 10RC, AMX 13, Cougar, Fox, SpPz Luchs, M24, M41, M114A2, M551 Panhard AML, Panhard EBR, PT-76, Saracen, Scimitar, and Scorpion M1128 Stryker MGS: With additional ceramic armor, this has protection against 14.5 mm but not heavier rounds, which I believe counts as III.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAnti-tank vehicles may be mediumMedium Anti-Tank Vehicles Regarding the protection class: The WRG 1950–1985 rules give class IV (i.e., medium) protection to the: Raketen JPz.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAPCs can be mediumMedium APCs Regarding the protection class: Boxer: Wikipedia states that with the baseline armor it is protected against medium-caliber rounds.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe 1976 Operator's Manual describes the use of an AN/VPS-2 range-only radar.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe 1976 Operator's Manual describes the use of an AN/TVS-2B night sight.\\E$"}
