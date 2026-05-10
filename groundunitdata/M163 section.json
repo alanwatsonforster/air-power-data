@@ -4,7 +4,7 @@
     "description": "M163 20 mm gatling self-propelled air-defense section",
     "symbols": "air-defense/gun/armor/light/section",
     "text": "20×6",
-    "defensestrength": "4H",
+    "defensestrength": "4O",
     "sightingrange": 12,
     "mobility": "U",
     "aaa": {

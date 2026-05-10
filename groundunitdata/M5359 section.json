@@ -4,7 +4,7 @@
     "description": "M-53/59 twin 30 mm air-defense section",
     "symbols": "truck/limitedwheeled/air-defense/gun/section",
     "text": "30×2",
-    "defensestrength": "3S",
+    "defensestrength": "3O",
     "sightingrange": 12,
     "mobility": "G/P",
     "aaa": {
