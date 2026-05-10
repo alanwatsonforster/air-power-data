@@ -22,7 +22,6 @@
         ],
         "maximumrelativealtitude": 9,
         "damagerating": 3,
-        "nightirsights": true,
         "fcrclass": "R",
         "fcrfrequency": "UF"
     },
