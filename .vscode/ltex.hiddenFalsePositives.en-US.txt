@@ -70,3 +70,4 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAPCs can be mediumMedium APCs Regarding the protection class: Boxer: Wikipedia states that with the baseline armor it is protected against medium-caliber rounds.\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe 1976 Operator's Manual describes the use of an AN/VPS-2 range-only radar.\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe 1976 Operator's Manual describes the use of an AN/TVS-2B night sight.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSingh, M. (Pen & Sword, 2020): “Anti-Aircraft Artillery in Combat 1950–1972: Air Defence in the Jet Age”.\\E$"}
