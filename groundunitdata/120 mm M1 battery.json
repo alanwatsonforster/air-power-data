@@ -1,27 +1,27 @@
 {
-    "name": "90 mm M2",
-    "year": 1939,
-    "description": "90 mm M2 air-defense battery",
+    "name": "120 mm M1",
+    "year": 1944,
+    "description": "120 mm M1 air-defense battery",
     "symbols": "air-defense/gun/battery",
-    "text": "90",
+    "text": "120",
     "defensestrength": "4S",
     "sightingrange": 18,
     "mobility": "T",
     "aaa": {
-        "type": "90",
+        "type": "120",
         "class": "H",
         "range": [
-            7,
-            14,
-            21
+            11,
+            22,
+            33
         ],
         "hitroll": [
-            3,
+            2,
             2,
             1
         ],
-        "maximumrelativealtitude": 43,
-        "damagerating": 6
+        "maximumrelativealtitude": 57,
+        "damagerating": 7
     },
     "VPs": [
         9,

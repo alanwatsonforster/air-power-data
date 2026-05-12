@@ -1,0 +1,27 @@
+{
+    "name": "KS-30",
+    "year": 1955,
+    "description": "KS-30 air-defense battery",
+    "symbols": "air-defense/gun/battery",
+    "text": "130",
+    "defensestrength": "4S",
+    "sightingrange": 18,
+    "mobility": "T",
+    "aaa": {
+        "type": "130",
+        "class": "H",
+        "range": [
+            12,
+            24,
+            36
+        ],
+        "hitroll": [
+            1,
+            1,
+            0
+        ],
+        "maximumrelativealtitude": 64,
+        "damagerating": 7
+    },
+    "VP3D": 11
+}
