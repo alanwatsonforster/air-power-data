@@ -2,7 +2,7 @@
     "name": "M42",
     "description": "M42 twin 40 mm self-propelled air-defense section",
     "year": 1953,
-    "symbols": "air-defense/gun/armor/section",
+    "symbols": "air-defense/gun/armor/open/section",
     "text": "40×2",
     "defensestrength": "4H",
     "sightingrange": 12,

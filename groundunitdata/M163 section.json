@@ -2,7 +2,7 @@
     "name": "M163",
     "year": 1968,
     "description": "M163 20 mm gatling self-propelled air-defense section",
-    "symbols": "air-defense/gun/armor/light/section",
+    "symbols": "air-defense/gun/armor/open/section",
     "text": "20×6",
     "defensestrength": "4O",
     "sightingrange": 12,

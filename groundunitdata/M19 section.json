@@ -2,7 +2,7 @@
     "name": "M19",
     "year": 1944,
     "description": "M19 twin 40 mm self-propelled air-defense section",
-    "symbols": "air-defense/gun/armor/section",
+    "symbols": "air-defense/gun/armor/open/section",
     "text": "40×2",
     "defensestrength": "4H",
     "sightingrange": 12,
