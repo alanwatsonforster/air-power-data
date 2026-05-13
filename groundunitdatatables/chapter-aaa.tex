@@ -52,7 +52,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             ZPU-1&6&2/3/5&3/2/1&1&---&\phantom{0}14.5&600&1000&EOTG/TSOH\\
             ZPU-2&6&2/3/5&4/3/2&1&---&\phantom{0}14.5&1200&1000&AS\\
             ZPU-4&6&2/3/5&5/4/3&2&---&\phantom{0}14.5&2400&1000&AS\\
-            ZPU-4&6&2/3/5&4/3/2&2&---&1\phantom{0}4.5&2400&1000&TSOH\\
+            ZPU-4&6&2/3/5&4/3/2&2&---&\phantom{0}14.5&2400&1000&TSOH\\
             TCM-20&8&2/4/6&4/4/3&2&---&\phantom{0}20&1450&860&EOTG\\
             Single Rh-202&8&2/4/6&3/2/1&2&---&\phantom{0}20&1030&1044&AS\\
             Twin Rh-202&8&2/4/6&5/4/3&2&---&\phantom{0}20&2060&1044&AS\\
@@ -80,6 +80,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             \midrule
             \multicolumn{10}{c}{New}\\
             \midrule
+            M51&30&6/12/18&4/4/3&6&W&\phantom{0}75&45&854\\
             90 mm M2&32&7/14/21&3/2/1&6&---&\phantom{0}90&24&820\\
             QF 3.7 inch Mk VI&45&9/18/27&3/2/1&6&--&\phantom{0}94&20&1044\\
             120 mm M1&57&11/22/33&2/2/1&7&--&120&12&945\\
@@ -778,6 +779,27 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \begin{itemize}\raggedright
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/ZSU-57-2}{ZSU-57-2}.
             \item WeaponSystems on the \href{https://weaponsystems.net/system/531-ZSU-57-2\%20Sparka}{ZSU-57-2}.
+        \end{itemize}
+    }
+}
+
+\subsectionwithcounter{M51 Battery}{\counter{M51 battery}}{
+    The M51 Skysweeper has a single 75~mm gun in an open mount in a towed carriage. The mount incorporates the T38 radar fire-control system. Its rate of fire is 45 rounds per minute.
+
+    The M51 entered service with the US Army in 1951 and was used for defense of strategic locations in the USA and in Europe, but was retired in 1959. It also served with Greece, Japan, and Turkey, with the last examples being retired until the mid-1970s.
+    \note{M51 Battery}{
+        Wikipedia gives a rate of fire of 45 rounds per minute, a muzzle velocity of 854~m/s, an effective maximum altitude of 30k feet, and a horizontal range of 26 hexes (13 km).
+
+        The TM states that the search radar is X-band (6--11 GHz or SHF).
+
+        The AAA hit rolls are based on the S-60, reduced by 1 for a lower rate of fire, increased by 1 for proximity fuzes, and increased by 2 for FCR-W, so 4/4/3. I will give it the same range of 6/12/18 as the 85~mm JS-12, which fires a slightly heavier round at a slightly lower velocity.
+
+        Sources:
+        \begin{itemize}
+            \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M51_Skysweeper}{M51} and \href{https://en.wikipedia.org/wiki/Western_Electric_M-33_Antiaircraft_Fire_Control_System}{T38 radar}
+            \item WeaponSystems on the \href{https://weaponsystems.net/system/421-M51+Skysweeper}{M51}.
+            \item Werrell, K.P. (2005, Air University Press, 2nd edition): “\href{https://media.defense.gov/2017/Mar/31/2001725225/-1/-1/0/B_0028_WERRELL_ARCHIE_TO_SAM.PDF}{Archie to SAM}”.
+            \item Departament of the Army (1956): \href{https://www.usarmygermany.com/Sont.htm?http&&&www.usarmygermany.com/Units/Air\%20Defense/USAREUR_ADA\%20Overview\%201.htm}{TM 9-6092-1-1} “Antiaircraft Fire Control System M33C and M33D Operation, June 1956”.
         \end{itemize}
     }
 }

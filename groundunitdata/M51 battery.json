@@ -1,0 +1,31 @@
+{
+    "name": "M51",
+    "year": 1953,
+    "description": "75 mm M51 air-defense battery",
+    "symbols": "air-defense/gun/battery",
+    "text": "75",
+    "defensestrength": "4S",
+    "sightingrange": 18,
+    "mobility": "T",
+    "aaa": {
+        "type": "75",
+        "class": "M",
+        "range": [
+            6,
+            12,
+            18
+        ],
+        "hitroll": [
+            4,
+            4,
+            3
+        ],
+        "maximumrelativealtitude": 30,
+        "damagerating": 6
+    },
+    "VPs": [
+        9,
+        6,
+        3
+    ]
+}
