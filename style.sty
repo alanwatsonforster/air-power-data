@@ -283,10 +283,15 @@
 
 % These stack one to four counters vertically.
 
-\newcommand{\counter}[1]{%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
+\newcommand{\onecounter}[1]{%
+    \raisebox{-3.2em}[0em][0em]{\includegraphics[width=4em]{counters/#1.png}}%
 }
 \newcommand{\twocounters}[2]{%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
+    \vspace{0.15em}%
+    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#2.png}}}%
+}
+\newcommand{\newtwocounters}[2]{%
     \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
     \vspace{0.15em}%
     \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#2.png}}}%
@@ -324,6 +329,40 @@
     \begin{tabular}{@{}p{4em}p{\@textwidthwithcounter}@{}}
         #1&#2\\
     \end{tabular}\par
+}
+
+\usepackage{hanging}
+\usepackage{needspace}
+
+\newcommand{\vspacelines}[1]{\vspace{#1\baselineskip}}
+
+\newcommand{\@subsectionwithcounters}[3]{%
+    \needspace{#1\baselineskip}%
+    \hangpara{5em}{-#1}%
+    \makebox[0em][r]{#3\hspace{0.5em}}%
+    {\bfseries #2:}
+    \addcontentsline{toc}{subsection}{#2}%
+    \ignorespaces\@ifnextchar\par{\@gobble}{}
+}
+
+\newcommand{\newsubsectionwithcounter}[2]{%
+    \@subsectionwithcounters{4}{#1}{%
+        \makebox[0em][r]{\raisebox{-3.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#2.png}}}%
+    }
+}
+
+\newcommand{\newsubsectionwithtwocounters}[3]{%
+    \@subsectionwithcounters{8}{#1}{%
+        \makebox[0em][r]{\raisebox{-3.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#2.png}}}%
+        \makebox[0em][r]{\raisebox{-8.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#3.png}}}%
+    }
+}
+\newcommand{\newsubsectionwiththreecounters}[4]{%
+    \@subsectionwithcounters{12}{#1}{%
+        \makebox[0em][r]{\raisebox{-3.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#2.png}}}%
+        \makebox[0em][r]{\raisebox{-8.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#3.png}}}%
+        \makebox[0em][r]{\raisebox{-13.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#4.png}}}%
+    }
 }
 
 \newlength{\@textwidthwithcounter}
