@@ -161,6 +161,18 @@
 \newcommand{\example}[2][Example]{{\itshape #1:} #2}
 \newcommand{\examples}[1]{\example[Examples]{#1}}
 
+%\newcommand{\example}[2][Example]{%
+%    \begin{tabular}{@{}p{8.3em}p{15em}@{}}
+%        {\itshape #1:}&#2\\
+%    \end{tabular}
+%}
+
+\newenvironment{exampletable}{%
+    \begin{tabular}{@{\itshape}p{8.2em}p{15em}@{}}
+    }{
+    \end{tabular}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % TABLE OF CONTENTS
@@ -273,66 +285,12 @@
 % SUBSECTIONS WITH COUNTERS
 
 % The aim here is to have a counter image at the left margin and a subsection
-% describing the counter wrapped around it. I've not quite managed this, so
-% instead I am settling for a counter in a column at the left and a subsection
-% describing it in a column on the right. This means the text does not wrap and
-% will not break. However, it's not too bad.
-
-% I originally tried to get this to work with the wrapfig2 package, but I had
-% problems with columns breaking unexpectedly.
-
-% These stack one to four counters vertically.
-
-\newcommand{\onecounter}[1]{%
-    \raisebox{-3.2em}[0em][0em]{\includegraphics[width=4em]{counters/#1.png}}%
-}
-\newcommand{\twocounters}[2]{%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
-    \vspace{0.15em}%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#2.png}}}%
-}
-\newcommand{\newtwocounters}[2]{%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
-    \vspace{0.15em}%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#2.png}}}%
-}
-\newcommand{\threecounters}[3]{%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
-    \vspace{0.15em}%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#2.png}}}\par%
-    \vspace{0.15em}%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#3.png}}}%
-}
-\newcommand{\fourcounters}[4]{%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#1.png}}}\par%
-    \vspace{0.15em}%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#2.png}}}\par%
-    \vspace{0.15em}%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#3.png}}}\par%
-    \vspace{0.15em}%
-    \raisebox{-3.2em}{{\includegraphics[width=4em]{counters/#4.png}}}%
-}
-
-\makeatletter
-
-% Use this as:
-%
-% \subsectionwithcounter{SUBSECTION HEADING}{COUNTER}{TEXT}
-
-\newcommand{\@formatforcounter}[2]{%
-    \noindent
-    \setlength{\@textwidthwithcounter}{\linewidth}%
-    \addtolength{\@textwidthwithcounter}{-4em}%
-    \addtolength{\@textwidthwithcounter}{-\tabcolsep}%
-    % I do not understand why I need to subtract an extra 2.7pt, but if I do not I get an overfull hbox warning.
-    \addtolength{\@textwidthwithcounter}{-2.7pt}%
-    \begin{tabular}{@{}p{4em}p{\@textwidthwithcounter}@{}}
-        #1&#2\\
-    \end{tabular}\par
-}
+% describing the counter wrapped around it.
 
 \usepackage{hanging}
 \usepackage{needspace}
+
+\makeatletter
 
 \newcommand{\vspacelines}[1]{\vspace{#1\baselineskip}}
 
@@ -345,19 +303,20 @@
     \ignorespaces\@ifnextchar\par{\@gobble}{}
 }
 
-\newcommand{\newsubsectionwithcounter}[2]{%
+\newcommand{\subsectionwithcounter}[2]{%
     \@subsectionwithcounters{4}{#1}{%
         \makebox[0em][r]{\raisebox{-3.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#2.png}}}%
     }
 }
 
-\newcommand{\newsubsectionwithtwocounters}[3]{%
+\newcommand{\subsectionwithtwocounters}[3]{%
     \@subsectionwithcounters{8}{#1}{%
         \makebox[0em][r]{\raisebox{-3.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#2.png}}}%
         \makebox[0em][r]{\raisebox{-8.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#3.png}}}%
     }
 }
-\newcommand{\newsubsectionwiththreecounters}[4]{%
+
+\newcommand{\subsectionwiththreecounters}[4]{%
     \@subsectionwithcounters{12}{#1}{%
         \makebox[0em][r]{\raisebox{-3.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#2.png}}}%
         \makebox[0em][r]{\raisebox{-8.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#3.png}}}%
@@ -365,24 +324,12 @@
     }
 }
 
-\newlength{\@textwidthwithcounter}
-\newcommand{\subsectionwithcounter}[3]{%
-    \vspace{0.13em}
-    \@formatforcounter{#2}{
-        % If I use \subsection{#1}, I get additional space above the heading. I
-        % don't know why. The simplest fix seems to be to explicitly format the
-        % heading.
-        {\bfseries #1:}%
-        \addcontentsline{toc}{subsection}{#1}%
-        #3
-    }
-}
-
-\newcommand{\paragraphwithcounter}[3]{%
-    \@formatforcounter{#2}{
-        {\itshape #1:}%
-        \addcontentsline{toc}{paragraph}{#1}%
-        #3
+\newcommand{\subsectionwithfourcounters}[5]{%
+    \@subsectionwithcounters{16}{#1}{%
+        \makebox[0em][r]{\raisebox{-3.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#2.png}}}%
+        \makebox[0em][r]{\raisebox{-8.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#3.png}}}%
+        \makebox[0em][r]{\raisebox{-13.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#4.png}}}%
+        \makebox[0em][r]{\raisebox{-18.8em}[0em][0em]{\includegraphics[width=4.5em]{counters/#5.png}}}%
     }
 }
 
