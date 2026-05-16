@@ -1,0 +1,12 @@
+{
+    "name": "mobile M45",
+    "year": 1967,
+    "description": "mobile M45 quad .50 cal air-defense section",
+    "symbols": "truck/limitedwheeled/air-defense/gun/section",
+    "text": "12.7×4",
+    "defensestrength": "2S",
+    "sightingrange": 12,
+    "mobility": "G/P",
+    "_include": "M16 section",
+    "VP2D": 4
+}
