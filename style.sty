@@ -399,6 +399,13 @@
     \par{\itshape #1:} \ignorespaces%
 }
 
+\newenvironment{notesources}{%
+    \noteparagraph{Sources}
+    \begin{itemize}\raggedright
+        }{
+    \end{itemize}
+}
+
 \newcommand{\listofnotes}{
     \printendnotes[itemize]
 }
