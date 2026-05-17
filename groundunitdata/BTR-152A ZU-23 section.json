@@ -1,0 +1,10 @@
+{
+    "name": "BTR-152A ZU-2",
+    "year": 1980,
+    "description": "BTR-152A twin 23 mm self-propelled air-defense section",
+    "symbols": "air-defense/gun/armor/open/section",
+    "defensestrength": "3O",
+    "mobility": "U",
+    "VP2D": 4,
+    "_include": "mobile ZU-23 section"
+}

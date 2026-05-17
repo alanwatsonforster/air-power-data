@@ -1,0 +1,10 @@
+{
+    "name": "BTR-152A ZPU-4",
+    "year": 1951,
+    "description": "BTR-152A quad 14.5 mm self-propelled air-defense section",
+    "symbols": "air-defense/gun/armor/open/section",
+    "defensestrength": "3O",
+    "mobility": "U",
+    "VP2D": 5,
+    "_include": "mobile ZPU-4 section"
+}

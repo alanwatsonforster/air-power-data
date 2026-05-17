@@ -1,7 +1,7 @@
 {
-    "name": "BTR-40A",
-    "year": 1950,
-    "description": "BTR-40A twin 14.5 mm self-propelled air-defense section",
+    "name": "BTR-152A ZPU-2",
+    "year": 1951,
+    "description": "BTR-152A twin 14.5 mm self-propelled air-defense section",
     "symbols": "air-defense/gun/armor/open/section",
     "defensestrength": "3O",
     "mobility": "U",
