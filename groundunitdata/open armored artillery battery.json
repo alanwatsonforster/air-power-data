@@ -2,7 +2,7 @@
     "name": "open armored artillery",
     "description": "open armored artillery battery",
     "symbols": "artillery/armor/open/battery",
-    "defensestrength": "4O",
+    "defensestrength": "3O",
     "sightingrange": 12,
     "mobility": "U",
     "aaa": {

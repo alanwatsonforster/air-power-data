@@ -5,7 +5,7 @@
     "description": "M42 twin 40 mm self-propelled air-defense section",
     "symbols": "air-defense/gun/armor/open/section",
     "text": "40×2",
-    "defensestrength": "4H",
+    "defensestrength": "3O",
     "sightingrange": 12,
     "mobility": "U",
     "aaa": {

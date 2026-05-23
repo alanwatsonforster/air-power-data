@@ -2,7 +2,7 @@
     "name": "open tank",
     "description": "open tank platoon",
     "symbols": "armor/gun/open/platoon",
-    "defensestrength": "4O",
+    "defensestrength": "3O",
     "sightingrange": 12,
     "mobility": "U",
     "aaa": {
