@@ -1,0 +1,6 @@
+{
+    "name": "BTR-152A Vz.53",
+    "year": 1953,
+    "description": "BTR-152A Vz.52 12.7 mm air-defense section",
+    "_include": "M16 section"
+}
