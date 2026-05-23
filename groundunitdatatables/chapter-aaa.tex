@@ -1086,13 +1086,74 @@ The KS-30 entered service in 1955 with Soviet forces, was used to defend strateg
     \end{notesources}
 }
 
-\begin{table*}[p]
-    \caption*{\hypertarget{table:aaa-units}{AAA Units Table}}
-    \centering
+\newenvironment{LONGTABLE}{
+    \onecolumn
+    \pagestyle{fancy}
+    \raggedbottom
     \footnotesize
-    \input{table-aaa-units.tex}
-    \par
-    \begin{tablenote}{0.9\linewidth}
-        \tablenotetext{a}{Platoons and batteries are available as sections with corresponding modifications to their damage resiliences and hit rolls.}
-    \end{tablenote}
-\end{table*}
+    \begin{longtable}{lcccccclccc@{~}c@{~}cc@{~}c@{~}ccccl}
+
+        \caption*{\hypertarget{table:aaa-units}{AAA Units Table}\rule{0em}{3.2ex}}\\
+        \toprule
+        Type&
+        \vertical{Size\tablenotemark{a}}&
+        \vertical{Year}&
+        \vertical{Defense Strength}&
+        \vertical{Sighting Range}&
+        \vertical{Mobility}&
+        \begin{tabular}[b]{@{}c@{}}\vertical{VPs}\\\midrule 3D/2D/D\\
+        \end{tabular}&
+        \wbox[r]{00}{\vertical{Gun}}&
+        \vertical{AAA Class}&
+        \multirow[b]{-3}{*}{\vertical{Altitude}}&
+        \multicolumn{3}{c}{
+            \begin{tabular}[b]{@{}ccc@{}}\multicolumn{3}{@{}c@{}}{\vertical{Range}}\\\midrule\wbox[c]{00}{S}&\wbox[c]{00}{M}&\wbox[c]{00}{L}
+        \end{tabular}}&
+        \multicolumn{3}{c}{
+            \begin{tabular}[b]{@{}ccc@{}}\multicolumn{3}{@{}c@{}}{\vertical{Hit}}\\\midrule\wbox[c]{00}{S}&\wbox[c]{00}{M}&\wbox[c]{00}{L}
+        \end{tabular}}&
+        \vertical{Damage Rating}&
+        \vertical{FCR}&
+        \vertical{Night IR Sights}&
+        \wbox[r]{00}{\vertical{SAM}}\\
+        \midrule
+        \addlinespace
+        \endfirsthead
+
+        \caption*{AAA Units Table\rule{0em}{3.2ex}}\\
+        \toprule
+        Type&
+        \vertical{Size\tablenotemark{a}}&
+        \vertical{Year}&
+        \vertical{Defense Strength}&
+        \vertical{Sighting Range}&
+        \vertical{Mobility}&
+        \begin{tabular}[b]{@{}c@{}}\vertical{VPs}\\\midrule 3D/2D/D\\
+        \end{tabular}&
+        \wbox[r]{00}{\vertical{Gun}}&
+        \vertical{AAA Class}&
+        \multirow[b]{-3}{*}{\vertical{Altitude}}&
+        \multicolumn{3}{c}{
+            \begin{tabular}[b]{@{}ccc@{}}\multicolumn{3}{@{}c@{}}{\vertical{Range}}\\\midrule\wbox[c]{00}{S}&\wbox[c]{00}{M}&\wbox[c]{00}{L}
+        \end{tabular}}&
+        \multicolumn{3}{c}{
+            \begin{tabular}[b]{@{}ccc@{}}\multicolumn{3}{@{}c@{}}{\vertical{Hit}}\\\midrule\wbox[c]{00}{S}&\wbox[c]{00}{M}&\wbox[c]{00}{L}
+        \end{tabular}}&
+        \vertical{Damage Rating}&
+        \vertical{FCR}&
+        \vertical{Night IR Sights}&
+        \wbox[r]{00}{\vertical{SAM}}\\
+        \midrule
+        \addlinespace
+        \endhead
+
+        \addlinespace
+        \bottomrule
+        \endfoot
+    }{
+    \end{longtable}
+}
+\input{table-aaa-units.tex}
+
+\twocolumn
+\pagestyle{fancy}
