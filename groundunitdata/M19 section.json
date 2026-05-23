@@ -1,5 +1,6 @@
 {
     "name": "M19",
+    "country": "US",
     "year": 1944,
     "description": "M19 twin 40 mm self-propelled air-defense section",
     "symbols": "air-defense/gun/armor/open/section",

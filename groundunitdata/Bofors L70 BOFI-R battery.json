@@ -1,5 +1,6 @@
 {
     "name": "Bofors L/70 BOFI-R",
+    "country": "SE",
     "description": "Bofors 40 mm L/70 BOFI-R air-defense battery",
     "symbols": "air-defense/gun/battery",
     "text": "40",

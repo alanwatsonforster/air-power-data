@@ -1,5 +1,6 @@
 {
     "name": "BTR-152A ZU-2",
+    "country": "PS",
     "year": 1975,
     "description": "BTR-152A twin 23 mm self-propelled air-defense section",
     "symbols": "air-defense/gun/armor/open/section",

@@ -1,5 +1,6 @@
 {
     "name": "Panhard M3 VDA",
+    "country": "FR",
     "year": 1975,
     "description": "Panhard M3 VDA twin 20 mm self-propelled air-defense section",
     "symbols": "air-defense/gun/armor/light/section",

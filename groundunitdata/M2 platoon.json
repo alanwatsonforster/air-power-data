@@ -1,5 +1,6 @@
 {
     "name": "M2",
+    "country": "US",
     "year": 1933,
     "description": "M2 12.7 mm air-defense platoon",
     "symbols": "air-defense/gun/infantry/platoon",

@@ -1,5 +1,6 @@
 {
     "name": "M51",
+    "country": "US",
     "year": 1953,
     "description": "75 mm M51 air-defense battery",
     "symbols": "air-defense/gun/battery",

@@ -1,5 +1,6 @@
 {
     "name": "Bofors L/60",
+    "country": "SE",
     "year": 1935,
     "description": "Bofors 40 mm L/60 air-defense battery",
     "symbols": "air-defense/gun/battery",

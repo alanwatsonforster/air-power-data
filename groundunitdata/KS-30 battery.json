@@ -1,5 +1,6 @@
 {
     "name": "KS-30",
+    "country": "SU",
     "year": 1955,
     "description": "KS-30 air-defense battery",
     "symbols": "air-defense/gun/battery",

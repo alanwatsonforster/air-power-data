@@ -1,5 +1,6 @@
 {
     "name": "Gepard",
+    "country": "DE",
     "year": 1976,
     "description": "Gepard twin 35 mm self-propelled air-defense section",
     "symbols": "air-defense/gun/armor/light/section",

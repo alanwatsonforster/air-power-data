@@ -1,5 +1,6 @@
 {
     "name": "BTR-152A ZPU-2",
+    "country": "SU",
     "year": 1951,
     "description": "BTR-152A twin 14.5 mm self-propelled air-defense section",
     "symbols": "air-defense/gun/armor/open/section",
