@@ -1,0 +1,13 @@
+{
+    "name": "open armored truck",
+    "description": "open armored truck platoon",
+    "symbols": "armor/open/transport/platoon",
+    "defensestrength": "4O",
+    "sightingrange": 12,
+    "mobility": "G/P",
+    "aaa": {
+        "class": "B",
+        "maximumrelativealtitude": 3
+    },
+    "VP3D": 5
+}

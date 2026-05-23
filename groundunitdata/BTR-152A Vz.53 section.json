@@ -1,7 +1,28 @@
 {
     "name": "BTR-152A Vz.53",
     "country": "CS",
-    "year": 1953,
+    "year": 1955,
     "description": "BTR-152A Vz.52 12.7 mm air-defense section",
-    "_include": "M16 section"
+    "symbols": "air-defense/gun/armor/open/section",
+    "text": "12.7×4",
+    "defensestrength": "3O",
+    "sightingrange": 12,
+    "mobility": "G/P",
+    "aaa": {
+        "type": "12.7×4",
+        "class": "L",
+        "range": [
+            2,
+            3,
+            4
+        ],
+        "hitroll": [
+            4,
+            3,
+            2
+        ],
+        "damagerating": 2,
+        "maximumrelativealtitude": 5
+    },
+    "VP2D": 6
 }

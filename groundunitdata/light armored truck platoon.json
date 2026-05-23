@@ -1,0 +1,13 @@
+{
+    "name": "light armored truck",
+    "description": "light armored truck platoon",
+    "symbols": "armor/light/transport/platoon",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "G/P",
+    "aaa": {
+        "class": "B",
+        "maximumrelativealtitude": 3
+    },
+    "VP3D": 6
+}
