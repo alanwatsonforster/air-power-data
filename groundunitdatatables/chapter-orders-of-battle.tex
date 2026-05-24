@@ -1,5 +1,6 @@
 %!TEX root = groundunitdata.tex
 
+\onecolumn
 \chapter{Example Orders of Battle}
 \raggedbottom
 
@@ -11,19 +12,36 @@ The unit identifiers for line platoons are the platoon number, followed by the c
 
 Within the game, units are referred to as a squad, section, platoon/battery, or battalion according to their size. These terms are not used uniformly by all armies. For example, in armored formations in the British Army, the terms troop, squadron, and regiment are used in place of platoon, company, and battalion. Furthermore, even when these terms are used, they do not always refer to units of the same size. To help navigate these differences, when a different term is used for a formation, the game equivalent will appear in brackets.
 
-\newcommand{\orderofbattle}[3]{
-    \subsection{#1} #3\par
-    \medskip
+\newcommand{\orderofbattletext}[1]{
     \noindent
-    \includegraphics[width=\linewidth]{orders-of-battle/#2.png}\par
+    \begin{minipage}{0.3\linewidth}
+        \setlength{\parindent}{1.0em}
+        #1
+    \end{minipage}
+}
+
+\newcommand{\orderofbattle}[3]{
+    \noindent
+    \raisebox{-\height}{%
+        \orderofbattletext{%
+        \subsection{#1} #3}%
+    }
+    \hfill
+    \raisebox{2.0ex-\height}{%
+        \includegraphics[width=0.68\linewidth]{orders-of-battle/#2.png}%
+    }
     \medskip
 }
 
+\onecolumn
+
 \section{British Army (Early 1960s)}
 
-The British Army in the early 1960s was in transition. It still operated with a mixture of medium Centurion, upgraded with the L7 105~mm gun, and heavy Conqueror tanks, and operated both mechanized and motorized infantry.%
-\note{British Army Units (Early 1960s)}{
-    The British Army formations from early 1960s are from the document “Modern British TOEs” by Richard A. Rinaldi (2002).
+\orderofbattletext{
+    The British Army in the early 1960s was in transition. It still operated with a mixture of medium Centurion, upgraded with the L7 105~mm gun, and heavy Conqueror tanks, and operated both mechanized and motorized infantry.%
+    \note{British Army Units (Early 1960s)}{
+        The British Army formations from early 1960s are from the document “Modern British TOEs” by Richard A. Rinaldi (2002).
+    }
 }
 
 \orderofbattle{Armoured Regiment}{british-armoured-regiment-early-1960s}{
