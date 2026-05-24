@@ -3,7 +3,7 @@
     "country": "US",
     "year": 1943,
     "description": "90 mm M2 air-defense battery",
-    "symbols": "air-defense/gun/battery",
+    "symbols": "air-defense/gun/towed/battery",
     "text": "90",
     "defensestrength": "4S",
     "sightingrange": 18,

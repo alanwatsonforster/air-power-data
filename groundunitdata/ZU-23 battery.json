@@ -3,7 +3,7 @@
     "country": "SU",
     "year": 1960,
     "description": "ZU-23 twin 23 mm air-defense battery",
-    "symbols": "air-defense/gun/battery",
+    "symbols": "air-defense/gun/towed/battery",
     "text": "23×2",
     "defensestrength": "3S",
     "sightingrange": 12,

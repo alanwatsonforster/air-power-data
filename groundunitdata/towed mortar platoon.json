@@ -1,7 +1,7 @@
 {
     "name": "towed mortar",
     "description": "towed mortar platoon",
-    "symbols": "mortar/platoon",
+    "symbols": "mortar/towed/platoon",
     "sightingrange": 12,
     "defensestrength": "3S",
     "mobility": "T",

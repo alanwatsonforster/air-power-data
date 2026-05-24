@@ -1,7 +1,7 @@
 o{
     "name": "towed EWR-B",
     "description": "early-warning control radar (type B)",
-    "symbols": "air-defense/radar/platoon",
+    "symbols": "air-defense/radar/towed/platoon",
     "text": "EWR-B",
     "sightingrange": 12,
     "defensestrength": "2S",

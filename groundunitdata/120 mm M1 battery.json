@@ -3,7 +3,7 @@
     "country": "US",
     "year": 1944,
     "description": "120 mm M1 air-defense battery",
-    "symbols": "air-defense/gun/battery",
+    "symbols": "air-defense/gun/towed/battery",
     "text": "120",
     "defensestrength": "4S",
     "sightingrange": 18,

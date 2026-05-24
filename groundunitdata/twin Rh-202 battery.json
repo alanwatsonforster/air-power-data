@@ -3,7 +3,7 @@
     "country": "DE",
     "year": 1972,
     "description": "Rh-202 twin 20 mm air-defense battery",
-    "symbols": "air-defense/gun/battery",
+    "symbols": "air-defense/gun/towed/battery",
     "text": "20×2",
     "defensestrength": "3S",
     "sightingrange": 12,

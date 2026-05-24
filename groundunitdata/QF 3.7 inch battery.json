@@ -3,7 +3,7 @@
     "country": "UK",
     "year": 1939,
     "description": "90 mm M2 air-defense battery",
-    "symbols": "air-defense/gun/battery",
+    "symbols": "air-defense/gun/towed/battery",
     "text": "94",
     "defensestrength": "4S",
     "sightingrange": 18,

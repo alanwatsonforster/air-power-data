@@ -3,7 +3,7 @@
     "country": "SE",
     "year": 1952,
     "description": "Bofors 40 mm L/70 air-defense battery",
-    "symbols": "air-defense/gun/battery",
+    "symbols": "air-defense/gun/towed/battery",
     "text": "40",
     "defensestrength": "3S",
     "sightingrange": 12,

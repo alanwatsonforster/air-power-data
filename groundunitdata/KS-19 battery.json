@@ -3,7 +3,7 @@
     "country": "SU",
     "year": 1948,
     "description": "KS-19 100 mm air-defense battery",
-    "symbols": "air-defense/gun/battery",
+    "symbols": "air-defense/gun/towed/battery",
     "text": "100",
     "defensestrength": "4S",
     "sightingrange": 18,

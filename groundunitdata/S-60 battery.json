@@ -3,7 +3,7 @@
     "country": "SU",
     "year": 1950,
     "description": "S-60 57 mm air-defense battery",
-    "symbols": "air-defense/gun/battery",
+    "symbols": "air-defense/gun/towed/battery",
     "text": "57",
     "defensestrength": "3S",
     "sightingrange": 12,

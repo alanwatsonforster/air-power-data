@@ -1,7 +1,7 @@
 {
     "name": "open armored truck",
     "description": "open armored truck platoon",
-    "symbols": "armor/open/transport/platoon",
+    "symbols": "armor/open/transport/limitedwheeled/platoon",
     "defensestrength": "3O",
     "sightingrange": 12,
     "mobility": "G/P",

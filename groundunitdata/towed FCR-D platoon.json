@@ -1,7 +1,7 @@
 {
     "name": "towed FCR-D",
     "description": "towed fire control radar (type D)",
-    "symbols": "air-defense/radar/platoon",
+    "symbols": "air-defense/radar/towed/platoon",
     "text": "FCR-D",
     "defensestrength": "2S",
     "sightingrange": 12,

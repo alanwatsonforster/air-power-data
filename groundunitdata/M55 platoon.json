@@ -3,7 +3,7 @@
     "country": "US",
     "year": 1945,
     "description": "M55 quad .50 cal air-defense platoon",
-    "symbols": "air-defense/gun/platoon",
+    "symbols": "air-defense/gun/towed/platoon",
     "text": "12.7×4",
     "defensestrength": "3S",
     "sightingrange": 12,

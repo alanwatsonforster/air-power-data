@@ -1,7 +1,7 @@
 {
     "name": "light armored truck",
     "description": "light armored truck platoon",
-    "symbols": "armor/light/transport/platoon",
+    "symbols": "armor/light/transport/limitedwheeled/platoon",
     "defensestrength": "4H",
     "sightingrange": 12,
     "mobility": "G/P",
