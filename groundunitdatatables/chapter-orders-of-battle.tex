@@ -14,7 +14,7 @@ Within the game, units are referred to as a squad, section, platoon/battery, or 
 
 \newcommand{\orderofbattletext}[1]{
     \noindent
-    \begin{minipage}{0.3\linewidth}
+    \begin{minipage}{0.38\linewidth}
         \setlength{\parindent}{1.0em}
         #1
     \end{minipage}
@@ -27,10 +27,11 @@ Within the game, units are referred to as a squad, section, platoon/battery, or 
         \subsection{#1} #3}%
     }
     \hfill
-    \raisebox{2.0ex-\height}{%
-        \includegraphics[width=0.68\linewidth]{orders-of-battle/#2.png}%
-    }
-    \medskip
+    \raisebox{0.6ex-\height}{%
+        \includegraphics[width=0.60\linewidth]{orders-of-battle/#2.png}%
+    }%
+    \par
+    \bigskip
 }
 
 \onecolumn
@@ -38,49 +39,65 @@ Within the game, units are referred to as a squad, section, platoon/battery, or 
 \section{British Army (Early 1960s)}
 
 \orderofbattletext{
-    The British Army in the early 1960s was in transition. It still operated with a mixture of medium Centurion, upgraded with the L7 105~mm gun, and heavy Conqueror tanks, and operated both mechanized and motorized infantry.%
+    The British Army in the early 1960s was in transition. It still operated with a mixture of medium Centurion tanks  (upgraded with the L7 105~mm gun) and heavy Conqueror tanks, and operated both mechanized and motorized infantry.%
     \note{British Army Units (Early 1960s)}{
         The British Army formations from early 1960s are from the document “Modern British TOEs” by Richard A. Rinaldi (2002).
     }
 }
 
 \orderofbattle{Armoured Regiment}{british-armoured-regiment-early-1960s}{
-    This regiment [battalion] has three squadrons [companies] A/B/C each consisting of three tank troops [platoons] with Centurion medium tanks and one with Conqueror heavy tanks. The reconnaissance (R) squadron [company] is equipped with Ferret armored cars.
+    This regiment has three squadrons A/B/C each with three tank troops with Centurion medium tanks and one tank troop with Conqueror heavy tanks. The reconnaissance (R) squadron has three light reconnaissance troops with Ferret armored cars.
+
+    Note that in armored formations in the British Army, the terms troop, squadron, and regiment are used in place of platoon, company, and battalion.
 }
 
 \orderofbattle{APC Infantry Battalion}{british-APC-infantry-battalion-early-1960s}{
-    This battalion has three companies A/B/C each consisting of three infantry platoons and one infantry weapons platoon, with Saracen light APCs to provide mobility and protection.
+    This battalion has three companies A/B/C each with three infantry platoons, one infantry weapons platoon, and corresponding light APC platoons with Saracen light APCs to provide mobility and protection.
 }
 
 \orderofbattle{Infantry Battalion}{british-infantry-battalion-early-1960s}{
-    This battalion has three companies A/B/C each consisting of three infantry platoons and one infantry weapons platoon, with trucks to provide mobility.
+    This battalion has three companies A/B/C each with of three infantry platoons, one infantry weapons platoon, with corresponding truck platoons to provide mobility.
 }
 
 \orderofbattle{Field Artillery Regiment}{british-field-artillery-regiment-early-1960s}{
-    This regiment [battalion] has four batteries A/B/C/D each with six Cardinal (M44) self-propelled guns.
+    This regiment has four batteries A/B/C/D each with six Cardinal 155~mm self-propelled guns.
+
+    Note that in artillery formations in the British Army, the term regiment is used in place of battalion.
+
 }
 
 \orderofbattle{Heavy Artillery Regiment}{british-heavy-artillery-regiment-early-1960s}{
-    This regiment [battalion] has four batteries A/B/C/D, of which A/B batteries [sections] each have two Honest John launchers and C/D batteries each have four towed 8-inch M1 guns with trucks.
+    This regiment has four batteries A/B/C/D, of which A/B batteries each have two Honest John mobile missile launchers (and are represented by section) and C/D batteries each have four towed 8-inch M1 guns with trucks.
+
+    Note that in artillery formations in the British Army, the term regiment is used in place of battalion.
 }
 
 \section{Battle of Goose Green}
 
-The 1982 Battle of Goose Green in the South Atlantic War was fought between 2 Para Battalion of the British Army and 12 Infantry Regiment of the Argentine Army, both with attached elements.%
-\note{Goose Green}{
-    The primary source for the orders of battle at Goose Green is Mark Adkin's \emph{The Battle for Goose Green: A Battle is Fought to be Won} (Leo Cooper, 1992).
+\orderofbattletext{
+    The 1982 Battle of Goose Green in the South Atlantic War was fought between 2 Para Battalion of the British Army and 12 Infantry Regiment of the Argentine Army, both with attached elements.%
+    \note{Goose Green}{
+        The primary source for the orders of battle at Goose Green is Mark Adkin's \emph{The Battle for Goose Green: A Battle is Fought to be Won} (Leo Cooper, 1992).
+    }
 }
+\nopagebreak
 
 \orderofbattle{2 Para Battalion}{goose-green-2-para}{
-    2 Para at the time consisted of three line companies A/B/D each with three platoons of infantry, one patrol company C with two infantry platoons, and a support company S with one platoon of mortars [but with only 2 out of 8 mortars available, so equivalent to a squad], one platoon of sustained-fire GPMGs, one platoon with MILAN portable ATGMs, and one engineers platoon. The attached units were half a battery [equivalent to a section] of three 105~mm Light Guns from Alma Battery of 29 Commando Regiment, Royal Artillery, two squads of Blowpipes from 43  Air Defence Battery, Royal Artillery, and a Recce Troop [platoon] of 59 Independent Commando Squadron, Royal Engineers.
+    2 Para consisted of: three line companies A/B/D each with three platoons of infantry; one patrol company C with two infantry platoons; and a support company S with one infantry mortar squad (as only two of the eight mortars in the mortar platoon were available), one infantry weapons platoon of sustained-fire GPMGs, one infantry weapons platoon with MILAN portable ATGMs, and one infantry engineers platoon.
+
+    The attached units were: a towed artillery section of three 105~mm Light Guns from Alma Battery of 29 Commando Regiment, Royal Artillery; an infantry engineers platoon of 59 Independent Commando Squadron, Royal Engineers; and two squads of Blowpipes from 43 Air Defence Battery, Royal Artillery.
 }
 
 \orderofbattle{Task Force Mercedes}{goose-green-12-infantry-regiment}{
-    The Argentine Army at Goose Green was called \emph{Fuerza de Tareas Mercédes} (Task Force Mercedes). It consisted of \emph{Regimento de Infantería 12} (12th Infantry Regiment), with three line companies A/B/C, and reinforced with C company of 25th Infantry Regiment, three 105~mm pack howitzers [one section] of A Battery of 4th Airborne Artillery Regiment, an engineers platoon from the 9th Engineering Company, two Oerlikon GDF 35~mm AA guns with a Skyguard FCR of B Battery of 601st Anti-Aircraft Artillery Group, and a pair of SA-7B squads.
+    The Argentine Army elements at Goose Green were called \emph{Fuerza de Tareas Mercédes} (Task Force Mercedes).
+
+    The main body of the force was \emph{Regimento de Infantería 12} (12th Infantry Regiment), with three line companies A/B/C, and reinforced with C company of 25th Infantry Regiment.
+
+    The attached units were: a towed artillery section with three 105~mm pack howitzers from A Battery of 4th Airborne Artillery Regiment; an infantry engineers platoon from the 9th Engineering Company; a section with two Oerlikon GDF 35~mm AA guns with a Skyguard FCR from B Battery of 601st Anti-Aircraft Artillery Group; and a pair of SA-7B squads.
 }
 
 \orderofbattle{Military Airbase Condor}{goose-green-airbase-condor}{
-    The Argentine Air Force renamed the airstrip at Goose Green as \emph{Base Aérea Militar Cóndor} (Condor Military Air Base). The air-force elements at the base included a battery of two 20~mm Rh-202 AA guns of 3 Section B Battery 601AAAG with an Elta EWR and a security platoon.
+    The Argentine Air Force renamed the airstrip at Goose Green as \emph{Base Aérea Militar Cóndor} (Condor Military Air Base). The Air Force elements at the base included a battery of six 20~mm Rh-202 AA guns with an Elta EWR and a security platoon.
 }
 
 \section{British Army (Mid 1980s)}
