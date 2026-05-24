@@ -3,7 +3,7 @@
     "country": "SU",
     "year": 1948,
     "description": "KS-19 100 mm air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "100",
     "defensestrength": "4S",
     "sightingrange": 18,

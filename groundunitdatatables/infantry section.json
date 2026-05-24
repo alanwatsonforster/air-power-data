@@ -1,0 +1,9 @@
+{
+    "name": "infantry",
+    "description": "infantry section",
+    "symbols": "infantry/section",
+    "defensestrength": "4S",
+    "sightingrange": 6,
+    "mobility": "U",
+    "VP3D": 5
+}

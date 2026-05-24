@@ -1,0 +1,31 @@
+{
+    "name": "90 mm M2",
+    "country": "UK",
+    "year": 1939,
+    "description": "90 mm M2 air-defense section",
+    "symbols": "air-defense/gun/towed/section",
+    "text": "94",
+    "defensestrength": "4S",
+    "sightingrange": 18,
+    "mobility": "T",
+    "aaa": {
+        "type": "94",
+        "class": "H",
+        "range": [
+            9,
+            18,
+            27
+        ],
+        "hitroll": [
+            2,
+            1,
+            0
+        ],
+        "maximumrelativealtitude": 45,
+        "damagerating": 6
+    },
+    "VPs": [
+        6,
+        3
+    ]
+}

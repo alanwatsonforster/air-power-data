@@ -1,0 +1,28 @@
+{
+    "name": "KS-30",
+    "country": "SU",
+    "year": 1955,
+    "description": "KS-30 air-defense section",
+    "symbols": "air-defense/gun/towed/section",
+    "text": "130",
+    "defensestrength": "4S",
+    "sightingrange": 18,
+    "mobility": "T",
+    "aaa": {
+        "type": "130",
+        "class": "H",
+        "range": [
+            12,
+            24,
+            36
+        ],
+        "hitroll": [
+            0,
+            0,
+            0
+        ],
+        "maximumrelativealtitude": 64,
+        "damagerating": 7
+    },
+    "VP3D": 11
+}

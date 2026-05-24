@@ -1,8 +1,9 @@
 {
     "name": "S-60",
+    "country": "SU",
     "year": 1950,
     "description": "S-60 57 mm air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "57",
     "defensestrength": "3S",
     "sightingrange": 12,

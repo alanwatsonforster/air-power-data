@@ -1,8 +1,9 @@
 {
     "name": "Bofors L/60",
+    "country": "SE",
     "year": 1935,
     "description": "Bofors 40 mm L/60 air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "40",
     "defensestrength": "3S",
     "sightingrange": 12,

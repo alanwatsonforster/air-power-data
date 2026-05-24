@@ -1,8 +1,9 @@
 {
     "name": "KS-12",
+    "country": "SU",
     "year": 1939,
     "description": "KS-12 85 mm air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "85",
     "defensestrength": "4S",
     "sightingrange": 18,

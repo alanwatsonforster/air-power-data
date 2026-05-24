@@ -1,7 +1,7 @@
 {
     "name": "towed artillery",
     "description": "towed artillery section",
-    "symbols": "artillery/section",
+    "symbols": "artillery/towed/section",
     "sightingrange": 18,
     "defensestrength": "4S",
     "mobility": "T",

@@ -3,7 +3,7 @@
     "country": "CH",
     "year": 1963,
     "description": "Oerlikon GDF twin 35 mm air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "35\u00d72",
     "defensestrength": "3S",
     "sightingrange": 12,

@@ -1,0 +1,9 @@
+{
+    "name": "tracked carrier squad",
+    "description": "tracked carrier squad",
+    "symbols": "truck/tracked/transport/squad",
+    "sightingrange": 12,
+    "defensestrength": "2S",
+    "mobility": "U",
+    "VP3D": 4
+}

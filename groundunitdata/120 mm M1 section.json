@@ -1,0 +1,31 @@
+{
+    "name": "120 mm M1",
+    "country": "US",
+    "year": 1944,
+    "description": "120 mm M1 air-defense section",
+    "symbols": "air-defense/gun/towed/section",
+    "text": "120",
+    "defensestrength": "4S",
+    "sightingrange": 18,
+    "mobility": "T",
+    "aaa": {
+        "type": "120",
+        "class": "H",
+        "range": [
+            11,
+            22,
+            33
+        ],
+        "hitroll": [
+            1,
+            1,
+            0
+        ],
+        "maximumrelativealtitude": 57,
+        "damagerating": 7
+    },
+    "VPs": [
+        6,
+        3
+    ]
+}

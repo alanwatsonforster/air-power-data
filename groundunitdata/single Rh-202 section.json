@@ -1,8 +1,9 @@
 {
     "name": "single Rh-202",
+    "country": "DE",
     "year": 1972,
     "description": "Rh-202 single 20 mm air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "20",
     "defensestrength": "3S",
     "sightingrange": 12,

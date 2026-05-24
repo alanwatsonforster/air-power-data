@@ -1,7 +1,7 @@
 {
     "name": "mobile anti-tank missile",
     "description": "mobile anti-tank missile section",
-    "symbols": "truck/antiarmor/missile/section",
+    "symbols": "truck/limitedwheeled/missile/section",
     "defensestrength": "2S",
     "sightingrange": 12,
     "mobility": "G/P",

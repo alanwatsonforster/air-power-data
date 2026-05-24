@@ -2,8 +2,8 @@
     "name": "open armored reconnaissance",
     "description": "open armored reconnaissance section",
     "symbols": "armor/reconnaissance/open/section",
-    "defensestrength": "4O",
+    "defensestrength": "3O",
     "sightingrange": 12,
     "mobility": "U",
-    "VP3D": 5
+    "VP3D": 4
 }

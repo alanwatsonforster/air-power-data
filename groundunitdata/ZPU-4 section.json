@@ -3,7 +3,7 @@
     "country": "SU",
     "year": 1949,
     "description": "ZPU-4 quad 14.5 mm air-defense gun section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "14.5\u00d74",
     "defensestrength": "3S",
     "sightingrange": 12,

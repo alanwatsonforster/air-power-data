@@ -2,7 +2,7 @@
     "name": "open tank",
     "description": "open tank section",
     "symbols": "armor/gun/open/section",
-    "defensestrength": "4O",
+    "defensestrength": "3O",
     "sightingrange": 12,
     "mobility": "U",
     "VP3D": 5

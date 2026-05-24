@@ -1,0 +1,11 @@
+{
+    "name": "mobile artillery",
+    "description": "mobile artillery squad",
+    "symbols": "artillery/truck/limitedwheeled/squad",
+    "sightingrange": 12,
+    "defensestrength": "2S",
+    "mobility": "G/P",
+    "VPs": [
+        3
+    ]
+}

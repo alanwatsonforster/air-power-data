@@ -1,0 +1,9 @@
+{
+    "name": "open armored truck",
+    "description": "open armored truck section",
+    "symbols": "armor/open/transport/limitedwheeled/section",
+    "defensestrength": "3O",
+    "sightingrange": 12,
+    "mobility": "G/P",
+    "VP3D": 5
+}

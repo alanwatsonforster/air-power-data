@@ -1,0 +1,9 @@
+{
+    "name": "light armored reconnaissance",
+    "description": "light armored reconnaissance squad",
+    "symbols": "armor/reconnaissance/light/squad",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 6
+}

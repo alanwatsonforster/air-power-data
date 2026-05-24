@@ -1,0 +1,9 @@
+{
+    "name": "light APC",
+    "description": "light APC squad",
+    "symbols": "armor/light/transport/squad",
+    "defensestrength": "4H",
+    "sightingrange": 12,
+    "mobility": "U",
+    "VP3D": 6
+}

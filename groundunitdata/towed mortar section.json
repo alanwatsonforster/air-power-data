@@ -1,7 +1,7 @@
 {
     "name": "towed mortar",
     "description": "towed mortar section",
-    "symbols": "mortar/section",
+    "symbols": "mortar/towed/section",
     "sightingrange": 12,
     "defensestrength": "3S",
     "mobility": "T",

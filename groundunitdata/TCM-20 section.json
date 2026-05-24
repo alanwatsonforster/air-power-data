@@ -1,8 +1,9 @@
 {
     "name": "TCM-20",
+    "country": "IL",
     "year": 1970,
     "description": "TCM-20 twin 20 mm air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "20\u00d72",
     "defensestrength": "3S",
     "sightingrange": 12,

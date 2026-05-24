@@ -1,8 +1,9 @@
 {
     "name": "M55",
+    "country": "US",
     "year": 1945,
     "description": "M55 quad .50 cal air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "12.7\u00d74",
     "defensestrength": "3S",
     "sightingrange": 12,

@@ -1,6 +1,6 @@
 {
     "name": "light armored rocket artillery",
-    "description": "armored rocket artillery section",
+    "description": "light armored rocket artillery section",
     "symbols": "rocket/armor/light/section",
     "sightingrange": 12,
     "defensestrength": "4H",

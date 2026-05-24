@@ -1,8 +1,9 @@
 {
     "name": "ZU-23",
+    "country": "SU",
     "year": 1960,
     "description": "ZU-23 twin 23 mm air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "23\u00d72",
     "defensestrength": "3S",
     "sightingrange": 12,

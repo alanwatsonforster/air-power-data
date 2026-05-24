@@ -1,8 +1,9 @@
 {
     "name": "M167",
+    "country": "US",
     "year": 1967,
     "description": "M167 20 mm gatling towed air-defense section",
-    "symbols": "air-defense/gun/section",
+    "symbols": "air-defense/gun/towed/section",
     "text": "20\u00d76",
     "defensestrength": "3S",
     "sightingrange": 12,
