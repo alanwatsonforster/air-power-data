@@ -1,0 +1,28 @@
+{
+    "name": "M34",
+    "country": "US",
+    "year": 1951,
+    "description": "M34 40 mm self-propelled air-defense section",
+    "symbols": "air-defense/gun/truck/section",
+    "text": "40",
+    "defensestrength": "2S",
+    "sightingrange": 12,
+    "mobility": "U",
+    "aaa": {
+        "type": "40",
+        "class": "M",
+        "range": [
+            2,
+            4,
+            8
+        ],
+        "hitroll": [
+            1,
+            1,
+            1
+        ],
+        "damagerating": 4,
+        "maximumrelativealtitude": 15
+    },
+    "VP2D": 3
+}
