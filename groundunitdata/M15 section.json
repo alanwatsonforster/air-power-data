@@ -1,0 +1,28 @@
+{
+    "name": "M15",
+    "country": "US",
+    "year": 1942,
+    "description": "M15 37 mm and .50 cal self-propelled air-defense section",
+    "symbols": "air-defense/gun/armor/open/section",
+    "text": "37+12.7×2",
+    "defensestrength": "3O",
+    "sightingrange": 12,
+    "mobility": "U",
+    "aaa": {
+        "type": "37+12.7×2",
+        "class": "M",
+        "range": [
+            2,
+            4,
+            8
+        ],
+        "hitroll": [
+            3,
+            2,
+            1
+        ],
+        "damagerating": 4,
+        "maximumrelativealtitude": 12
+    },
+    "VP2D": 4
+}

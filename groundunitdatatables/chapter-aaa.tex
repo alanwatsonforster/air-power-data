@@ -204,6 +204,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             \multicolumn{10}{c}{New}\\
             \midrule
             AMX-13DCA&11&4/7/9&5/4/3&3&W&30&1200&970&\\
+            M15&12&2/4/8&3/2/1&4&---&37&120&792\\
             M19&15&4/8/12&2/2/1&4&---&40&270&865&\\
             M42&15&4/8/12&2/2/1&4&---&40&270&865&\\
             \bottomrule
@@ -269,7 +270,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
 
     \end{itemize}
 
-    The AAA values for new guns are discussed when they are present.
+    The AAA values for new guns are discussed when they are presented.
 
     \noteparagraph{Summary}
     I have developed an empirical understanding of the model for AAA values.
@@ -818,6 +819,21 @@ The 61-K is referred to as the “M-38” in {\AirStr}, {\EOTG}, and {\TSOH}.%
     \end{notesources}
 }
 
+\subsectionwithcounter{M15 Section}{M15 section}
+
+The M15 Combination Gun Motor Carriage has a M1 37-mm cannon and two Browning M2 .50 cal (12.7 mm) machine guns mounted on a modifier M3 half-track.
+A section has two vehicles.
+The M15 entered service with the US Army in 1942, saw combat in WW2 and the Korean War, in the latter mainly in a ground-support role, and was retired in 1953. It also served with the armed forces of Japan and Yugoslavia.%
+\note{M15 Section}{
+    The M1 is somewhat inferior to the 61-K in rate of fire and muzzle velocity. There is a quote in Wikipedia about using the .50 cals to aim the 37 mm.
+
+    Considering this as half an M16, the ranges would be 2/3/4 and the hit rolls 3/2/1. Considering this as half a 61-K battery, the ranges would be 4/8/11 and the hit rolls 2/1/0. We can combine these two by giving it ranges of 2/4/8 and hit rolls of 3/2/1. The damage rating is 4 to match the 37 mm.
+
+    \begin{notesources}
+        \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M15_half-track}{M15}, \href{https://en.wikipedia.org/wiki/37_mm_gun_M1}{M1 37 mm}, and \href{https://en.wikipedia.org/wiki/M2_Browning}{M2 .50 cal}.
+    \end{notesources}
+}
+
 \subsectionwithcounter{Bofors L/60 Battery}{Bofors L60 battery}
 
 The Bofors L/60 has a single 40~mm gun in an open mount on a towed carriage. A
@@ -1091,14 +1107,14 @@ The KS-30 entered service in 1955 with Soviet forces, was used to defend strateg
     \pagestyle{fancy}
     \raggedbottom
     \footnotesize
-    \begin{longtable}{lcclcccccccc@{~}c@{~}cc@{~}c@{~}ccccl}
+    \begin{longtable}{llcccccccccc@{~}c@{~}cc@{~}c@{~}ccccl}
 
         \caption*{\hypertarget{table:aaa-units}{AAA Units Table}\rule{0em}{3.2ex}}\\
         \toprule
         Type&
+        \wbox[r]{00}{\vertical{Gun}}&
         \vertical{Country}&
         \vertical{Year}&
-        \wbox[r]{00}{\vertical{Gun}}&
         \vertical{Size\tablenotemark{a}}&
         \vertical{Defense Strength}&
         \vertical{Sighting Range}&
@@ -1124,9 +1140,9 @@ The KS-30 entered service in 1955 with Soviet forces, was used to defend strateg
         \caption*{AAA Units Table\rule{0em}{3.2ex}}\\
         \toprule
         Type&
+        \wbox[r]{00}{\vertical{Gun}}&
         \vertical{Country}&
         \vertical{Year}&
-        \wbox[r]{00}{\vertical{Gun}}&
         \vertical{Size\tablenotemark{a}}&
         \vertical{Defense Strength}&
         \vertical{Sighting Range}&
