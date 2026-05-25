@@ -1,0 +1,31 @@
+{
+    "name": "Flab Kan 38",
+    "country": "CH",
+    "year": 1938,
+    "description": "Flab Kan 38 75 mm air-defense section",
+    "symbols": "air-defense/gun/towed/section",
+    "text": "75",
+    "defensestrength": "4S",
+    "sightingrange": 18,
+    "mobility": "T",
+    "aaa": {
+        "type": "75",
+        "class": "H",
+        "range": [
+            6,
+            12,
+            18
+        ],
+        "hitroll": [
+            1,
+            0,
+            0
+        ],
+        "maximumrelativealtitude": 24,
+        "damagerating": 5
+    },
+    "VPs": [
+        6,
+        3
+    ]
+}
