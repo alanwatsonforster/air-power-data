@@ -22,7 +22,9 @@
             2
         ],
         "maximumrelativealtitude": 30,
-        "damagerating": 6
+        "damagerating": 5,
+        "fcrclass": "W",
+        "fcrfrequency": "MF"
     },
     "VPs": [
         6,
