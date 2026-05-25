@@ -1,0 +1,28 @@
+{
+    "name": "QF 5.25 inch",
+    "country": "UK",
+    "year": 1942,
+    "description": "QF 5.25 inch air-defense section",
+    "symbols": "air-defense/gun/towed/section",
+    "text": "133",
+    "defensestrength": "4S",
+    "sightingrange": 18,
+    "mobility": "T",
+    "aaa": {
+        "type": "133",
+        "class": "H",
+        "range": [
+            12,
+            24,
+            36
+        ],
+        "hitroll": [
+            1,
+            1,
+            0
+        ],
+        "maximumrelativealtitude": 46,
+        "damagerating": 7
+    },
+    "VP3D": 11
+}
