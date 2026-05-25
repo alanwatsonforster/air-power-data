@@ -15,7 +15,82 @@ The \hyperlink{table:fcr-units}{FCR Unit Table} summarizes the properties of FCR
 As well as the basic properties common to all ground units, the table gives:
 the FCR class;
 the frequency band; and
-the modifier to the hit roll.
+the modifier to the hit roll.%
+\note{FCR Units}{
+
+    \noteparagraph{Bands}
+    Radar frequencies are often referred to by the corresponding \href{https://en.wikipedia.org/wiki/Radio_spectrum\#EU,_NATO,_US_ECM_frequency_designations}{NATO} (post 1978) and \href{https://en.wikipedia.org/wiki/Radio_spectrum\#IEEE_radar_bands}{IEEE} band designations.
+    \begin{center}\scriptsize
+        \raisebox{-\depth}{
+            \begin{tabular}{cc}
+                \toprule
+                Frequency&NATO\\
+                (GHz)&Band\\
+                \midrule
+                \phantom{0}2--3\phantom{0}&E\\
+                \phantom{0}3--4\phantom{0}&F\\
+                \phantom{0}4--6\phantom{0}&G\\
+                \phantom{0}6--8\phantom{0}&H\\
+                \phantom{0}8--10\phantom{}&I\\
+                \phantom{}10--20\phantom{}&J\\
+                \phantom{}20--40\phantom{}&K\\
+                \bottomrule
+            \end{tabular}
+        }
+        \qquad
+        \raisebox{-\depth}{
+            \begin{tabular}{cc}
+                \toprule
+                Frequency&IEEE\\
+                (GHz)&Band\\
+                \midrule
+                \phantom{0}1.55--3.9\phantom{00}&S\\
+                \phantom{00}3.9--6.2\phantom{00}&C\\
+                \phantom{00}6.2--10.9\phantom{0}&X\\
+                \phantom{0}10.9--20.0\phantom{0}&Ku\\
+                \phantom{0}20.0--36.0\phantom{0}&Ka\\
+                \bottomrule
+            \end{tabular}
+        }
+    \end{center}
+
+    \noteparagraph{Frequencies}
+    The table gives a summary of the frequencies of various FCRs along with the NATO and IEEE bands.
+    Some radar systems use different individual radars for different roles.
+    The roles are R for range, S for search, and T for tracking.
+    The sources of the data are given in the entries for the individual radars.
+
+    \begin{center}\scriptsize
+        \begin{tabular}{lccccccl}
+            \toprule
+            Radar&\vertical{Role}&\vertical{Frequency (GHz)}&\vertical{NATO Band}&\vertical{IEEE Band}&\vertical{MTI}&\vertical{IFF}&Notes\\
+            \midrule
+            SCR-584&S/T&2.7--2.8&E&S&N\\
+            SCR-784&S/T&2.7--2.8&E&S&N\\
+            SON-9&S/T&2.7--2.86&E&S&N\\
+            Super Fledermaus&S/T&8.6-9.6&I&X&Y&N&MTI from 1970\\
+            Flycatcher&S&9.2&I&X&Y&Y&MTI from 1992?\\
+            &T&9.2&I&X&---&---\\
+            &T&26.5--30&K&Ka&---&---&From 1992?\\
+            Skyguard&S/T&8.6--9.5&I&X&&Y\\
+            \midrule
+            M163/M167&R&9.2--9.5&I&X&---&N\\
+            Panhard M3 DCA&S/R&---&E&S&Y&N\\
+            ZSU 23-4&S/T&14.6--15.6&J&Ku&N&Y&IFF from 1977\\
+            Sinai 23&S/R&---&E&S&Y&N\\
+            Tunguska&S&---&E&S&Y&Y\\
+            &T&---&J&X&---&---\\
+            Gepard&S&---&E&S&Y&Y\\
+            &T&---&J&Ku&---&---\\
+            M51&T&---&I&X&N\\
+            \midrule
+            AMX-13DCA\\
+            AMX-30SA\\
+            BOFI-R\\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+}
 
 \section{FCR-A}
 
@@ -34,13 +109,16 @@ The SCR-584 entered service with US and British anti-aircraft artillery units in
 \note{SCR-584}{
     I classify this as FCR-A as the SON-9 is derived from it.
 
-    Wikipedia gives the frequency as 2.7--2.8 GHz (NATO E-band and ITU UHF) and the search and tracking ranges for bomber-sized targets as 64~km and 29~km.
+    Wikipedia gives the frequency as 2.7--2.8 GHz (NATO E-band) and the search and tracking ranges for bomber-sized targets as 64~km and 29~km.
 
     Werrell mentions its use with the 90~mm and 3.7~inch guns against V-1s in 1944.
 
     \begin{notesources}
         \item Wikipedia on the \href{https://en.wikipedia.org/wiki/SCR-584_radar}{SCR-584}, \href{https://en.wikipedia.org/wiki/90_mm_gun_M1/M2/M3}{90~mm M1/M2 gun}, \href{https://en.wikipedia.org/wiki/120_mm_gun_M1}{120~mm M1 gun}, and \href{https://en.wikipedia.org/wiki/QF_3.7-inch_AA_gun}{QF 3.7~inch AA gun}.
         \item Werrell, K.P. (2005, Air University Press, 2nd edition): “\href{https://media.defense.gov/2017/Mar/31/2001725225/-1/-1/0/B_0028_WERRELL_ARCHIE_TO_SAM.PDF}{Archie to SAM}”.
+        \item \href{https://www.radartutorial.eu/19.kartei/11.ancient4/karte001.en.html}{RadarTutorial}
+        \item MobileRadar on the \href{https://www.mobileradar.org/radar_descptn_2.html}{SCR-784}
+        \item
     \end{notesources}
 }
 
@@ -51,12 +129,13 @@ It is commonly used with 57~mm S-60, 85~mm KS-12, 100~mm KS-19, and 130~mm KS-30
 The SON-9 entered service in 1955 with Soviet forces and was widely exported to Soviet allies.
 It has seen combat, including with North Vietnam in the Vietnam War, Egypt and Syria in the 1967 War, the War of Attrition, and the 1973 War.%
 \note{SON-9}{
-    Wikipedia gives the frequency as 2.7--2.8 GHz (NATO E-band and ITU UHF).
+    Wikipedia gives the frequency as 2.7--2.8 GHz (NATO E-band). RadarTutorial gives it as 2.7--2.86 GHz.
 
     Wikipedia states this was used with the 57, 85, 100, and 130~mm guns and was widely deployed in the Vietnam War. In {\TSOH} the 57~mm S-60 and 85~mm KS-12 are often combined with an FCR-A, presumably the SON-9.
 
     \begin{notesources}
         \item Wikipedia on the \href{https://en.wikipedia.org/wiki/SON-9}{SON-9}.
+        \item \href{https://www.radartutorial.eu/19.kartei/11.ancient6/karte007.en.html}{RadarTutorial}
     \end{notesources}
 }
 
@@ -90,7 +169,7 @@ It also saw combat with the Argentine Air Force in the 1982 South Atlantic War c
 
     Wikipedia also states these the prototype of the Gepard used a Flt Gt 63. Since the FCR-W radar of the Gepard is equivalent to a \plus{2} modifier and has VF frequency, it corresponds to an FCR-C. We assume the Super Fledermaus does too.
 
-    Wikipedia gives the frequency as 8.6--9.6~GHz (NATO X-band and ITU SHF).
+    The Wikipedia page on the Super Fledermaus gives the frequency as 8.6--9.6~GHz (old NATO X-band), but also states that its search function operates in the E/F bands (2--4 GHz) and tracking function in the J band (10--20 GHz).
 
     The service history is from Wikipedia and Singh (for Israeli use).
 
@@ -107,11 +186,22 @@ Flycatcher entered service with the Royal Netherlands Air Force in 1979, serving
 \note{Flycatcher}{
     Flycatcher is similar to the Cheetah radar, so presumably FCR-C.
 
-    According to Wikipedia, the search radar is I/J band (ITU SHF) and the tracking radar is K band (ITU SHF/EHF).
+    According to Wikipedia, the search radar is NATO I/J band and the tracking radar is NATO K band. RadioTutorial states the search frequency is 9.2 GHz (NATO I band) and the tracking frequency is either I or K band.
+    Van Elk states the tracking radar is an independent pulse-Doppler 26.5--31 GHz (old-NATO Ka band) system, but this seems to be referring to an upgrade in 1992. He also mentions that the radar is used in the Goalkeeper CIWS, and the Wikipedia page on this states it searches in I band and tracks in both I and K bands.
+    I conclude:
+    \begin{itemize}
+        \item Search is 9.2 GHz (I band)
+        \item Tracking is 9.2 GHz (I band) or 26.5--31 GHz (K band)
+    \end{itemize}
+
+    Van Elk states that it has IFF and directed a maximum of 3 cannons or missile launchers.
+
+    Van Elk states that it succeeded the HSA L4/5 radar.
 
     \begin{notesources}
         \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Flycatcher_(radar)}{Flycatcher}.
-        \item \href{https://magazines.defensie.nl/materieelgezien/2020/09/06_flycatche}{Terug naar de toekomst: De Flycatcher}.
+        \item van Elk, Bert (2020): \href{https://magazines.defensie.nl/materieelgezien/2020/09/06_flycatche}{Terug naar de toekomst: De Flycatcher}.
+        \item \href{https://www.radartutorial.eu/19.kartei/06.missile/karte012.en.html}{RadarTutorial}
     \end{notesources}
 }
 
@@ -131,8 +221,12 @@ Skyguard entered service in 1977 with the Swiss Air Force.
 It was subsequently very widely exported and used by the Argentine Army, Austria, Bahrain, Bangladesh, Brazil, Canada, Chile, China, Cyprus, Egypt, Greece, Indonesia, Iran, Italy, South Korea, Kuwait, Malaysia, Oman, Pakistan, Saudi Arabia, Spain, Taiwan, and the UK.
 It saw combat with the Argentine Army in the 1982 South Atlantic War in the defense of BAM Malvinas (Port Stanley Airport) and BAM Condor (Goose Green Airfield) controlling Oerlikon GDF 35~mm guns.%
 \note{Skyguard}{
+
+    RadarTutorial states that the frequency is 8.6--9.5 GHz (NATO I-band or IEEE X-band). The description of the system suggests that both search and tracking radars use the same frequency.
+
     \begin{notesources}
-        \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Super_Fledermaus}{Super Fledermaus} and \href{https://en.wikipedia.org/wiki/Oerlikon_GDF\#Super_Fledermaus}{its use with the Oerlikon GDF}.
+        \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Oerlikon_GDF\#Skyguard}{Skyguard's use with the Oerlikon GDF}.
+        \item \href{https://www.radartutorial.eu/19.kartei/11.ancient6/karte059.en.html}{RadarTutorial}
     \end{notesources}
 }
 
