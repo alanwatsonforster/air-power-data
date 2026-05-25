@@ -3,7 +3,7 @@
     "country": "CS",
     "year": 1955,
     "description": "BTR-152A Vz.52 12.7 mm air-defense section",
-    "symbols": "air-defense/gun/armor/open/section",
+    "symbols": "air-defense/gun/armor/limitedwheeled/open/section",
     "text": "12.7×4",
     "defensestrength": "3O",
     "sightingrange": 12,

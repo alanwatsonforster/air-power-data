@@ -3,7 +3,7 @@
     "country": "PS",
     "year": 1975,
     "description": "BTR-152A twin 23 mm self-propelled air-defense section",
-    "symbols": "air-defense/gun/armor/open/section",
+    "symbols": "air-defense/gun/armor/limitedwheeled/open/section",
     "defensestrength": "3O",
     "mobility": "G/P",
     "VP2D": 4,
