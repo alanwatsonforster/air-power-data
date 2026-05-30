@@ -1,7 +1,7 @@
 {
-    "name": "towed FCR-B",
-    "description": "towed fire control radar (type B)",
-    "symbols": "air-defense/radar/towed/platoon",
+    "name": "mobile FCR-B",
+    "description": "mobile fire control radar (type B)",
+    "symbols": "air-defense/radar/truck/platoon",
     "text": "FCR-B",
     "defensestrength": "2S",
     "sightingrange": 12,

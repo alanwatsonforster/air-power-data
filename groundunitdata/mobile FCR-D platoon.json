@@ -1,11 +1,11 @@
 {
-    "name": "towed FCR-D",
-    "description": "towed fire control radar (type D)",
-    "symbols": "air-defense/radar/towed/platoon",
+    "name": "mobile FCR-D",
+    "description": "mobile fire control radar (type D)",
+    "symbols": "air-defense/radar/truck/platoon",
     "text": "FCR-D",
     "defensestrength": "2S",
     "sightingrange": 12,
-    "mobility": "G/P",
+    "mobility": "T",
     "aaa": {
         "fcrclass": "D",
         "fcrfrequency": "MW"

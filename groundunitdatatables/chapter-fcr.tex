@@ -60,34 +60,36 @@ the modifier to the hit roll.%
     The roles are R for range, S for search, and T for tracking.
     The sources of the data are given in the entries for the individual radars.
 
-    \begin{center}
-        \begin{tabular}{lccccccl}
+    \begin{center}\scriptsize
+        \begin{tabular}{lcccccccl}
             \toprule
-            Radar&\vertical{Role}&\vertical{Frequency (GHz)}&\vertical{NATO Band}&\vertical{IEEE Band}&\vertical{MTI}&\vertical{IFF}&Notes\\
+            Radar&\vertical{Year}&\vertical{Role}&\vertical{Frequency (GHz)}&\vertical{NATO Band}&\vertical{IEEE Band}&\vertical{MTI}&\vertical{IFF}&Notes\\
             \midrule
-            SCR-584&S/T&2.7--2.8&E&S&N\\
-            SCR-784&S/T&2.7--2.8&E&S&N\\
-            SON-4&S/T&2.70-2.86&E&S&N\\
-            Blue Cedar&S/T&3.00--3.12&F&S&N&\\
-            SON-9&S/T&2.70--2.86&E&S&N\\
-            Super Fledermaus&S/T&8.6-9.6&I&X&Y&N&MTI from 1970\\
-            Flycatcher&S&9.2&I&X&Y&Y&MTI from 1992?\\
-            &T&9.2&I&X&---&---\\
-            &T&26.5--30&K&Ka&---&---&From 1992?\\
-            Skyguard&S/T&8.6--9.5&I&X&&Y\\
+            SCR-584&1944&S/T&2.7--2.8&E&S&N\\
+            SCR-784&1945&S/T&2.7--2.8&E&S&N\\
+            SON-4&1945&S/T&2.70-2.86&E&S&N\\
+            Blue Cedar&1952&S/T&3.00--3.12&F&S&N&\\
+            SON-9&1955&S/T&2.70--2.86&E&S&N\\
+            SON-30&&S/T&---&E&S&N&Y\\
+            SON-50&&S/T&9.25--9.70&I&X&N&Y\\
+            Super Fledermaus&1965&S/T&8.6-9.6&I&X&Y&N&MTI from 1970\\
+            Flycatcher&1979&S&9.2&I&X&Y&Y&MTI from 1992?\\
+            &&T&9.2&I&X&---&---\\
+            &&T&26.5--30&K&Ka&---&---&From 1992?\\
+            Skyguard&1977&S/T&8.6--9.5&I&X&&Y\\
             \midrule
-            M163/M167&R&9.2--9.5&I&X&---&N\\
-            Panhard M3 DCA&S/R&---&E&S&Y&N\\
-            ZSU 23-4&S/T&14.6--15.6&J&Ku&N&Y&IFF from 1977\\
-            Sinai 23&S/R&---&E&S&Y&N\\
-            Tunguska&S&---&E&S&Y&Y\\
-            &T&---&J&X&---&---\\
-            Gepard&S&---&E&S&Y&Y\\
-            &T&---&J&Ku&---&---\\
-            M51&T&---&I&X&N\\
+            M163/M167&1967&R&9.2--9.5&I&X&---&N\\
+            Panhard M3 DCA&1975&S/R&---&E&S&Y&N\\
+            ZSU 23-4&1965&S/T&14.6--15.6&J&Ku&N&Y&IFF from 1977\\
+            Sinai 23&1992&S/R&---&E&S&Y&N\\
+            Tunguska&1984&S&---&E&S&Y&Y\\
+            &&T&---&J&X&---&---\\
+            Gepard&1976&S&---&E&S&Y&Y\\
+            &&T&---&J&Ku&---&---\\
+            M51&1953&T&---&I&X&N\\
             \midrule
-            AMX-13DCA\\
-            AMX-30SA\\
+            AMX-13DCA&1969\\
+            AMX-30SA&1979\\
             BOFI-R\\
             \bottomrule
         \end{tabular}
@@ -96,18 +98,16 @@ the modifier to the hit roll.%
 
 \section{FCR-A}
 
-\subsectionwithcounter{Towed FCR-A Platoon}{towed FCR-A platoon}
+\subsectionwithtwocounters{Towed and Mobile FCR-A Platoon}{towed FCR-A platoon}{mobile FCR-A platoon}
 
-FCR-As typically use 1940s technology. They include the SCR-584, SCR-784, and SON-9 FCRs.
+FCR-As typically use 1940s technology. They can be towed or mobile.
 
-\vspacelines{1}
-
-\subsection{SCR-584}
+\subsectionwithcountercontinued{6}{SCR-584}
 
 The SCR-584 is an early US towed FCR-A based on the British 3 GHz magnetron.
-It replaced the much larger and less accurate SCR-268.
-It is commonly used to control batteries of 90~mm M2, QF 3.7~inch, and 120~mm M1 guns.
-The SCR-584 entered service with US and British anti-aircraft artillery units in 1944.%
+It replaced the much larger and less accurate SCR-268 and its basic technology was used in a series of successors.
+The SCR-584 entered service with US and British anti-aircraft artillery units in 1944 and was commonly used to control batteries of 90~mm M2, QF 3.7~inch, 120~mm M1, and QF 5.5~inch guns.
+It was also supplied to the Soviet Union and used to control batteries of 85~mm KS-12, and 100~mm KS-19 guns.%
 \note{SCR-584}{
     I classify this as FCR-A as the SON-9 is derived from it.
 
@@ -126,8 +126,8 @@ The SCR-584 entered service with US and British anti-aircraft artillery units in
 
 \subsection{SCR-784}
 
-The SCR-784 is a more compact version of the SCR-584.
-It entered service with the US Army in 1945.%
+The SCR-784 towed FCR-A is a more compact version of the SCR-584.
+It entered service with the US Army in 1945, replacing the SCR-584 and controlling 90~mm M2 and 120~mm M1 guns.%
 \note{SCR-784}{
     I classify this as FCR-A it is derived from the SCR-584.
 
@@ -143,7 +143,8 @@ It entered service with the US Army in 1945.%
 
 \subsection{SON-4}
 
-The Soviet SON-4 (Whiff) FCR is based on the SCR-584 radars supplied by the US during WW2.
+The Soviet SON-4 (Whiff) towed FCR-A is based on the SCR-584 radars supplied by the US during WW2.
+It is commonly used with 85~mm KS-12 and 100~mm KS-19 batteries.
 It entered services in the Soviet Army in 1948 and started to be replaced by the SON-9 in 1955.%
 \note{SON-4}{
     I classify this as FCR-A it is derived from the SCR-584.
@@ -158,8 +159,8 @@ It entered services in the Soviet Army in 1948 and started to be replaced by the
 
 \subsection{Blue Cedar}
 
-The Blue Cedar or “Radar, Anti-Aircraft No.3 Mk.7” is a post-war development of the Mk.4 radar with post-war technology, resulting in a more compact and reliable system.
-It entered services with the British Army in 1952, controlling batteries of QF 5.25~inch and QF 3.7~inch guns, and served until these guns were retired in 1957. It also served with the Swiss Air Force from 1958, controlling 7.5~cm guns, until 1965, when the radars were replaced by Super Fledermaus systems and the guns by 35~mm Oerlikon GDFs. The radar was also used by the Netherlands, Sweden, Finland, and South Africa.%
+The Blue Cedar or “Radar, Anti-Aircraft No.3 Mk.7” towed FCR-A is a post-war development of the Mk.4 radar with post-war technology, resulting in a more compact and reliable system.
+It entered services with the British Army in 1952, controlling batteries of QF 3.7~inch and QF 5.25~inch guns, and served until these guns were retired in 1957. It also served with the Swiss Air Force from 1958, controlling 7.5~cm guns, until 1965, when the radars were replaced by Super Fledermaus systems and the guns by 35~mm Oerlikon GDFs. The radar was also used by the Netherlands, Sweden, Finland, and South Africa.%
 \note{Blue Cedar}{
 
     I'm not sure whether this is a FCR-A or FCR-B.
@@ -177,7 +178,7 @@ It entered services with the British Army in 1952, controlling batteries of QF 5
 
 \subsection{SON-9}
 
-The Soviet SON-9 (Fire Can) FCR-A was derived from the earlier SON-4, which in turn was derived from the US-supplied SCR-584.
+The Soviet SON-9 (Fire Can) towed FCR-A was derived from the earlier SON-4, which in turn was derived from the US-supplied SCR-584.
 It is commonly used with 57~mm S-60, 85~mm KS-12, 100~mm KS-19, and 130~mm KS-30 batteries.
 The SON-9 entered service in 1955 with Soviet forces and was widely exported to Soviet allies.
 It has seen combat, including with North Vietnam in the Vietnam War, Egypt and Syria in the 1967 War, the War of Attrition, and the 1973 War.%
@@ -192,24 +193,74 @@ It has seen combat, including with North Vietnam in the Vietnam War, Egypt and S
     \end{notesources}
 }
 
+\subsection{SON-30}
+
+The Soviet SON-30 (Fire Wheel) towed FCR-B was derived from the earlier SON-9.
+It entered service in 1957 and was used to control batteries of 130~mm KS-30 guns.%
+\note{SON-30}{
+
+    This looks very similar to the SON-9.
+
+    RadarTutorial gives the frequency as S band.
+
+    The photo on RadioTutorial shows an integrated IFF system.
+
+    Wikipedia and RadarTutorial both state it was used for 130 mm guns, but do not mention others.
+
+    RadarTutorial states that it had replaced the SON-4 and SON-9 by 1957, but the SON-9 only entered service in 1955. I suspect that it entered service in 1957.
+
+    Foss (p.~185) states that it was used for 130 mm guns.
+
+    \begin{notesources}
+        \item Wikipedia on the \href{https://en.wikipedia.org/wiki/SON-30}{SON-30}.
+        \item RadarTutorial on the \href{https://www.radartutorial.eu/19.kartei/11.ancient6/karte009.en.html}{SON-30}.
+        \item Foss, Christopher F., 1974 (London : Allan): “\href{https://archive.org/details/artilleryofworld0000foss_u1u7/page/184/mode/2up?q=\%22SON-9\%22}{Artillery of the World}”.
+    \end{notesources}
+}
+
+\pagebreak
 \section{FCR-B}
 
-\subsectionwithcounter{Towed FCR-B Platoon}{towed FCR-B platoon}
+\subsectionwithtwocounters{Towed and Mobile FCR-B Platoon}{towed FCR-B platoon}{mobile FCR-B platoon}
 
 FCR-Bs typically use 1950s technology.
+They can be towed or mobile.
 
-\vspacelines{2}
+\subsectionwithcountercontinued{6}{SON-50}
+
+The SON-50 (Flap Wheel) mobile FCR-B is new development and a contemporary of the RPK-2/1RL33 (Gun Dish) radar used in the ZSU-23-4.
+It has an integrated IFF system.
+It is used to control batteries of S-60 57~mm and KS-30 130~mm guns.
+It entered service in the 1960s.%
+\note{SON-50}{
+
+    This is truck-mounted.
+
+    RadarTutorial gives the frequency as 9.25--9.7 GHz (X band).
+
+    The photo on RadioTutorial shows an integrated IFF system.
+
+    RadarTutorial states it was used for 57 and 130 mm guns. Wikipedia states it was used for 57 mm guns.
+
+    RadarTutorial states that it is mounted on a URAL-375. Wikipedia then states that this was produced from 1961 to 1993. The in-service data can be no earlier than 1961. I guess it entered service in the 1960s; by the 1970s I think the focus had moved to SAMs.
+
+    Chant (p.\ 253) states that the SON-50 is believed to be derived from the Gun Dish radar on the ZSU-23-4 and has a TV back-up. I note, however, that the frequencies are very different: Flap Wheel is E band and Gun Dish is J band.
+
+    \begin{notesources}
+        \item Wikipedia on the \href{https://en.wikipedia.org/wiki/SON-50}{SON-50} and \href{https://en.wikipedia.org/wiki/Ural-375}{Ural-375}
+        \item RadarTutorial on the \href{https://www.radartutorial.eu/19.kartei/11.ancient4/karte087.en.html}{SON-50}.
+        \item Chant, Christopher, 1989 (Brassey's Defence Publishers): “\href{https://books.google.com.mx/books?id=C3osAAAAYAAJ&q=\%22Fire+Wheel\%22+\%22SON-30\%22&redir_esc=y}{Air Defence Systems and Weapons World AAA and SAM Systems in the 1990s}”.
+    \end{notesources}
+}
 
 \section{FCR-C}
 
-\subsectionwithcounter{Towed FCR-C Platoon}{towed FCR-C platoon}
+\subsectionwithtwocounters{Towed and Mobile FCR-C Platoon}{towed FCR-C platoon}{mobile FCR-C platoon}
 
 FCR-Cs typically use 1960s technology.
-They include the Super Fledermaus and Flycatcher FCRs.
+They can be towed or mobile.
 
-\vspacelines{2}
-
-\subsection{Super Fledermaus}
+\subsectionwithcountercontinued{6}{Super Fledermaus}
 
 The Contraves Super Fledermaus FCR-C can control a section of two Oerlikon GDF 35~mm guns; it cannot control a whole battery.
 It entered service in 1965 with the Swiss Air Force and also was used by the Argentine Air Force, Brazil, Iran, Israel, Japan, and South Africa.
@@ -260,14 +311,11 @@ Flycatcher entered service with the Royal Netherlands Air Force in 1979, serving
 
 \section{FCR-D}
 
-\subsectionwithcounter{Towed FCR-D Platoon}{towed FCR-D platoon}
+\subsectionwithtwocounters{Towed and Mobile FCR-D Platoon}{towed FCR-D platoon}{mobile FCR-D platoon}
 
-FCR-Ds typically use 1970s technology.
-They include the Skyguard.
+FCR-Ds typically use 1970s technology. They can be towed or mobile.
 
-\vspacelines{2}
-
-\subsection{Skyguard}
+\subsectionwithcountercontinued{6}{Skyguard}
 
 The Contraves Skyguard FCR-D can control two Oerlikon GDF 35~mm guns and additionally a SAM launcher with AIM-9 Sparrow, RIM-9 Sea Sparrow, or Aspide missiles.
 Skyguard entered service in 1977 with the Swiss Air Force.
