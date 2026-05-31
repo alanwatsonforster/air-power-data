@@ -6,9 +6,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setlength{\parskip}{1ex plus 0.1ex}
-\setlength{\parindent}{0pt}
-
 \setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{1}
 
@@ -26,15 +23,15 @@
 \renewcommand
 \subsection{%
     \@startsection{subsection}{2}{\z@}%
-    {\parskip}%
-    {\parskip}%
+    {2.0ex plus 0.6ex minus 0.2ex}%
+    {1.0ex plus 0.3ex minus 0.1ex}%
 {\normalfont\large\bfseries}}
 
 \renewcommand
 \subsubsection{%
     \@startsection{subsubsection}{3}{\z@}%
-    {\parskip}%
-    {\parskip}%
+    {2.0ex plus 0.6ex minus 0.2ex}%
+    {1.0ex plus 0.3ex minus 0.1ex}%
 {\normalfont\normalsize\bfseries\itshape}}
 
 \renewcommand\tableofcontents{%
@@ -134,10 +131,6 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{booktabs}
-\usepackage{tabularx}
-\setlength{\tabcolsep}{0.3em}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -654,11 +647,5 @@
     \newpage
     \restoregeometry
 }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Special characters
-
-\renewcommand{\deg}{\ensuremath{^\circ}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
