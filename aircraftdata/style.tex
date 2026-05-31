@@ -1,9 +1,5 @@
 %LTeX: enabled=false
 
-% Use slightly less tight line spacing by default.
-\usepackage{setspace}
-\setstretch{1.05}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\superscript}[1]{$^{\textrm\scriptsize #1}$}
@@ -63,15 +59,6 @@
 
 % Basic spacing.
 
-\sloppy
-
-\setlength{\columnsep}{2em}
-
-\setlength{\parindent}{0em}
-\setlength{\parskip}{0.7ex plus 0.2ex}
-\newcommand{\numberspace}{\phantom{0}}
-\setlength{\multicolsep}{0ex}
-
 \newsavebox{\fitwidthbox}
 \newenvironment{fitwidth}[1]{%
     \def\fitwidth{#1}%
@@ -107,26 +94,9 @@
 \hyphenation{crew-mem-ber crew-mem-bers}
 \hyphenation{seek-er}
 
-% Headers
-
-\newcommand{\therunningtitle}{}
-\newcommand{\runningtitle}[1]{\renewcommand{\therunningtitle}{#1}}
-
-\pagestyle{fancy}
-\setlength{\headsep}{1em}
-\fancyhead[L]{\textbf{\therunningtitle}}
-\fancyhead[C]{}
-\fancyhead[R]{\textbf{Page \thepage}}
-\fancyfoot[L,C,R]{}
-\setlength{\footskip}{4pt}
-\renewcommand{\headruleskip}{0.1em}
-\addtolength{\headheight}{\headruleskip}
-
 % Line weights
 
 \setlength{\arrayrulewidth}{0.4pt}
-\setlength{\columnseprule}{0.4pt}
-\renewcommand{\headrulewidth}{0.4pt}
 
 % Lists
 

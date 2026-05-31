@@ -8,33 +8,6 @@
 
 \usepackage{calc}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% PAGE LAYOUT.
-
-\usepackage{multicol}
-
-\setlength{\multicolsep}{0ex}
-\setlength{\columnsep}{1.5em}
-\setlength{\columnseprule}{0pt}
-
-\setlength{\parindent}{1.0em}
-\setlength{\parskip}{0ex}
-\newcommand{\numberspace}{\phantom{0}}
-
-% Two-column text really needs relaxed line breaking.
-
-\sloppy
-
-% Use slightly less tight line spacing by default.
-
-\usepackage{setspace}
-\setstretch{1.05}
-
-% Line weights
-
-\setlength{\arrayrulewidth}{0.4pt}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % TITLE PAGE
@@ -399,26 +372,6 @@
 
 \newcommand{\asteriskmark}{\superscript{*}}
 \newcommand{\doubleasteriskmark}{\superscript{**}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Headers
-
-\usepackage{fancyhdr}
-
-\newcommand{\therunningtitle}{}
-\newcommand{\runningtitle}[1]{\renewcommand{\therunningtitle}{#1}}
-
-\pagestyle{fancy}
-\setlength{\headsep}{0.6em}
-\fancyhead[L]{\textbf{\therunningtitle}}
-\fancyhead[C]{}
-\fancyhead[R]{\textbf{Page \thepage}}
-\fancyfoot[L,C,R]{}
-\setlength{\footskip}{4pt}
-\renewcommand{\headruleskip}{0.1em}
-\addtolength{\headheight}{0.2em}
-%\renewcommand{\headrulewidth}{0.4pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
