@@ -6,6 +6,10 @@
 \input{../../air-power-shared/latex/style.tex}
 \input{style.tex}
 
+\newcommand{\helicoptertype}[1]{%
+    \subsection{#1}
+}
+
 \setcounter{tocdepth}{1}
 
 \begin{document}
@@ -13,11 +17,17 @@
 \maketitlepage{Helicopter Data}{Alan Watson Forster}{31 May 2006}{}
 \runningtitle{Helicopter Data}
 
-\twocolumn[
-\section{Introduction}]
+\chapter{Introduction}
 
 \noindent
 This document contains information on helicopters for J.D.\ Webster's {\AirPow} game system. Specifically, it includes the Helicopter Data Table and has notes on each helicopter type, including usual armament.
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Helicopters}
 
 The Helicopter Data Table, on the following pages, contains basic information on many interesting helicopters. Its columns are:
 \begin{itemize}
@@ -30,8 +40,6 @@ The Helicopter Data Table, on the following pages, contains basic information on
     \item Its ECM capability: its DDS type, IRM suppression modifier, RWR type, and DJM type. Some helicopters have multiple DDS systems. The IRM suppression modifier is applied to IRM and IR SAM attacks.
     \item Its technology: whether it has VAS, TV/IR optics, a laser spot tracker, a laser designator, a helmet-mounted sight (HMS), a mast-mounted sight (MMS), or mast-mounted radar (MMR).
 \end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Generic Helicopters}
 
@@ -816,9 +824,9 @@ The Table gives typical data values for door guns, specifically a single 7.62 mm
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\onecolumn
-\section{Helicopter Stores}
+\chapter{Helicopter Stores}
 
+\onecolumn
 \begin{table}[h]
     \caption*{Helicopter ATGMs}
     \centering
