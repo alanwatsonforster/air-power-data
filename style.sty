@@ -149,45 +149,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% END NOTES
-
-\usepackage{enotez}
-
-\newcommand{\listofnotesheading}[1]{%
-    \chapter{#1}
-}
-
-\setenotez{%
-    list-heading={\listofnotesheading{#1}},
-    reset = true,
-    backref = true
-}
-
-\newcommand{\note}[2]{%
-    \endnote{%
-        \setlength{\parindent}{0pt}%
-        \setlength{\parskip}{\smallskipamount}%
-        {\bfseries #1}\par\nopagebreak #2
-    }%
-}
-
-\newcommand{\noteparagraph}[1]{%
-    \par{\itshape #1:} \ignorespaces%
-}
-
-\newenvironment{notesources}{%
-    \noteparagraph{Sources}
-    \begin{itemize}\raggedright
-        }{
-    \end{itemize}
-}
-
-\newcommand{\listofnotes}{
-    \printendnotes[itemize]
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \newcommand{\asteriskmark}{\superscript{*}}
 \newcommand{\doubleasteriskmark}{\superscript{**}}
 

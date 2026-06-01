@@ -23,38 +23,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Text Notes
-
-\newif\iftextnotes
-
-\newcommand{\textnote}[2]{%
-    \iftextnotes%
-    \footnote{%
-        \setlength{\parindent}{0pt}%
-        \setlength{\parskip}{\smallskipamount}%
-        ~{\bfseries #1.} \ignorespaces #2%
-    }%
-    \fi%
-}
-
-\newcommand{\textnotesection}[1]{%
-    {\itshape\bfseries #1.} \ignorespaces
-}
-
-\newcommand{\cleartextnotes}{%
-    \iftextnotes%
-    \clearpage%
-    \fi%
-}
-
-% Add some space between footnotes.
-\setlength{\footnotesep}{11pt}
-
-% Don't break footnotes between columns so easily.
-\interfootnotelinepenalty=1000
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % Basic spacing.
 
 \newsavebox{\fitwidthbox}
