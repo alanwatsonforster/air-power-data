@@ -20,19 +20,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Basic spacing.
-
-\newsavebox{\fitheightbox}
-\newenvironment{fitheight}[1]{%
-    \def\fitheight{#1}%
-    \begin{lrbox}{\fitheightbox}%
-    }{%
-    \end{lrbox}%
-    \resizebox{!}{\fitheight}{\usebox{\fitheightbox}}%
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \renewcommand{\deg}{\ensuremath{^\circ}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
