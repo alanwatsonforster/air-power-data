@@ -2,48 +2,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% RULES SECTIONS
-
-% Rule sections are built upon normal section.
-
-\makeatletter
-
-\newcounter{rulesection}
-\newcommand{\rulesection}[1]{%
-    \stepcounter{rulesection}
-    \section{Rule \arabic{rulesection}: #1}
-}
-
-\newcounter{rulesubsection}[rulesection]
-\newcommand{\rulesubsection}[1]{%
-    \stepcounter{rulesubsection}
-    \subsection{\Alph{rulesubsection}. #1}
-}
-
-% Examples: in 40.B and 40.C.
-\newcounter{rulesubsubsection}[rulesubsection]
-\newcommand{\rulesubsubsection}[1]{%
-    \stepcounter{rulesubsubsection}
-    \subsubsection{\arabic{rulesubsubsection}. #1}
-}
-
-\newcommand{\ruleparagraph}[1]{
-    \paragraph{#1}
-}
-
-\newcommand{\advancedrule}{
-    \@startsection{section}{1}%
-    {0pt}%
-    {1.0ex plus 0.3ex minus 0.1ex}%
-    {0.1ex plus 0.1ex minus 0.1ex}%
-    {\normalfont\normalsize\bfseries\raggedright}%
-    *{Advanced Rule}
-}
-
-\makeatother
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % SUBSECTIONS WITH COUNTERS
 
 % The aim here is to have a counter image at the left margin and a subsection
@@ -97,6 +55,48 @@
 
 \newcommand{\subsectionwithcountercontinued}[2]{%
     \@subsectionwithcounters{#1}{#2}{\hfill}
+}
+
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% RULES SECTIONS
+
+% Rule sections are built upon normal section.
+
+\makeatletter
+
+\newcounter{rulesection}
+\newcommand{\rulesection}[1]{%
+    \stepcounter{rulesection}
+    \section{Rule \arabic{rulesection}: #1}
+}
+
+\newcounter{rulesubsection}[rulesection]
+\newcommand{\rulesubsection}[1]{%
+    \stepcounter{rulesubsection}
+    \subsection{\Alph{rulesubsection}. #1}
+}
+
+% Examples: in 40.B and 40.C.
+\newcounter{rulesubsubsection}[rulesubsection]
+\newcommand{\rulesubsubsection}[1]{%
+    \stepcounter{rulesubsubsection}
+    \subsubsection{\arabic{rulesubsubsection}. #1}
+}
+
+\newcommand{\ruleparagraph}[1]{
+    \paragraph{#1}
+}
+
+\newcommand{\advancedrule}{
+    \@startsection{section}{1}%
+    {0pt}%
+    {1.0ex plus 0.3ex minus 0.1ex}%
+    {0.1ex plus 0.1ex minus 0.1ex}%
+    {\normalfont\normalsize\bfseries\raggedright}%
+    *{Advanced Rule}
 }
 
 \makeatother
