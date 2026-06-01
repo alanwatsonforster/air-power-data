@@ -22,15 +22,6 @@
 
 % Basic spacing.
 
-\newsavebox{\fitwidthbox}
-\newenvironment{fitwidth}[1]{%
-    \def\fitwidth{#1}%
-    \begin{lrbox}{\fitwidthbox}%
-    }{%
-    \end{lrbox}%
-    \resizebox{\fitwidth}{!}{\usebox{\fitwidthbox}}%
-}
-
 \newsavebox{\fitheightbox}
 \newenvironment{fitheight}[1]{%
     \def\fitheight{#1}%
