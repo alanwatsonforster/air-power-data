@@ -113,42 +113,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Lists
-
-\usepackage{enumitem}
-
-\setlist[itemize]{
-    noitemsep,
-    nolistsep,
-    leftmargin=0em,
-    labelindent=\parindent,
-    labelwidth=*,
-    labelsep=\interwordspace,
-    itemindent=*,
-    label=--,
-}
-\setlist[enumerate]{
-    noitemsep,
-    nolistsep,
-    leftmargin=0em,
-    labelindent=\parindent,
-    labelwidth=*,
-    labelsep=\interwordspace,
-    itemindent=*,
-    align=left
-}
-\setlist[enumerate,2]{
-    label=\alph*.
-}
-
-\setlist[itemize,2]{
-    leftmargin=2em
-}
-
-\newcommand{\itemparagraph}[1]{{\bfseries #1}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \newlength{\digitwidth}
 \settowidth{\digitwidth}{0}
 \newcommand{\aligninteger}[2]{\makebox[#1\digitwidth][r]{#2}}
