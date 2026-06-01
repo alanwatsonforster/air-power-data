@@ -4,7 +4,6 @@
 \documentclass{report}
 
 \input{../../air-power-shared/latex/style.tex}
-\input{style.tex}
 
 \newcommand{\helicoptertype}[1]{%
     \subsection{#1}
@@ -29,7 +28,7 @@ This document contains information on helicopters for J.D.\ Webster's {\AirPow} 
 
 \chapter{Helicopters}
 
-The Helicopter Data Table, on the following pages, contains basic information on many interesting helicopters. Its columns are:
+The \hyperlink{table:helicopter-data}{Helicopter Data Table} contains basic information on many interesting helicopters. Its columns are:
 \begin{itemize}
     \item The helicopter type and name. The NATO reporting name is given in parentheses.
     \item Whether it has high speed/agility (HSA).
@@ -97,14 +96,14 @@ The Table gives typical data values for door guns, specifically a single 7.62 mm
 
 \newenvironment{helicopterdatapage}{
     \begin{landscape}
-        \begin{fullwidthtable}
+        \begin{table*}[p]
         }{
-        \end{fullwidthtable}
+        \end{table*}
     \end{landscape}
 }
 
 \newenvironment{helicopterdatatable}{
-    \caption*{Helicopter Data Table}
+    \caption*{\hypertarget{table:helicopter-data}{Helicopter Data Table}}
     \footnotesize
     \setlength{\tabcolsep}{0.45em}
     \tabularx{\linewidth}{Lccccclp{20ex}p{10ex}rccccccccccccccccc}
@@ -827,10 +826,10 @@ The Table gives typical data values for door guns, specifically a single 7.62 mm
 \chapter{Helicopter Stores}
 
 \onecolumn
-\begin{table}[h]
-    \caption*{Helicopter ATGMs}
+\begin{table}[p]
+    \caption*{\hypertarget{table:helicopter-atgm}{Helicopter ATGM Table}}
     \centering
-    \begin{tabularx}{1.0\linewidth}{lLcccccccc}
+    \begin{tabularx}{0.8\linewidth}{lLcccccccc}
         \toprule
         Type&&Year&Guidance&Modifier&Range&\multicolumn{3}{c}{Attack Strength}&Warhead\\
         \cmidrule{7-9}
@@ -904,14 +903,14 @@ The Table gives typical data values for door guns, specifically a single 7.62 mm
         & 1995 & RS(C)  & \minus{6} & \phantom{0}1--16\phantom{} & 0.5 & 0.5 & 3.0 & T \\
         \bottomrule
     \end{tabularx}
-    \begin{tablenote}{1.0\linewidth}
+    \begin{tablenote}{0.8\linewidth}
         Guidance: RCG = remote-control guidance, AGC = automatic-control guidance, LG = laser guidance, RS = radar smart guidance, (M) = manual bomb system, (B) = ballistic bomb system, and (C) = computed bomb system.
         Warhead: S = Singular, T = Tandem, and TA = Top-Attack.
     \end{tablenote}
 \end{table}
 
-\begin{table}[ht]
-    \caption*{Helicopter RPs}
+\begin{table}[p]
+    \caption*{\hypertarget{table:helicopter-rp}{Helicopter RP Table}}
     \centering
     \begin{tabularx}{0.45\linewidth}{llCC}
         \toprule
@@ -940,8 +939,8 @@ The Table gives typical data values for door guns, specifically a single 7.62 mm
     \end{tablenote}
 \end{table}
 
-\begin{table}[ht]
-    \caption*{Helicopter GPs}
+\begin{table}[p]
+    \caption*{\hypertarget{table:helicopter-gp}{Helicopter GP Table}}
     \centering
     \begin{tabularx}{0.45\linewidth}{Lccc}
         \toprule
