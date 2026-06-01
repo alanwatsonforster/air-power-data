@@ -1107,8 +1107,7 @@ def writeadc(name):
 
 
 def writelatexprolog(withtableofcontents):
-    writelatex(
-        r"""
+    writelatex(r"""
 %%!LW recipe=latexmk (xelatex)
 %%!TEX program = xelatex
 %%LTeX: enabled=false
@@ -1120,29 +1119,21 @@ def writelatexprolog(withtableofcontents):
 \newif\ifversionthree\versionthreefalse
 \version%strue
 \begin{document}
-"""
-        % ["one", "two", "three"][version - 1]
-    )
+""" % ["one", "two", "three"][version - 1])
     if withtableofcontents:
-        writelatex(
-            r"""
+        writelatex(r"""
 \tableofcontents
-"""
-        )
-    writelatex(
-        r"""
+""")
+    writelatex(r"""
 \onecolumn
 \newpage
-"""
-    )
+""")
 
 
 def writelatexepilog():
-    writelatex(
-        r"""
+    writelatex(r"""
 \end{document}
-"""
-    )
+""")
 
 
 def readjsonfile(jsonfilename):

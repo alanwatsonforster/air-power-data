@@ -48,8 +48,6 @@
 
 % Table of Contents
 
-%\usepackage[bookmarks,bookmarksdepth=2,hypertexnames=false]{hyperref}
-
 \newcommand{\adclabel}[1]{\label{adc:#1}}
 \newcommand{\adcref}[1]{\hyperref[adc:#1]{#1}}
 
@@ -77,16 +75,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{graphicx}
 \graphicspath{{../aircraftdata/}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{enumitem}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{graphicx} % For \resizebox
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -96,26 +89,6 @@
 \newcommand\spacebelow{\rule[-1.0ex]{0pt}{0pt}}   % = `bottom' strut
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\usepackage{unicode-math}
-%\setmainfont[
-%    BoldFont = texgyreschola-bold.otf,
-%    BoldItalicFont = texgyreschola-bolditalic.otf,
-%    ItalicFont = texgyreschola-italic.otf
-%]{texgyreschola-regular.otf}
-%\setmathfont{texgyreschola-math.otf}
-\usepackage[usefilenames]{plex-otf}
-\renewcommand*\familydefault{\sfdefault}
-
-% Use slightly less tight line spacing by default.
-\usepackage{setspace}
-\setstretch{1.05}
-
-\usepackage{tabularx}
-
-\usepackage{multirow}
-
-\setlength{\extrarowheight}{2pt}
 
 \newlength{\cellwidth}
 \newcommand{\multicell}[5]{\multicolumn{#2}{#1@{}l@{}#3}{\parbox[b][#4][t]{#2\cellwidth}{#5}}}
