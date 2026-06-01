@@ -132,10 +132,6 @@
 
 \setlength{\extrarowheight}{2pt}
 
-\newlength{\digitwidth}
-\settowidth{\digitwidth}{0}
-\newcommand{\aligninteger}[2]{\makebox[#1\digitwidth][r]{#2}}
-
 \newlength{\cellwidth}
 \newcommand{\multicell}[5]{\multicolumn{#2}{#1@{}l@{}#3}{\parbox[b][#4][t]{#2\cellwidth}{#5}}}
 
