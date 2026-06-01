@@ -86,15 +86,6 @@
 \usepackage{graphicx}
 \graphicspath{{../aircraftdata/}}
 
-\usepackage{calc}
-
-\newlength{\fitwidthlength}
-
-\newcommand\fitwidth[2]{%
-    \settowidth{\fitwidthlength}{#2}%
-    \resizebox{\minof{\fitwidthlength}{#1}}{!}{#2}%
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{enumitem}
@@ -421,7 +412,7 @@
                     Lock-On:&\Ff\spacebelow\\
                     \hline
                     \spaceabove\spacebelow
-                    \bfseries Guns:&\fitwidth{\linewidth}{\Fg}\\
+                    \bfseries Guns:&\\newcommand\fitmaxwidthbox{\linewidth}{\Fg}\\
                     To Hit:&\Fh\\
                     Ammunition:&\Fi\\
                     Gunsight:&\small \Fj\\
