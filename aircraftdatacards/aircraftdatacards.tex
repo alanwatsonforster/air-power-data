@@ -6,7 +6,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setlistofnoteheading{\subsection}
+\setlistofnoteheading{\section}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -17,26 +17,10 @@
 
 \let\@section\section
 
-\renewcommand{\section}[1]{%
-    \twocolumn[
-        \@section{#1}
-        \label{type:#1}
-    ]
+\newcommand{\typechapter}[1]{%
+    \chapter{#1}
+    \label{type:#1}
 }
-
-\renewcommand
-\subsection{%
-    \@startsection{subsection}{2}{\z@}%
-    {2.0ex plus 0.6ex minus 0.2ex}%
-    {1.0ex plus 0.3ex minus 0.1ex}%
-{\normalfont\large\bfseries}}
-
-\renewcommand
-\subsubsection{%
-    \@startsection{subsubsection}{3}{\z@}%
-    {2.0ex plus 0.6ex minus 0.2ex}%
-    {1.0ex plus 0.3ex minus 0.1ex}%
-{\normalfont\normalsize\bfseries\itshape}}
 
 \renewcommand\tableofcontents{%
     \@starttoc{toc}%
