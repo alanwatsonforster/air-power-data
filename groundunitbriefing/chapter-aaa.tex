@@ -27,75 +27,84 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
 
     \noteparagraph{AAA Values for Batteries} I start by attempting to understand the AAA values for batteries.
 
-    The upper part of the following table shows the original data for gun batteries from {\AirStr} (AS), {\EOTG} (EOTG), and {\TSOH} (TSOH). I have added columns with the caliber, burst rate of fire per mount, and muzzle velocity.
+    The upper part of the following table shows the original data for gun batteries from {\AirStr} (AS), {\EOTG} (EOTG), {\TSOH} (TSOH), and Malcolm Pipes' 2026 compilation (MP). I have added columns with the caliber, burst rate of fire per mount, and muzzle velocity.
 
-    \begin{center}
-        \medskip
-        \scriptsize
-        \begin{tabular}{lrrllllrrl}
-            \toprule
-            Type
-            &\multicolumn{1}{c}{\vertical{Maximum Altitude}}
-            &\multicolumn{1}{c}{\vertical{Ranges}}
-            &\multicolumn{1}{c}{\vertical{Hit Rolls}}
-            &\multicolumn{1}{c}{\vertical{Damage}}
-            &\multicolumn{1}{c}{\vertical{FCR}}
-            &\multicolumn{1}{c}{\vertical{Caliber (mm)}}
-            &\multicolumn{1}{c}{\vertical{Rate of fire (RPM)}}
-            &\multicolumn{1}{c}{\vertical{Muzzle Velocity (m/s)}}
-            &\multicolumn{1}{c}{\vertical{Source}}
-            \\
-            \midrule
-            \multicolumn{10}{c}{Original}\\
-            \midrule
-            M2/DShK-38&5&2/3/4&3/2/1&1&---&\phantom{0}12.7&500&890&AS\\
-            M55&5&2/3/4&5/4/3&2&---&\phantom{0}12.7&2000&890&EOTG\\
-            ZPU-1&6&2/3/5&3/2/1&1&---&\phantom{0}14.5&600&1000&EOTG/TSOH\\
-            ZPU-2&6&2/3/5&4/3/2&1&---&\phantom{0}14.5&1200&1000&AS\\
-            ZPU-4&6&2/3/5&5/4/3&2&---&\phantom{0}14.5&2400&1000&AS\\
-            ZPU-4&6&2/3/5&4/3/2&2&---&\phantom{0}14.5&2400&1000&TSOH\\
-            TCM-20&8&2/4/6&4/4/3&2&---&\phantom{0}20&1450&860&EOTG\\
-            Single Rh-202&8&2/4/6&3/2/1&2&---&\phantom{0}20&1030&1044&AS\\
-            Twin Rh-202&8&2/4/6&5/4/3&2&---&\phantom{0}20&2060&1044&AS\\
-            M167&8&2/4/6&6/5/4&3&R&\phantom{0}20&3000&1030&AS\\
-            ZU-23&9&2/5/8&4/3/2&2&---&\phantom{0}23&2000&980&AS/TSOH\\
-            Gemag&10&3/6/9&6/5/4&4&R&\phantom{0}25&1800&1040&AS\\
-            Oerlikon GDF&12&4/8/10&5/4/3&4&---&\phantom{0}35&1100&1175&AS\\
-            61-K (M-38)&12&4/8/11&3/2/1&4&---&\phantom{0}37&165&880&AS/TSOH\\
-            Bofors L/60&15&4/8/12&2/2/1&4&---&\phantom{0}40&135&865&EOTG\\
-            Bofors L/70&15&4/8/12&3/3/2&4&---&\phantom{0}40&330&1000&AS\\
-            BOFI&15&4/8/12&4/4/3&4&W&\phantom{0}40&330&1000&AS\\
-            S-60&18&5/10/15&2/2/1&5&---&\phantom{0}57&110&1000&AS/TSOH\\
-            KS-12&27&6/12/18&2/1/0&6&---&\phantom{0}85&10&790&AS/TSOH\\
-            KS-19&39&7/14/21&1/1/0&6&---&100&15&900&AS\\
-            \midrule
-            \multicolumn{10}{c}{Modified}\\
-            \midrule
-            ZPU-4&&&5/4/3&&\multicolumn{5}{l}{--- for rate of fire}\\
-            Single Rh-202&&&4/3/2&&\multicolumn{5}{l}{--- for rate of fire}\\
-            Twin Rh-202&&&&3 &\multicolumn{5}{l}{--- for rate of fire}\\
-            ZU-23&&&5/4/3&3&\multicolumn{5}{l}{--- for rate of fire}\\
-            Oerlikon GDF&&&4/3/2&&\multicolumn{5}{l}{--- for rate of fire}\\
-            BOFI&&&5/5/3&&\multicolumn{5}{l}{--- for FCR-W}\\
-            %Bofors L/60&14\\
-            \midrule
-            \multicolumn{10}{c}{New}\\
-            \midrule
-            M51&30&6/12/18&4/4/3&5&W&\phantom{0}75&45&854\\
-            Flab Kan 38&24&6/12/18&2/1/0&5&---&\phantom{0}75&25&700\\
-            90 mm M2&32&7/14/21&3/2/1&6&---&\phantom{0}90&24&820\\
-            QF 3.7 inch Mk VI&45&9/18/27&3/2/1&6&--&\phantom{0}94&20&1044\\
-            120 mm M1&57&11/22/33&2/2/1&7&--&120&12&945\\
-            KS-30&64&12/24/36&1/1/0&7&---&130&12&970\\
-            QF 5.25 inch&46&12/24/36&1/1/0&7&---&133&10&850\\
-            \bottomrule
-        \end{tabular}
-        \medskip
-    \end{center}
+    Malcolm Pipes (MP) also gives AAA data in his 2026 list. Where this data is in agreement with the original data, this is indicated along with the sources. Where it differs, this is indicated in the second section.
+
+    \begin{minipage}{\linewidth}
+        \begin{center}
+            \smallskip
+            AAA VALUES FOR BATTERIES\par
+            \medskip
+            \scriptsize
+            \begin{tabular}{lrrllllrrl}
+                \toprule
+                Type
+                &\multicolumn{1}{c}{\vertical{Maximum Altitude}}
+                &\multicolumn{1}{c}{\vertical{Ranges}}
+                &\multicolumn{1}{c}{\vertical{Hit Rolls}}
+                &\multicolumn{1}{c}{\vertical{Damage}}
+                &\multicolumn{1}{c}{\vertical{FCR}}
+                &\multicolumn{1}{c}{\vertical{Caliber (mm)}}
+                &\multicolumn{1}{c}{\vertical{Rate of fire (RPM)}}
+                &\multicolumn{1}{c}{\vertical{Muzzle Velocity (m/s)}}
+                &\multicolumn{1}{c}{\vertical{Source}}
+                \\
+                \midrule
+                \multicolumn{10}{c}{Original Values}\\
+                \midrule
+                M2/DShK-38&5&2/3/4&3/2/1&1&---&\phantom{0}12.7&500&890&AS/MP\\
+                M55&5&2/3/4&5/4/3&2&---&\phantom{0}12.7&2000&890&EOTG/MP\\
+                ZPU-1&6&2/3/5&3/2/1&1&---&\phantom{0}14.5&600&1000&EOTG/TSOH/MP\\
+                ZPU-2&6&2/3/5&4/3/2&1&---&\phantom{0}14.5&1200&1000&AS\\
+                ZPU-2&6&2/3/5&4/3/1&3&---&\phantom{0}14.5&1200&1000&MP\\
+                ZPU-4&6&2/3/5&5/4/3&2&---&\phantom{0}14.5&2400&1000&AS/MP\\
+                ZPU-4&6&2/3/5&4/3/2&2&---&\phantom{0}14.5&2400&1000&TSOH\\
+                TCM-20&8&2/4/6&4/4/3&2&---&\phantom{0}20&1450&860&EOTG\\
+                Single Rh-202&8&2/4/6&3/2/1&2&---&\phantom{0}20&1030&1044&AS\\
+                Twin Rh-202&8&2/4/6&5/4/3&2&---&\phantom{0}20&2060&1044&AS\\
+                Twin Rh-202&8&2/4/6&3/2/1&3&---&\phantom{0}20&2060&1044&MP\\
+                M167&8&2/4/6&6/5/4&3&R&\phantom{0}20&3000&1030&AS/MP\\
+                ZU-23&9&2/5/8&4/3/2&2&---&\phantom{0}23&2000&980&AS/TSOH/MP\\
+                Gemag&10&3/6/9&6/5/4&4&R&\phantom{0}25&1800&1040&AS\\
+                Oerlikon GDF&12&4/8/10&5/4/3&4&---&\phantom{0}35&1100&1175&AS/MP\\
+                61-K (M-38)&12&4/8/11&3/2/1&4&---&\phantom{0}37&165&880&AS/TSOH/MP\\
+                Bofors L/60&15&4/8/12&2/2/1&4&---&\phantom{0}40&135&865&EOTG/MP\\
+                Bofors L/70&15&4/8/12&3/3/2&4&---&\phantom{0}40&330&1000&AS/MP\\
+                BOFI&15&4/8/12&4/4/3&4&W&\phantom{0}40&330&1000&AS\\
+                S-60&18&5/10/15&2/2/1&5&---&\phantom{0}57&110&1000&AS/TSOH/MP\\
+                KS-12&27&6/12/18&2/1/0&6&---&\phantom{0}85&10&790&AS/TSOH\\
+                KS-19&39&7/14/21&1/1/0&6&---&100&15&900&AS\\
+                KS-19&39&7/14/21&2/1/0&6&---&100&15&900&MP\\
+                \midrule
+                \multicolumn{10}{c}{Modified or Adopted Values}\\
+                \midrule
+                ZPU-2&&&4/3/2&1&&&\multicolumn{3}{l}{--- adopted from AS}\\
+                ZPU-4&&&5/4/3&&&&\multicolumn{3}{l}{--- for rate of fire}\\
+                Single Rh-202&&&4/3/2&&&&\multicolumn{3}{l}{--- for rate of fire}\\
+                Twin Rh-202&&&5/4/3&3&&&\multicolumn{3}{l}{--- for rate of fire}\\
+                ZU-23&&&5/4/3&3&&&\multicolumn{3}{l}{--- for rate of fire}\\
+                Oerlikon GDF&&&4/3/2&&&&\multicolumn{3}{l}{--- for rate of fire}\\
+                BOFI&&&5/5/3&&&&\multicolumn{3}{l}{--- for FCR-W}\\
+                KS-19&&&1/1/0&&&&\multicolumn{3}{l}{--- for rate of fire}\\
+                \midrule
+                \multicolumn{10}{c}{New Values}\\
+                \midrule
+                M51&30&6/12/18&4/4/3&5&W&\phantom{0}75&45&854\\
+                Flab Kan 38&24&6/12/18&2/1/0&5&---&\phantom{0}75&25&700\\
+                90 mm M2&32&7/14/21&3/2/1&6&---&\phantom{0}90&24&820\\
+                QF 3.7 inch Mk VI&45&9/18/27&3/2/1&6&--&\phantom{0}94&20&1044\\
+                120 mm M1&57&11/22/33&2/2/1&7&--&120&12&945\\
+                KS-30&64&12/24/36&1/1/0&7&---&130&12&970\\
+                QF 5.25 inch&46&12/24/36&1/1/0&7&---&133&10&850\\
+                \bottomrule
+            \end{tabular}
+            \medskip
+        \end{center}
+    \end{minipage}
 
     Qualitatively, altitude and range increase with caliber, hit rolls increase with rate of fire, and damage rating increases with both caliber and rate of fire.
     This is as expected.
-
     Quantitatively:
     \begin{itemize}
         \item Approximately doubling the rate of fire increases the hit rolls by one, with typical values of 3/2/1 around 500 rounds per minute, 4/3/2 around 1000, and 5/3/2 around 2000 and above.
@@ -103,57 +112,40 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
         \item The damage rating is increased by one if the rate of fire is 1800 rounds per minute or more.
     \end{itemize}
 
-    Most of the original values can be used as they are, but a few of the hit rolls need adjusting:
+    Most of the original values can be used as they are, but a few of the hit rolls and damage ratings need adjusting. These are shown in the second section of the table. Specifically:
     \begin{itemize}
-        \item ZPU-4 and ZU-23
 
-            There are six AAA batteries with rates of fire per mount of about 2000 rounds per minute or more: the M55, ZPU-4, twin Rh-202, M167, ZU-23, and Gemag. After accounting for the \plus{1} modifier for the FCR-R of the M167 and Gemag, all have hit rolls of 5/4/3 except for the ZPU-4 from {\TSOH} (although the one from {\AirStr} does have 5/4/3) and the ZU-23.
+        \item ZPU-2: Malcolm Pipes gives this a damage rating of 3 (more than the ZPU-4) whereas AS gives it a rating of 1 (equal to the ZPU-1). Pipes gives this hit rolls of 4/3/1 whereas AS gives it 4/3/2. The ZPU-2 should have both hit rolls and damage ratings intermediate to those of the ZPU-1 and ZPU-4, but this is impossible as these only differ by one. The solution in {\AirStr} seems to be a good compromise: give it the hit rolls of the ZPU-4 but the damage rating of the ZPU-1. I adopt the AS values.
 
-            Furthermore, all of these except for the ZU-23 (both {\AirStr} and {\TSOH} versions) have damage ratings increased by one above their baseline values.
-
-            It seems that either there is some reason to reduce the effectiveness of the ZPU-4 and ZU-23 compared to these other guns, or perhaps they have inconsistent values rolls.
+        \item ZPU-4 and ZU-23: There are six AAA batteries with rates of fire per mount of about 2000 rounds per minute or more: the M55, ZPU-4, twin Rh-202, M167, ZU-23, and Gemag. After accounting for the \plus{1} modifier for the FCR-R of the M167 and Gemag, all have hit rolls of 5/4/3 except for the ZPU-4 from {\TSOH} (although the one from {\AirStr} does have 5/4/3) and the ZU-23. Furthermore, all of these except for the ZU-23 (both {\AirStr} and {\TSOH} versions) have damage ratings increased by one above their baseline values. It seems that either there is some reason to reduce the effectiveness of the ZPU-4 and ZU-23 compared to these other guns, or perhaps they have inconsistent values rolls.
 
             The ZU-23 is undeniably basic, and one might think that would be reason to reduce its effectiveness. However, the TCM-20 is basic too and has both a lower rate of fire than the ZU-23 (1450 compared to 2000) and a smaller caliber (20~mm compared to 23~mm), yet its hit rolls are higher than the ZU-23 in {\TSOH} and its damage rating is the same.
 
-            The best solution would seem to be to give these guns the values we would expect from comparing them to other guns with similar rate of fire and caliber. Therefore, I give both the ZPU-4 and ZU-23 hit rolls of 5/4/3 and the ZU-23 a damage rating of 3.
+            I think the best solution is to give these guns the values we would expect from comparing them to other guns with similar rate of fire and caliber. Therefore, I give both the ZPU-4 and ZU-23 hit rolls of 5/4/3 and the ZU-23 a damage rating of 3.
 
             (I also considered the idea that increasing the rate of fire increases \emph{either} the hit rolls \emph{or} the damage rating. However, while this might explain the ZPU-4 from {\TSOH} and the twin Rh-202, it does not correctly predict the values of the M167 or Gemag.)
 
-        \item Single RH-202
+        \item Single RH-202: The single Rh-202 has unexpectedly low original hit rolls of 3/2/1 for its rate of fire. The values of 4/3/2 for the ZPU-2 and TCM-20, which have a similar rate of fire, are probably more appropriate.
 
-            The single Rh-202 has unexpectedly low original hit rolls of 3/2/1 for its rate of fire. The values of 4/3/2 for the ZPU-2 and TCM-20, which have a similar rate of fire, are probably more appropriate.
+        \item Twin Rh-202: The twin has an unexpectedly low original damage rating of 2 for its rate of fire. A value of 3, increased by one from the baseline for the caliber, is probably more appropriate.
 
-        \item Twin Rh-202
+            Malcolm Pipes gives values for the Rh-202, but it is not clear whether they are for the single or twin mount. He gives hit rolls of 3/2/1 (equal to the {\AirStr} values for the single mount) but a damage rating of 3 (equal to the value I have adopted for the twin mount). I do not adopt this combination of values either for the single or twin Rh-202.
 
-            The twin has an unexpectedly low original damage rating of 2 for its rate of fire. A value of 3, increased by one from the baseline for the caliber, is probably more appropriate.
+        \item Oerlikon GDF: The Oerlikon GDF has unexpectedly high original hit rolls of 5/4/3 for its rate of fire. The values of 4/3/2 for the ZPU-2, which has a similar rate of fire, are probably more appropriate.
 
-        \item Oerlikon GDF
+        \item BOFI: The BOFI has unexpectedly low original hit rolls of 4/4/3. Values of 5/5/3, obtained by applying a \plus{2} modifier for FCR-W to the Bofors L/70, are probably more appropriate. (Note that the “BOFI” in {\AirStr} corresponds to what I call the “BOFI-R” below.)
 
-            The Oerlikon GDF has unexpectedly high original hit rolls of 5/4/3 for its rate of fire. The values of 4/3/2 for the ZPU-2, which has a similar rate of fire, are probably more appropriate.
-
-        \item BOFI
-
-            The BOFI has unexpectedly low original hit rolls of 4/4/3. Values of 5/5/3, obtained by applying a \plus{2} modifier for FCR-W to the Bofors L/70, are probably more appropriate. (Note that the “BOFI” in {\AirStr} corresponds to what I call the “BOFI-R” below.)
+        \item K-19: Malcolm Pipes gives hit rolls of 2/1/0 whereas AS gives 1/1/0. While it makes sense that the hit roll is less at short range than medium range, it makes less send that in this case the hot roll for the KS19 (15 rounds per minute) is equal to that of the S-60 (110 rounds per minute). I prefer the {\AirStr} values.
 
     \end{itemize}
-
-    I adopt these modified values.
 
     Also, I note the following:
 
     \begin{itemize}
 
-        \item FCR-R
+        \item FCR-R: The M167 and Gemag have hit rolls of 6/5/4, and the twin Rh-202 has 5/4/3. Otherwise, they are similar, except that the M167 and Gemag have FCR-R, and the Rh-202 does not (and the M167 has a moderate advantage in rate of fire). I consider the FCR-R of the M167 and Gemag to be largely responsible for increasing their hit rolls by \plus{1} compared to the Rh-202.
 
-            The M167 and Gemag have hit rolls of 6/5/4, and the twin Rh-202 has 5/4/3. Otherwise, they are similar, except that the M167 and Gemag have FCR-R, and the Rh-202 does not (and the M167 has a moderate advantage in rate of fire). I consider the FCR-R of the M167 and Gemag to be largely responsible for increasing their hit rolls by \plus{1} compared to the Rh-202.
-
-        \item Bofors
-
-            The hit rolls of 2/2/1 for the Bofors L/60, 3/2/1 for the 61-K (M-38), and 3/3/2 for the Bofors L/70 seem to reflect the increase in rate of fire.
-
-            The L/60 and L/70 have the same maximum altitude of 16 and maximum range of 12, despite the L/60 having lower muzzle velocity. However, I am not especially motivated to attempt to change this, since the Bofors is primarily a weapon for point-defense against aircraft up to about level 10.
-
-            The real BOFI and BOFI-R also have proximity fuzes, and I consider these will increase their hit rolls by \plus{1}.
+        \item Bofors: The hit rolls of 2/2/1 for the Bofors L/60, 3/2/1 for the 61-K (M-38), and 3/3/2 for the Bofors L/70 seem to reflect the increase in rate of fire. The L/60 and L/70 have the same maximum altitude of 16 and maximum range of 12, despite the L/60 having lower muzzle velocity. However, I am not especially motivated to attempt to change this, since the Bofors is primarily a weapon for point-defense against aircraft up to about level 10. The real BOFI and BOFI-R also have proximity fuzes, and I consider these will increase their hit rolls by \plus{1}.
 
     \end{itemize}
 
@@ -349,7 +341,7 @@ The M17 was supplied to the Soviet Union and entered service in 1944. It was pre
 
     \begin{notesources}
         \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M16_Multiple_Gun_Motor_Carriage}{M17}, \href{https://en.wikipedia.org/wiki/M45_quad_mount}{M45}, and \href{https://en.wikipedia.org/wiki/M2_Browning}{M2}.
-        \item Tank Encylopedia on the \href{https://tanks-encyclopedia.com/ww2/usa/multiple-gun-motor-carriage-m16-and-m17/}{M17} .
+        \item Tank Encyclopedia on the \href{https://tanks-encyclopedia.com/ww2/usa/multiple-gun-motor-carriage-m16-and-m17/}{M17} .
     \end{notesources}
 }
 
@@ -527,7 +519,7 @@ From 1988 in the US Army, each M163 was typically issued with a FIM-92 Stinger l
         \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M163_VADS}{M163}, \href{https://en.wikipedia.org/wiki/M167_VADS}{M167}, and \href{https://en.wikipedia.org/wiki/M61_Vulcan}{M61 Vulcan}.
         \item WeaponSystems on the \href{https://weaponsystems.net/system/67-M163+Vulcan}{M163}, \href{https://weaponsystems.net/system/150-M167+Vulcan}{M167} and \href{https://weaponsystems.net/system/1510-20mm\%20M61\%20Vulcan}{M61}.
         \item Department of the Army, \href{https://archive.org/details/TM9235030010M163VADS/mode/2up}{TM 9-2350-300-10}, 1976: “Operator's Manual For Gun, Air Defense Artillery, Self-Propelled 20-mm, M163”.
-        \item Deaprtment of the Army, \href{https://apps.dtic.mil/sti/tr/pdf/AD0857327.pdf}{ACGC-64F}, 1969: “Final Report: XM163 Vulcan Air Defense System”.
+        \item Department of the Army, \href{https://apps.dtic.mil/sti/tr/pdf/AD0857327.pdf}{ACGC-64F}, 1969: “Final Report: XM163 Vulcan Air Defense System”.
         \item \href{https://www.mobileradar.org/radar_descptn_3.html}{MobileRadar} on the AN/VPS-2.
     \end{notesources}
 }
