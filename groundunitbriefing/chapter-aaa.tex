@@ -27,7 +27,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
 
     \noteparagraph{AAA Values for Batteries} I start by attempting to understand the AAA values for batteries.
 
-    The upper part of the following table shows the original data for gun batteries from {\AirStr} (AS), {\EOTG} (EOTG), {\TSOH} (TSOH), and Malcolm Pipes' 2026 compilation (MP). For the ZPU-2, ZPU-4, Twin Rh-202, and KS-19, these sources are not in agreement among themselves and so there are multiple entries. I have added columns with the caliber, burst rate of fire per mount (i.e., the rate of fire per barrel multiplied by the number of barrels per mount), and muzzle velocity.
+    The upper part of the following table shows the original data for gun batteries from {\AirStr} (AS), {\EOTG} (EOTG), {\TSOH} (TSOH). I also include data for these guns from Malcolm Pipes' 2026 compilation (MP). For the ZPU-2, ZPU-4, Twin Rh-202, and KS-19, these sources are not in agreement among themselves and so there are multiple entries. I have added columns with the caliber, burst rate of fire per mount (i.e., the rate of fire per barrel multiplied by the number of barrels per mount), and muzzle velocity. Values in red will be subsequently modified.
 
     \begin{minipage}{\linewidth}
         \setlength{\tabcolsep}{0.2em}
@@ -36,23 +36,24 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             AAA VALUES FOR BATTERIES\par
             \medskip
             \scriptsize
-            \begin{tabular}{lrrlrclrrl}
+            \begin{tabularx}{\linewidth}{LrrlrclrrL}
                 \toprule
                 Type
                 &\multicolumn{1}{c}{\vertical{Maximum Altitude}}
                 &\multicolumn{1}{c}{\vertical{Ranges}}
                 &\multicolumn{1}{c}{\vertical{Hit Rolls}}
                 &\multicolumn{1}{c}{\vertical{Damage}}
-                &\multicolumn{1}{c}{\vertical{FCR}}
+                &\multicolumn{1}{c}{\vertical{FCR/LRF}}
                 &\multicolumn{1}{c}{\vertical{Caliber (mm)}}
-                &\multicolumn{1}{c}{\vertical{Rate of fire (RPM)}}
+                &\multicolumn{1}{c}{\vertical{Rate of Fire (RPM)}}
                 &\multicolumn{1}{c}{\vertical{Muzzle Velocity (m/s)}}
                 &\multicolumn{1}{c}{\vertical{Sources}}
                 \\
                 \midrule
                 \multicolumn{10}{c}{Original Values}\\
                 \midrule
-                M2/DShK-38&5&2/3/4&3/2/1&1&---&\phantom{0}12.7&500&890&AS/MP\\
+                M2&5&2/3/4&3/2/1&1&---&\phantom{0}12.7&500&890&AS/MP\\
+                DShK-38&5&2/3/4&3/2/1&1&---&\phantom{0}12.7&500&850&AS/MP\\
                 M55&5&2/3/4&5/4/3&2&---&\phantom{0}12.7&2000&890&EOTG/MP\\
                 ZPU-1&6&2/3/5&3/2/1&1&---&\phantom{0}14.5&600&1000&EOTG/TSOH/MP\\
                 ZPU-2&6&2/3/5&4/3/2&1&---&\phantom{0}14.5&1200&1000&AS\\
@@ -66,7 +67,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 M167&8&2/4/6&6/5/4&3&R&\phantom{0}20&3000&1030&AS/MP\\
                 ZU-23&9&2/5/8&\highlight{4/3/2}&\highlight{2}&---&\phantom{0}23&2000&980&AS/TSOH/MP\\
                 Gemag&10&3/6/9&6/5/4&4&R&\phantom{0}25&1800&1040&AS\\
-                Oerlikon GDF&12&4/8/10&\highlight{5/4/3}&4&---&\phantom{0}35&1100&1175&AS/MP\\
+                Oerlikon GDF-001&12&4/8/10&\highlight{5/4/3}&4&---&\phantom{0}35&1100&1175&AS/MP\\
                 61-K (M-38)&12&4/8/11&3/2/1&4&---&\phantom{0}37&165&880&AS/TSOH/MP\\
                 Bofors L/60&15&4/8/12&2/2/1&4&---&\phantom{0}40&135&865&EOTG/MP\\
                 Bofors L/70&15&4/8/12&\highlight{3/3/2}&4&---&\phantom{0}40&330&1000&AS/MP\\
@@ -78,21 +79,31 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 \midrule
                 \multicolumn{10}{c}{Empirical Model Values}\\
                 \midrule
-                &&&1/1/0&&&&15\\
+                \addlinespace
+                \multicolumn{3}{l}{Base hit rolls depend on rate of fire}&1/1/0&&&&15\\
                 &&&2/2/1&&&&120\\
                 &&&3/2/1&&&&500\\
                 &&&4/3/2&&&&1000\\
                 &&&5/3/2&&&&2000\\
-                &&&\plus{1}&&R&&\\
-                &&&\plus{2}&&W&&\\
-                &&&&1&&\lessthanorequaltobefore{14.5}\\
+                \addlinespace
+                \multicolumn{3}{l}{Hit roll modifiers for FCR/LRF}&\plus{1}&&R\\
+                &&&\plus{1}&&L\\
+                &&&\plus{2}&&W\\
+                \addlinespace
+                \multicolumn{3}{l}{Hit roll modifiers for proximity fuzes}&\plus{1}\\
+                \addlinespace
+                \multicolumn{3}{l}{Hit roll modifiers for section}&\minus{1}\\
+                \addlinespace
+                \multicolumn{3}{l}{Base damage depends on caliber}&&1&&\lessthanorequaltobefore{14.5}\\
                 &&&&2&&20--23\\
                 &&&&3&&25--30\\
                 &&&&4&&35--40\\
                 &&&&5&&57\\
                 &&&&6&&75--100\\
                 &&&&7&&\greaterthanorequaltobefore{120}\\
-                &&&&\plus{1}&&&\greaterthanorequaltobefore{1800}\\
+                \addlinespace
+                \multicolumn{3}{l}{Damage modifier for rate of fire}&&\plus{1}&&&\greaterthanorequaltobefore{1800}\\
+                \addlinespace
                 \midrule
                 \multicolumn{10}{c}{Modified or Adopted Values}\\
                 \midrule
@@ -101,7 +112,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 Single Rh-202&&&4/3/2&&&&\multicolumn{3}{l}{--- for rate of fire}\\
                 Twin Rh-202&&&5/4/3&3&&&\multicolumn{3}{l}{--- for rate of fire}\\
                 ZU-23&&&5/4/3&3&&&\multicolumn{3}{l}{--- for rate of fire}\\
-                Oerlikon GDF&&&4/3/2&&&&\multicolumn{3}{l}{--- for rate of fire}\\
+                Oerlikon GDF-001&&&4/3/2&&&&\multicolumn{3}{l}{--- for rate of fire}\\
                 BOFI&&&5/5/3&&&&\multicolumn{3}{l}{--- for FCR-W}\\
                 KS-12&&&1/1/0&&&&\multicolumn{3}{l}{--- for rate of fire}\\
                 KS-19&&&1/1/0&&&&\multicolumn{3}{l}{--- for rate of fire}\\
@@ -116,7 +127,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 KS-30&64&12/24/36&1/1/0&7&---&130&12&970\\
                 QF 5.25 inch&46&12/24/36&1/1/0&7&---&133&10&850\\
                 \bottomrule
-            \end{tabular}
+            \end{tabularx}
             \medskip
         \end{center}
     \end{minipage}
@@ -126,35 +137,31 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
     Quantitatively:
     \begin{itemize}
         \item Approximately doubling the rate of fire increases the hit rolls by one, with typical values of 1/1/0 at about 15 rounds per minutes, 2/2/1 at about 150 rounds per minute, 3/2/1 at about 500 rounds per minute, 4/3/2 at about 1000, and 5/3/2 at about 2000 and above. Intermediate rates of fire can have one of these hit rolls increased or decreased by one.
-        \item FCR-W and FCR-R effectively modify the hit rolls by a \plus{1} and \plus{2}.
+        \item FCR-W and FCR-R effectively modify the hit rolls by \plus{1} and \plus{2}.
+        \item A laser rangefinder (LRF) effectively modifiers the hit rolls by \plus{1}.
+        \item As we will see below, sections have their hit rolls modified by \minus{1}.
+        \item Proximity fuzes increase the hit rolls by \plus{1} (e.g., BOFI).
         \item The base damage rating is 1 for \lessthanorequaltobefore{14.5}~mm, 2 for 20--23~mm, 3 for 25--30~mm, 4 for 35--40~mm, 5 for 57~mm, and 6 for 85--100~mm. I have extended this to 7 for \greaterthanorequaltobefore{120}~mm.
-        \item The damage rating is increased by one if the rate of fire is 1800 rounds per minute or more.
+        \item The damage rating is increased by one if the rate of fire is 1800 rounds per minute or more (e.g., M55, ZPU-4, Gemag, and M167).
     \end{itemize}
+    These model values are shown in the second section of the table.
 
-    Most of the original values can be used as they are, but a few of the hit rolls and damage ratings do not fit this general pattern and need adjusting. Also, for guns for which the sources give different values, a single set needs to be adopted. These are shown in the second section of the table. Specifically:
+    Most of the original values can be used as they are, but a few of the hit rolls and damage ratings do not fit this general pattern and need adjusting. Also, for guns for which the sources give different values, a single set needs to be adopted. These are shown in the third section of the table. Specifically:
     \begin{itemize}
 
         \item ZPU-2: Malcolm Pipes gives this a damage rating of 3 (more than the ZPU-4) whereas AS gives it a rating of 1 (equal to the ZPU-1). Pipes gives this hit rolls of 4/3/1 whereas AS gives it 4/3/2. The ZPU-2 should have both hit rolls and damage ratings intermediate to those of the ZPU-1 and ZPU-4, but this is impossible as these only differ by one. The solution in {\AirStr} seems to be a good compromise: give it the hit rolls of the ZPU-4 but the damage rating of the ZPU-1. I adopt the AS values.
 
-        \item ZPU-4 and ZU-23: There are six AAA batteries with rates of fire per mount of about 2000 rounds per minute or more: the M55, ZPU-4, twin Rh-202, M167, ZU-23, and Gemag. After accounting for the \plus{1} modifier for the FCR-R of the M167 and Gemag, all have hit rolls of 5/4/3 except for the ZPU-4 from {\TSOH} (although the one from {\AirStr} does have 5/4/3) and the ZU-23. Furthermore, all of these except for the ZU-23 (both {\AirStr} and {\TSOH} versions) have damage ratings increased by one above their baseline values. It seems that either there is some reason to reduce the effectiveness of the ZPU-4 and ZU-23 compared to these other guns, or perhaps they have inconsistent values rolls.
-
-            The ZU-23 is undeniably basic, and one might think that would be reason to reduce its effectiveness. However, the TCM-20 is basic too and has both a lower rate of fire than the ZU-23 (1450 compared to 2000) and a smaller caliber (20~mm compared to 23~mm), yet its hit rolls are higher than the ZU-23 in {\TSOH} and its damage rating is the same.
-
-            I think the best solution is to give these guns the values we would expect from comparing them to other guns with similar rate of fire and caliber. Therefore, I give both the ZPU-4 and ZU-23 hit rolls of 5/4/3 and the ZU-23 a damage rating of 3.
-
-            (I also considered the idea that increasing the rate of fire increases \emph{either} the hit rolls \emph{or} the damage rating. However, while this might explain the ZPU-4 from {\TSOH} and the twin Rh-202, it does not correctly predict the values of the M167 or Gemag.)
+        \item ZPU-4 and ZU-23: There are six AAA batteries with rates of fire per mount of about 2000 rounds per minute or more: the M55, ZPU-4, twin Rh-202, M167, ZU-23, and Gemag. After accounting for the \plus{1} modifier for the FCR-R of the M167 and Gemag, all have hit rolls of 5/4/3 except for the ZPU-4 from {\TSOH} (although the one from {\AirStr} does have 5/4/3) and the ZU-23. Furthermore, all of these except for the ZU-23 (both {\AirStr} and {\TSOH} versions) have damage ratings increased by one above their baseline values. It seems that either there is some reason to reduce the effectiveness of the ZPU-4 and ZU-23 compared to these other guns, or perhaps they have inconsistent values rolls. The ZU-23 is undeniably basic, and one might think that would be reason to reduce its effectiveness. However, the TCM-20 is basic too and has both a lower rate of fire than the ZU-23 (1450 compared to 2000) and a smaller caliber (20~mm compared to 23~mm), yet its hit rolls are higher than the ZU-23 in {\TSOH} and its damage rating is the same. I think the best solution is to give the ZPU-4 and ZU-23 the values we would expect from comparing them to other guns with similar rate of fire and caliber. Therefore, I give these guns hit rolls of 5/4/3 and the ZU-23 a damage rating of 3. (I also considered the idea that increasing the rate of fire increases \emph{either} the hit rolls \emph{or} the damage rating. However, while this might explain the ZPU-4 from {\TSOH} and the twin Rh-202, it does not correctly predict the values of the M167 or Gemag.)
 
         \item Single RH-202: The single Rh-202 has unexpectedly low original hit rolls of 3/2/1 for its rate of fire. The values of 4/3/2 for the ZPU-2 and TCM-20, which have a similar rate of fire, are probably more appropriate.
 
-        \item Twin Rh-202: The twin has an unexpectedly low original damage rating of 2 for its rate of fire. A value of 3, increased by one from the baseline for the caliber, is probably more appropriate.
-
-            Malcolm Pipes gives values for the Rh-202, but it is not clear whether they are for the single or twin mount. He gives hit rolls of 3/2/1 (equal to the {\AirStr} values for the single mount) but a damage rating of 3 (equal to the value I have adopted for the twin mount). I do not adopt this combination of values either for the single or twin Rh-202.
+        \item Twin Rh-202: The twin has an unexpectedly low original damage rating of 2 for its rate of fire. A value of 3, increased by one from the baseline for the caliber, is probably more appropriate. Malcolm Pipes gives values for the Rh-202, but it is not clear whether they are for the single or twin mount. He gives hit rolls of 3/2/1 (equal to the {\AirStr} values for the single mount) but a damage rating of 3 (equal to the value I have adopted for the twin mount). I do not adopt this combination of values either for the single or twin Rh-202.
 
         \item Oerlikon GDF: The Oerlikon GDF has unexpectedly high original hit rolls of 5/4/3 for its rate of fire. The values of 4/3/2 for the ZPU-2, which has a similar rate of fire, are probably more appropriate.
 
         \item BOFI: The BOFI has unexpectedly low original hit rolls of 4/4/3. Values of 5/5/3, obtained by applying a \plus{2} modifier for FCR-W to the Bofors L/70, are probably more appropriate. (Note that the “BOFI” in {\AirStr} corresponds to what I call the “BOFI-R” below.)
 
-        \item KS-19: Malcolm Pipes gives hit rolls of 2/1/0 whereas AS gives 1/1/0. While it makes sense that the hit roll is less at short range than medium range, it makes less send that in this case the hot roll for the KS19 (15 rounds per minute) is equal to that of the S-60 (110 rounds per minute). I prefer the {\AirStr} values.
+        \item KS-19: Malcolm Pipes gives hit rolls of 2/1/0 whereas AS gives 1/1/0. While it makes sense that the hit roll is less at short range than medium range, it makes less sense that in this case the hit roll for the KS-19 (15 rounds per minute) is equal to that of the S-60 (110 rounds per minute). I prefer the {\AirStr} values.
 
     \end{itemize}
 
@@ -170,53 +177,66 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
 
     \end{itemize}
 
+    Values for new guns are shown in the fourth section of the table. They are based on the empirical model discussed here and are explained in more detail in the sections for the specific guns.
+
     \noteparagraph{AAA Values for Sections} I now turn to sections. Again, my aim is to empirically understand the underlying model sufficiently to identify anomalous values and to apply it to other guns.
 
-    The upper part of the following table shows the original data for gun sections from {\AirStr} (AS), {\EOTG} (EOTG), and {\TSOH} (TSOH). Again, I have added columns with the caliber, burst rate of fire per mount, and muzzle velocity.
+    The upper part of the following table shows the original data for gun sections from {\AirStr} (AS), {\EOTG} (EOTG), and {\TSOH} (TSOH), and Malcolm Pipes' 2026 compilation (MP). Again, I have added columns with the caliber, burst rate of fire per mount, and muzzle velocity. Values in red will be subsequently modified.
 
     \begin{center}
         \medskip
+        \smallskip
+        AAA VALUES FOR SECTIONS\par
+        \medskip
         \scriptsize
-        \begin{tabular}{lrlllllrrl}
+        \begin{tabularx}{\linewidth}{LrlllllrrL}
             \toprule
             Type
             &\multicolumn{1}{c}{\vertical{Maximum Altitude}}
             &\multicolumn{1}{c}{\vertical{Ranges}}
             &\multicolumn{1}{c}{\vertical{Hit Rolls}}
             &\multicolumn{1}{c}{\vertical{Damage}}
-            &\multicolumn{1}{c}{\vertical{FCR}}
+            &\multicolumn{1}{c}{\vertical{FCR/LRF}}
             &\multicolumn{1}{c}{\vertical{Caliber (mm)}}
             &\multicolumn{1}{c}{\vertical{Rate of fire (RPM)}}
             &\multicolumn{1}{c}{\vertical{Muzzle Velocity (m/s)}}
             &\multicolumn{1}{c}{\vertical{Source}}
             \\
             \midrule
-            \multicolumn{10}{c}{Original}\\
+            \multicolumn{10}{c}{Original Values}\\
             \midrule
-            M16&5&2/3/4&4/3/2&2&---&12.7&2000&890&EOTG\\
-            Mobile ZPU-4&6&2/3/5&3/3/2&2&---&14.5&2400&1000&AS\\
+            M16&5&2/3/4&4/3/2&2&---&12.7&2000&890&EOTG/MP\\
+            Mobile ZPU-4&6&2/3/5&\highlight{3/3/2}&2&---&14.5&2400&1000&AS\\
+            Mobile ZPU-4&6&2/3/5&\highlight{5/4/3}&2&---&14.5&2400&1000&MP\\
             M163&8&2/4/6&5/4/3&3&R&20&3000&1030&AS\\
+            M163&8&2/4/6&\highlight{6/5/4}&3&R&20&3000&1030&MP\\
             M3 TCM-20&8&2/4/6&3/3/2&2&---&20&1450&860&EOTG\\
-            Panhard&8&2/4/6&2/2/1&2&---&20&1450&860&AS\\
-            Mobile ZU-23&9&2/5/8&2/2/1&2&---&23&2000&980&AS\\
-            Nile 23&9&2/5/8&3/3/2&2&---&23&2000&980&EOTG\\
-            ZSU-23-4&9&2/5/8&5/4/3&3&W&23&4000&980&AS\\
+            Panhard&8&2/4/6&\highlight{2/2/1}&2&---&20&1450&860&AS\\
+            Panhard&8&2/4/6&3/3/2&2&---&20&1450&860&MP\\
+            Mobile ZU-23&9&2/5/8&\highlight{2/2/1}&2&---&23&2000&980&AS/MP\\
+            Nile 23&9&2/5/8&\highlight{3/3/2}&2&---&23&2000&980&EOTG/MP\\
+            ZSU-23-4&9&2/5/8&5/4/3&3&W&23&4000&980&AS/MP\\
             Blazer&10&3/6/9&5/4/3&4&W&25&1800&1040&AS\\
-            M53/59&11&4/7/9&4/3/2&3&---&30&1000&1000&AS\\
+            Blazer&\highlight{9}&3/6/9&5/4/3&4&W&25&1800&1040&MP\\
+            M53/59&11&4/7/9&\highlight{4/3/2}&3&---&30&1000&1000&AS/MP\\
             AMX-30&11&4/7/9&5/4/3&3&W&30&1200&970&AS\\
-            ZSU-30-2&11&4/7/9&5/4/3&4&W&30&5000&960&AS\\
+            ZSU-30-2&11&4/7/9&5/4/3&4&W&30&5000&960&AS/MP\\
             Gepard&12&4/8/10&5/4/3&4&W&35&1100&1175&AS\\
-            ZSU-57-2&18&5/10/15&2/1/1&5&---&57&240&1000&EOTG\\
+            Gepard&12&\highlight{4/8/12}&5/4/3&4&W&35&1100&1175&MP\\
+            ZSU-57-2&18&5/10/15&2/1/1&5&---&57&240&1000&EOTG/MP\\
             \midrule
-            \multicolumn{10}{c}{Modified}\\
+            \multicolumn{10}{c}{Modified or Adopted Values}\\
             \midrule
-            Mobile ZPU-4&&&4/3/2&&\multicolumn{5}{l}{--- to match the ZPU-4}\\
-            Panhard&&&3/3/2&&\multicolumn{5}{l}{--- to match the M3 TCM-20}\\
-            Mobile ZU-23&&&4/3/2&3&\multicolumn{5}{l}{--- to match the ZU-23}\\
-            Nile 23&&&4/3/2&3&\multicolumn{5}{l}{--- to match the ZU-23}\\
-            M53/59&&&3/2/1&&\multicolumn{5}{l}{--- to match the AMX-30}\\
+            Mobile ZPU-4&&&4/3/2&&&&\multicolumn{3}{l}{--- to match the ZPU-4}\\
+            M163&&&5/4/3&&&&\multicolumn{3}{l}{--- to match the M167}\\
+            Panhard&&&3/3/2&&&&\multicolumn{3}{l}{--- to match the M3 TCM-20}\\
+            Mobile ZU-23&&&4/3/2&3&&&\multicolumn{3}{l}{--- to match the ZU-23}\\
+            Nile 23&&&4/3/2&3&&&\multicolumn{3}{l}{--- to match the ZU-23}\\
+            Blazer&10&&&&&&\multicolumn{3}{l}{--- adopt {\AirStr} values}\\
+            M53/59&&&3/2/1&&&&\multicolumn{3}{l}{--- to match the AMX-30}\\
+            Gepard&&4/8/10&&&&&\multicolumn{3}{l}{--- adopt {\AirStr} values}\\
             \midrule
-            \multicolumn{10}{c}{New}\\
+            \multicolumn{10}{c}{New Values}\\
             \midrule
             AMX-13DCA&11&4/7/9&5/4/3&3&W&30&1200&970&\\
             M15&12&2/4/8&3/2/1&4&---&37&120&792\\
@@ -224,50 +244,44 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             M34&15&2/4/82&1/1/1&4&---&40&135&865&\\
             M42&15&4/8/12&2/2/1&4&---&40&270&865&\\
             \bottomrule
-        \end{tabular}
+        \end{tabularx}
         \medskip
     \end{center}
 
     Comparing similar weapons, batteries and sections have the same maximum altitudes, ranges, and damage ratings.
-    However, batteries (with four to six mounts) typically have a \plus{1} advantage on their hit rolls compared to sections (with two mounts).
-    In a very few cases, the difference is 0, and in a very few others, it is \plus{2}.
+    However, sections (with two mounts) typically have a \minus{1} modification to their hit rolls compared to batteries (with four to six mounts).
+    In a very few cases, the difference is 0, and in a very few others, it is \minus{2}.
     A difference of 1 in the hit rolls is commensurate with the approximate doubling of the rate of fire from a section to a battery.
 
     To determine the appropriate AAA for sections, the following recipe seems to work in most cases:
     \begin{itemize}
-        \item Take the value for an equivalent battery without FCR and apply an adjustment of \minus{1} to the hit rolls to account for the reduced rate of fire in the section. (Only do this if the rate of fire is reduced; see the comment on the ZSU-23-4 and ZSU-57-2 below.)
-        \item Apply an adjustment of \plus{1} to the hit rolls for FCR-R or similar.
-        \item Apply an adjustment of \plus{2} to the hit rolls for FCR-W.
-        \item The preceding steps would then predict hit rolls of 6/5/4 for the Blazer and 7/6/5 for the ZSU-23-4 and ZSU-30-2. To conform to the original values, I limit the hit rolls to 5/4/3. It would appear that in the underlying model, beyond a certain rate of fire, other factors take over to limit the probability of a hit.
+        \item Take the value for an equivalent battery apply an adjustment of \minus{1} to the hit rolls to account for the reduced rate of fire in the section. (Only do this if the rate of fire is reduced; see the comment on the ZSU-23-4 and ZSU-57-2 below.)
+        \item Limit the hit rolls to 5/4/3. The preceding guideline would predict hit rolls of 6/5/4 for the Blazer and 7/6/5 for the ZSU-23-4 and ZSU-30-2, so this limit is to conform to the original values. I suggest that in the underlying model, beyond a certain rate of fire, other factors take over to limit the probability of a hit.
     \end{itemize}
-
-    % One problem is that there are no 30~mm batteries, so data for 30~mm sections needs to be determined by comparison to smaller and larger calibers.
 
     Again, most of the original data can be used as they are, but a few of the values are worth commenting upon or need adjusting.
     \begin{itemize}
-        \item Agreements
 
-            The original hit rolls and the predicted hit rolls are in agreement for the M16 (from the M55 battery), M3 TCM-20 (from the TCM-20 battery), M163 (from the M167 battery), the Blazer (from the Gemag), and the Gepard (from the Oerlikon GDF).
+        \item Mobile ZPU-4: The original hit rolls for the mobile ZPU-4 section are 3/3/2, but 4/3/2 is predicted from the values of 5/4/3 for the battery and is in better agreement with the values for the M16. Malcolm Pipes gives the section the same hit rolls as the battery, despite the fewer mounts, which does not seem to be correct.
 
-        \item Mobile ZPU-4
+        \item M163: Malcolm Pipes gives the section the same hit rolls as the battery, despite the fewer mounts, which does not seem to be correct. I adopt the {\AirStr} hit rolls, which are in agreement with the empirical model.
 
-            The original hit rolls for the mobile ZPU-4 section are 3/3/2, but 4/3/2 is predicted from the values of 5/4/3 for the battery and is in better agreement with the values for the M16.
+        \item Panhard M3 VDA: The Panhard M3 VDA in {\AirStr} has unexpectedly low original hit rolls of 2/2/1 compared to the TCM-20 battery and the M3 TCM-20 section, despite having very similar guns. The values of 3/3/2 given by Malcolm Pipes are in agreement with those of the M3 TCM-20 section and those predicted from the TCM-20 battery.
 
-        \item Panhard M3 VDA
+        \item Mobile ZU-23 and Nile 23: The original hit rolls for the mobile ZU-23 and Nile 23 section are 2/2/1 and 3/3/2, despite them being quite similar. The model values of 4/3/2 are probably more appropriate and are in better agreement with the values for the M16. Also, as with the ZU-23 battery, a damage rating of 3 is probably more appropriate given their high rate of fire.
 
-            The Panhard M3 VDA has unexpectedly low original hit rolls of 2/2/1 compared to the TCM-20 battery and the M3 TCM-20 section, despite having very similar guns. Values of 3/3/2 are probably more appropriate.
+        \item Blazer: Malcolm Pipes gives this a maximum altitude of 9 rather than the 10 in {\AirStr}. The Blazer uses a 25~mm gun, and the {\AirStr} value is between that of 23~mm guns (9) and 30~mm guns (11), so I will adopt it. Following the model, the hit rolls would be 6/5/4, but they are limited to 5/4/3.
 
-        \item Mobile ZU-23 and Nile 23
+        \item ZSU-23-4: The ZSU-23-4 has four barrels whereas the ZU-23-2 has two, so the normal \minus{1} modifier for sections does not apply. Following the model and with the \plus{2} modifier for FCR-W, the hit rolls would be 7/6/5, but they are limited to 5/4/3.
 
-            The original hit rolls for the mobile ZU-23 and Nile 23 section are 2/2/1 and 3/3/2, despite them being quite similar. The predicted values of 4/3/2 are probably more appropriate and are in better agreement with the values for the M16. Also, as with the ZU-23 battery, a damage rating of 3 is probably more appropriate given their high rate of fire.
+        \item ZSU-30-2: Following the model, the hit rolls would be 7/6/5, but they are limited to 5/4/3.
 
-        \item M53/59
+        \item M53/59: The original hit rolls for the M53/59 section are 4/3/2. The predicted values of 3/2/1, derived from the modified hit rolls of 4/3/2 for the Oerlikon GDF-001 battery and also from the AMX-30SA after discounting the FCR-W, are probably more appropriate.
 
-            The original hit rolls for the M53/59 section are 4/3/2. The predicted values of 3/2/1, derived from the modified hit rolls of 4/3/2 for the Oerlikon GDF battery and also from the AMX-30SA after discounting the FCR-W, are probably more appropriate.
+        \item Gepard: Malcolm Pipes increases the long range to 12, from 10 in {\AirStr}. This might be correct; perhaps later ammunition give longer range than the GDF-001 and I note that he gives a similar increase to the GDF-005. However, I can find no evidence for such an improvement. I adopt the {\AirStr} value.
 
-        \item ZSU-57-2
+        \item ZSU-57-2: The ZSU-57-2 section has the same hit rolls as the S-60 battery. This is probably appropriate, as the ZSU-57-2 is a twin mount and this largely compensates for the reduced rate of fire of the section.
 
-            The ZSU-57-2 section has the same hit rolls as the S-60 battery. This is probably appropriate, as the ZSU-57-2 is a twin mount and this largely compensates for the reduced rate of fire of the section. The same applies to the quad ZSU-23-4 compared to the twin ZU-23.
     \end{itemize}
 
     I adopt these modified values.
@@ -276,27 +290,13 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
 
     \begin{itemize}
 
-        \item Panhard M3 VDA
+        \item Panhard M3 VDA: The Panhard M3 VDA has an FCR-R capability, which is discussed below but not considered here.
 
-            The Panhard M3 VDA has an FCR-R capability, which is discussed below but not considered here.
-
-        \item AMX-30 DCA
-
-            The real AMX-30 DCA does not have an FCR. The AMX-30 DCA in the game seems to correspond to the similar AMX-30SA, which does.
+        \item AMX-30 DCA: The real AMX-30 DCA does not have an FCR. The AMX-30 DCA in the game seems to correspond to the similar AMX-30SA, which does.
 
     \end{itemize}
 
     The AAA values for new guns are discussed when they are presented.
-
-    \noteparagraph{Summary}
-    I have developed an empirical understanding of the model for AAA values.
-    Consideration of outliers suggests:
-    \begin{itemize}
-        \item Increasing in the hit rolls of the mounted ZPU-4, single Rh-202, Panhard M3 VDA, ZU-23 (and derivatives), and BOFI.
-        \item Decreasing the hit rolls of the Oerlikon GDF.
-        \item Increasing the damage rating of the twin Rh-202 and the ZU-23 guns (and derivatives).
-    \end{itemize}
-    I have adopted these changes.
 
 }
 
