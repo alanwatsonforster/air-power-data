@@ -259,3 +259,34 @@
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QSkyguard\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial states that the frequency is 8.6–9.5 GHz (NATO I-band or IEEE X-band).\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qtable:fcr-units FCR Unit Table\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe table:infantry-sam-unit Infantry SAM Unit Table summarizes the properties of infantry SAM units.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe table:infantry-sam Infantry SAM Table summarizes the properties of the actual missiles: guidance mode; launch roll; turn rate; flight time; visibility; ECCM, chaff, and flare ratings; whether the missile is active homing (AH) or has a home-on-jam (HOJ) capability; boost phase in FPs; base speed and sustainer duration in game turns; minimum altitude (and modifier for targets at T level); hit rolls for direct and proximity hits; and damage ratings for direct and proximity hits.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgives this a seeker type of I, but that does seem appropriate for an uncooled PbS seeker.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgives a turn rate of HT, but the control capability seems to be the same as in the SA-7B and SA-15.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgives a turn rate of BT, which I adopt.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgives this a speed of 10.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgives this a type A seeker, but that does seem appropriate; the first type A seekers in Soviet AAMs did not appear until 1985 in the AA-8C.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgives a turn rate of ET, but the control capability seems to be the same as in the SA-7A and SA-7B.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QIt was also supplied by the CIA to the Afghan Mujahedeen and the Nicaraguan Contras.FIM-43C Squad The launcher and SAM values are from .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThey saw service in the 1982 South Atlantic War, the Soviet-Afghan War, the Angolan Civil War, the Libyan Invasion of Chad, the Tajik Civil War, the Chechen War, the Sri Lankan Civil War, the Syrian Civil War, and the Russian Invasion of Ukraine.FIM-92A/B/C/D Squad The launcher and SAM values for the A model are from .\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qhas the visibility as 2, but looking at photos I don't see much differ\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QBlowpipe Squad Blowpipe squad\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QBlowpipe Squad The launcher and SAM values are from .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QBlowpipe Squad The launcher and SAM values are from .\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QJavelin Squad Javelin squad\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QJavelin Squad The launcher and SAM values for Javelin are from .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QJavelin Squad The launcher and SAM values for Javelin are from .\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QStarburst Squad Starburst squad\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QStarburst Squad The launcher and SAM values for Starburst are just those for Javelin but with the OG guidance replaced by LG guidance.\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QStarstreak Squad Starstreak squad\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QStarstreak Squad The launcher and SAM values are from Malcolm Pipes.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QStarstreak LML Squad The SAM values are from Malcolm Pipes.\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QMistral Squad Mistral squad\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QMistral Squad The launcher and SAM values are from .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QMistral Squad The launcher and SAM values are from .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QIt was subsequently used by Argentina, Australia, Bahrain, Brazil, the Czech Republic, Iran, Ireland, Lithuania, Norway, Pakistan, Singapore, Thailand, Tunisia, the UAE, Ukraine, and Venezuela.RBS 70 Squad For the RBS 70: The launcher and SAM values are from .\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QAyn-al-Saqr Squad The launcher and SAM values are taken to be equal to those of the SA-7B.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtable:infantry-sam-unit Infantry SAM Unit Table\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qtable:infantry-sam-unit Infantry SAM Unit Table\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qtable:infantry-sam Infantry SAM Table\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QStarburst was originally called “Javelin S15”.\\E$"}

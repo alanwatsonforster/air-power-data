@@ -1,9 +1,9 @@
 {
-    "name": "QF 5.25 inch",
+    "name": "QF 5.25-inch",
     "country": "UK",
     "year": 1942,
-    "description": "QF 5.25 inch air-defense section",
-    "symbols": "air-defense/gun/towed/section",
+    "description": "QF 5.25-inch air-defense battery",
+    "symbols": "air-defense/gun/towed/battery",
     "text": "133",
     "defensestrength": "4S",
     "sightingrange": 18,
@@ -17,9 +17,9 @@
             36
         ],
         "hitroll": [
-            1,
-            1,
-            0
+            2,
+            2,
+            1
         ],
         "maximumrelativealtitude": 46,
         "damagerating": 7
