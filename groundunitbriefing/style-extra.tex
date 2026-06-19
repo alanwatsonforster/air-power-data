@@ -4,10 +4,9 @@
 
 % SUBSECTIONS WITH COUNTERS
 
-% The aim here is to have a counter image at the left margin and a subsection
-% describing the counter wrapped around it.
+% The aim here is to have counter images at the left margin and a subsection
+% describing the counter indented appropriately.
 
-\usepackage{hanging}
 \usepackage{needspace}
 
 \makeatletter
@@ -16,11 +15,7 @@
 
 \newcommand{\@subsectionwithcounters}[3]{%
     \Needspace{#1\baselineskip}%
-    \hangpara{5em}{-#1}%
-    \makebox[0em][r]{#3\hspace{0.5em}}%
-    {\bfseries #2:}
-    \addcontentsline{toc}{subsection}{#2}%
-    \ignorespaces\@ifnextchar\par{\@gobble}{}
+    \@unindentedsubsection[#2]{\makebox[0em][r]{#3\hspace{0.5em}}#2}
 }
 
 \newcommand{\subsectionwithcounter}[2]{%
@@ -53,8 +48,11 @@
     }
 }
 
-\newcommand{\subsectionwithcountercontinued}[2]{%
-    \@subsectionwithcounters{#1}{#2}{\hfill}
+\newenvironment{withcounters}{%
+    \setlength{\leftskip}{5em}%
+    \ignorespaces\@ifnextchar\par{\@gobble}{}
+}{%
+    \setlength{\leftskip}{0em}
 }
 
 \makeatother
