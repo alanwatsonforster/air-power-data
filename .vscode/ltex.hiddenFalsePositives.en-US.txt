@@ -231,3 +231,31 @@
 {"rule":"LC_AFTER_PERIOD","sentence":"^\\QEleven were installed in Gibraltar starting in 1953 and were manned until the early 1980s.QF 5.25 inch Battery The AAA values are the same as for the KS-30, except the hit rolls are increased by one for proximity fuzes and the maximum altitude is reduced from 64,000 to 46,000 ft.\\E$"}
 {"rule":"LC_AFTER_PERIOD","sentence":"^\\QIt also served with Australia, Belgium, Canada, Sri Lanka, Cyprus, India, Ireland, Israel, Malta, Nepal, New Zealand, Pakistan, South Africa, Yugoslavia, and Portugal.QF 3.7-inch Battery Wikipedia gives a maximum altitude of 45k feet, a muzzle velocity of 1044 m/s (significantly more than other similar guns), and a rate of fire of 20 rounds per minute.\\E$"}
 {"rule":"LC_AFTER_PERIOD","sentence":"^\\QEleven were installed in Gibraltar starting in 1953 and were manned until the early 1980s.QF 5.25-inch Battery The AAA values are the same as for the KS-30, except the hit rolls are increased by one for proximity fuzes and the maximum altitude is reduced from 64,000 to 46,000 ft.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe table:fcr-units FCR Unit Table summarizes the properties of FCR units.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QRadar Year Role Frequency (GHz) NATO Band IEEE Band MTI IFF Notes SCR-584 1944 S/T 2.7–2.8 E S N SCR-784 1945 S/T 2.7–2.8 E S N SON-4 1945 S/T 2.70-2.86 E S N Blue Cedar 1952 S/T 3.00–3.12 F S N SON-9 1955 S/T 2.70–2.86 E S N SON-30 S/T — E S N Y SON-50 S/T 9.25–9.70 I X N Y Super Fledermaus 1965 S/T 8.6-9.6 I X Y N MTI from 1970 Flycatcher 1979 S 9.2 I X Y Y MTI from 1992?\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSkyguard 1977 S/T 8.6–9.5 I X Y M163/M167 1967 R 9.2–9.5 I X — N Panhard M3 DCA 1975 S/R — E S Y N ZSU 23-4 1965 S/T 14.6–15.6 J Ku N Y IFF from 1977 Sinai 23 1992 S/R — E S Y N Tunguska 1984 S — E S Y Y T — J X — — Gepard 1976 S — E S Y Y T — J Ku — — M51 1953 T — I X N AMX-13DCA 1969 AMX-30SA 1979 BOFI-R\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q MobileRadar on the \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial on the \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q MobileRadar on the \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q RadioNerds on the \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadioTutorial states that the frequency is 2.70–2.86 GHz.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial states that it is a tracking radar, and was typically used with a P-8 (Knife Rest A) or P-10 (Knife Rest B) search radar.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QBlue Cedar\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial gives it as 2.7–2.86 GHz.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial gives the frequency as S band.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe photo on RadioTutorial shows an integrated IFF system.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWikipedia and RadarTutorial both state it was used for 130 mm guns, but do not mention others.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial states that it had replaced the SON-4 and SON-9 by 1957, but the SON-9 only entered service in 1955.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial gives the frequency as 9.25–9.7 GHz (X band).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial states it was used for 57 and 130 mm guns.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial states that it is mounted on a URAL-375.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWikipedia on the \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q RadarTutorial on the \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QChant, Christopher, 1989 (Brassey's Defence Publishers): “\\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q”.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QSuper Fledermaus Wikipedia states there were two versions: the Feuerleitgerät (FLt Gt) 63 (from 1965) and the Feuerleitgerät 69 (from 1970).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSuper Fledermaus Wikipedia states there were two versions: the Feuerleitgerät (FLt Gt) 63 (from 1965) and the Feuerleitgerät 69 (from 1970).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWikipedia also states these the prototype of the Gepard used a Flt Gt 63.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QFlycatcher Flycatcher is similar to the Cheetah radar, so presumably FCR-C.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadioTutorial states the search frequency is 9.2 GHz (NATO I band) and the tracking frequency is either I or K band.\\E$"}
+{"rule":"THIS_NNS","sentence":"^\\QHe also mentions that the radar is used in the Goalkeeper CIWS, and the Wikipedia page on this states it searches in I band and tracks in both I and K bands.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qvan Elk, Bert (2020): \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QSkyguard\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarTutorial states that the frequency is 8.6–9.5 GHz (NATO I-band or IEEE X-band).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Qtable:fcr-units FCR Unit Table\\E$"}
