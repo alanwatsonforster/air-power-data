@@ -71,3 +71,17 @@
 {"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe 1976 Operator's Manual describes the use of an AN/VPS-2 range-only radar.\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe 1976 Operator's Manual describes the use of an AN/TVS-2B night sight.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSingh, M. (Pen & Sword, 2020): “Anti-Aircraft Artillery in Combat 1950–1972: Air Defence in the Jet Age”.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QGround-Combat and Transport Units and provide eleven types of ground-combat and transport unit: light, medium, and heavy armor, infantry, infantry FAC, infantry SAM, towed artillery, infantry HQ, armored HQ, truck, and light truck.\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QInfantry Platoon infantry platoon\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QInfantry Weapons Platoon An infantry weapons platoon is not strictly necessary, but it adds to the look-and-feel, and we might consider giving them longer range in ground-to-ground combat.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QInfantry HQs In the scenarios HQ platoons are included at a ratio of about one to every nine normal platoons, so they seem to be battalion HQs.\\E$"}
+{"rule":"KIND_OF_A","sentence":"^\\QThe primary factors that determine the type of an armored-vehicle unit are its weapons and protection level.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QConsidering the vehicles depicted in scenarios in and , it seems that typically: Light = protection from 14.5 mm and smaller rounds.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QTanks Protection Levels\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTo extend this to other tanks and AFVs, we use Wargames Research Group (WRG) 1950–1985 miniatures rules, which give armor classes of I to X for a range of AFVs:\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QMedium Tanks The WRG 1950–1985 rules give class IV to IIX (i.e., medium) protection to the AMX-30, ASU-85, Centurion, Comet, Cromwell, ISU-122, ISU-152, Kanonen JPz, Leopard 1, M103, M4 Sherman, M46, M47, M48, M48, M60, Panzer 68, SU-100, T-34, T-54, T-55, T-62, TAM, Type 61, Type 74, and Vijayanta.\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QOpen Tanks Open tanks are uncommon, but we need an open target class for M3 half-track APCs, so it is easy to apply it here too.\\E$"}
+{"rule":"LC_AFTER_PERIOD","sentence":"^\\QHeavy and medium APCs are typically converted tanks.APC Units Heavy APCs These are converted tanks.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QOT-64 SKOT: Wikipedia states the maximum armor is 13 mm.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTPz Fuchs: Wikipedia states that it is protected against small-arms rounds.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QLight IFVs The WRG 1950–1985 rules give class II or III (i.e., light) protection to the AMX-10P, BMD, BMP-1, Commando, Dutch AIFV (YPR-765), FV432 (FV432 RARDEN), HS.30 (SPz Lang), M113 (M113 FSC), SPz Kurz, UK MICV (Warrior), and XM723 (M2/M3 Bradley).\\E$"}
