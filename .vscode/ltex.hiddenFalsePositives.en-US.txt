@@ -71,17 +71,56 @@
 {"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe 1976 Operator's Manual describes the use of an AN/VPS-2 range-only radar.\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThe 1976 Operator's Manual describes the use of an AN/TVS-2B night sight.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSingh, M. (Pen & Sword, 2020): “Anti-Aircraft Artillery in Combat 1950–1972: Air Defence in the Jet Age”.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QMuch of the data here is adapted from , , and , from , and from Malcolm Pipe's extensive compendium of AAA and SAM units.\\E$"}
+{"rule":"DOUBLE_PUNCTUATION","sentence":"^\\QMuch of the data here is adapted from , , and , from , and from Malcolm Pipe's extensive compendium of AAA and SAM units.\\E$"}
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QGround-Combat and Transport Units and provide eleven types of ground-combat and transport unit: light, medium, and heavy armor, infantry, infantry FAC, infantry SAM, towed artillery, infantry HQ, armored HQ, truck, and light truck.\\E$"}
 {"rule":"PHRASE_REPETITION","sentence":"^\\QInfantry Platoon infantry platoon\\E$"}
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QInfantry Weapons Platoon An infantry weapons platoon is not strictly necessary, but it adds to the look-and-feel, and we might consider giving them longer range in ground-to-ground combat.\\E$"}
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QInfantry HQs In the scenarios HQ platoons are included at a ratio of about one to every nine normal platoons, so they seem to be battalion HQs.\\E$"}
 {"rule":"KIND_OF_A","sentence":"^\\QThe primary factors that determine the type of an armored-vehicle unit are its weapons and protection level.\\E$"}
-{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QConsidering the vehicles depicted in scenarios in and , it seems that typically: Light = protection from 14.5 mm and smaller rounds.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe gun is most commonly mounted in a turret, but AFVs with casemate guns such as the SU-100, Kanonen Jpz, and Stridsvagn 103 are also considered to be tanks.\\E$"}
 {"rule":"SENTENCE_WHITESPACE","sentence":"^\\QTanks Protection Levels\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QConsidering the vehicles depicted in scenarios in and , it seems that typically: Light = protection from 14.5 mm and smaller rounds.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTo extend this to other tanks and AFVs, we use Wargames Research Group (WRG) 1950–1985 miniatures rules, which give armor classes of I to X for a range of AFVs:\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QHeavy Tanks The WRG 1950–1985 rules give class IX or X (i.e., heavy) protection to the Chieftain, Conqueror, EPC (Leclerc), IS-3, Leopard 2, Merkava 1, Shir 2 (Challenger 1), Stridsvagn 103, T-10, T-64, T-72, and T-80.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QMedium Tanks The WRG 1950–1985 rules give class IV to IIX (i.e., medium) protection to the AMX-30, ASU-85, Centurion, Comet, Cromwell, ISU-122, ISU-152, Kanonen JPz, Leopard 1, M103, M4 Sherman, M46, M47, M48, M48, M60, Panzer 68, SU-100, T-34, T-54, T-55, T-62, TAM, Type 61, Type 74, and Vijayanta.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QLight Tanks The WRG 1950–1985 rules give class II and III (i.e., light) protection to the AMX 10RC, AMX 13, Commando, Cougar, Fox, SpPz Luchs, M8, M24, M41, M114A2, M551, Panhard AML, Panhard EBR, PT-76, Saracen, Scimitar, and Scorpion.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QStrv 74: This has a similar weight to the M41 (light).\\E$"}
 {"rule":"PHRASE_REPETITION","sentence":"^\\QOpen Tanks Open tanks are uncommon, but we need an open target class for M3 half-track APCs, so it is easy to apply it here too.\\E$"}
-{"rule":"LC_AFTER_PERIOD","sentence":"^\\QHeavy and medium APCs are typically converted tanks.APC Units Heavy APCs These are converted tanks.\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QOT-64 SKOT: Wikipedia states the maximum armor is 13 mm.\\E$"}
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTPz Fuchs: Wikipedia states that it is protected against small-arms rounds.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QStrf 9040/CV90: Wikipedia states that the CV90 has frontal protection against 30 mm APFSDS rounds.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QLight IFVs The WRG 1950–1985 rules give class II or III (i.e., light) protection to the AMX-10P, BMD, BMP-1, Commando, Dutch AIFV (YPR-765), FV432 (FV432 RARDEN), HS.30 (SPz Lang), M113 (M113 FSC), SPz Kurz, UK MICV (Warrior), and XM723 (M2/M3 Bradley).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QPbv 301: Wikipedia states the armor ranges from 8 to 50 mm, with upper front armor being 34 mm (20 mm at 55 degree).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QPiranha IFV: Presumably similar protection to LAVs.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QStrkyer ICVD: This is derived from the Stryker (light).\\E$"}
+{"rule":"LC_AFTER_PERIOD","sentence":"^\\QHeavy and medium APCs are typically converted tanks.APC Units Heavy APCs These are converted tanks.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QNakpadon: This is an improved version of the Nagmashot and Nagmachon.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QNagmashot: Based on the Centurion (medium).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe in-service dates for the Nagmashot (1990) and Nagmachon (2000) are guesses.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QOT-64 SKOT: Wikipedia states the maximum armor is 13 mm.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QPiranha APC: Presumably similar protection to LAVs.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTPz Fuchs: Wikipedia states that it is protected against small-arms rounds.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QArmored Truck Platoon Mobility The BTR-40 is based on the GAZ-63 truck.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBeyond these, we have: SKP/VKP/SKPF/VKPF: Wikipedia states the armor is 8 to 20 mm, which is would be light if the vehicle were not open.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBeyond these, we have: SKP/VKP/SKPF/VKPF: Wikipedia states the armor is 8 to 20 mm, which would be light if the vehicle were not open.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSKP/VKP/SKPF/VKPF: \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q [Light example]BTR-152K.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QConventional gun-armed tank destroyers such as the Kanonen JPz are considered to be tanks.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QArmored Anti-Tank Missile Vehicles Anti-tank units are mainly chrome.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QMedium Anti-Tank Missile Vehicles The WRG 1950–1985 rules give class IV (i.e., medium) protection to the Raketen JPz.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBeyond this, we have: Jaguar: This is Raketen JPz (medium) upgraded with HOT missiles.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBeyond these, we have: Fennek MRAT: Based on the Fennek (light).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q[Medium examples]Rakaten Jpz and Jaguar.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QArmored Reconnaissance Vehicles Again, reconnaissance vehicles are mainly chrome.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QArmored Mortars For the protection class, we have: FV432: based on FV432 (light).\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QArmored Artillery Light Armored Artillery The WRG 1950–1985 rules give class II (i.e., light) protection to the Abbot, AMC-155GCT (AMX-30 AuF1), L33, M52, M108, M109, SP.73 (2S3), SP.74 (2S1), and VK.155 (BKan 1).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QArmored Artillery Light Armored Artillery The WRG 1950–1985 rules give class II (i.e., light) protection to the Abbot, AMC-155GCT (AMX-30 AuF1), L33, M52, M108, M109, SP.73 (2S3), SP.74 (2S1), and VK.155 (BKan 1).\\E$"}
+{"rule":"PHRASE_REPETITION","sentence":"^\\QTruck Platoon truck platoon\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q[Example]Bv 202.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QTracked Artillery To count as a hard target, both the crew and weapons must be protected by armor.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QMobile Artillery To count as a hard target, both the crew and weapons must be protected by armor.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QMobile Rocket Artillery To count as a hard target, both the crew and weapons must be protected by armor.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QMobile Rocket Artillery To count as a hard target, both the crew and weapons must be protected by armor, which is not the case here.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QMobile Missile Artillery Batteries Missile artillery is mainly included to serve as a target.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q[Examples]M1003 Pershing II and OTR-21 Tocha (SS-21).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q[Example]2A18 (T-12) and 2A45 (Sprut).\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtable:ground-combat-units Ground-Combat and Transport Unit Table a Platoons and batteries are available as sections and squads with corresponding modifications to their damage resiliences and VPs.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtable:vehicle-types Vehicle Types Table\\E$"}

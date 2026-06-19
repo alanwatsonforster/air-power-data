@@ -8,4 +8,5 @@
     "latex-workshop.formatting.latexindent.path": "",
     "editor.formatOnSave": true,
     "latex-workshop.format.fixQuotes.enabled": true,
+    "latex-workshop.message.badbox.show": "overfull",
 }
