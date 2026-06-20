@@ -1,3 +1,20 @@
+%!TEX root = groundunitbriefing.tex
+
+% LTeX: enabled=true
+
+% LTex: dictionary+=SAMs
+% LTex: dictionary+=CCUs
+% LTex: dictionary+=Oerlikon
+% LTex: dictionary+=Skyguard
+% LTex: dictionary+=APCs
+% LTex: dictionary+=IFVs
+% LTex: dictionary+=Starstreak
+% LTex: dictionary+=Mitla
+% LTex: dictionary+=Landrovers
+% LTex: dictionary+=AMLs
+% LTex: dictionary+=Bv
+% LTex: dictionary+=Panhard
+% LTex: dictionary+=FACs
 
 \chapter{Additional Rules}
 
@@ -43,7 +60,7 @@ The type and size of a ground unit determines its basic properties: damage resil
 
 The damage resilience is the amount of damage a ground unit can suffer before being killed. It is determined by the size of the unit: a squad has a damage resilience of 1D; a section has a damage resilience of 2D; and a platoon or battery has a damage resilience of 3D.%
 \note{Damage Resilience in {\AirStr}}{
-    There is a form of damage resilience in {\AirStr}, in that units whose counters have white text are only able to take 1D of damage before being killed (see the last paragraph of rule 28). Such units include infantry SAMs, armored CCUs, and many vehicle SAMs. TSOH also mentions units being able to take only 2D damage, but it doesn't have any relevant units since it attaches SAM teams to infantry platoons rather than having them as separate (see below) and doesn't have a separate FAC unit. In both cases, the idea seems to have been incompletely implemented in the rules. I'm generalizing and homogenizing the idea. This is important as we need sections for mobile AAA units with two vehicles and for the Oerlikon GDF (as Skyguard can only control two guns and not a full battery). To a large degree, a section is equivalent to a platoon that has taken 1D and a squad is equivalent to a platoon that has taken 2D, so the mechanics of the game are really not impacted.
+    There is a form of damage resilience in {\AirStr}, in that units whose counters have white text are only able to take 1D of damage before being killed (see the last paragraph of rule 28). Such units include infantry SAMs, armored CCUs, and many vehicle SAMs. {\TSOH} also mentions units being able to take only 2D damage, but it doesn't have any relevant units since it attaches SAM teams to infantry platoons rather than having them as separate (see below) and doesn't have a separate FAC unit. In both cases, the idea seems to have been incompletely implemented in the rules. I'm generalizing and homogenizing the idea. This is important as we need sections for mobile AAA units with two vehicles and for the Oerlikon GDF (as Skyguard can only control two guns and not a full battery). To a large degree, a section is equivalent to a platoon that has taken 1D and a squad is equivalent to a platoon that has taken 2D, so the mechanics of the game are really not impacted.
 }
 
 The numerical defense strength is used to calculate the odds for air-to-ground attacks and for ground-to-ground combat.
@@ -90,25 +107,13 @@ Hard targets are indicated by an underlined defense strength and open targets by
 The mobility of a ground unit restricts the hexes it can occupy according to the terrain in and around those hexes. Infantry units, tracked armored units, wheeled armored units other than armored trucks, and tracked unarmored units have unrestricted (U) mobility. Trucks, armored trucks, and other wheeled unarmored units have good (G) or poor (P) mobility. All other units have towed (T) mobility.%
 \note{Mobility}{
     The inspiration for this rule was \href{https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_road_through_Mitla_Pass_dotted_with_wrecked_Egyptian_vehicles_and_armour_after_Israel_air_force_attacks._June_1967._D326-013.jpg}{this photograph} of the Mitla Pass from 1967, which shows trucks destroyed on and just off a road.
-    Also, in the the Falklands War roads could be traversed by Landrovers and AMLs, but off-road terrain was impassable to everything except the CVR(T)s and Bv~202s despite being open.
+    Also, in the Falklands War roads could be traversed by Landrovers and AMLs, but off-road terrain was impassable to everything except the CVR(T)s and Bv~202s despite being open.
 }
 
 A unit with unrestricted mobility may occupy: any urban hex; any clear hex; or any forest hex.
 A unit with good mobility may occupy: any urban hex; any clear hex; or any forest hex with a road or trail.
 A unit with poor mobility may occupy: any urban hex; any clear or forest hex with a road, trail, or runway; or any clear hex adjacent to an urban hex or another clear hex with a road, trail, or runway.
-A unit with towed mobility may occupy hexes according to the mobility of its transport.%
-\note{Mobility Restrictions}{
-    When trucks have good mobility, the rule is: don't put trucks or towed weapons in forests unless there is a road. When trucks have poor mobility, the rule is effectively: if the terrain is difficult, keep your trucks and towed weapons near roads even in clear terrain.
-}
-
-%Figure~\ref{figure:mobility} illustrates these rules.
-%
-%\begin{figure}
-%    \centering
-%    \includegraphics[width=1\linewidth]{figure-mobility.png}
-%     \caption{Mobility. {\normalfont The figure shows the hexes a ground unit may occupy according to its mobility under the advanced rule. A ground unit with poor mobility may only occupy the hexes marked with green dots; one with good mobility may occupy those marked with yellow or green dots; and one with unlimited mobility may occupy those marked with red, yellow, or green dots. No ground unit may occupy the hex marked with a black dot.}}
-%     \label{figure:mobility}
-% \end{figure}
+A unit with towed mobility may occupy hexes according to the mobility of its transport.
 
 When necessary, a scenario must specify whether trucks, armored trucks, and other wheeled unarmored units have good or poor mobility, according to the terrain and the capabilities of the vehicles represented, and assign transport units to towed units.\note{Truck Mobility}{
     For example, a scenario set in the open desert of southern Iraq might specify that trucks have good mobility, but one set in the Falkland Islands might specify that they have poor mobility. Similarly, a scenario might specify that cargo trucks have poor mobility, but mobile artillery units have good mobility. Finally, a scenario might not assign an explicit transport unit to a towed artillery battery, but might state that it has been transported by helicopter and so can be placed as if it had a transport unit with good mobility.
@@ -128,12 +133,14 @@ At the start of the game, an infantry, infantry weapons, infantry mortar, or inf
 The attached squads are commonly infantry SAM or FAC squads.
 Once formed, a composite platoon may not be split into its constituent units.%
 \note{Composite Platoons}{
-    This rule comes from TSOH. It doesn't have counters for infantry SAMs, so in scenarios V-11 and V-22 it says treat infantry platoons as if they have an infantry SAM squad. This rule helps with stacking (since attached squads do not count for stacking) and with keeping your precious FACs and SAM teams anonymous. It also works nicely with the transport rule, since attached squads do not need their own transport but can ride with the platoon.
+    This rule comes from {\TSOH}. It doesn't have counters for infantry SAMs, so in scenarios V-11 and V-22 it says treat infantry platoons as if they have an infantry SAM squad. This rule helps with stacking (since attached squads do not count for stacking) and with keeping your precious FACs and SAM teams anonymous. It also works nicely with the transport rule, since attached squads do not need their own transport but can ride with the platoon.
 }
 
 An attached squad is not represented by a separate counter, does not count for stacking, and may not be sighted, identified, or attacked directly.
 Instead, it is considered to form part of the composite platoon.
 An attached squad retains its normal capabilities (for example, an attached SAM squad may engage aircraft and an attached FAC squad may sight and mark targets).
+
+% LTeX: rules-=ENGLISH_WORD_REPEAT_BEGINNING_RULE
 
 A composite platoon has the same damage resilience, defense strength, target class, mobility, and sighting range as its constituent platoon.
 If a composite platoon is sighted, no information is given on any attached squads.
@@ -148,6 +155,8 @@ VPs are awarded for damage to each of the constituent units.%
     Are the damage rolls secret?
 }
 
+% LTeX: rules+=ENGLISH_WORD_REPEAT_BEGINNING_RULE
+
 \rulesubsection{Transport}
 
 An infantry or towed unit may be transported by a specific associated transporting IFV, APC, armored truck, truck, or tracked-carrier unit of at least the same size.
@@ -160,8 +169,12 @@ When necessary, a scenario will establish the association between units and thei
 A transported unit is not represented by a separate counter, does not count for stacking, and may not be sighted, identified, or attacked directly. It may not attack other ground units or aircraft, may not launch SAMs, may not use radar, and may not act as a FAC.
 %Instead, a transported unit is considered to form part of the transporting unit.
 
+% LTeX: rules-=ENGLISH_WORD_REPEAT_BEGINNING_RULE
+
 If a transporting unit is sighted, no information is given on the transported unit. If a transporting unit is identified, no information is given on a transported infantry unit, but any transported towed unit is also identified (for example, “truck platoon towing an artillery battery” or “truck platoon towing a ZPU-4 battery”). If a transporting unit suffers damage, then its transported unit suffers the same damage.
 VPs are awarded for damage to both the transporting and transported unit.
+
+% LTeX: rules+=ENGLISH_WORD_REPEAT_BEGINNING_RULE
 
 A unit may start the game either transported or not. If not transported, it may be placed according to either its mobility or that of its associated transport.%
 \note{Mobility}{

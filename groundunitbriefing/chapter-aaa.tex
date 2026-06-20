@@ -1,10 +1,54 @@
 %!TEX root = groundunitbriefing.tex
 
+% LTeX: enabled=true
+
+% LTeX: dictionary+=aéronefs
+% LTeX: dictionary+=AFVs
+% LTeX: dictionary+=APCs
+% LTeX: dictionary+=Ayn-al-Saqr
+% LTeX: dictionary+=Biryusa
+% LTeX: dictionary+=BOFI
+% LTeX: dictionary+=BOFI-R
+% LTeX: dictionary+=Bofors
+% LTeX: dictionary+=contre
+% LTeX: dictionary+=Dochka
+% LTeX: dictionary+=DShK
+% LTeX: dictionary+=Dushka
+% LTeX: dictionary+=EOTG
+% LTeX: dictionary+=Fliegerabwehr
+% LTeX: dictionary+=Fuzes
+% LTeX: dictionary+=Gemag
+% LTeX: dictionary+=Gepard
+% LTeX: dictionary+=Hispano-Suiza
 % LTeX: dictionary+=Janes
+% LTeX: dictionary+=Kanone
+% LTeX: dictionary+=Luchs
+% LTeX: dictionary+=Malvinas
+% LTeX: dictionary+=Marder
+% LTeX: dictionary+=Mk
 % LTeX: dictionary+=MobileRadar
+% LTeX: dictionary+=modèle
+% LTeX: dictionary+=Multisensor
+% LTeX: dictionary+=Oeil
+% LTeX: dictionary+=Oerlikon
+% LTeX: dictionary+=Ogaden
+% LTeX: dictionary+=Panhard
+% LTeX: dictionary+=PIVADS
+% LTeX: dictionary+=Proximity-fuzed
 % LTeX: dictionary+=RadarTutorial
+% LTeX: dictionary+=SAMs
+% LTeX: dictionary+=Skyguard
+% LTeX: dictionary+=Skysweeper
+% LTeX: dictionary+=TSOH
+% LTeX: dictionary+=VADS
+% LTeX: dictionary+=VDAA
+% LTeX: dictionary+=Vz
 % LTeX: dictionary+=WeapoNEWS
 % LTeX: dictionary+=WeaponSystems
+% LTeX: dictionary+=Werrell
+
+% Note: The British spellings "Defense" is toggled locally when needed to allow
+% checking the US spelling elsewhere.
 
 \chapter{AAA Units}
 
@@ -20,7 +64,7 @@ the damage rating;
 whether the unit has an all-weather or ranging-only fire-control radar and its frequency band or a laser rangefinder;
 whether it has night infrared sights; and
 whether it is also equipped with a SAM system.
-If the unit has a SAM, this will be described in detail in the section on SAM launcher units.
+If the unit has a SAM, this will be described in detail in the section on SAM launcher units.%
 \note{AAA Values}{
     This long note summarizes how I have determined the AAA values for AAA units. VP values are discussed separately.
 
@@ -328,10 +372,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    % LTeX: dictionary+=Dushka
-    % LTeX: dictionary+=Dochka
-    % LTeX: dictionary+=Defence
-
     \subsectionwithcounter{DShK-38 platoon}{DShK-38 Platoon}
 
     The DShK-38 12.7~mm heavy machine gun is most commonly found on a low, wheeled mount for ground combat or mounted on armored fighting vehicles, but here is used on a tall tripod suitable for air defense. It is nicknamed the Dushka (darling) or Dochka (daughter). A platoon has six guns.
@@ -341,15 +381,15 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         Service in the Korean War is from Singh, ch.~1.
 
+        % LTeX: dictionary+=Defence
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/DShK}{DShK}.
             \item WeaponSystems on the \href{https://weaponsystems.net/system/744-DShK}{DShK}.
             \item Singh, M. (Pen \& Sword, 2020): “Anti-Aircraft Artillery in Combat 1950--1972: Air Defence in the Jet Age”.
         \end{notesources}
-    }
+        % LTeX: dictionary-=Defence
 
-    % LTeX: dictionary-=Dushka
-    % LTeX: dictionary-=Dochka
+    }
 
     \subsectionwithcounter{M16 section}{M16 Section}
 
@@ -391,8 +431,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    % LTeX: dictionary+=Vz
-
     \subsectionwithcounter{Vz.53 platoon}{Vz.53 Platoon}
 
     The Czechoslovak Vz.53 has four Vz.38/46 12.7 mm machine guns (copies of the Soviet DShK) on a light, wheeled mount.
@@ -429,8 +467,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    % LTeX: dictionary-=Vz
-
     \subsectionwithcounter{mobile M45 section}{Mobile M45 Section}
 
     The mounted M45 has the M45 turret with four M2 .50 cal (12.7~mm) heavy machine guns (the same turret as used in the M16) removed from an M55 trailer and mounted on a truck.
@@ -445,24 +481,24 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    \subsectionwithcounter{ZPU-4 battery}{ZPU-1/2/4 Battery}{ZPU-1 battery}{ZPU-2 battery}{
-        The ZPU-1/2/4 have one, two, or four 14.5~mm heavy machine guns in open mounts on towed carriages. A battery has six gun mounts.
-        The ZPU-1/2/4 was introduced in 1949 and saw extensive service with Soviet or Soviet-supported forces in many subsequent conflicts, including with communist forces in the Korean War and Vietnam War and with Arab forces in the various Arab-Israeli Wars from 1956 onwards.%
-        \note{ZPU-1/2/4 Battery}{
-            The AAA values for the ZPU-1 are from {\EOTG} and {\TSOH}.
-            The AAA values for the ZPU-2 are from {\AirStr}.
-            The AAA values for the ZPU-4 are from {\AirStr} rather than {\TSOH}, for the reasons described in the extended note above.
+    \subsectionwiththreecounters{ZPU-1 battery}{ZPU-2 battery}{ZPU-4 battery}{ZPU-1/2/4 Battery}
 
-            \begin{notesources}
-                \item Wikipedia on the \href{https://en.wikipedia.org/wiki/ZPU}{ZPU}.
-                \item WeaponSystems on the \href{https://weaponsystems.net/system/1674-ZPU-1}{ZPU-1}, \href{https://weaponsystems.net/system/935-ZPU-2}{ZPU-2}, and \href{https://weaponsystems.net/system/934-ZPU-4}{ZPU-4}, and \href{https://weaponsystems.net/system/356-Vladimirov\%20KPV}{KPV}.
-            \end{notesources}
-        }
+    The ZPU-1/2/4 have one, two, or four 14.5~mm heavy machine guns in open mounts on towed carriages. A battery has six gun mounts.
+    The ZPU-1/2/4 was introduced in 1949 and saw extensive service with Soviet or Soviet-supported forces in many subsequent conflicts, including with communist forces in the Korean War and Vietnam War and with Arab forces in the various Arab-Israeli Wars from 1956 onwards.%
+    \note{ZPU-1/2/4 Battery}{
+        The AAA values for the ZPU-1 are from {\EOTG} and {\TSOH}.
+        The AAA values for the ZPU-2 are from {\AirStr}.
+        The AAA values for the ZPU-4 are from {\AirStr} rather than {\TSOH}, for the reasons described in the extended note above.
+
+        \begin{notesources}
+            \item Wikipedia on the \href{https://en.wikipedia.org/wiki/ZPU}{ZPU}.
+            \item WeaponSystems on the \href{https://weaponsystems.net/system/1674-ZPU-1}{ZPU-1}, \href{https://weaponsystems.net/system/935-ZPU-2}{ZPU-2}, and \href{https://weaponsystems.net/system/934-ZPU-4}{ZPU-4}, and \href{https://weaponsystems.net/system/356-Vladimirov\%20KPV}{KPV}.
+        \end{notesources}
     }
 
     \vspacelines{3}
 
-    \subsectionwithcounter{mobile ZPU-4 section}{Mobile ZPU-1/2/4 Section}{mobile ZPU-1 section}{mobile ZPU-2 section}
+    \subsectionwiththreecounters{mobile ZPU-1 section}{mobile ZPU-2 section}{mobile ZPU-4 section}{Mobile ZPU-1/2/4 Section}
 
     The mobile ZPU-1/2/4 is a light truck with a ZPU-1/2/4 gun mount.
     A section has two vehicles.
@@ -498,7 +534,7 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    \subsectionwithcounter{BTR-152A ZPU-4 section}{BTR-152A ZPU-2/4 Section}{BTR-152A ZPU-2 section}
+    \subsectionwithtwocounters{BTR-152A ZPU-2 section}{BTR-152A ZPU-4 section}{BTR-152A ZPU-2/4 Section}
 
     The BTR-152A has a twin 14.5~mm ZPU-2 or quad 14.5~mm ZPU-4 turret in the open, six-wheeled BTR-152 APC.
     A section has two vehicles.
@@ -606,8 +642,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    % LTeX: dictionary+=VDAA
-
     \subsectionwithcounter{Panhard M3 VDA section}{Panhard M3 VDA Section}
 
     The Panhard M3 VDA vehicles have an armored turret for twin HS.820 20~mm guns mounted on the Panhard M3 APC.
@@ -622,14 +656,15 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         The radar is the RA 20. Janes states that it operates in the E band. There is no mention of IFF, but it does seem to be a PD radar with a MTI.
 
+        % LTeX: dictionary+=Defence
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Panhard_M3\#Variants}{Panhard M3 VDA} and \href{https://en.wikipedia.org/wiki/Hispano-Suiza_HS.820}{HS.820}.
             \item WeaponSystems on the \href{https://weaponsystems.net/system/532-VDAA}{Panhard M3 VDAA}.
             \item Jane’s Land-Based Air Defence 1992-93 (\href{https://forum.warthunder.com/t/british-weapon-systems-technical-data-and-discussion/3879/2225}{extract})
         \end{notesources}
-    }
+        % LTeX: dictionary-=Defence
 
-    % LTeX: dictionary-=VDAA
+    }
 
     \subsectionwithcounter{ZU-23 battery}{ZU-23 Battery}
 
@@ -691,11 +726,7 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         RadarTutorial states that the radar operates at 14.6--15.6 GHz (NATO J-band and IEEE Ku-band), and does not mention a difference between search and tracking. This makes sense, as there seems to be only one radar dish.
 
-        % LTeX: dictionary+=Biryusa
-
         Wikipedia states that the ZSU-23-4M3 “Biryusa” upgrade from 1977 adds IFF.
-
-        % LTeX: dictionary-=Biryusa
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/ZSU-23-4_Shilka}{ZSU-23-4}.
@@ -704,7 +735,7 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    \subsectionwithcounter{Sinai 23 Stinger section}{Sinai 23 Section}{Sinai 23 Ayn-al-Saqr section}
+    \subsectionwithtwocounters{Sinai 23 Ayn-al-Saqr section}{Sinai 23 Stinger section}{Sinai 23 Section}
 
     The Sinai 23 has a Dassault TA20 turret with two 23~mm guns and six Ayn-al-Saqr (similar to the Strela-2M) or Stinger missiles on an M113 chassis.
     A section has two vehicles.
@@ -762,8 +793,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    % LTeX: dictionary+=Oeil
-
     \subsectionwithcounter{AMX-13DCA section}{AMX-13DCA Section}
 
     The AMX-13DCA is equipped with a pair of radar-controlled 30~mm Hispano-Suiza guns mounted in an armored turret on the hull of an AMX-12 tank.
@@ -778,8 +807,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
             \item WeaponSystems on the \href{https://weaponsystems.net/system/114-AMX-30+DCA}{AMX-13DCA} \href{https://weaponsystems.net/system/1562-30mm\%20Hispano-Suiza\%20HS.831}{HS.831A}.
         \end{notesources}
     }
-
-    % LTeX: dictionary-=Oeil
 
     \subsectionwithcounter{AMX-30SA section}{AMX-30SA Section}
 
@@ -957,11 +984,14 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         Singh (ch. 4) describes the Israeli use.
 
+        % LTeX: dictionary+=Defence
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Bofors_40_mm_Automatic_Gun_L/70}{Bofors L/70}.
             \item WeaponSystems on the \href{https://weaponsystems.net/system/932-Bofors\%20L/70}{Bofors L/70}.
             \item Singh, M. (Pen \& Sword, 2020): “Anti-Aircraft Artillery in Combat 1950--1972: Air Defence in the Jet Age”.
         \end{notesources}
+        % LTeX: dictionary-=Defence
+
     }
 
     \subsectionwithcounter{M42 section}{M42 Section}
@@ -992,8 +1022,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    % LTeX: dictionary+=Multisensor
-
     \subsectionwithcounter{Bofors L70 BOFI-R battery}{Bofors L/70 BOFI-R Battery}
 
     The BOFI-R version of the Bofors L/70 also adds an integrated fire-control radar to the BOFI version. A battery has six gun mounts.%
@@ -1009,8 +1037,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
             \item WeaponSystems on the \href{https://weaponsystems.net/system/932-Bofors\%20L/70}{BOFI and BOFI-R}.
         \end{notesources}
     }
-
-    % LTeX: dictionary-=Multisensor
 
     \subsectionwithcounter{S-60 battery}{S-60 Battery}
 
@@ -1075,12 +1101,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
 \begin{withcounters}
 
-    % LTeX: dictionary+=Fliegerabwehr
-    % LTeX: dictionary+=Kanone
-    % LTeX: dictionary+=contre
-    % LTeX: dictionary+=aéronefs
-    % LTeX: dictionary+=modèle
-
     \subsectionwithcounter{Flab Kan 38 battery}{Flab Kan 38 Battery}
 
     The Swiss Flab Kan 38 (Fliegerabwehr Kanone 38) has a single 75~mm L/49 gun in an open mount on a towed carriage.
@@ -1103,12 +1123,6 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    % LTeX: dictionary-=Fliegerabwehr
-    % LTeX: dictionary-=Kanone
-    % LTeX: dictionary-=contre
-    % LTeX: dictionary-=aéronefs
-    % LTeX: dictionary-=modèle
-
     \subsectionwithcounter{KS-12 battery}{KS-12 Battery}
 
     The KS-12 (M1939 52-K) and the very similar KS-12A (M1944 KS-1) have a single 85~mm gun in an open mount on a towed carriage. A battery has six gun mounts.
@@ -1126,11 +1140,14 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         It is not clear to me that the Soviets had proximity fuzes for this gun.
 
+        % LTeX: dictionary+=Defence
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/85_mm_air_defense_gun_M1939_(52-K)}{KS-12}.
             \item WeaponSystems on the \href{https://weaponsystems.net/system/1439-KS-12}{KS-12}.
             \item Singh, M. (Pen \& Sword, 2020): “Anti-Aircraft Artillery in Combat 1950--1972: Air Defence in the Jet Age”.
         \end{notesources}
+        % LTeX: dictionary-=Defence
+
     }
 
     \subsectionwithcounter{90 mm M2 battery}{90 mm M2 Battery}
@@ -1146,9 +1163,9 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         Wikipedia gives the rate of fire as 24 RPM, about twice that of the KS-12.
 
-        Wikipedia gives a horizontal range of 19 km, and vertical range of 43.5k feet. Warrell states the effective ceiling is 32k feet. As the caliber and the muzzle velocity of the M2 are between the KS-12 (maximum altitude of 27) and the KS-19 (maximum altitude of 39), this seems to be about right.
+        Wikipedia gives a horizontal range of 19 km, and vertical range of 43.5k feet. Werrell states the effective ceiling is 32k feet. As the caliber and the muzzle velocity of the M2 are between the KS-12 (maximum altitude of 27) and the KS-19 (maximum altitude of 39), this seems to be about right.
 
-        I give the M2 the hit rolls of the KS-12 increased by 1, to account for the increased rate of fire and proximity fuzes (although the number of guns per battery is reduced from six to four), a maximum altitude of 32 (following Warrell), and the ranges of the KS-19.
+        I give the M2 the hit rolls of the KS-12 increased by 1, to account for the increased rate of fire and proximity fuzes (although the number of guns per battery is reduced from six to four), a maximum altitude of 32 (following Werrell), and the ranges of the KS-19.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/90_mm_gun_M1/M2/M3}{90 mm M2}.
@@ -1172,10 +1189,13 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         Singh states that Pakistan used the 3.7-inch gun in the 1971 War.
 
+        % LTeX: dictionary+=Defence
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/QF_3.7-inch_AA_gun}{QF 3.7-inch}.
             \item Singh, M. (Pen \& Sword, 2020): “Anti-Aircraft Artillery in Combat 1950--1972: Air Defence in the Jet Age”.
         \end{notesources}
+        % LTeX: dictionary-=Defence
+
     }
 
     \subsectionwithcounter{KS-19 battery}{KS-19 Battery}
