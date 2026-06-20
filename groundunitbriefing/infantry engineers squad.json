@@ -1,9 +1,0 @@
-{
-    "name": "infantry engineers",
-    "description": "infantry engineers squad",
-    "symbols": "infantry/engineers/squad",
-    "defensestrength": "4S",
-    "sightingrange": 6,
-    "mobility": "U",
-    "VP3D": 6
-}

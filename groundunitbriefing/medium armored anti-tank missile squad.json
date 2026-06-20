@@ -1,9 +1,0 @@
-{
-    "name": "medium armored anti-tank missile",
-    "description": "medium armored anti-tank missile squad",
-    "symbols": "armor/antiarmor/missile/medium/squad",
-    "defensestrength": "6H",
-    "sightingrange": 12,
-    "mobility": "U",
-    "VP3D": 12
-}

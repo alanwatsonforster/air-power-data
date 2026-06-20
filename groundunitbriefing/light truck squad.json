@@ -1,9 +1,0 @@
-{
-    "name": "light truck squad",
-    "description": "light truck squad",
-    "symbols": "truck/light/limitedwheeled/transport/squad",
-    "sightingrange": 12,
-    "defensestrength": "2S",
-    "mobility": "G/P",
-    "VP3D": 4
-}

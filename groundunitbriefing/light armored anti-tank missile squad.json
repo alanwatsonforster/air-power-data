@@ -1,9 +1,0 @@
-{
-    "name": "light armored anti-tank missile",
-    "description": "light armored anti-tank missile squad",
-    "symbols": "armor/antiarmor/missile/light/squad",
-    "defensestrength": "4H",
-    "sightingrange": 12,
-    "mobility": "U",
-    "VP3D": 10
-}

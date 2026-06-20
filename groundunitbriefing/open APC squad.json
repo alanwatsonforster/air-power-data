@@ -1,9 +1,0 @@
-{
-    "name": "open APC",
-    "description": "open APC squad",
-    "symbols": "armor/open/transport/squad",
-    "defensestrength": "3O",
-    "sightingrange": 12,
-    "mobility": "U",
-    "VP3D": 5
-}

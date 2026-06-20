@@ -1,9 +1,0 @@
-{
-    "name": "medium IFV",
-    "description": "medium IFV squad",
-    "symbols": "armor/gun/medium/transport/squad",
-    "defensestrength": "6H",
-    "sightingrange": 12,
-    "mobility": "U",
-    "VP3D": 10
-}

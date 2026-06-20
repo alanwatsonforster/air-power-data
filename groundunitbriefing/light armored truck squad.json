@@ -1,9 +1,0 @@
-{
-    "name": "light armored truck",
-    "description": "light armored truck squad",
-    "symbols": "armor/light/transport/limitedwheeled/squad",
-    "defensestrength": "4H",
-    "sightingrange": 12,
-    "mobility": "G/P",
-    "VP3D": 6
-}

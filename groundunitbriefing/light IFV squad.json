@@ -1,9 +1,0 @@
-{
-    "name": "light IFV",
-    "description": "light tank squad",
-    "symbols": "armor/gun/light/transport/squad",
-    "defensestrength": "4H",
-    "sightingrange": 12,
-    "mobility": "U",
-    "VP3D": 6
-}

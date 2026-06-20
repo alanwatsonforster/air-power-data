@@ -1,9 +1,0 @@
-{
-    "name": "heavy tank",
-    "description": "heavy tank squad",
-    "symbols": "armor/gun/heavy/squad",
-    "defensestrength": "8H",
-    "sightingrange": 12,
-    "mobility": "U",
-    "VP3D": 12
-}
