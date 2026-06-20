@@ -183,3 +183,4 @@ Ogaden
 Skysweeper
 Proximity-fuzed
 Warrell
+Luchs

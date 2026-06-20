@@ -9,4 +9,20 @@
     "editor.formatOnSave": true,
     "latex-workshop.format.fixQuotes.enabled": true,
     "latex-workshop.message.badbox.show": "overfull",
+    "ltex.latex.commands": {
+        "\\note{}": "ignore",
+        "\\AirSup": "dummy",
+        "\\AirStr": "dummy",
+        "\\EOTG": "dummy",
+        "\\TSOH": "dummy",
+        "\\APJ": "dummy",
+        "\\subsectionwithcounter{}": "ignore",
+        "\\subsectionwithtwocounters{}{}": "ignore",
+        "\\subsectionwiththreecounters{}{}{}": "ignore",
+        "\\subsectionwithfourcounters{}{}{}{}": "ignore",
+        "\\hyperlink{}": "ignore",
+        "\\tablecaption{}": "ignore",
+        "\\tablenotetext{}": "ignore",
+        "\\href{}": "ignore"
+    }
 }
