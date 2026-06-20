@@ -129,7 +129,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 &&&2/2/1&&&&120\\
                 &&&3/2/1&&&&500\\
                 &&&4/3/2&&&&1000\\
-                &&&5/3/2&&&&2000\\
+                &&&5/4/3&&&&2000\\
                 \addlinespace
                 \multicolumn{3}{l}{Hit roll modifiers for FCR/LRF}&\plus{1}&&R\\
                 &&&\plus{1}&&L\\
@@ -181,11 +181,12 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
     This is as expected.
     Quantitatively:
     \begin{itemize}
-        \item Approximately doubling the rate of fire increases the hit rolls by one, with typical values of 1/1/0 at about 15 rounds per minutes, 2/2/1 at about 150 rounds per minute, 3/2/1 at about 500 rounds per minute, 4/3/2 at about 1000, and 5/3/2 at about 2000 and above. Intermediate rates of fire can have one of these hit rolls increased or decreased by one.
+        \item Approximately doubling the rate of fire increases the hit rolls by one, with typical values of 1/1/0 at about 15 rounds per minutes, 2/2/1 at about 150 rounds per minute, 3/2/1 at about 500 rounds per minute, 4/3/2 at about 1000, and 5/4/2 at about 2000 and above. Intermediate rates of fire can have one of these hit rolls increased or decreased by one.
         \item FCR-W and FCR-R effectively modify the hit rolls by \plus{1} and \plus{2}.
         \item A laser rangefinder (LRF) effectively modifiers the hit rolls by \plus{1}.
-        \item As we will see below, sections have their hit rolls modified by \minus{1}.
         \item Proximity fuzes increase the hit rolls by \plus{1} (e.g., BOFI).
+        \item As we will see below, sections have their hit rolls modified by \minus{1}.
+        \item As we shall see below, sections have their hit rolls limited to 5/4/3.
         \item The base damage rating is 1 for \lessthanorequaltobefore{14.5}~mm, 2 for 20--23~mm, 3 for 25--30~mm, 4 for 35--40~mm, 5 for 57~mm, and 6 for 85--100~mm. I have extended this to 7 for \greaterthanorequaltobefore{120}~mm.
         \item The damage rating is increased by one if the rate of fire is 1800 rounds per minute or more (e.g., M55, ZPU-4, Gemag, and M167).
     \end{itemize}
@@ -194,13 +195,13 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
     Most of the original values can be used as they are, but a few of the hit rolls and damage ratings do not fit this general pattern and need adjusting. Also, for guns for which the sources give different values, a single set needs to be adopted. These are shown in the third section of the table. Specifically:
     \begin{itemize}
 
-        \item ZPU-2: {\MP} gives this a damage rating of 3 (more than the ZPU-4) whereas AS gives it a rating of 1 (equal to the ZPU-1). Pipes gives this hit rolls of 4/3/1 whereas AS gives it 4/3/2. The ZPU-2 should have both hit rolls and damage ratings intermediate to those of the ZPU-1 and ZPU-4, but this is impossible as these only differ by one. The solution in {\AirStr} seems to be a good compromise: give it the hit rolls of the ZPU-4 but the damage rating of the ZPU-1. I adopt the AS values.
+        \item ZPU-2: See the note on this below.
 
-        \item ZPU-4 and ZU-23: There are six AAA batteries with rates of fire per mount of about 2000 rounds per minute or more: the M55, ZPU-4, twin Rh-202, M167, ZU-23, and Gemag. After accounting for the \plus{1} modifier for the FCR-R of the M167 and Gemag, all have hit rolls of 5/4/3 except for the ZPU-4 from {\TSOH} (although the one from {\AirStr} does have 5/4/3) and the ZU-23. Furthermore, all of these except for the ZU-23 (both {\AirStr} and {\TSOH} versions) have damage ratings increased by one above their baseline values. It seems that either there is some reason to reduce the effectiveness of the ZPU-4 and ZU-23 compared to these other guns, or perhaps they have inconsistent values rolls. The ZU-23 is undeniably basic, and one might think that would be reason to reduce its effectiveness. However, the TCM-20 is basic too and has both a lower rate of fire than the ZU-23 (1450 compared to 2000) and a smaller caliber (20~mm compared to 23~mm), yet its hit rolls are higher than the ZU-23 in {\TSOH} and its damage rating is the same. I think the best solution is to give the ZPU-4 and ZU-23 the values we would expect from comparing them to other guns with similar rate of fire and caliber. Therefore, I give these guns hit rolls of 5/4/3 and the ZU-23 a damage rating of 3. (I also considered the idea that increasing the rate of fire increases \emph{either} the hit rolls \emph{or} the damage rating. However, while this might explain the ZPU-4 from {\TSOH} and the twin Rh-202, it does not correctly predict the values of the M167 or Gemag.)
+        \item ZPU-4: See the note on this below.
 
-        \item Single RH-202: The single Rh-202 has unexpectedly low original hit rolls of 3/2/1 for its rate of fire. The values of 4/3/2 for the ZPU-2 and TCM-20, which have a similar rate of fire, are probably more appropriate.
+        \item ZU-23: There are six AAA batteries with rates of fire per mount of about 2000 rounds per minute or more: the M55, ZPU-4, twin Rh-202, M167, ZU-23, and Gemag. After accounting for the \plus{1} modifier for the FCR-R of the M167 and Gemag, all have hit rolls of 5/4/3 except for the ZPU-4 from {\TSOH} (although the one from {\AirStr} does have 5/4/3) and the ZU-23. Furthermore, all of these except for the ZU-23 (both {\AirStr} and {\TSOH} versions) have damage ratings increased by one above their baseline values. It seems that either there is some reason to reduce the effectiveness of the ZPU-4 and ZU-23 compared to these other guns, or perhaps they have inconsistent values rolls. The ZU-23 is undeniably basic, and one might think that would be reason to reduce its effectiveness. However, the TCM-20 is basic too and has both a lower rate of fire than the ZU-23 (1450 compared to 2000) and a smaller caliber (20~mm compared to 23~mm), yet its hit rolls are higher than the ZU-23 in {\TSOH} and its damage rating is the same. I think the best solution is to give the ZPU-4 and ZU-23 the values we would expect from comparing them to other guns with similar rate of fire and caliber. Therefore, I give these guns hit rolls of 5/4/3 and the ZU-23 a damage rating of 3. (I also considered the idea that increasing the rate of fire increases \emph{either} the hit rolls \emph{or} the damage rating. However, while this might explain the ZPU-4 from {\TSOH} and the twin Rh-202, it does not correctly predict the values of the M167 or Gemag.)
 
-        \item Twin Rh-202: The twin has an unexpectedly low original damage rating of 2 for its rate of fire. A value of 3, increased by one from the baseline for the caliber, is probably more appropriate. {\MP} gives values for the Rh-202, but it is not clear whether they are for the single or twin mount. He gives hit rolls of 3/2/1 (equal to the {\AirStr} values for the single mount) but a damage rating of 3 (equal to the value I have adopted for the twin mount). I do not adopt this combination of values either for the single or twin Rh-202.
+        \item Single and Twin RH-202: See the note on these below.
 
         \item Oerlikon GDF: The Oerlikon GDF has unexpectedly high original hit rolls of 5/4/3 for its rate of fire. The values of 4/3/2 for the ZPU-2, which has a similar rate of fire, are probably more appropriate.
 
@@ -272,9 +273,9 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             \midrule
             \multicolumn{10}{c}{Modified or Adopted Values}\\
             \midrule
-            Mobile ZPU-4&&&4/3/2&&&&\multicolumn{3}{l}{--- to match the ZPU-4}\\
+            Mobile ZPU-4&&&4/3/2&&&&\multicolumn{3}{l}{--- to match the M16 and ZPU-4}\\
             M163&&&5/4/3&&&&\multicolumn{3}{l}{--- to match the M167}\\
-            Panhard&&&3/3/2&&&&\multicolumn{3}{l}{--- to match the M3 TCM-20}\\
+            Panhard&&&4/4/&&R&&\multicolumn{3}{l}{--- to match the M3 TCM-20}\\
             Mobile ZU-23&&&4/3/2&3&&&\multicolumn{3}{l}{--- to match the ZU-23}\\
             Nile 23&&&4/3/2&3&&&\multicolumn{3}{l}{--- to match the ZU-23}\\
             Blazer&10&&&&&&\multicolumn{3}{l}{--- adopt {\AirStr} values}\\
@@ -307,11 +308,11 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
     Again, most of the original data can be used as they are, but a few of the values are worth commenting upon or need adjusting.
     \begin{itemize}
 
-        \item Mobile ZPU-4: The original hit rolls for the mobile ZPU-4 section are 3/3/2, but 4/3/2 is predicted from the values of 5/4/3 for the battery and is in better agreement with the values for the M16. {\MP} gives the section the same hit rolls as the battery, despite the fewer mounts, which does not seem to be correct.
+        \item Mobile ZPU-4: See the note on this below.
 
-        \item M163: {\MP} gives the section the same hit rolls as the battery, despite the fewer mounts, which does not seem to be correct. I adopt the {\AirStr} hit rolls, which are in agreement with the empirical model.
+        \item M163: See the note on this below.
 
-        \item Panhard M3 VDA: The Panhard M3 VDA in {\AirStr} has unexpectedly low original hit rolls of 2/2/1 compared to the TCM-20 battery and the M3 TCM-20 section, despite having very similar guns. The values of 3/3/2 given by {\MP} are in agreement with those of the M3 TCM-20 section and those predicted from the TCM-20 battery.
+        \item Panhard M3 VDA: See the note on this below.
 
         \item Mobile ZU-23 and Nile 23: The original hit rolls for the mobile ZU-23 and Nile 23 section are 2/2/1 and 3/3/2, despite them being quite similar. The model values of 4/3/2 are probably more appropriate and are in better agreement with the values for the M16. Also, as with the ZU-23 battery, a damage rating of 3 is probably more appropriate given their high rate of fire.
 
@@ -367,7 +368,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/M2 platoon.tex}
 
-        The AAA values are from {\AirStr} and {\MP}.
+        I adopt the AAA values, defense strength, and sighting range from {\AirStr} and {\MP}.
+        The adopted AAA values are in agreement with the empirical model.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M2_Browning}{M2}.
@@ -385,7 +387,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/DShK platoon.tex}
 
-        The AAA values are from {\AirStr} and {\MP}.
+        I adopt the AAA values, defense strength, and sighting range from {\AirStr} and {\MP}.
+        The adopted AAA values are in agreement with the empirical model.
 
         Service in the Korean War is from Singh, ch.~1.
 
@@ -409,7 +412,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/M16 section.tex}
 
-        The AAA values are from {\EOTG} and {\MP}.
+        I adopt the AAA values, defense strength, and sighting range from {\EOTG} and {\MP}.
+        The adopted AAA values are in agreement with the empirical model.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M16_Multiple_Gun_Motor_Carriage}{M16}, \href{https://en.wikipedia.org/wiki/M45_quad_mount}{M45}, and \href{https://en.wikipedia.org/wiki/M2_Browning}{M2}.
@@ -422,13 +426,14 @@ All AAA platoons and batteries are also available as sections (but not squads), 
     The M17 Multiple Gun Motor Carriage is the equivalent of the M16 Multiple Gun Motor Carriage, but based on the slightly different M5 half-track.
     A section has two vehicles.
     The M17 was supplied to the Soviet Union and entered service in 1944. It was presumably replaced by the BTR-40A.%
-    \note{M16 Section}{
+    \note{M17 Section}{
 
         \aaamountvalues{12.7}{2000}{890}
 
         \input{aaavalues/M17 section.tex}
 
-        The AAA values are the same as for the M16.
+        I give this same AAA values, defense strength, and sighting range as the M16.
+        The adopted AAA values are in agreement with the empirical model.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M16_Multiple_Gun_Motor_Carriage}{M17}, \href{https://en.wikipedia.org/wiki/M45_quad_mount}{M45}, and \href{https://en.wikipedia.org/wiki/M2_Browning}{M2}.
@@ -446,7 +451,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/M55 platoon.tex}
 
-        The AAA values are from {\EOTG} and {\MP}.
+        I adopt the AAA values, defense strength, and sighting range from {\EOTG} and {\MP}.
+        The adopted AAA values are in agreement with the empirical model.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M45_quad_mount}{M45} and \href{https://en.wikipedia.org/wiki/M2_Browning}{M2}.
@@ -466,7 +472,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/Vz.53 platoon.tex}
 
-        The AAA values the same as for the M55.
+        I give this same AAA values, defense strength, and sighting range as the M55.
+        The adopted AAA values are in agreement with the empirical model.
 
         {\MP} gives data for the M53, but it appears to be a truck-mounted section (the “type” is given as “truck” and the hit rolls are the same as an M16 section), but one inconsistent value is its defense strength of 3, which corresponds to other towed batteries, rather than 2, which corresponds to other truck-mounted sections.
 
@@ -489,7 +496,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/BTR-152A Vz.53 section.tex}
 
-        I have given this the armor and mobility of the M16.
+        I give this same AAA values, defense strength, and sighting range as the M16.
+        The adopted AAA values are in agreement with the empirical model.
 
         The in-service date assumes they were supplied or converted shortly after the 1955 arms deal.
         Some {\EOTG} scenarios for 1956 War give the Egyptian Army M16s, but I do not think these served with the Egyptian Army; I think these might well be BTR.152A Vz.53s.
@@ -506,13 +514,15 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
     The mounted M45 has the M45 turret with four M2 .50 cal (12.7~mm) heavy machine guns (the same turret as used in the M16) removed from an M55 trailer and mounted on a truck.
     During the Vietnam War, in 1967, US forces improvised these \emph{gun trucks} for convoy security%
-    \note{M55 Battery}{
+    \note{Mobile M45 Battery}{
 
         \aaamountvalues{12.7}{2000}{890}
 
         \input{aaavalues/mobile M45 section.tex}
 
-        The AAA values are the same as the M16.
+        I give this same AAA values as the M16.
+        The adopted AAA values are in agreement with the empirical model.
+        I give this the same defense strength and sighting range as the mobile ZPU-4 in {\AirStr}.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M45_quad_mount}{M45}, \href{https://en.wikipedia.org/wiki/M2_Browning}{M2}, and \href{https://en.wikipedia.org/wiki/Gun_truck
@@ -533,9 +543,13 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         ZPU-2 \input{aaavalues/ZPU-2 battery.tex}
         ZPU-4 \input{aaavalues/ZPU-4 battery.tex}
 
-        The AAA values for the ZPU-1 are from {\EOTG}, {\TSOH}, and {\MP}.
-        The AAA values for the ZPU-2 are from {\AirStr} rather than {\MP}, for the reasons given in the extended note above.
-        The AAA values for the ZPU-4 are from {\AirStr} and {\MP} rather than {\TSOH}, for the reasons given in the extended note above.
+        For the ZPU-1, I adopt the AAA values, defense strength, and sighting range from {\EOTG}, {\TSOH}, and {\MP}.
+        The adopted AAA values are in agreement with the empirical model.
+
+        For the ZPU-2, {\AirStr} gives hit rolls of 4/3/2 whereas {\MP} gives it 4/3/1 and {\AirStr} gives a damage rating of 1 (equal to the ZPU-1) whereas {\MP} gives it a rating of 3 (more than the ZPU-4). The ZPU-2 should logically have both hit rolls and damage ratings intermediate to those of the ZPU-1 and ZPU-4, but this is impossible as these only differ by one. The solution in {\AirStr} seems to be a good compromise: give it the hit rolls of the ZPU-4 but the damage rating of the ZPU-1. I adopt the AAA values, defense strength, and sighting range from {\AirStr}.
+        The adopted AAA values are in agreement with the empirical model.
+
+        For the ZPU-4, {\AirStr} and {\MP} give hit rolls of 5/4/3 whereas {\TSOH} gives 4/3/2. All give damage ratings of 2. I see no reason to give this different hit rolls to those of the M55, given the similarities between the two in caliber, rate of fire, and muzzle velocity. Therefore, I give it hit rolls of 5/4/3, by analogy with the M55 and in agreement with the empirical model. I therefore adopt the AAA values, defense strength, and sighting range from {\AirStr} and {\MP}.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/ZPU}{ZPU}.
@@ -560,7 +574,11 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         Mobile ZPU-2 \input{aaavalues/mobile ZPU-2 section.tex}
         Mobile ZPU-4 \input{aaavalues/mobile ZPU-4 section.tex}
 
-        AAA values for the mobile ZPU-4 are from {\AirStr}, except that I have adopted hit rolls of 4/3/2 rather than 3/3/2 as described in the extended note above. The mobile ZPU-1/2 do not appear in {\AirStr}, {\EOTG}, or {\TSOH}, but they are very common. As described in the extended note above, I have produced AAA hit values for the sections from those of the ZPU-1 and ZPU-2 batteries.
+        For the mobile  ZPU-1 and ZPU-2 sections, I adopt the AAA values of the ZPU-1 and ZPU-2 batteries with a \minus{1} modifier to the hit rolls for being sections. I adopt same the defense strength and sighting range as the mobile ZPU-4 section in {\AirStr} and {\MP}.
+        The adopted AAA values are in agreement with the empirical model.
+
+        For the mobile ZPU-4, {\AirStr} gives hit rolls of 3/3/2 and {\MP} gives hit rolls of {5/4/3}. The values from {\AirStr} seem to be too low and those of {\MP} seem to be too high. I see no reason to give this different hit rolls to those of the M16, given the similarities between the two in caliber, rate of fire, and muzzle velocity. Therefore, I give it hit rolls of 4/3/2, by analogy with the M16, in agreement with those of the ZPU-4 battery with a \minus{1} modifier, and in agreement with the empirical model.
+        I adopt the defense strength and sighting range from {\AirStr} and {\MP}.
 
         %{\AirStr} gives this 5 VPs, which is the same as the towed ZPU-4 battery despite the mobile section having worse hit rolls and defense strength. I think 4 VPs (i.e., one less than the battery) is more appropriate.
 
@@ -584,7 +602,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/BTR-40A section.tex}
 
-        I have given this the armor and mobility of the M16 and the AAA properties of the mobile ZPU-2 section.
+        I have adopted the AAA values of the mobile ZPU-2 section and the defense strength and sighting range of the M16.
+        The adopted AAA values are in agreement with the empirical model.
 
         The BTR-40 is based on a truck and does not seem to have especially good mobility; we might consider giving it “G/P” mobility rather than “U”.
 
@@ -607,7 +626,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         BTR-152A ZPU-2 \input{aaavalues/BTR-152A ZPU-2 section.tex}
         BTR-152A ZPU-4 \input{aaavalues/BTR-152A ZPU-4 section.tex}
 
-        I have given this the armor and mobility of the M16 and the AAA properties of the mobile ZPU-2/4 section.
+        I have adopted the AAA values of the mobile ZPU-2/4 section and the defense strength and sighting range of the M16.
+        The adopted AAA values are in agreement with the empirical model.
 
         Like the BTR-40, the BTR-152 is based on a truck and does not seem to have especially good mobility; we might consider giving it “G/P” mobility rather than “U”.
 
@@ -630,9 +650,10 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/M167 platoon.tex}
 
-        The AAA values are from {\AirStr} and {\MP}.
+        I have adopted the AAA values, defense strength, and sighting range from {\AirStr} and {\MP}.
+        The adopted AAA values are in agreement with the empirical model.
 
-        The 1976 Operator's Manual describes the use of the AN/TVS-2B or AN/TVS-5 night sight. These are first- and second-generation image intensifiers. They are mounted next to the tracking sight and appear to be useful only for ground targets.
+        The 1976 Operator's Manual describes the use of the AN/TVS-2B or AN/TVS-5 night sight. These are first- and second-generation image intensifiers. They are mounted next to the tracking sight and appear to be useful only for ground targets. I do not count it as giving “night IR sights” capability.
 
         MobileRadar states the AN/VPS-2 operates at 9.2--9.5 GHz.
 
@@ -655,13 +676,16 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/M163 section.tex}
 
-        The AAA values are from {\AirStr}. I do not use the hit rolls from {\MP} for the reasons given in the extended note above.
+        I have adopted the AAA values, defense strength, and sighting range from {\AirStr}.
+        The adopted AAA values are in agreement with the empirical model.
+        {\MP} gives the section the same hit rolls as the M167 battery, despite the fewer mounts, which does not seem to be correct.
+        The turret is open, so I give this open rather than hard armor protection.
 
         The 1969 report and 1976 manual mention the AN/VPS-2 range-only radar. MobileRadar states it operates at 9.2--9.5 GHz.
 
-        The 1976 Operator's Manual describes the use of the AN/TVS-2B night sight. This is a first-generation image intensifier. It is mounted next to the tracking sight and appears to be useful only for ground targets.
+        The 1976 Operator's Manual describes the use of the AN/TVS-2B night sight. This is a first-generation image intensifier. It is mounted next to the tracking sight and appears to be useful only for ground targets.  I do not count it as giving “night IR sights” capability.
 
-        The PIVADS version introduced in 1984 had an improved sight.
+        The PIVADS version introduced in 1984 had an improved sight, but I assume this makes no difference in the AAA values.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M163_VADS}{M163}, \href{https://en.wikipedia.org/wiki/M167_VADS}{M167}, and \href{https://en.wikipedia.org/wiki/M61_Vulcan}{M61 Vulcan}.
@@ -682,7 +706,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/TCM-20 platoon.tex}
 
-        The AAA values are from {\EOTG}.
+        I have adopted the AAA values, defense strength, and sighting range from {\EOTG}.
+        The adopted AAA values are in agreement with the empirical model.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M45_quad_mount\#TCM-20}{TCM-20} and \href{https://en.wikipedia.org/wiki/Hispano-Suiza_HS.404}{HS.404}.
@@ -700,7 +725,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/M3 TCM-20 section.tex}
 
-        The AAA values are from {\EOTG}.
+        I have adopted the AAA values, defense strength, and sighting range from {\EOTG}.
+        The adopted AAA values are in agreement with the empirical model.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M3_half-track\#Post-war_Israeli_variants}{M3 TCM-20}, \href{https://en.wikipedia.org/wiki/M45_quad_mount\#TCM-20}{TCM-20}, \href{https://en.wikipedia.org/wiki/Hispano-Suiza_HS.404}{HS.404}.
@@ -708,23 +734,29 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    \subsectionwithcounter{twin Rh-202 battery}{Twin Rh-202 Battery}
+    \subsectionwithcounter{Rh-202 battery}{Rh-202 Battery}
 
-    The Rheinmetall Rh-202 has a single or twin 20mm gun in an open mount on a towed carriage. The fire-control system is entirely optical.
-    The most common version is the twin mount.
+    The Rheinmetall Rh-202 has a twin 20mm gun in an open mount on a towed carriage. The fire-control system is entirely optical.
     A battery has six gun mounts.
-    The twin version entered service with West German forces in 1972 and was used for airfield defense. Subsequently, it was exported and notably used by the Argentine Air Force in the 1982 South Atlantic War in the defense of BAM Malvinas (Port Stanley Airport) and BAM Condor (Goose Green Airfield).%
+    It entered service with West German forces in 1972 and was used for airfield defense. Subsequently, it was exported and notably used by the Argentine Air Force in the 1982 South Atlantic War in the defense of BAM Malvinas (Port Stanley Airport) and BAM Condor (Goose Green Airfield).%
     \note{Rh-202 Battery}{
 
-        \aaamountvalues{20}{1030/2060}{1044}
+        \aaamountvalues{20}{2060}{1044}
 
-        Single Rh-202 \input{aaavalues/single Rh-202 battery.tex}
-        Twin Rh-202 \input{aaavalues/twin Rh-202 battery.tex}
+        Rh-202 \input{aaavalues/Rh-202 battery.tex}
 
-        The AAA values are from {\AirStr}, with the hit values for the single mount changed from 3/2/1 to 4/3/2 and the damage value for the twin mount changed from 2 to 3, for the reasons given in the extended note above. I do not use the values from {\MP} for the reasons given in the extended note above.
+        % For the single Rh-202, {\AirStr} gives unexpectedly low original hit rolls of 3/2/1 given its rate of fire.
+        % The ZPU-2 and TCM-20 have a similar rate of fire and values of 4/3/2.
+        % Therefore, by analogy with the ZPU-2 and TCM-20 and in agreement with the empirical model, I adopt AAA values, defense strength, and sighting range from {\AirStr}, but modify the hit rolls to 4/3/2.
+
+        I adopt the AAA values, defense strength, and sighting range from {\AirStr}, except I increase the damage rating from 2 to 3.
+        {\AirStr} gives an unexpectedly low original damage rating of 2 for its rate of fire. A value of 3, increased by one from the baseline for the caliber, is probably more appropriate.
+        The adopted AAA values are in agreement with the empirical model.
+
+        {\MP} gives values for the Rh-202, but it is not clear whether they are for the single or twin mount. He gives hit rolls of 3/2/1 (equal to the {\AirStr} values for the single mount) but a damage rating of 3 (equal to the value I have adopted for the twin mount). I do not adopt this combination of values either for the single or twin Rh-202.
 
         {\AirStr} has single and twin Rh-202 batteries.
-        Single mounts seem to be used for AFVs (e.g., Marder, Luchs, and Wiesel) and naval applications, but all AAA mounts seem to be twin.
+        Single mounts seem to be used for AFVs (e.g., Marder, Luchs, and Wiesel) and naval applications, but all AAA mounts seem to be twin. I therefore drop the single mounts.
 
         \begin{notesources}
             \item Wikipedia on \href{https://en.wikipedia.org/wiki/Rheinmetall_Mk_20_Rh-202}{Rh-202}.
@@ -743,6 +775,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \aaamountvalues{20}{1450}{860}
 
         \input{aaavalues/Panhard M3 VDA section.tex}
+
+        The Panhard M3 VDA in {\AirStr} has unexpectedly low original hit rolls of 2/2/1 compared to the TCM-20 battery and the M3 TCM-20 section, despite having very similar guns. The values of 3/3/2 given by {\MP} are in agreement with those of the M3 TCM-20 section and those predicted from the TCM-20 battery.
 
         The Panhard M3 VDA in {\AirStr} seems to correspond to Wikipedia M3 VDA or WeaponSystems M3 VDAA.
 
