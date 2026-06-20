@@ -16,6 +16,7 @@
         "\\EOTG": "dummy",
         "\\TSOH": "dummy",
         "\\APJ": "dummy",
+        "\\MP": "dummy",
         "\\subsectionwithcounter{}": "ignore",
         "\\subsectionwithtwocounters{}{}": "ignore",
         "\\subsectionwiththreecounters{}{}{}": "ignore",
