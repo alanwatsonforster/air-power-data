@@ -135,7 +135,7 @@ The undercarriage could be lowered or trailed to act as a dive break. They could
 - [SAC for F4U-5P](https://www.aahs-online.org/images/Navy_SAC/F4U-5P.pdf)
 - [SAC for F4U-5N](https://www.aahs-online.org/images/Navy_SAC/F4U-5N.pdf)
 - [SAC for AU-1](https://www.aahs-online.org/images/Navy_SAC/AU-1.pdf)
-- Tilman, Barrett, “Corsair: The F4U in World War II and Korea”
+- Tilman, Barrett, “Corsair: The F4U in WW2 and Korea”
 - Tilman, Barrett, "Warbird Tech: The F4U Corsair", ????
 - [Wikipedia](https://en.wikipedia.org/wiki/Vought_F4U_Corsair)
 - White, “[Action Report of CAG2](https://www.history.navy.mil/content/dam/nhhc/research/archives/action-reports/Korean%20War%20Carrier%20Air%20Group%20Combat/PDF%27s/cvg2-50-1.pdf)”, 15 September to 2 October 1950.
