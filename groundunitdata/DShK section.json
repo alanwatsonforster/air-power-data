@@ -1,9 +1,9 @@
 {
-    "name": "DShK-38",
+    "name": "DShK",
     "country": "SU",
     "year": 1938,
-    "description": "DShK-38 12.7 mm air-defense platoon",
-    "symbols": "air-defense/gun/infantry/platoon",
+    "description": "DShK 12.7 mm air-defense section",
+    "symbols": "air-defense/gun/infantry/section",
     "text": "12.7",
     "defensestrength": "3S",
     "sightingrange": 12,
@@ -17,9 +17,9 @@
             4
         ],
         "hitroll": [
-            3,
             2,
-            1
+            1,
+            0
         ],
         "maximumrelativealtitude": 5,
         "damagerating": 1
