@@ -23,7 +23,8 @@
         ],
         "maximumrelativealtitude": 10,
         "damagerating": 4,
-        "nightirsights": true
+        "nightirsights": true,
+        "laserrangefinder": true
     },
     "sam": {
         "type": "FIM-92D",
