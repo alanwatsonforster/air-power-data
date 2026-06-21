@@ -323,7 +323,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
 
         \item ZSU-30-2: Following the model, the hit rolls would be 7/6/5, but they are limited to 5/4/3.
 
-        \item M53/59: The original hit rolls for the M53/59 section are 4/3/2. The predicted values of 3/2/1, derived from the modified hit rolls of 4/3/2 for the Oerlikon GDF-001 battery and also from the AMX-30SA after discounting the FCR-W, are probably more appropriate.
+        \item M53/59: See the note on this below.
 
         \item Gepard: {\MP} increases the long range to 12, from 10 in {\AirStr}. This might be correct; perhaps later ammunition give longer range than the GDF-001 and I note that he gives a similar increase to the GDF-005. However, I can find no evidence for such an improvement. I adopt the {\AirStr} value.
 
@@ -976,9 +976,12 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/M5359 section.tex}
 
-        I adopted the AAA values from {\AirStr} and {\MP}, but reduced the hit rolls from 4/3/2 to 3/2/1 to be consistent with the AMX-30SA and Oerlikon GDF, as described in the extended note above.
+        I adopt the AAA values from {\AirStr} and {\MPC}, but reduce the hit rolls from 4/3/2 to 3/2/1.
+        I adopt the defense strength (4), target class (open), and sighting range (12) from the M163.
 
-        If the VADS is classed as armored, should this be armored too?
+        The hit rolls for the M53/59 section from {\AirStr} and {\MPC} are 4/3/2. The empirical model suggests 3/2/1, derived from the modified hit rolls of 4/3/2 for the Oerlikon GDF-001 battery with a \minus{1} modifier for being a section and also from the hit rolls of 5/3/2 for the AMX-30SA with a \minus{2} modifier to discounting the FCR-W. Therefore, by analogy with these units and in agreement with the empirical model, I adopt hit rolls of 3/2/1.
+
+        The M53/59 is based on a truck and does not seem to have especially good mobility; we might consider giving it “G/P” mobility rather than “U”.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M53/59_Praga}{M53/59}.
