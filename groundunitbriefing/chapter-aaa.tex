@@ -129,6 +129,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 &&&2/2/1&&&&120\\
                 &&&3/2/1&&&&500\\
                 &&&4/3/2&&&&1000\\
+                &&&4/4/3&&&&1500\\
                 &&&5/4/3&&&&2000\\
                 \addlinespace
                 \multicolumn{3}{l}{Hit roll modifiers for FCR/LRF}&\plus{1}&&R\\
@@ -154,7 +155,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 \midrule
                 ZPU-2&&&4/3/2&1&&&\multicolumn{3}{l}{--- adopted from AS}\\
                 ZPU-4&&&5/4/3&&&&\multicolumn{3}{l}{--- for rate of fire}\\
-                Single Rh-202&&&4/3/2&&&&\multicolumn{3}{l}{--- for rate of fire}\\
+                %Single Rh-202&&&4/3/2&&&&\multicolumn{3}{l}{--- for rate of fire}\\
                 Twin Rh-202&&&5/4/3&3&&&\multicolumn{3}{l}{--- for rate of fire}\\
                 ZU-23&&&5/4/3&3&&&\multicolumn{3}{l}{--- for rate of fire}\\
                 Oerlikon GDF-001&&&4/3/2&&&&\multicolumn{3}{l}{--- for rate of fire}\\
@@ -181,7 +182,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
     This is as expected.
     Quantitatively:
     \begin{itemize}
-        \item Approximately doubling the rate of fire increases the hit rolls by one, with typical values of 1/1/0 at about 15 rounds per minutes, 2/2/1 at about 150 rounds per minute, 3/2/1 at about 500 rounds per minute, 4/3/2 at about 1000, and 5/4/2 at about 2000 and above. Intermediate rates of fire can have one of these hit rolls increased or decreased by one.
+        \item Approximately doubling the rate of fire increases the hit rolls by one, with typical values of 1/1/0 at about 15 rounds per minutes, 2/2/1 at about 150 rounds per minute, 3/2/1 at about 500 rounds per minute, 4/3/2 at about 1000, 4/4/3 at about 1500, and 5/4/2 at about 2000 and above. Intermediate rates of fire can have one of these hit rolls increased or decreased by one.
         \item FCR-W and FCR-R effectively modify the hit rolls by \plus{1} and \plus{2}.
         \item A laser rangefinder (LRF) effectively modifiers the hit rolls by \plus{1}.
         \item Proximity fuzes increase the hit rolls by \plus{1} (e.g., BOFI).
@@ -199,7 +200,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
 
         \item ZPU-4: See the note on this below.
 
-        \item ZU-23: There are six AAA batteries with rates of fire per mount of about 2000 rounds per minute or more: the M55, ZPU-4, twin Rh-202, M167, ZU-23, and Gemag. After accounting for the \plus{1} modifier for the FCR-R of the M167 and Gemag, all have hit rolls of 5/4/3 except for the ZPU-4 from {\TSOH} (although the one from {\AirStr} does have 5/4/3) and the ZU-23. Furthermore, all of these except for the ZU-23 (both {\AirStr} and {\TSOH} versions) have damage ratings increased by one above their baseline values. It seems that either there is some reason to reduce the effectiveness of the ZPU-4 and ZU-23 compared to these other guns, or perhaps they have inconsistent values rolls. The ZU-23 is undeniably basic, and one might think that would be reason to reduce its effectiveness. However, the TCM-20 is basic too and has both a lower rate of fire than the ZU-23 (1450 compared to 2000) and a smaller caliber (20~mm compared to 23~mm), yet its hit rolls are higher than the ZU-23 in {\TSOH} and its damage rating is the same. I think the best solution is to give the ZPU-4 and ZU-23 the values we would expect from comparing them to other guns with similar rate of fire and caliber. Therefore, I give these guns hit rolls of 5/4/3 and the ZU-23 a damage rating of 3. (I also considered the idea that increasing the rate of fire increases \emph{either} the hit rolls \emph{or} the damage rating. However, while this might explain the ZPU-4 from {\TSOH} and the twin Rh-202, it does not correctly predict the values of the M167 or Gemag.)
+        \item ZU-23: See the note on this below.
 
         \item Single and Twin RH-202: See the note on these below.
 
@@ -776,11 +777,17 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/Panhard M3 VDA section.tex}
 
-        The Panhard M3 VDA in {\AirStr} has unexpectedly low original hit rolls of 2/2/1 compared to the TCM-20 battery and the M3 TCM-20 section, despite having very similar guns. The values of 3/3/2 given by {\MP} are in agreement with those of the M3 TCM-20 section and those predicted from the TCM-20 battery.
+        I have adopted the AAA values, defense strength, and sighting range from {\AirStr}, except that I have adopted hit rolls of 4/4/3 and FCR-R.
+
+        The Panhard M3 VDA has the same twin guns as the M3 TCM-20.
+        {\AirStr} has unexpectedly low original hit rolls of 2/2/1 compared to those of 3/3/2 for the M3 TCM-20 section.
+        {\MP} gives it the same hit rolls, but omits the FCR-R.
+        I adopt the hit rolls of the M3 TCM-20 (3/3/2) with a \plus{1} modifier for FCR-R.
+        The adopted AAA values are in agreement with the empirical model.
 
         The Panhard M3 VDA in {\AirStr} seems to correspond to Wikipedia M3 VDA or WeaponSystems M3 VDAA.
 
-        The AAA data are from {\MP}. These modified from those in {\AirStr}, as described in the extended note above, to give hit rolls of 3/3/2 without FCR. However, the Panhard M3 VDA radar-equipped vehicle seems to be able to search and share speed and range information with the other vehicle in the section, which seems equivalent to FCR-R. Therefore, I have increased the hit rolls by one to give 4/4/3 with FCR-R.
+        However, the Panhard M3 VDA radar-equipped vehicle seems to be able to search and share speed and range information with the other vehicle in the section, which seems equivalent to FCR-R.
 
         The radar is the RA 20. Janes states that it operates in the E band. There is no mention of IFF, but it does seem to be a PD radar with a MTI.
 
@@ -806,7 +813,15 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/ZU-23 battery.tex}
 
-        The AAA values are from {\AirStr}, {\TSOH}, and {\MP}, but the hit rolls are modified as from 4/3/2 to 5/3/2 and the damage rating from 2 to 3 as described in the extended note above.
+        I adopt the AAA values, defense strength, and sighting range are from {\AirStr}, {\TSOH}, and {\MP}, but the hit rolls are modified as from 4/3/2 to 5/3/2 and the damage rating from 2 to 3.
+
+        {\AirStr}, {\TSOH}, and {\MP} all give the ZU-23 hit rolls of 4/3/2, but give 5/4/3 to other AAA batteries with similar rates of fire (M55, twin Rh-202, M167, and Gemag) after accounting for modifiers for FCR.
+        Furthermore, all of these other batteries have damage ratings increased by one above their baseline values.
+        There does not seem to be a reason to penalize the ZU-23.
+        It is undeniably basic, and one might think that would be reason to reduce its effectiveness. However, the TCM-20 is basic too and has both a lower rate of fire than the ZU-23 (1450 compared to 2000) and a smaller caliber (20~mm compared to 23~mm), yet its hit rolls are higher than the ZU-23 in {\AirStr}, {\TSOH}, and {\MP} and its damage rating is the same.
+
+        Therefore, by analogy with these batteries and in agreement with the empirical model, I give it hit rolls of 5/4/3 and a damage rating of 3.
+
         %TSOH gives it 6 VPs and {\AirStr} gives it only 5. I think 6 is more appropriate, comparing to the ZPU-4 battery.
 
         \begin{notesources}
