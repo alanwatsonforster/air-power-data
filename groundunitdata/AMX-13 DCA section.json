@@ -17,13 +17,13 @@
             9
         ],
         "hitroll": [
-            5,
             4,
-            3
+            3,
+            2
         ],
         "maximumrelativealtitude": 11,
         "damagerating": 3,
-        "fcrclass": "W",
+        "fcrclass": "R",
         "fcrfrequency": "VF"
     },
     "VP2D": 10
