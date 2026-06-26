@@ -22,6 +22,8 @@
 % LTeX: dictionary+=Hispano-Suiza
 % LTeX: dictionary+=Janes
 % LTeX: dictionary+=Kanone
+% LTeX: dictionary+=Launet
+% LTeX: dictionary+=Lesavre
 % LTeX: dictionary+=Luchs
 % LTeX: dictionary+=Malvinas
 % LTeX: dictionary+=Marder
@@ -46,6 +48,11 @@
 % LTeX: dictionary+=WeapoNEWS
 % LTeX: dictionary+=WeaponSystems
 % LTeX: dictionary+=Werrell
+
+% LTeX: language=fr-FR
+% LTeX: dictionary+=GS1C
+% LTeX: dictionary+=SAGEM
+% LTeX: language=en-US
 
 % Note: The British spellings "Defense" is toggled locally when needed to allow
 % checking the US spelling elsewhere.
@@ -994,9 +1001,9 @@ All AAA platoons and batteries are also available as sections (but not squads), 
     \subsectionwithcounter{AMX-13 DCA section}{AMX-13 DCA Section}
 
     The AMX-13 DCA is equipped with a pair of radar-controlled 30~mm Hispano-Suiza HS.831A guns mounted in an armored turret on the hull of an AMX-13 tank.
+    The Thomson-CSF \foreignlanguage{french}{Œil Noir} radar provides search and ranging, but tracking is optical.
     A section has two vehicles.
-    The AMX-13 DCA is equipped with the Thomson-CSF Oeil Noir radar.
-    It served only in the French Army, entering service in 1969 and being retired in the 1990s.%
+    The AMX-13 DCA served only in the French Army, entering service in 1969 and being retired in the 1990s.%
     \note{AMX-13 DCA Section}{
 
         \aaamountvalues{30}{1200}{970}
@@ -1009,23 +1016,70 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         {\MPC} also gives a damage rating of 4. This is the same as the Tunguska, despite the latter having a much higher rate of fire. I prefer to use the {\AirStr} value for the AMX-30 DCA of 3.
 
-        I believe the CGT/Thomson-CSF \foreignlanguage{french}{Œil Noir} DRVC 1A radar provides search and ranging, but not tracking. BAS'ART states:
+        I believe the Thomson-CSF \foreignlanguage{french}{Œil Noir} DRVC 1A radar provides search and ranging, but not tracking. BAS'ART states:
         \begin{quote}
-            \foreignlanguage{french}{Distance fournie par le radar en mode télémétrie. Vitesse de rotation de la droite pièce-objectif fournie par le pointage sur l’objectif.}
+            \begin{otherlanguage}{french}
+                Distance fournie par le radar en mode télémétrie. Vitesse de rotation de la droite pièce-objectif fournie par le pointage sur l’objectif.
+            \end{otherlanguage}
         \end{quote}
         I translate this as:
         \begin{quote}
             Distance furnished by the radar in telemetry mode.
             Tracking speed of the target furnished by the pointing of the sight.
         \end{quote}
-        This is consistent with the radar of the Panhard M3 VDA, which is more or less contemporaneous, and with later statements that the AMX-30 DCA did not have tracking but the AMX-30 SA did.
+        Lesavre \& de Launet state:
+        \begin{quote}
+            \begin{otherlanguage}{french}
+                Le pointage était réalisé optiquement à l’aide d’un viseur correcteur à
+                partir des éléments fournis par le radar. Le chef de char et le viseur disposaient
+                chacun d’un système de visée
+                \begin{itemize}
+                    \item Le chef de char utilisait un viseur collimateur anti-aérien SAGEM 1B, dit
+                        aussi GS1C, de grossissement 1, porté par un pantographe assurant le parallélisme de
+                        l’axe de visée avec l’axe du canon quand la masse oscillante se déplaçait en site. Ce
+                        viseur permettait au chef de char de désigner l’objectif au tireur.
+                    \item
+                        Le tireur de son côté disposait d’un viseur collimateur anti-aérien SAGEM
+                        4A, dit aussi GS 6C, de grossissement 6, également supporté par un pantographe.
+                \end{itemize}
+                La correction de visée était définie par un calculateur analogique (35) qui
+                élaborait la position future de l’avion et introduisait la correction nécessaire dans la
+                télécommande de pointage, en tenant compte
+                \begin{itemize}
+                    \item de la télémétrie radar
+                    \item des positions et vitesses angulaires de la tourelle poursuivant l’avion
+                    \item des éléments balistiques
+                \end{itemize}
+                Cette correction-but était calculée pendant que le tireur effectuait la poursuite en
+                manœuvrant son palonnier.
+            \end{otherlanguage}
+        \end{quote}
+        I translate this as:
+        \begin{quote}
+            Pointing was performed optically using a corrective viewfinder from the elements provided by the radar. The vehicle commander and the gunner each had a sight system
+            \begin{itemize}
+                \item The vehicle commander used a SAGEM 1B anti-aircraft collimator sight, also called GS1C, with a magnification of \multiplyafter{1}, mounted in a pantograph ensuring the parallelism of the aiming axis with the axis of the barrel when the oscillating mass moved in place. This viewfinder allowed the vehicle commander to designate the target to the gunner.
+                \item  The gunner on his side had a SAGEM 4A anti-aircraft collimator viewfinder, also called GS 6C, with a magnification of \multiplyafter{6}, also mounted on a pantograph.
+            \end{itemize}
+            The aiming correction was determined by an analog computer which worked out the future position of the aircraft and introduced the necessary correction into the sights, taking into account
+            \begin{itemize}
+                \item the radar telemetry
+                \item the positions and angular velocities of the turret tracking the aircraft
+                \item the ballistic elements
+            \end{itemize}
+            This target correction was calculated while the gunner tracked the target with his controls.
+        \end{quote}
+        These descriptions are consistent with the radar of the Panhard M3 VDA, which is different but more or less contemporaneous.
 
         BAS'ART states that the radar operates at 1.71--1.75 GHz (NATO D-band and IEEE S-band) and is a PD radar with MTI.
 
+        BAS'ART states that each divisional AA regiment had one battery of 12 units.
+
         \begin{notesources}
-            \item \href{https://artillerie.asso.fr/basart/article.php3?id_article=1086}{BAS'ART} on the AMX-13 “\foreignlanguage{french}{Bitubes de 30 mm automoteur antiaérien}”.
+            \item \href{https://artillerie.asso.fr/basart/article.php3?id_article=1086}{BAS'ART} on the AMX-13 “\foreignlanguage{french}{Bitubes de 30 mm automoteur antiaérien}” (\href{https://web.archive.org/web/20260624131035/https://artillerie.asso.fr/basart/article.php3?id_article=1086\%2A}{Wayback}).
+            \item “\href{https://www.yumpu.com/fr/document/view/16630048/les-armements-de-defense-antiaerienne-souvenirs-de-la-}{\foreignlanguage{french}{Les armements de défense anti-antiaérienne par canons et armes automatiques}},” René Lesavre \& Michel de Launet (\foreignlanguage{french}{Centres de hautes études de l'armement}, 2007).
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/AMX-13\#Production_variants}{AMX-13 DCA} and \href{https://en.wikipedia.org/wiki/Oerlikon_KCB}{HS.831A}.
-            \item WeaponSystems on the \href{https://weaponsystems.net/system/114-AMX-30+DCA}{AMX-13 DCA} \href{https://weaponsystems.net/system/1562-30mm\%20Hispano-Suiza\%20HS.831}{HS.831A}.
+            \item WeaponSystems on the \href{https://weaponsystems.net/system/61-AMX-13\%20DCA}{AMX-13 DCA} (\href{https://web.archive.org/web/20260624131956/https://weaponsystems.net/system/61-AMX-13\%20DCA}{Wayback}) and \href{https://weaponsystems.net/system/1562-30mm\%20Hispano-Suiza\%20HS.831}{HS.831A} (\href{https://web.archive.org/web/20260624132150/https://weaponsystems.net/system/1562-30mm\%20Hispano-Suiza\%20HS.831}{Wayback}).
         \end{notesources}
     }
 
@@ -1044,7 +1098,7 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/AMX-30\#AMX-30_DCA_–_défense_contre_avion}{AMX-30DCA/SA} and \href{https://en.wikipedia.org/wiki/Oerlikon_KCB}{HS.831A}.
-            \item WeaponSystems on the \href{https://weaponsystems.net/system/114-AMX-30+DCA}{AMX-30DCA} \href{https://weaponsystems.net/system/1562-30mm\%20Hispano-Suiza\%20HS.831}{HS.831A}.
+            \item WeaponSystems on the \href{https://weaponsystems.net/system/114-AMX-30+DCA}{AMX-30DCA} (\href{https://web.archive.org/web/20260624131728/https://weaponsystems.net/system/114-AMX-30+DCA}{Wayback}) and \href{https://weaponsystems.net/system/1562-30mm\%20Hispano-Suiza\%20HS.831}{HS.831A} (\href{https://web.archive.org/web/20260624132150/https://weaponsystems.net/system/1562-30mm\%20Hispano-Suiza\%20HS.831}{Wayback}).
         \end{notesources}
     }
 
