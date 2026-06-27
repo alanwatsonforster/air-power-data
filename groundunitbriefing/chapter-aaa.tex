@@ -172,6 +172,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 \midrule
                 \multicolumn{10}{c}{New Values}\\
                 \midrule
+                Oerlikon GDF-005&12&4/8/10&4/3/2&4&L&\phantom{0}35&1100&1175&AS/MP\\
                 M51&30&6/12/18&4/4/3&5&W&\phantom{0}75&45&854\\
                 Flab Kan 38&24&6/12/18&2/1/0&5&---&\phantom{0}75&25&700\\
                 90 mm M2&32&7/14/21&3/2/1&6&---&\phantom{0}90&24&820\\
@@ -241,7 +242,9 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
         \medskip
         \smallskip
         AAA VALUES FOR SECTIONS\par
+        \nobreak
         \medskip
+        \nobreak
         \scriptsize
         \begin{tabularx}{\linewidth}{LrlllllrrL}
             \toprule
@@ -265,15 +268,15 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             M163&8&2/4/6&5/4/3&3&R&20&3000&1030&AS\\
             M163&8&2/4/6&\highlight{6/5/4}&3&R&20&3000&1030&MP\\
             M3 TCM-20&8&2/4/6&3/3/2&2&---&20&1450&860&EOTG\\
-            Panhard&8&2/4/6&\highlight{2/2/1}&2&---&20&1450&860&AS\\
-            Panhard&8&2/4/6&3/3/2&2&---&20&1450&860&MP\\
+            Panhard&8&2/4/6&\highlight{2/2/1}&2&\highlight{---}&20&1450&860&AS\\
+            Panhard&8&2/4/6&3/3/2&2&\highlight{---}&20&1450&860&MP\\
             Mobile ZU-23&9&2/5/8&\highlight{2/2/1}&2&---&23&2000&980&AS/MP\\
             Nile 23&9&2/5/8&\highlight{3/3/2}&2&---&23&2000&980&EOTG/MP\\
             ZSU-23-4&9&2/5/8&5/4/3&3&W&23&4000&980&AS/MP\\
             Blazer&10&3/6/9&5/4/3&4&W&25&1800&1040&AS\\
             Blazer&\highlight{9}&3/6/9&5/4/3&4&W&25&1800&1040&MP\\
             M53/59&11&4/7/9&\highlight{4/3/2}&3&---&30&1000&1000&AS/MP\\
-            AMX-30&11&4/7/9&5/4/3&3&W&30&1200&970&AS\\
+            AMX-30&11&4/7/9&\highlight{5/4/3}&3&\highlight{W}&30&1200&970&AS\\
             ZSU-30-2&11&4/7/9&5/4/3&4&W&30&5000&960&AS/MP\\
             Gepard&12&4/8/10&5/4/3&4&W&35&2200&1175&AS\\
             Gepard&12&\highlight{4/8/12}&5/4/3&4&W&35&2200&1175&MP\\
@@ -287,15 +290,26 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             Mobile ZU-23&&&4/3/2&3&&&\multicolumn{3}{l}{--- to match the ZU-23}\\
             Nile 23&&&4/3/2&3&&&\multicolumn{3}{l}{--- to match the ZU-23}\\
             Blazer&10&&&&&&\multicolumn{3}{l}{--- adopt {\AirStr} values}\\
-            M53/59&&&3/2/1&&&&\multicolumn{3}{l}{--- to match the AMX-30}\\
+            M53/59&&&3/2/1&&&&\multicolumn{3}{l}{--- to match the AMX-30 DCA}\\
+            AMX-30 DCA&&&4/3/2&&R&&\multicolumn{3}{l}{--- does not have FCR-W}\\
             Gepard&&4/8/10&&&&&\multicolumn{3}{l}{--- adopt {\AirStr} values}\\
             \midrule
             \multicolumn{10}{c}{New Values}\\
             \midrule
-            AMX-13 DCA&11&4/7/9&5/4/3&3&W&30&1200&970&\\
+            M17&5&2/3/4&4/3/2&2&---&12.7&2000&890\\
+            BTR-152A Vz.53&5&2/3/4&4/3/2&2&---&12.7&2000&850\\
+            Mobile M45&5&2/3/4&4/3/2&2&---&12.7&2000&890\\
+            Mobile ZPU-2&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
+            BTR-40A&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
+            BTR-152A ZPU-2&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
+            BTR-152A ZPU-4&6&2/3/5&4/3/2&2&---&14.5&2400&1000\\
+            BTR-152A ZU-23&9&2/5/8&4/3/2&3&---&23&2000&980\\
+            Sinai 23&9&2/5/8&4/3/2&3&---&23&2000&980\\
+            AMX-13 DCA&11&4/7/9&4/3/2&3&R&30&1200&970&\\
+            AMX-30SA&11&4/7/9&4/3/2&3&R&30&1200&970&\\
             M15&12&2/4/8&3/2/1&4&---&37&120&792\\
             M19&15&4/8/12&2/2/1&4&---&40&270&865&\\
-            M34&15&2/4/82&1/1/1&4&---&40&135&865&\\
+            M34&15&2/4/12&1/1/1&4&---&40&135&865&\\
             M42&15&4/8/12&2/2/1&4&---&40&270&865&\\
             \bottomrule
         \end{tabularx}
