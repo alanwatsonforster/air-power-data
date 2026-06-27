@@ -1,0 +1,29 @@
+{
+    "name": "Oerlikon GDF-005",
+    "country": "CH",
+    "year": 1985,
+    "description": "Oerlikon GDF-005 twin 35 mm air-defense battery",
+    "symbols": "air-defense/gun/towed/battery",
+    "text": "35×2",
+    "defensestrength": "3S",
+    "sightingrange": 12,
+    "mobility": "T",
+    "aaa": {
+        "type": "35×2",
+        "class": "M",
+        "range": [
+            4,
+            8,
+            10
+        ],
+        "hitroll": [
+            5,
+            4,
+            3
+        ],
+        "maximumrelativealtitude": 12,
+        "damagerating": 4,
+        "laserrangefinder": true
+    },
+    "VP3D": 8
+}

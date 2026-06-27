@@ -1,0 +1,29 @@
+{
+    "name": "Oerlikon GDF-005",
+    "country": "CH",
+    "year": 1985,
+    "description": "Oerlikon GDF-005 twin 35 mm air-defense section",
+    "symbols": "air-defense/gun/towed/section",
+    "text": "35\u00d72",
+    "defensestrength": "3S",
+    "sightingrange": 12,
+    "mobility": "T",
+    "aaa": {
+        "type": "35\u00d72",
+        "class": "M",
+        "range": [
+            4,
+            8,
+            10
+        ],
+        "hitroll": [
+            4,
+            3,
+            2
+        ],
+        "maximumrelativealtitude": 12,
+        "damagerating": 4,
+        "laserrangefinder": true
+    },
+    "VP3D": 8
+}
