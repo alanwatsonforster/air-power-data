@@ -14,14 +14,14 @@
         "range": [
             4,
             8,
-            10
+            12
         ],
         "hitroll": [
             4,
             3,
             2
         ],
-        "maximumrelativealtitude": 12,
+        "maximumrelativealtitude": 15,
         "damagerating": 4,
         "laserrangefinder": true
     },

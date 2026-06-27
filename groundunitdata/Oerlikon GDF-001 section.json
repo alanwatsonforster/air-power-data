@@ -14,14 +14,14 @@
         "range": [
             4,
             8,
-            10
+            12
         ],
         "hitroll": [
             3,
             2,
             1
         ],
-        "maximumrelativealtitude": 12,
+        "maximumrelativealtitude": 15,
         "damagerating": 4
     },
     "VP3D": 7

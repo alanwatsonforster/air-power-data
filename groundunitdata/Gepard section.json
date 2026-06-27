@@ -14,7 +14,7 @@
         "range": [
             4,
             8,
-            10
+            12
         ],
         "hitroll": [
             5,
@@ -22,7 +22,7 @@
             3
         ],
         "damagerating": 4,
-        "maximumrelativealtitude": 12,
+        "maximumrelativealtitude": 15,
         "fcrclass": "W",
         "fcrfrequency": "VF"
     },
