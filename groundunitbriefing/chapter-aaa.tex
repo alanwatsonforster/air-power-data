@@ -254,8 +254,8 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             M53/59&11&4/7/9&\highlight{4/3/2}&3&---&30&1000&1000&AS/MP\\
             AMX-30&11&4/7/9&\highlight{5/4/3}&3&\highlight{W}&30&1200&970&AS\\
             ZSU-30-2&11&4/7/9&5/4/3&4&W&30&5000&960&AS/MP\\
-            Gepard&\highlight{12}&\highlight{4/8/10}&5/4/3&4&W&35&2200&1175&AS\\
-            Gepard&\highlight{12}&4/8/12&5/4/3&4&W&35&2200&1175&MP\\
+            Gepard&\highlight{12}&\highlight{4/8/10}&5/4/3&4&W&35&1100&1175&AS\\
+            Gepard&\highlight{12}&4/8/12&5/4/3&\highlight{5}&W&35&1100&1175&MP\\
             ZSU-57-2&18&5/10/15&2/1/1&5&---&57&240&1000&EOTG/MP\\
             \midrule
             \multicolumn{10}{c}{Modified or Adopted Values}\\
@@ -269,6 +269,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             M53/59&&&3/2/1&&&\multicolumn{4}{l}{--- to match the AMX-30 DCA}\\
             AMX-30 DCA&&&4/3/2&&R&\multicolumn{4}{l}{--- does not have FCR-W}\\
             Gepard&15&4/8/12&&&&\multicolumn{4}{l}{--- for muzzle velocity}\\
+            Gepard&&&&4&&\multicolumn{4}{l}{--- adopt {\AirStr} values}\\
             \midrule
             \multicolumn{10}{c}{New Values}\\
             \midrule
@@ -1227,7 +1228,7 @@ All AAA platoons and batteries are also available as sections (but not squads), 
     The Gepard entered service in 1976 with the West German Army and also served with the Belgian and Dutch armies. After the end of the Cold War, they were retired by these armies, and many were sold on to other countries.%
     \note{Gepard Section}{
 
-        \aaamountvalues{35}{2200}{1175}
+        \aaamountvalues{35}{1100}{1175}
 
         \input{aaavalues/Gepard section.tex}
 
@@ -1235,6 +1236,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         The adopted AAA values are in agreement with the empirical model.
 
         The increase in maximum altitude and maximum range give this a reach that matches the Bofors 40~mm L/70 and reflects the higher muzzle velocity of the 35~mm gun (1175 m/s compared to 1000 m/s).  See also the GDF-001 and GDF-005.
+
+        In {\AirStr}, the damage rating is given as 4. In {\MPC}, the damage rating is given as 5. However, the empirical model suggests 4 and this is the value given in {\MPC} for the similar GDF-001 and GDF-005. I prefer the {\AirStr} value.
 
         Wikipedia states that the Siemens MPRD-12 search radar operates in the S band (2.60--3.95 GHz) and the tracking radar in the Ku band (12.4--18.0 GHz). RadarTutorial states that it searches in the E band (2--3 GHz) and tracks in the J band (10--20 GHz) and has an integrated IFF.
 
