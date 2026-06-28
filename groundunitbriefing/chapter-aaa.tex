@@ -177,12 +177,12 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 Oerlikon GDF-005&15&4/8/12&5/4/3&4&L&\phantom{0}35&1100&1175\\
                 BOFI&15&4/8/12&5/4/3&4&L&\phantom{0}40&330&1000\\
                 M51&30&6/12/18&4/4/3&5&W&\phantom{0}75&45&854\\
-                Flab Kan 38&24&6/12/18&2/1/0&5&---&\phantom{0}75&25&700\\
-                90 mm M2&32&7/14/21&3/2/1&6&---&\phantom{0}90&24&820\\
-                QF 3.7-inch Mk VI&45&9/18/27&3/2/1&6&--&\phantom{0}94&20&1044\\
+                Flab Kan 38&24&6/12/18&1/1/0&5&---&\phantom{0}75&25&700\\
+                90 mm M2&32&7/14/21&2/2/1&6&---&\phantom{0}90&24&820\\
+                QF 3.7-inch Mk VI&45&9/18/27&2/2/1&6&--&\phantom{0}94&20&1044\\
                 120 mm M1&57&11/22/33&2/2/1&7&--&120&12&945\\
                 KS-30&64&12/24/36&1/1/0&7&---&130&12&970\\
-                QF 5.25-inch&46&12/24/36&1/1/0&7&---&133&10&850\\
+                QF 5.25-inch&46&12/24/36&2/2/1&7&---&133&10&850\\
                 \bottomrule
             \end{tabularx}
             \medskip
@@ -221,7 +221,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
 
         \item BOFI-R: See the note on this below.
 
-        \item KS-19: {\MP} gives hit rolls of 2/1/0 whereas {\AirStr} gives 1/1/0. While it makes sense that the hit roll is less at short range than medium range, it makes less sense that in this case the hit roll for the KS-19 (15 rounds per minute) is equal to that of the S-60 (110 rounds per minute). I prefer the {\AirStr} values.
+        \item KS-19: See the note on this below.
 
     \end{itemize}
 
@@ -1506,6 +1506,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \input{aaavalues/S-60 battery.tex}
 
         The AAA values are from {\AirStr} and {\TSOH}.
+        The adopted AAA values are in agreement with the empirical model.
+
         % These are the same as in {\AirStr}, except that TSOH gives 8 VPs and {\AirStr} only 6.
 
         \begin{notesources}
@@ -1526,7 +1528,9 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/ZSU-57-2 section.tex}
 
-        For the ZSU-57-2 section: The AAA values are from {\EOTG}.
+        For the ZSU-57-2 section, the AAA values are from {\EOTG}.
+        Note that the values are the same for the S-60 battery and the ZSU-57-2 section, as the ZSU-57-2 has two guns per mount.
+        The adopted AAA values are in agreement with the empirical model.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/ZSU-57-2}{ZSU-57-2}.
@@ -1547,13 +1551,16 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/M51 battery.tex}
 
+        The AAA hit rolls are based on the S-60, reduced by 1 for a lower rate of fire, increased by 1 for proximity fuzes, and increased by 2 for FCR-W, so 4/4/3. I give it the same range of 6/12/18 as the 85~mm KS-12, which fires a slightly heavier round at a slightly lower velocity.
+        The adopted AAA values are in agreement with the empirical model.
+
+        I classify this as medium AAA, as it has powered traverse. However, I have not been able to confirm that this is fast enough for it to avoid the need to state pointing.
+
         Wikipedia gives a rate of fire of 45 rounds per minute, a muzzle velocity of 854~m/s, an effective maximum altitude of 30k feet, and a horizontal range of 26 hexes (13 km).
 
         The TM states that the search radar is X-band (6--11 GHz). RadarTutorial also states it is X-band or I/J-band. There is no mention of PD or MTI.
 
         RadarTutorial notes that it is often used with the AN/MPQ-10 as a search radar, but this seems to be counter-battery radar.
-
-        The AAA hit rolls are based on the S-60, reduced by 1 for a lower rate of fire, increased by 1 for proximity fuzes, and increased by 2 for FCR-W, so 4/4/3. I will give it the same range of 6/12/18 as the 85~mm JS-12, which fires a slightly heavier round at a slightly lower velocity.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/M51_Skysweeper}{M51} and \href{https://en.wikipedia.org/wiki/Western_Electric_M-33_Antiaircraft_Fire_Control_System}{T38 radar}
@@ -1583,16 +1590,17 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/Flab Kan 38 battery.tex}
 
+        Its rate of fire suggests hit rolls of 1/1/0.
+        The adopted AAA values are in agreement with the empirical model.
+
         Wikipedia gives the 75 mm Schneider a rate of fire of 20--30 RPM and a muzzle velocity of about 700 m/s.
 
-        Wikipedia gives an effective altitude of 27,000 ft. However, the KS-12 fires a heavier shell at a higher velocity and has a maximum altitude of 27,000 ft. To match this, I will give it 24,000 ft.
-
-        The AAA ranges match those of the KS-12. I presume it does not have proximity fuzes, so I will give it hit rolls of 2/1/0.
+        Wikipedia gives an effective altitude of 27,000 ft. However, the KS-12 fires a heavier shell at a higher velocity and has a maximum altitude of 27,000 ft. To match this, I will give it 24,000 ft. The AAA ranges match those of the KS-12.
 
         I classify the Flab Kan 38 as heavy but the M51 as medium, despite both having the same caliber. This is because the M51 has powered traverse whereas the Flab Kan 38 has manual traverse.
 
         \begin{notesources}
-            \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Canon_de_75_CA_modèle_1940_Schneider}{75~mm Scheider}, \href{https://de.wikipedia.org/wiki/Fliegerabwehrtruppen}{Swiss Fliegerabwehrtruppen}.
+            \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Canon_de_75_CA_modèle_1940_Schneider}{75~mm Scheider} and \href{https://de.wikipedia.org/wiki/Fliegerabwehrtruppen}{Swiss Fliegerabwehrtruppen}.
             \item militaerfahrzeuge.ch on the \href{https://militaerfahrzeuge.ch/unterkategorie_26_34_333.html}{Flab Kan 38}
         \end{notesources}
     }
@@ -1609,7 +1617,9 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/KS-12 battery.tex}
 
-        The AAA values are from {\AirStr} and {\TSOH}.
+        The AAA values are from {\AirStr} and {\TSOH}, with the hit roll modified to 1/1/0 for the rate of fire.
+        In {\AirStr} and {\MPC}, this has hit rolls of 2/1/0, but that seems too close to the rolls of 2/2/1 of the S-60 which has a much higher rate of fire.
+        With this modification, the adopted AAA values are in agreement with the empirical model.
 
         There are two KS-12 guns. The M-1939 is given a maximum altitude of 34k feet by Wikipedia and 25k feet by Singh. The M-1944 is given a maximum altitude of 38k ft by Wikipedia 29k ft by Singh. The game version have maximum altitudes of 27k feet, which is half-way between the figures given by Singh.
 
@@ -1643,13 +1653,14 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/90 mm M2 battery.tex}
 
+        I give the M2 hit rolls of 1/1/0 for the rate of fire and then increased by 1 for proximity fuzes, a maximum altitude of 32 (following Werrell), and the ranges of the KS-19.
+        The adopted AAA values are in agreement with the empirical model.
+
         The M1 version entered service in 1940. The M2 was a development of the M1 and was the “standard weapon” from 1943. I presume all post-war examples are M2s.
 
         Wikipedia gives the rate of fire as 24 RPM, about twice that of the KS-12.
 
         Wikipedia gives a horizontal range of 19 km, and vertical range of 43.5k feet. Werrell states the effective ceiling is 32k feet. As the caliber and the muzzle velocity of the M2 are between the KS-12 (maximum altitude of 27) and the KS-19 (maximum altitude of 39), this seems to be about right.
-
-        I give the M2 the hit rolls of the KS-12 increased by 1, to account for the increased rate of fire and proximity fuzes (although the number of guns per battery is reduced from six to four), a maximum altitude of 32 (following Werrell), and the ranges of the KS-19.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/90_mm_gun_M1/M2/M3}{90 mm M2}.
@@ -1670,9 +1681,10 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/QF 3.7-inch battery.tex}
 
-        Wikipedia gives a maximum altitude of 45k feet, a muzzle velocity of 1044 m/s (significantly more than other similar guns), and a rate of fire of 20 rounds per minute.
+        I give the QF 3.7 hit rolls of 1/1/0 for the rate of fire and then increased by 1 for proximity fuzes, a maximum altitude of 45, and a maximum range of 27.
+        The adopted AAA values are in agreement with the empirical model.
 
-        I give the QF 3.7 the hit rolls of the KS-12 increased by 1, to account for the increased rate of fire and proximity fuzes, a maximum altitude of 45, and a maximum range of 27.
+        Wikipedia gives a maximum altitude of 45k feet, a muzzle velocity of 1044 m/s (significantly more than other similar guns), and a rate of fire of 20 rounds per minute.
 
         Singh states that by 1956 the IDF had twelve 3.7-inch guns with FCR.
 
@@ -1700,6 +1712,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \input{aaavalues/KS-19 battery.tex}
 
         The AAA values are from {\AirStr}.
+        In {\MPC}, this has hit rolls of 2/1/0, but that seems too close to the rolls of 2/2/1 of the S-60 which has a much higher rate of fire.
+        The adopted AAA values are in agreement with the empirical model.
 
         Wikipedia gives a rate of fire of 15 RPM, a vertical range of 48 altitude levels (15 km, with a proximity fuse), and a horizontal range of 39 hexes (21 km). The {\AirStr} values are 39 altitude levels and 21 hexes, so are cut back somewhat from the maximums.
 
@@ -1723,9 +1737,10 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/120 mm M1 battery.tex}
 
-        Wikipedia gives rate of fire of 12 RPM, a maximum altitude of 57 altitude levels (17.5 km), and a maximum range of 50 hexes (25 km).
+        The hit rolls are adapted from the KS-30 (which has a similar rate of fire), with a \plus{1} modifier for proximity shells.
+        The adopted AAA values are in agreement with the empirical model.
 
-        The hit rolls are adapted from the KS-30 (which has a similar rate of fire), with a \plus{1} modifier for proximity shells (although the number of guns per battery is reduced from six to four).
+        Wikipedia gives rate of fire of 12 RPM, a maximum altitude of 57 altitude levels (17.5 km), and a maximum range of 50 hexes (25 km).
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/120_mm_gun_M1}{M1}.
@@ -1745,11 +1760,12 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/KS-30 battery.tex}
 
+        The hit rolls are the same as the KS-19 (which has a similar rate of fire). In order to reach an altitude of 64, it needs a maximum range of at least 32. I will give it 36.
+        The adopted AAA values are in agreement with the empirical model.
+
         Wikipedia gives the rate of fire is 10--12 RPM, the vertical range as 72 altitude levels (22 km) and 54 hexes (29 km) horizontally. Wikipedia also says it provided a 25\% increase over the effective ceiling of the KS-19, which would be 48 altitude levels. However, this has a heavier shell and slightly higher muzzle velocity than the 120~mm M1, so it should have a maximum altitude of more than 57. I will give it a maximum altitude of 64.
 
         It is not clear to me that the Soviets had proximity fuzes for this gun.
-
-        The hit rolls are adapted from the KS-19 (which has a similar rate of fire). In order to reach an altitude of 64, it needs a maximum range of at least 32. I will give it 36.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/130_mm_air_defense_gun_KS-30}{KS-30}.
@@ -1771,6 +1787,7 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \input{aaavalues/QF 5.25-inch battery.tex}
 
         The AAA values are the same as for the KS-30, except the hit rolls are increased by one for proximity fuzes and the maximum altitude is reduced from 64,000 to 46,000 ft. This is the value given on Wikipedia, but it makes sense given the lower muzzle velocity of the 5.25-inch.
+        The adopted AAA values are in agreement with the empirical model.
 
         \begin{notesources}
             \item Wikipedia on the \href{https://en.wikipedia.org/wiki/QF_5.25-inch_naval_gun}{QF 5.25-inch} and \href{https://en.wikipedia.org/wiki/Princess_Anne\%27s_Battery}{Princess Anne's Battery}.
