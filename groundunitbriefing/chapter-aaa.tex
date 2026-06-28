@@ -30,6 +30,7 @@
 % LTeX: dictionary+=Mk
 % LTeX: dictionary+=MobileRadar
 % LTeX: dictionary+=modèle
+% LTeX: dictionary+=MOWAG
 % LTeX: dictionary+=Multisensor
 % LTeX: dictionary+=Oeil
 % LTeX: dictionary+=Oerlikon
@@ -41,6 +42,7 @@
 % LTeX: dictionary+=SAMs
 % LTeX: dictionary+=Skyguard
 % LTeX: dictionary+=Skysweeper
+% LTeX: dictionary+=Stormer
 % LTeX: dictionary+=TSOH
 % LTeX: dictionary+=VADS
 % LTeX: dictionary+=VDAA
@@ -118,7 +120,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 Twin Rh-202&8&2/4/6&\highlight{3/2/1}&3&---&\phantom{0}20&2060&1044&MP\\
                 M167&8&2/4/6&6/5/4&3&R&\phantom{0}20&3000&1030&AS/MP\\
                 ZU-23&9&2/5/8&\highlight{4/3/2}&\highlight{2}&---&\phantom{0}23&2000&980&AS/TSOH/MP\\
-                Gemag&10&3/6/9&6/5/4&4&R&\phantom{0}25&1800&1040&AS\\
+                Gemag&10&3/6/9&6/5/4&4&R&\phantom{0}25&3600&1040&AS\\
                 Oerlikon GDF-001&\highlight{12}&\highlight{4/8/10}&\highlight{5/4/3}&4&---&\phantom{0}35&1100&1175&AS/MP\\
                 61-K (M-38)&12&4/8/11&3/2/1&4&---&\phantom{0}37&165&880&AS/TSOH/MP\\
                 Bofors L/60&15&4/8/12&2/2/1&4&---&\phantom{0}40&135&865&EOTG/MP\\
@@ -155,7 +157,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 &&&&6&&75--100\\
                 &&&&7&&\greaterthanorequaltobefore{120}\\
                 \addlinespace
-                \multicolumn{3}{l}{Damage modifier for rate of fire}&&\plus{1}&&&\greaterthanorequaltobefore{1800}\\
+                \multicolumn{3}{l}{Damage modifier for rate of fire}&&\plus{1}&&&\greaterthanorequaltobefore{2000}\\
                 \addlinespace
                 \midrule
                 \multicolumn{10}{c}{Modified or Adopted Values}\\
@@ -201,7 +203,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
         \item As we will see below, sections have their hit rolls modified by \minus{1}.
         \item As we shall see below, sections have their hit rolls limited to 5/4/3.
         \item The base damage rating is 1 for \lessthanorequaltobefore{14.5}~mm, 2 for 20--23~mm, 3 for 25--30~mm, 4 for 35--40~mm, 5 for 57~mm, and 6 for 85--100~mm. I have extended this to 7 for \greaterthanorequaltobefore{120}~mm.
-        \item The damage rating is increased by one if the rate of fire is 1800 rounds per minute or more (e.g., M55, ZPU-4, Gemag, and M167).
+        \item The damage rating is increased by one if the rate of fire is 2000 rounds per minute or more (e.g., M55, ZPU-4, Gemag, and M167).
     \end{itemize}
     These model values are shown in the second section of the table.
 
@@ -248,8 +250,8 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             Mobile ZU-23&9&2/5/8&\highlight{2/2/1}&2&---&23&2000&980&AS/MP\\
             Nile 23&9&2/5/8&\highlight{3/3/2}&2&---&23&2000&980&EOTG/MP\\
             ZSU-23-4&9&2/5/8&5/4/3&3&W&23&4000&980&AS/MP\\
-            Blazer&10&3/6/9&5/4/3&4&W&25&1800&1040&AS\\
-            Blazer&\highlight{9}&3/6/9&5/4/3&4&W&25&1800&1040&MP\\
+            Blazer&10&3/6/9&5/4/3&4&W&25&3600&1040&AS\\
+            Blazer&\highlight{9}&3/6/9&5/4/3&4&W&25&3600&1040&MP\\
             M53/59&11&4/7/9&\highlight{4/3/2}&3&---&30&1000&1000&AS/MP\\
             AMX-30&11&4/7/9&\highlight{5/4/3}&3&\highlight{W}&30&1200&970&AS\\
             ZSU-30-2&11&4/7/9&5/4/3&4&W&30&5000&960&AS/MP\\
@@ -919,7 +921,7 @@ All AAA platoons and batteries are also available as sections (but not squads), 
     In addition to the gun, it is armed with four FIM-92D Stinger missiles.%
     \note{M2 Blazer}{
 
-        \aaamountvalues{25}{1800}{1040}
+        \aaamountvalues{25}{3600}{1040}
 
         \input{aaavalues/M2 Blazer section.tex}
 
@@ -943,7 +945,7 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \begin{notesources}
             \item \href{https://www.reddit.com/r/Warthunder/comments/bdmhij/machbet_is_for_losers_m2_bradley_with_ge_blazer/}{Reddit post} by unknown person.
-            \item Janes, extract from Janes (I believe) posted on \href{https://www.secretprojects.co.uk/threads/ge-blazer-air-defence-turrets.19351/}{Secret Projects} by user tround.
+            \item Janes, extract from Janes (I believe) posted on \href{https://www.secretprojects.co.uk/threads/ge-blazer-air-defence-turrets.19351/}{Secret Projects}.
             \item Wikipedia on \href{https://en.wikipedia.org/wiki/M2_Bradley}{M2}, \href{https://en.wikipedia.org/wiki/GAU-12_Equalizer}{GAU-12}, and \href{https://en.wikipedia.org/wiki/Forward_Area_Air_Defense_System}{FAADS}.
         \end{notesources}
     }
@@ -956,7 +958,7 @@ All AAA platoons and batteries are also available as sections (but not squads), 
     It entered service with the USMC in 1997, but was retired after only a few years.%
     \note{LAV-AD Section}{
 
-        \aaamountvalues{25}{1800}{1040}
+        \aaamountvalues{25}{3600}{1040}
 
         \input{aaavalues/LAV-AD section.tex}
 
