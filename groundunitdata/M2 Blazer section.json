@@ -1,8 +1,8 @@
 {
-    "name": "LAV-AD",
+    "name": "M2 Blazer",
     "country": "US",
-    "year": 1997,
-    "description": "LAV-AD 25 mm self-propelled air-defense section",
+    "year": "",
+    "description": "M2 Blazer 25 mm self-propelled air-defense section",
     "symbols": "air-defense/missile/gun/light/armor/section",
     "text": "25×5/FIM-92",
     "defensestrength": "4H",
@@ -24,7 +24,9 @@
         "maximumrelativealtitude": 10,
         "damagerating": 4,
         "nightirsights": true,
-        "laserrangefinder": true
+        "laserrangefinder": true,
+        "fcrclass": "S",
+        "fcrfrequency": "VF"
     },
     "sam": {
         "type": "FIM-92D",

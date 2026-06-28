@@ -911,13 +911,48 @@ All AAA platoons and batteries are also available as sections (but not squads), 
     }
     \vspacelines{1}
 
-    % Blazer: {\MP} gives this a maximum altitude of 9 rather than the 10 in {\AirStr}. The Blazer uses a 25~mm gun, and the {\AirStr} value is between that of 23~mm guns (9) and 30~mm guns (11), so I will adopt it. Following the model, the hit rolls would be 6/5/4, but they are limited to 5/4/3.
+    \subsectionwithcounter{LAV-AD section}{M2 Blazer}
+
+    The M2 Blazer has a 25~mm GAU-12 rotary cannon mounted in a turret on the M2 Bradley IFV.
+    It was proposed in 1985 for the “Line-of-Sight-Forward (Heavy)” component of the US Army's Forward Area Air Defense System, but did not progress beyond a prototype.
+    It has a search radar, but fire-control is based optical tracking with a passive night IR sight and laser rangefinder.
+    In addition to the gun, it is armed with four FIM-92D Stinger missiles.%
+    \note{M2 Blazer}{
+
+        \aaamountvalues{25}{1800}{1040}
+
+        \input{aaavalues/M2 Blazer section.tex}
+
+        The AAA values are adopted from the LAV-AD, as the two systems are so similar.
+        The adopted AAA values are in agreement with the empirical model.
+
+        Janes describe several Blazer turret options:
+        \begin{itemize}
+            \item Blazer 30: One-person turret with 30 mm GAU-13 and four Blowpipe/Javelins installer on a MOWAG Piranha.
+            \item Blazer 25: Two-person turret with 25 mm GAU-12 and four Stingers installed on an M2.
+            \item Blazer 25: One- or two-person turret with 25 mm GAU-12 and four Stingers installed on a MOWAG Piranha.
+            \item Blazer 25: One- or two-person turret with 25 mm GAU-12 and two Stingers installed on Stormer.
+            \item Blazer 25: Two-person turret with  25 mm GAU-12, four Stingers, two RBS-70s, and radar.
+        \end{itemize}
+        Janes state that all have a digital fire-control system, laser rangefinder, FLIR, and ESD RA-20 S search radar. The Ericsson HARD radar is also mentioned.
+        Since the M2 system did not proceed beyond a proposal, it is difficult to be sure what version or versions to include. I have elected to include a version with four Stingers and search radar. I do not see the US Army adopting any missile other than the Stinger, and the radar distinguishes this from the LAV-AD.
+
+        The Reddit post state that turret is similar to that of the LAV-AD.
+
+        The Reddit post states that the radar was a search radar. This would presumably give cueing and range information for the night IR sight.
+
+        \begin{notesources}
+            \item \href{https://www.reddit.com/r/Warthunder/comments/bdmhij/machbet_is_for_losers_m2_bradley_with_ge_blazer/}{Reddit post} by unknown person.
+            \item Janes, extract from Janes (I believe) posted on \href{https://www.secretprojects.co.uk/threads/ge-blazer-air-defence-turrets.19351/}{Secret Projects} by user tround.
+            \item Wikipedia on \href{https://en.wikipedia.org/wiki/M2_Bradley}{M2}, \href{https://en.wikipedia.org/wiki/GAU-12_Equalizer}{GAU-12}, and \href{https://en.wikipedia.org/wiki/Forward_Area_Air_Defense_System}{FAADS}.
+        \end{notesources}
+    }
 
     \subsectionwithcounter{LAV-AD section}{LAV-AD Section}
 
     The LAV-AD has a 25~mm GAU-12 rotary cannon and eight FIM-92D Stinger missiles mounted in a turret on the LAV-25 vehicle.
     A section has two vehicles.
-    The LAV-AD does not have radar, but is equipped with a passive night IR sight.
+    The LAV-AD does not have radar, but is equipped with a laser rangefinder and passive night IR sight.
     It entered service with the USMC in 1997, but was retired after only a few years.%
     \note{LAV-AD Section}{
 
