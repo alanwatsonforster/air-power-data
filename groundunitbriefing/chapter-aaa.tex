@@ -123,7 +123,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 61-K (M-38)&12&4/8/11&3/2/1&4&---&\phantom{0}37&165&880&AS/TSOH/MP\\
                 Bofors L/60&15&4/8/12&2/2/1&4&---&\phantom{0}40&135&865&EOTG/MP\\
                 Bofors L/70&15&4/8/12&\highlight{3/3/2}&4&---&\phantom{0}40&330&1000&AS/MP\\
-                BOFI&15&4/8/12&\highlight{4/4/3}&4&W&\phantom{0}40&330&1000&AS\\
+                BOFI-R&15&4/8/12&\highlight{4/4/3}&4&W&\phantom{0}40&330&1000&AS\\
                 S-60&18&5/10/15&2/2/1&5&---&\phantom{0}57&110&1000&AS/TSOH/MP\\
                 KS-12&27&6/12/18&\highlight{2/1/0}&6&---&\phantom{0}85&10&790&AS/TSOH\\
                 KS-19&39&7/14/21&1/1/0&6&---&100&15&900&AS\\
@@ -167,13 +167,15 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 ZU-23&&&5/4/3&3&&\multicolumn{4}{l}{--- for rate of fire}\\
                 Oerlikon GDF-001&&&4/3/2&&&\multicolumn{4}{l}{--- for rate of fire}\\
                 Oerlikon GDF-001&15&4/8/12&&&&\multicolumn{4}{l}{--- for muzzle velocity}\\
-                BOFI&&&5/5/3&&&\multicolumn{4}{l}{--- for FCR-W}\\
+                Bofors L/70&&&3/2/1&&&\multicolumn{4}{l}{--- rate of fire}\\
+                BOFI-R&&&6/5/4&&&\multicolumn{4}{l}{--- for FCR-W and proximity fuzes}\\
                 KS-12&&&1/1/0&&&\multicolumn{4}{l}{--- for rate of fire}\\
                 KS-19&&&1/1/0&&&\multicolumn{4}{l}{--- for rate of fire}\\
                 \midrule
                 \multicolumn{10}{c}{New Values}\\
                 \midrule
-                Oerlikon GDF-005&15&4/8/12&4/3/2&4&L&\phantom{0}35&1100&1175\\
+                Oerlikon GDF-005&15&4/8/12&5/4/3&4&L&\phantom{0}35&1100&1175\\
+                BOFI&15&4/8/12&5/4/3&4&L&\phantom{0}40&330&1000\\
                 M51&30&6/12/18&4/4/3&5&W&\phantom{0}75&45&854\\
                 Flab Kan 38&24&6/12/18&2/1/0&5&---&\phantom{0}75&25&700\\
                 90 mm M2&32&7/14/21&3/2/1&6&---&\phantom{0}90&24&820\\
@@ -194,7 +196,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
         \item Approximately doubling the rate of fire increases the hit rolls by one, with typical values of 1/1/0 at about 15 rounds per minutes, 2/2/1 at about 150 rounds per minute, 3/2/1 at about 500 rounds per minute, 4/3/2 at about 1000, 4/4/3 at about 1500, and 5/4/2 at about 2000 and above. Intermediate rates of fire can have one of these hit rolls increased or decreased by one.
         \item FCR-W and FCR-R effectively modify the hit rolls by \plus{1} and \plus{2}.
         \item A laser rangefinder (LRF) effectively modifiers the hit rolls by \plus{1}.
-        \item Proximity fuzes increase the hit rolls by \plus{1} (e.g., BOFI).
+        \item Proximity fuzes increase the hit rolls by \plus{1} (e.g., BOFI and BOFI-R).
         \item As we will see below, sections have their hit rolls modified by \minus{1}.
         \item As we shall see below, sections have their hit rolls limited to 5/4/3.
         \item The base damage rating is 1 for \lessthanorequaltobefore{14.5}~mm, 2 for 20--23~mm, 3 for 25--30~mm, 4 for 35--40~mm, 5 for 57~mm, and 6 for 85--100~mm. I have extended this to 7 for \greaterthanorequaltobefore{120}~mm.
@@ -215,7 +217,9 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
 
         \item Oerlikon GDF-001:  See the note on this below.
 
-        \item BOFI: The BOFI has unexpectedly low original hit rolls of 4/4/3. Values of 5/5/3, obtained by applying a \plus{2} modifier for FCR-W to the Bofors L/70, are probably more appropriate. (Note that the “BOFI” in {\AirStr} corresponds to what I call the “BOFI-R” below.)
+        \item Bofors L/70: See the note on this below.
+
+        \item BOFI-R: See the note on this below.
 
         \item KS-19: {\MP} gives hit rolls of 2/1/0 whereas {\AirStr} gives 1/1/0. While it makes sense that the hit roll is less at short range than medium range, it makes less sense that in this case the hit roll for the KS-19 (15 rounds per minute) is equal to that of the S-60 (110 rounds per minute). I prefer the {\AirStr} values.
 
@@ -1407,7 +1411,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/Bofors L70 battery.tex}
 
-        The AAA values are from {\AirStr}.
+        The AAA values are from {\AirStr}, but with the hit rolls reduced from 3/3/2 to 3/2/1 to match the rate of fire.
+        With this modification, the adopted AAA values are in agreement with the empirical model.
 
         Singh (ch. 4) describes the Israeli use.
 
@@ -1450,7 +1455,10 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/Bofors L70 BOFI battery.tex}
 
-        The AAA values are adapted from {\AirStr} values for the Bofors L/70, with the hit rolls increased by one for proximity fuzes and one for the BOFI laser rangefinder (effectively FCR-R), giving hit rolls of 5/5/4 for BOFI.
+        The BOFI in {\AirStr} corresponds to the BOFI-R described next.
+
+        The AAA values are adapted from {\AirStr} values for the Bofors L/70, but with the hit rolls modified as described in the note on the Bofors L/70 and then with modifiers of \plus{1} for proximity fuzes and \plus{1} for the laser rangefinder, giving hit rolls of 5/4/3.
+        With this change, the adopted AAA values are in agreement with the empirical model.
 
         I don't know when the BOFI became available or who else uses them.
 
@@ -1469,14 +1477,17 @@ All AAA platoons and batteries are also available as sections (but not squads), 
 
         \input{aaavalues/Bofors L70 BOFI-R battery.tex}
 
-        The AAA values are adapted from {\AirStr} values for the Bofors L/70, with the hit rolls increased by one for proximity fuzes and another two for the BOFI-R radar, giving hit rolls of 6/6/5 for BOFI-R whereas {\AirStr} gives the BOFI-R 5/5/4.
+        The BOFI in {\AirStr} corresponds to the BOFI-R described here.
+
+        The AAA values are adapted from {\AirStr} values for the Bofors L/70, but with the hit rolls modified as described in the note on the Bofors L/70 and then modified by \plus{1} for proximity fuzes and \plus{2} for the BOFI-R radar, giving hit rolls of 6/5/4 for BOFI-R whereas {\AirStr} gives 5/5/4.
+        With this change, the adopted AAA values are in agreement with the empirical model.
 
         I don't know when the BOFI-R became available or who else uses them.
 
         Wikipedia states the BOFI-R has: “Multisensor fire control system with a J band radar. Provides automatic acquisition and tracking with an effective range of 4 km without external radar input.”
 
         \begin{notesources}
-            \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Bofors_40_mm_Automatic_Gun_L/70\#Variants}{BOFI and BOFI-R}.
+            \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Bofors_40_mm_Automatic_Gun_L/70}{BOFI and BOFI-R}.
             \item WeaponSystems on the \href{https://weaponsystems.net/system/932-Bofors\%20L/70}{BOFI and BOFI-R}.
         \end{notesources}
     }
