@@ -1,0 +1,11 @@
+{
+    "name": "M113 ZPU-4",
+    "country": "LB",
+    "year": 1975,
+    "description": "M113 quad 14.5 mm self-propelled air-defense section",
+    "symbols": "air-defense/gun/armor/open/section",
+    "defensestrength": "4O",
+    "mobility": "U",
+    "VP2D": 5,
+    "_include": "mobile ZPU-4 section"
+}
