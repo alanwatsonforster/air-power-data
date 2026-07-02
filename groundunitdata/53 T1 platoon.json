@@ -1,7 +1,7 @@
 {
     "name": "53 T1",
     "country": "FR",
-    "year": 1976,
+    "year": 1953,
     "description": "53 T1 single 20 mm air-defense platoon",
     "symbols": "air-defense/gun/towed/platoon",
     "text": "20",
@@ -17,9 +17,9 @@
             6
         ],
         "hitroll": [
-            4,
             3,
-            2
+            2,
+            1
         ],
         "maximumrelativealtitude": 8,
         "damagerating": 2

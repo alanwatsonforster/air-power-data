@@ -1,8 +1,8 @@
 {
-    "name": "53 T1",
+    "name": "53 T1 M693",
     "country": "FR",
-    "year": 1953,
-    "description": "53 T1 single 20 mm air-defense section",
+    "year": 1976,
+    "description": "53 T1 M693 single 20 mm air-defense section",
     "symbols": "air-defense/gun/towed/section",
     "text": "20",
     "defensestrength": "3S",
@@ -17,9 +17,9 @@
             6
         ],
         "hitroll": [
+            3,
             2,
-            1,
-            0
+            1
         ],
         "maximumrelativealtitude": 8,
         "damagerating": 2
