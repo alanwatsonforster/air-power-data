@@ -1,0 +1,28 @@
+{
+    "name": "mobile Tarasque 53 T2",
+    "country": "FR",
+    "year": 1982,
+    "description": "mobile Tarasque 53 T2 single 20 mm air-defense section",
+    "symbols": "air-defense/gun/truck/section",
+    "text": "20",
+    "defensestrength": "2S",
+    "sightingrange": 12,
+    "mobility": "G/P",
+    "aaa": {
+        "type": "20",
+        "class": "L",
+        "range": [
+            2,
+            4,
+            6
+        ],
+        "hitroll": [
+            3,
+            2,
+            1
+        ],
+        "maximumrelativealtitude": 8,
+        "damagerating": 2
+    },
+    "VP2D": 3
+}

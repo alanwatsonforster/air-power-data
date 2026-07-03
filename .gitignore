@@ -170,6 +170,7 @@ cython_debug/
 *.toc
 *.fdb_latexmk
 *.xdv
+*.lot
 
 # Sandbox files
 sandbox*
