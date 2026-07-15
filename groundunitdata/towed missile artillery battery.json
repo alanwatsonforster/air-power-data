@@ -1,0 +1,13 @@
+{
+    "name": "towed missile artillery",
+    "description": "towed missile artillery battery",
+    "symbols": "missile/towed/battery",
+    "sightingrange": 12,
+    "defensestrength": "2S",
+    "mobility": "T",
+    "VPs": [
+        9,
+        6,
+        3
+    ]
+}
