@@ -1,0 +1,11 @@
+{
+    "name": "towed missile artillery",
+    "description": "towed missile artillery squad",
+    "symbols": "missile/towed/squad",
+    "sightingrange": 12,
+    "defensestrength": "2S",
+    "mobility": "T",
+    "VPs": [
+        3
+    ]
+}
