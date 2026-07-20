@@ -1,0 +1,28 @@
+{
+    "name": "HS.661B",
+    "country": "CH",
+    "year": 1960,
+    "description": "HS.661B 30 mm air-defense section",
+    "symbols": "air-defense/gun/towed/light/section",
+    "text": "30",
+    "defensestrength": "3S",
+    "sightingrange": 12,
+    "mobility": "T",
+    "aaa": {
+        "type": "30",
+        "class": "L",
+        "range": [
+            4,
+            7,
+            9
+        ],
+        "hitroll": [
+            2,
+            1,
+            0
+        ],
+        "maximumrelativealtitude": 11,
+        "damagerating": 3
+    },
+    "VP3D": 8
+}

@@ -1,8 +1,8 @@
 {
-    "name": "HS.661",
+    "name": "HS.661A",
     "country": "CH",
     "year": 1955,
-    "description": "HS.661 30 mm air-defense section",
+    "description": "HS.661A 30 mm air-defense section",
     "symbols": "air-defense/gun/towed/light/section",
     "text": "30",
     "defensestrength": "3S",
@@ -17,7 +17,7 @@
             9
         ],
         "hitroll": [
-            2,
+            1,
             1,
             0
         ],

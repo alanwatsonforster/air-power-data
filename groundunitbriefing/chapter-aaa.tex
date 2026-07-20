@@ -87,7 +87,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
         \setlength{\tabcolsep}{0.2em}
         \begin{center}
             \smallskip
-            AAA VALUES FOR BATTERIES\par
+            AAA VALUES FOR BATTERIES OR PLATOONS\par
             \medskip
             \scriptsize
             \begin{tabularx}{\linewidth}{LrrlrclrrL}
@@ -147,6 +147,8 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 \addlinespace
                 \multicolumn{3}{l}{Hit roll modifiers for proximity fuzes}&\plus{1}\\
                 \addlinespace
+                \multicolumn{3}{l}{Hit roll modifiers for poor ergonomics}&\minus{1}\\
+                \addlinespace
                 \multicolumn{3}{l}{Hit roll modifiers for section}&\minus{1}\\
                 \addlinespace
                 \multicolumn{3}{l}{Base damage depends on caliber}&&1&&\lessthanorequaltobefore{14.5}\\
@@ -176,9 +178,11 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 \midrule
                 \multicolumn{10}{c}{New Values}\\
                 \midrule
-                53 T1 Platoon&8&2/4/6&3/2/1&2&---&\phantom{0}20&675&805\\
-                53 T1 M693 Platoon&8&2/4/6&4/3/2&2&---&\phantom{0}20&1000&1050\\
-                Tarasque Platoon&8&2/4/6&4/3/2&2&---&\phantom{0}20&1000&1050\\
+                53 T1&8&2/4/6&2/2/1&2&---&\phantom{0}20&675&805\\
+                53 T1 M693&8&2/4/6&3/3/2&2&---&\phantom{0}20&1000&1050\\
+                Tarasque&8&2/4/6&4/3/2&2&---&\phantom{0}20&1000&1050\\
+                HS.661A&8&2/4/6&3/3/2&2&---&\phantom{0}30&600&970\\
+                HS.661B&8&2/4/6&4/3/2&2&---&\phantom{0}30&600&970\\
                 Oerlikon GDF-005&15&4/8/12&5/4/3&4&L&\phantom{0}35&1100&1175\\
                 BOFI&15&4/8/12&5/4/3&4&L&\phantom{0}40&330&1000\\
                 M51&30&6/12/18&4/4/3&5&W&\phantom{0}75&45&854\\
@@ -203,6 +207,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
         \item FCR-W effectively modifies the hit rolls by \plus{2}.
         \item A laser rangefinder (LRF) effectively modifiers the hit rolls by \plus{1}.
         \item Proximity fuzes increase the hit rolls by \plus{1} (e.g., BOFI and BOFI-R).
+        \item Mounts with poor ergonomics (e.g., the 53 T1 and HS.661A) have their hit rolls decreased by \minus{1} at short range, where tracking becomes more difficult.
         \item As we will see below, sections have their hit rolls modified by \minus{1}.
         \item As we shall see below, sections have their hit rolls limited to 5/4/3.
         \item The base damage rating is 1 for \lessthanorequaltobefore{14.5}~mm, 2 for 20--23~mm, 3 for 25--30~mm, 4 for 35--40~mm, 5 for 57~mm, and 6 for 85--100~mm. I have extended this to 7 for \greaterthanorequaltobefore{120}~mm.
@@ -823,9 +828,8 @@ All AAA platoons and batteries are also available as sections (but not squads), 
     \subsectionwithcounter{53 T1 M693 platoon}{53 T1 M693 Platoon}
 
     The 53 T1 M693 has a single 20 mm F1 cannon in an open mount on a towed carriage.
-
     It is an adaptation of the much earlier 1950s 53 T1 with the MG 151 cannon replaced with a F1 cannon.
-    The F1 cannon is an early version of the M693 and is derived from the HS~820.
+    The F1 cannon is an early version of the M693 and is derived from the HS.820.
     A platoon has four guns.
     The 53 T1 entered service in small numbers with the French Army in 1976.%
     \note{53 T1 M693 Platoon}{
@@ -1134,29 +1138,64 @@ All AAA platoons and batteries are also available as sections (but not squads), 
         \end{notesources}
     }
 
-    \subsectionwithcounter{HS.661 battery}{HS.661 Battery}
+    \subsectionwithcounter{HS.661A battery}{HS.661A Battery}
 
-    The HS.661 has a single 30~mm Hispano-Suiza HS.831A gun in an open mount on a towed carriage.
-    After the acquisition of Hispano-Suiza by Oerlikon in 1971, it was renamed the Oerlikon KCB.
+    The HS.661A has a single 30~mm Hispano-Suiza HS.831A gun in an open mount on a towed carriage.
     A battery has four gun mounts.
-    It served with the Egyptian Army (entering service before 1956), Argentine Army and Marines, and Finish Army (from 1962).
-    It saw combat with the Egyptian Army in the 1956 Suez Crisis and the Argentine Army in the 1982 South Atlantic War.%
-    \note{HS.661 Battery}{
+    It served with the Egyptian Army (entering service before 1956) and the Indonesian Army, and
+    saw combat with the Egyptian Army in the 1956 Suez Crisis.%
+    \note{HS.661A Battery}{
 
         \aaamountvalues{30}{600}{970}
 
+        \input{aaavalues/HS.661A battery.tex}
+
         I adopt the AAA values for the AMX-13 DCA section, with no modifier for number of units (as the AMX-13 DCA has two guns) but a \minus{1} modifier for the lack of FCR-R.
+        I give it a \minus{1} modifier at short range for the poor ergonomics of the mount.
         The adopted AAA values are in agreement with the empirical model.
 
-        WeaponSystems states the HS.661A was used by the Egyptian Army and entered service to 1956 and the HS.661B was used by the Argentine Army. Wikipedia states it was used by the Finish Army from 1962.
-
-        WeaponSystems shows a photo of an HS.661B captioned as being in use by French forces in the defense of Djibouti airport in 1979 and another of an HS.661A in an Indonesian museum.
+        WeaponSystems states the HS.661A was used by the Egyptian Army and entered service prior to 1956.
+        WeaponSystems shows a photo of an HS.661A in an Indonesian museum, so I presume it was in service with the Indonesian Army.
 
         The in-service date is a guess.
 
         \begin{notesources}
-            \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Oerlikon_KCB}{Oerlikon KCB} and \href{https://en.wikipedia.org/wiki/List_of_former_equipment_of_the_Finnish_Army\#Anti-aircraft_weapons}{Equipment used by the Finish Army}.
-            \item WeaponSystems on the \href{https://weaponsystems.net/system/1561-30mm\%20HS.661}{HS.661} and \href{https://weaponsystems.net/system/752-M53}{M53}.
+            \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Oerlikon_KCB}{Oerlikon KCB} and \href{https://en.wikipedia.org/wiki/List_of_former_equipment_of_the_Finnish_Army\#Anti-aircraft_weapons}{Equipment used by the Finnish Army}.
+            \item WeaponSystems on the \href{https://weaponsystems.net/system/1561-30mm\%20HS.661}{HS.661} and \href{https://weaponsystems.net/system/1562-30mm\%20Hispano-Suiza\%20HS.831}{HS.831}.
+        \end{notesources}
+
+    }
+
+    \subsectionwithcounter{HS.661B battery}{HS.661B Battery}
+
+    The HS.661B has a single 30~mm Hispano-Suiza HS.831A gun in an open mount on a towed carriage.
+    While the gun is the same as in the HS.661A, the mount has much improved ergonomics.
+    After the acquisition of Hispano-Suiza by Oerlikon in 1971, it was renamed the Oerlikon KCB.
+    A battery has four gun mounts.
+    It served with the Argentine Army and Marines, the Finnish Army (from 1962), and the French Army (from 1960),
+    and saw combat with Argentine Army in the 1982 South Atlantic War.%
+    \note{HS.661B Battery}{
+
+        \aaamountvalues{30}{600}{970}
+
+        \input{aaavalues/HS.661B battery.tex}
+
+        I adopt the AAA values for the AMX-13 DCA section, with no modifier for number of units (as the AMX-13 DCA has two guns) but a \minus{1} modifier for the lack of FCR-R.
+        The adopted AAA values are in agreement with the empirical model.
+
+        WeaponSystems states the HS.661B was used by the Argentine Army. Wikipedia states it was used by the Finnish Army from 1962.
+
+        Lesavre \& de Launet (p.~38) mention that in about 1960 France acquired about 30 Hispano-Suiza single, towed 30 mm guns, the same model as used by the AMX-13 DCA (i.e., the HS.831).
+
+        Wikimedia Commons has a photo of an HS.661B captioned as being in use by French forces in the defense of Djibouti airport in 1979. The person who posted it apparently was a member of the French Army Troupes de Marine.
+
+        The in-service date is a guess.
+
+        \begin{notesources}
+            \item “\href{https://www.yumpu.com/fr/document/view/16630048/les-armements-de-defense-antiaerienne-souvenirs-de-la-}{\foreignlanguage{french}{Les armements de défense anti-antiaérienne par canons et armes automatiques}},” René Lesavre \& Michel de Launet (\foreignlanguage{french}{Centres de hautes études de l'armement}, 2007).
+            \item Wikipedia on the \href{https://en.wikipedia.org/wiki/Oerlikon_KCB}{Oerlikon KCB} and \href{https://en.wikipedia.org/wiki/List_of_former_equipment_of_the_Finnish_Army\#Anti-aircraft_weapons}{Equipment used by the Finnish Army}.
+            \item WeaponSystems on the \href{https://weaponsystems.net/system/1561-30mm\%20HS.661}{HS.661} and \href{https://weaponsystems.net/system/1562-30mm\%20Hispano-Suiza\%20HS.831}{HS.831}.
+            \item Wikimedia Commons \href{https://commons.wikimedia.org/wiki/File:Monotube_de_30mm_HSS_en_protection_de_l\%27aéroport_de_Djibouti.jpg}{photo} of French Army HS.661A in Djibouti.
         \end{notesources}
 
     }

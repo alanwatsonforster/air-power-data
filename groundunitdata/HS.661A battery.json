@@ -1,8 +1,8 @@
 {
-    "name": "HS.661",
+    "name": "HS.661A",
     "country": "CH",
     "year": 1955,
-    "description": "HS.661 30 mm air-defense battery",
+    "description": "HS.661A 30 mm air-defense battery",
     "symbols": "air-defense/gun/towed/light/battery",
     "text": "30",
     "defensestrength": "3S",
@@ -17,7 +17,7 @@
             9
         ],
         "hitroll": [
-            3,
+            2,
             2,
             1
         ],
