@@ -87,10 +87,10 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
         \setlength{\tabcolsep}{0.2em}
         \begin{center}
             \smallskip
-            AAA VALUES FOR BATTERIES OR PLATOONS\par
+            AAA VALUES FOR EXISTING AAA BATTERIES OR PLATOONS\par
             \medskip
             \scriptsize
-            \begin{tabularx}{\linewidth}{LrrlrclrrL}
+            \begin{tabular}{lrrlrclrrl}
                 \toprule
                 Type
                 &\multicolumn{1}{c}{\vertical{Maximum Altitude}}
@@ -131,27 +131,26 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 KS-19&39&7/14/21&1/1/0&6&---&100&15&900&AS\\
                 KS-19&39&7/14/21&\highlight{2/1/0}&6&---&100&15&900&MP\\
                 \midrule
-                \multicolumn{10}{c}{Empirical Model Values}\\
+                \multicolumn{10}{c}{Empirical Model for Hit Rolls}\\
                 \midrule
-                \addlinespace
-                \multicolumn{3}{l}{Base hit rolls depend on rate of fire}&1/1/0&&&&15\\
+                \multicolumn{3}{l}{Base according to rate of fire}&1/1/0&&&&15\\
                 &&&2/2/1&&&&120\\
                 &&&3/2/1&&&&500\\
                 &&&4/3/2&&&&1000\\
                 &&&4/4/3&&&&1500\\
                 &&&5/4/3&&&&2000\\
                 \addlinespace
-                \multicolumn{3}{l}{Hit roll modifiers for FCR/LRF}&\plus{1}&&R\\
-                &&&\plus{1}&&L\\
-                &&&\plus{2}&&W\\
+                \multicolumn{3}{l}{Modifier for FCR-R}&\plus{1}&&R\\
+                \multicolumn{3}{l}{Modifier for FCR-W}&\plus{2}&&W\\
+                \multicolumn{3}{l}{Modifier for LRF}&\plus{1}&&L\\
+                \multicolumn{3}{l}{Modifier for proximity fuzes}&\plus{1}\\
+                \multicolumn{3}{l}{Modifier for poor ergonomics}&\minus{1}/0/0\\
+                \multicolumn{3}{l}{Modifier for section}&\minus{1}\\
                 \addlinespace
-                \multicolumn{3}{l}{Hit roll modifiers for proximity fuzes}&\plus{1}\\
-                \addlinespace
-                \multicolumn{3}{l}{Hit roll modifiers for poor ergonomics}&\minus{1}\\
-                \addlinespace
-                \multicolumn{3}{l}{Hit roll modifiers for section}&\minus{1}\\
-                \addlinespace
-                \multicolumn{3}{l}{Base damage depends on caliber}&&1&&\lessthanorequaltobefore{14.5}\\
+                \midrule
+                \multicolumn{10}{c}{Empirical Model for Damage Rating}\\
+                \midrule
+                \multicolumn{3}{l}{Base according to caliber}&&1&&\lessthanorequaltobefore{14.5}\\
                 &&&&2&&20--23\\
                 &&&&3&&25--30\\
                 &&&&4&&35--40\\
@@ -159,7 +158,7 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 &&&&6&&75--100\\
                 &&&&7&&\greaterthanorequaltobefore{120}\\
                 \addlinespace
-                \multicolumn{3}{l}{Damage modifier for rate of fire}&&\plus{1}&&&\greaterthanorequaltobefore{2000}\\
+                \multicolumn{3}{l}{Modifier for rate of fire}&&\plus{1}&&&\greaterthanorequaltobefore{2000}\\
                 \addlinespace
                 \midrule
                 \multicolumn{10}{c}{Modified or Adopted Values}\\
@@ -175,25 +174,8 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
                 BOFI-R&&&6/5/4&&&\multicolumn{4}{l}{--- for FCR-W and proximity fuzes}\\
                 KS-12&&&1/1/0&&&\multicolumn{4}{l}{--- for rate of fire}\\
                 KS-19&&&1/1/0&&&\multicolumn{4}{l}{--- for rate of fire}\\
-                \midrule
-                \multicolumn{10}{c}{New Values}\\
-                \midrule
-                53 T1&8&2/4/6&2/2/1&2&---&\phantom{0}20&675&805\\
-                53 T1 M693&8&2/4/6&3/3/2&2&---&\phantom{0}20&1000&1050\\
-                Tarasque&8&2/4/6&4/3/2&2&---&\phantom{0}20&1000&1050\\
-                HS.661A&11&2/4/6&3/3/2&3&---&\phantom{0}30&600&970\\
-                HS.661B&11&2/4/6&4/3/2&3&---&\phantom{0}30&600&970\\
-                Oerlikon GDF-005&15&4/8/12&5/4/3&4&L&\phantom{0}35&1100&1175\\
-                BOFI&15&4/8/12&5/4/3&4&L&\phantom{0}40&330&1000\\
-                M51&30&6/12/18&4/4/3&5&W&\phantom{0}75&45&854\\
-                Flab Kan 38&24&6/12/18&1/1/0&5&---&\phantom{0}75&25&700\\
-                90 mm M2&32&7/14/21&2/2/1&6&---&\phantom{0}90&24&820\\
-                QF 3.7-inch Mk VI&45&9/18/27&2/2/1&6&--&\phantom{0}94&20&1044\\
-                120 mm M1&57&11/22/33&2/2/1&7&--&120&12&945\\
-                KS-30&64&12/24/36&1/1/0&7&---&130&12&970\\
-                QF 5.25-inch&46&12/24/36&2/2/1&7&---&133&10&850\\
                 \bottomrule
-            \end{tabularx}
+            \end{tabular}
             \medskip
         \end{center}
     \end{minipage}
@@ -213,25 +195,66 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
         \item The base damage rating is 1 for \lessthanorequaltobefore{14.5}~mm, 2 for 20--23~mm, 3 for 25--30~mm, 4 for 35--40~mm, 5 for 57~mm, and 6 for 85--100~mm. I have extended this to 7 for \greaterthanorequaltobefore{120}~mm.
         \item The damage rating is increased by one if the rate of fire is 2000 rounds per minute or more (e.g., M55, ZPU-4, Gemag, and M167).
     \end{itemize}
-    These model values are shown in the second section of the table.
+    These model values are shown in the second and third sections of the table.
 
-    Most of the original values can be used as they are, but a few of the hit rolls and damage ratings do not fit this general pattern and need adjusting. Also, for guns for which the sources give different values, a single set needs to be adopted. These are shown in the third section of the table and are discussed in the corresponding notes below.
+    Most of the original values can be used as they are, but a few of the hit rolls and damage ratings do not fit this general pattern and need adjusting. Also, for guns for which the sources give different values, a single set needs to be adopted. These are shown in the fourth section of the table and are discussed in the corresponding notes below.
 
-    Values for new guns are shown in the fourth section of the table. They are based on the empirical model discussed here and are explained in more detail in the corresponding notes.
+    Values for new guns are shown in the following table. They are based on the empirical model discussed here and are explained in more detail in the corresponding notes.
+
+    \begin{minipage}{\linewidth}
+        \setlength{\tabcolsep}{0.2em}
+        \begin{center}
+            \smallskip
+            AAA VALUES FOR NEW AAA BATTERIES OR PLATOONS\par
+            \medskip
+            \scriptsize
+            \begin{tabular}{lrrlrclrrc}
+                \toprule
+                Type
+                &\multicolumn{1}{c}{\vertical{Maximum Altitude}}
+                &\multicolumn{1}{c}{\vertical{Ranges}}
+                &\multicolumn{1}{c}{\vertical{Hit Rolls}}
+                &\multicolumn{1}{c}{\vertical{Damage}}
+                &\multicolumn{1}{c}{\vertical{FCR/LRF}}
+                &\multicolumn{1}{c}{\vertical{Caliber (mm)}}
+                &\multicolumn{1}{c}{\vertical{Rate of Fire (RPM)}}
+                &\multicolumn{1}{c}{\vertical{Muzzle Velocity (m/s)}}
+                &\multicolumn{1}{c}{\vertical{Poor Ergonomics?}}
+                \\
+                \midrule
+                53 T1&8&2/4/6&2/2/1&2&---&\phantom{0}20&675&805&Y\\
+                53 T1 M693&8&2/4/6&3/3/2&2&---&\phantom{0}20&1000&1050&Y\\
+                Tarasque&8&2/4/6&4/3/2&2&---&\phantom{0}20&1000&1050&N\\
+                HS.661A&11&2/4/6&3/3/2&3&---&\phantom{0}30&600&970&Y\\
+                HS.661B&11&2/4/6&4/3/2&3&---&\phantom{0}30&600&970&N\\
+                Oerlikon GDF-005&15&4/8/12&5/4/3&4&L&\phantom{0}35&1100&1175&N\\
+                BOFI&15&4/8/12&5/4/3&4&L&\phantom{0}40&330&1000&N\\
+                M51&30&6/12/18&4/4/3&5&W&\phantom{0}75&45&854&N\\
+                Flab Kan 38&24&6/12/18&1/1/0&5&---&\phantom{0}75&25&700&N\\
+                90 mm M2&32&7/14/21&2/2/1&6&---&\phantom{0}90&24&820&N\\
+                QF 3.7-inch Mk VI&45&9/18/27&2/2/1&6&--&\phantom{0}94&20&1044&N\\
+                120 mm M1&57&11/22/33&2/2/1&7&--&120&12&945&N\\
+                KS-30&64&12/24/36&1/1/0&7&---&130&12&970&N\\
+                QF 5.25-inch&46&12/24/36&2/2/1&7&---&133&10&850&N\\
+                \bottomrule
+            \end{tabular}
+            \medskip
+        \end{center}
+    \end{minipage}
 
     \noteparagraph{AAA Values for Sections} I now turn to sections. Again, my aim is to empirically understand the underlying model sufficiently to identify anomalous values and to apply it to other guns.
 
     The upper part of the following table shows the original data for gun sections from {\AirStr} (AS), {\EOTG} (EOTG), and {\TSOH} (TSOH), and \MP' 2026 compilation (MP). Again, I have added columns with the caliber, burst rate of fire per mount, and muzzle velocity. Values in red will be subsequently modified.
 
     \begin{center}
-        \medskip
+        \bigskip
         \smallskip
-        AAA VALUES FOR SECTIONS\par
+        AAA VALUES FOR EXISTING AAA SECTIONS\par
         \nobreak
         \medskip
         \nobreak
         \scriptsize
-        \begin{tabularx}{\linewidth}{LrlllllrrL}
+        \begin{tabular}{lrlllllrrl}
             \toprule
             Type
             &\multicolumn{1}{c}{\vertical{Maximum Altitude}}
@@ -279,28 +302,8 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
             AMX-30 DCA&&&4/3/2&&R&\multicolumn{4}{l}{--- does not have FCR-W}\\
             Gepard&15&4/8/12&&&&\multicolumn{4}{l}{--- for muzzle velocity}\\
             Gepard&&&&4&&\multicolumn{4}{l}{--- adopt {\AirStr} values}\\
-            \midrule
-            \multicolumn{10}{c}{New Values}\\
-            \midrule
-            M17&5&2/3/4&4/3/2&2&---&12.7&2000&890\\
-            BTR-152A Vz.53&5&2/3/4&4/3/2&2&---&12.7&2000&850\\
-            Mobile M45&5&2/3/4&4/3/2&2&---&12.7&2000&890\\
-            Mobile ZPU-2&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
-            BTR-40A&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
-            BTR-152A ZPU-2&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
-            BTR-152A ZPU-4&6&2/3/5&4/3/2&2&---&14.5&2400&1000\\
-            M113 ZPU-2&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
-            M113 ZPU-4&6&2/3/5&4/3/2&2&---&14.5&2400&1000\\
-            BTR-152A ZU-23&9&2/5/8&4/3/2&3&---&23&2000&980\\
-            Sinai 23&9&2/5/8&4/3/2&3&---&23&2000&980\\
-            AMX-13 DCA&11&4/7/9&4/3/2&3&R&30&1200&970&\\
-            AMX-30SA&11&4/7/9&4/3/2&3&R&30&1200&970&\\
-            M15&12&2/4/8&3/2/1&4&---&37&120&792\\
-            M19&15&4/8/12&2/2/1&4&---&40&270&865&\\
-            M34&15&2/4/12&1/1/1&4&---&40&135&865&\\
-            M42&15&4/8/12&2/2/1&4&---&40&270&865&\\
             \bottomrule
-        \end{tabularx}
+        \end{tabular}
         \medskip
     \end{center}
 
@@ -319,7 +322,48 @@ If the unit has a SAM, this will be described in detail in the section on SAM la
     Also, for guns for which the sources give different values, a single set needs to be adopted.
     These are shown in the second section of the table and are discussed in the corresponding notes below.
 
-    Values for new guns are shown in the third section of the table. They are based on the empirical model discussed here and are explained in more detail in the corresponding notes.
+    Values for new guns are shown in the following table. They are based on the empirical model discussed here and are explained in more detail in the corresponding notes.
+
+    \begin{center}
+        \bigskip
+        \scriptsize
+        \begin{tabular}{lrlllllrr}
+            \addlinespace
+            \multicolumn{9}{c}{\footnotesize AAA VALUES FOR NEW AAA SECTIONS}\\
+            \addlinespace
+            \toprule
+            Type
+            &\multicolumn{1}{c}{\vertical{Maximum Altitude}}
+            &\multicolumn{1}{c}{\vertical{Ranges}}
+            &\multicolumn{1}{c}{\vertical{Hit Rolls}}
+            &\multicolumn{1}{c}{\vertical{Damage}}
+            &\multicolumn{1}{c}{\vertical{FCR/LRF}}
+            &\multicolumn{1}{c}{\vertical{Caliber (mm)}}
+            &\multicolumn{1}{c}{\vertical{Rate of fire (RPM)}}
+            &\multicolumn{1}{c}{\vertical{Muzzle Velocity (m/s)}}
+            \\
+            \midrule
+            M17&5&2/3/4&4/3/2&2&---&12.7&2000&890\\
+            BTR-152A Vz.53&5&2/3/4&4/3/2&2&---&12.7&2000&850\\
+            Mobile M45&5&2/3/4&4/3/2&2&---&12.7&2000&890\\
+            Mobile ZPU-2&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
+            BTR-40A&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
+            BTR-152A ZPU-2&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
+            BTR-152A ZPU-4&6&2/3/5&4/3/2&2&---&14.5&2400&1000\\
+            M113 ZPU-2&6&2/3/5&3/2/1&1&---&14.5&1200&1000\\
+            M113 ZPU-4&6&2/3/5&4/3/2&2&---&14.5&2400&1000\\
+            BTR-152A ZU-23&9&2/5/8&4/3/2&3&---&23&2000&980\\
+            Sinai 23&9&2/5/8&4/3/2&3&---&23&2000&980\\
+            AMX-13 DCA&11&4/7/9&4/3/2&3&R&30&1200&970\\
+            AMX-30SA&11&4/7/9&4/3/2&3&R&30&1200&970\\
+            M15&12&2/4/8&3/2/1&4&---&37&120&792\\
+            M19&15&4/8/12&2/2/1&4&---&40&270&865\\
+            M34&15&2/4/12&1/1/1&4&---&40&135&865\\
+            M42&15&4/8/12&2/2/1&4&---&40&270&865\\
+            \bottomrule
+        \end{tabular}
+        \bigskip
+    \end{center}
 
 }
 
