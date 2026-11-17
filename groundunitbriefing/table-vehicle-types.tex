@@ -1,7 +1,7 @@
 %!TEX root = groundunitbriefing.tex
 % LTeX: enabled=false
 
-\newcommand\vehicle[3]{#1\hfill#2\hspace{\tabcolsep}\wbox{0000}{#3}}
+\newcommand\vehicle[3]{#1\hfill#2\hspace{0.5em}\wbox{0000}{#3}}
 
 \newcommand\vehiclecolumnA{
     \begin{tabular}[t]{@{}p{0.19\linewidth}@{}}
@@ -223,7 +223,7 @@
         \midrule
         \multicolumn{1}{c}{\bfseries Open APCs}\\
         \midrule
-        \vehicle{AT-P}{SU}{1954}\\
+        \vehicle{AT-P\tablenotemark{a}}{SU}{1954}\\
         \vehicle{BTR-50P}{SU}{1952}\\
         \vehicle{BTR-60P}{SU}{1959}\\
         \vehicle{M3 half-track}{US}{1941}\\
@@ -239,7 +239,7 @@
         \midrule
         \vehicle{BTR-40}{SU}{1950}\\
         \vehicle{BTR-152A}{SU}{1950}\\
-        \vehicle{SKP/VKP}{SE}{1944}\\
+        \vehicle{SKP\tablenotemark{a}/VKP\tablenotemark{a}}{SE}{1944}\\
         \vehicle{SKPF/VKPF}{SE}{1956}\\
 
         \bottomrule
@@ -423,6 +423,8 @@
     \end{tabular}
 }
 
+\begingroup
+\setlength{\tabcolsep}{0.00625\linewidth}
 \begin{tabular}{@{}lllll@{}}
     \vehiclecolumnA&
     \vehiclecolumnB&
@@ -430,3 +432,7 @@
     \vehiclecolumnD&
     \vehiclecolumnE\\
 \end{tabular}
+\begin{tablenote*}{\linewidth}
+    \tablenotetext{a}{Armored vehicles normally have an AAA class of B3, but these armored vehicles are not capable of barrage AAA fire.}
+\end{tablenote*}
+\endgroup
