@@ -1,0 +1,28 @@
+{
+    "name": "M-53/59",
+    "country": "CS",
+    "year": 1956,
+    "description": "M-53 twin 30 mm air-defense battery",
+    "symbols": "air-defense/gun/towed/battery",
+    "text": "30×2",
+    "defensestrength": "3S",
+    "sightingrange": 12,
+    "mobility": "T",
+    "aaa": {
+        "type": "30×2",
+        "class": "L",
+        "range": [
+            4,
+            7,
+            9
+        ],
+        "hitroll": [
+            4,
+            3,
+            2
+        ],
+        "maximumrelativealtitude": 11,
+        "damagerating": 4
+    },
+    "VP3D": 6
+}
